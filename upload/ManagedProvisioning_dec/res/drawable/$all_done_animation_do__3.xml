@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set android:ordering="together"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt">
+    <objectAnimator android:interpolator="@drawable/$$all_done_animation_do__3__0" android:duration="117" android:startOffset="0" android:propertyName="translateXY" android:pathData="M 253.961,32.054C 255.2705238208771,30.506380895614623 252.08004764175416,32.17304761940241 253.961,32.054" android:propertyXName="translateX" android:propertyYName="translateY" />
+    <objectAnimator android:interpolator="@drawable/$$all_done_animation_do__3__1" android:duration="633" android:startOffset="117" android:propertyName="translateXY" android:pathData="M 253.961,32.054C 255.2705238208771,30.506380895614623 259.50904764175414,28.45904761940241 261.39,28.34" android:propertyXName="translateX" android:propertyYName="translateY" />
+</set>

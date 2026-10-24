@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set android:ordering="together"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt">
+    <objectAnimator android:interpolator="@drawable/$$personal_apps_separate_hidden_from_work_animation__111__0" android:duration="1950" android:startOffset="0" android:propertyName="translateXY" android:pathData="M -117.48,-74.884C -114.29400000000001,-45.081 -184.763,-86.088 -117.48,-74.884" android:propertyXName="translateX" android:propertyYName="translateY" />
+    <objectAnimator android:interpolator="@drawable/$$personal_apps_separate_hidden_from_work_animation__111__1" android:duration="733" android:startOffset="1950" android:propertyName="translateXY" android:pathData="M -117.48,-74.884C -114.29400000000001,-45.081 -87.37100000000001,37.153999999999996 -20.088,48.358" android:propertyXName="translateX" android:propertyYName="translateY" />
+    <objectAnimator android:interpolator="@drawable/$$personal_apps_separate_hidden_from_work_animation__111__2" android:duration="1067" android:startOffset="2683" android:propertyName="translateXY" android:pathData="M -20.088,48.358C -20.086000000000002,48.358 -20.088,48.358 -20.088,48.358" android:propertyXName="translateX" android:propertyYName="translateY" />
+    <objectAnimator android:interpolator="@drawable/$$personal_apps_separate_hidden_from_work_animation__111__3" android:duration="500" android:startOffset="3750" android:propertyName="translateXY" android:pathData="M -20.088,48.358C -20.088,48.358 -2.624,52.841 -2.624,52.841" android:propertyXName="translateX" android:propertyYName="translateY" />
+</set>

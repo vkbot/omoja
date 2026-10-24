@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:id="@id/main" android:tag="layout/activity_internal_config_0" android:background="@color/black" android:padding="10.0dp" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <GridLayout android:layout_width="match_parent" android:layout_height="match_parent" android:columnCount="4">
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/chinese_display" style="@style/content_text" />
+            <com.mega.engineeringmode.ui.MegaSwitch android:id="@id/switch_signal" android:layout_marginStart="10.0dp" app:layout_constraintBottom_toBottomOf="@id/tv_title" app:layout_constraintLeft_toRightOf="@id/tv_title" app:layout_constraintStart_toEndOf="@id/tv_title" app:layout_constraintTop_toTopOf="@id/tv_title" style="@style/switch_custom" />
+        </LinearLayout>
+    </GridLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

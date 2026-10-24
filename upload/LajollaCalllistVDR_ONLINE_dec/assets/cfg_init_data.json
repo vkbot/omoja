@@ -1,0 +1,209 @@
+{
+  "code": 0,
+  "message": "success",
+  "data": {
+    "updateTime": 1692693669,
+    "version": "1.0.2",
+    "type": "RULE",
+    "id": "0001",
+    "rules": {
+      "filter": {
+        "collectNum": 30,
+        "period": 30,
+        "type": 0
+      },
+      "heartBeat": {
+        "enable": true,
+        "period": 30
+      },
+      "rules": [
+        {
+          "capturePeriod": 180,
+          "enable": true,
+          "id": "b010101",
+          "rule": "1.5"
+        },
+        {
+          "capturePeriod": 180,
+          "enable": true,
+          "id": "b010102",
+          "rule": "1.6"
+        },
+        {
+          "capturePeriod": 180,
+          "enable": true,
+          "id": "b010103",
+          "rule": "1.7"
+        },
+        {
+          "capturePeriod": 0,
+          "enable": true,
+          "id": "b010105",
+          "rule": "-1"
+        },
+        {
+          "capturePeriod": 0,
+          "enable": true,
+          "id": "b010201",
+          "rule": "-1"
+        },
+        {
+          "capturePeriod": 180,
+          "enable": true,
+          "id": "b010204",
+          "rule": "-1"
+        },
+        {
+          "capturePeriod": 180,
+          "enable": true,
+          "id": "b010205",
+          "rule": "-1"
+        },
+        {
+          "capturePeriod": 180,
+          "enable": true,
+          "id": "b010306",
+          "rule": "-1"
+        },
+        {
+          "capturePeriod": 180,
+          "enable": true,
+          "id": "b010307",
+          "rule": "-1"
+        },
+        {
+          "capturePeriod": 180,
+          "enable": true,
+          "id": "b010308",
+          "rule": "-1"
+        },
+        {
+          "capturePeriod": 0,
+          "enable": true,
+          "id": "b010401",
+          "rule": "-1"
+        },
+        {
+          "capturePeriod": 60,
+          "enable": true,
+          "id": "b010402",
+          "rule": "-1"
+        },
+        {
+          "capturePeriod": 0,
+          "enable": true,
+          "id": "b010403",
+          "rule": "-1"
+        },
+        {
+          "capturePeriod": 300,
+          "enable": true,
+          "id": "b010503",
+          "rule": "-1"
+        },
+        {
+          "capturePeriod": 180,
+          "enable": true,
+          "id": "b010504",
+          "rule": "-1"
+        },
+        {
+          "capturePeriod": 0,
+          "enable": true,
+          "id": "b010601",
+          "rule": "-1"
+        },
+        {
+          "capturePeriod": 0,
+          "enable": true,
+          "id": "b010603",
+          "rule": "-1"
+        },
+        {
+          "capturePeriod": 0,
+          "enable": true,
+          "id": "b010605",
+          "rule": "-1"
+        },
+        {
+          "capturePeriod": 60,
+          "enable": true,
+          "id": "b010608",
+          "rule": "-1"
+        },
+        {
+          "capturePeriod": 60,
+          "enable": true,
+          "id": "b010609",
+          "rule": "-1"
+        },
+        {
+          "capturePeriod": 180,
+          "enable": true,
+          "id": "b010701",
+          "rule": "-1"
+        },
+        {
+          "capturePeriod": 180,
+          "enable": true,
+          "id": "b010702",
+          "rule": "-1"
+        },
+        {
+          "capturePeriod": 180,
+          "enable": true,
+          "id": "b010703",
+          "rule": "-1"
+        },
+        {
+          "capturePeriod": 180,
+          "enable": true,
+          "id": "b020107",
+          "rule": "-1"
+        },
+        {
+          "capturePeriod": 180,
+          "enable": true,
+          "id": "b020108",
+          "rule": "-1"
+        },
+        {
+          "capturePeriod": 180,
+          "enable": true,
+          "id": "b020109",
+          "rule": "-1"
+        },
+        {
+          "capturePeriod": 180,
+          "enable": true,
+          "id": "b020110",
+          "rule": "-1"
+        },
+        {
+          "capturePeriod": 180,
+          "enable": true,
+          "id": "b020111",
+          "rule": "-1"
+        },
+        {
+          "capturePeriod": 180,
+          "enable": true,
+          "id": "b020203",
+          "rule": "-1"
+        },
+        {
+          "capturePeriod": 180,
+          "enable": true,
+          "id": "b030101",
+          "rule": "20,21,22,23,5555,80"
+        },
+        {
+          "capturePeriod": 180,
+          "enable": true,
+          "id": "b030102",
+          "rule": "-1"
+        }
+      ]
+    }
+  }
+}

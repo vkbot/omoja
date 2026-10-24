@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView android:textColor="@color/white" android:background="@drawable/btn_select_bg" android:layout_width="match_parent" style="@style/item_btn"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

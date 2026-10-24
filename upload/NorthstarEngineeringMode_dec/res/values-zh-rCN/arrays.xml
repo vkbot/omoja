@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="internal_upgrade">
+        <item>MCU升级</item>
+        <item>内置AVM升级</item>
+        <item>DSP升级</item>
+        <item>仪表报警音升级</item>
+        <item>仪表域升级</item>
+        <item>主机域升级</item>
+        <item>SOC整体升级</item>
+        <item>DMC整包升级</item>
+    </string-array>
+    <string-array name="mars_timbre">
+        <item>女声</item>
+        <item>男声</item>
+    </string-array>
+    <string-array name="periphery_upgrade">
+        <item>中控显示屏MCU软件升级</item>
+        <item>中控显示屏触摸软件升级</item>
+        <item>仪表显示屏MCU升级</item>
+        <item>仪表显示屏触摸面板软件升级</item>
+        <item>TBOX升级</item>
+        <item>APA升级</item>
+    </string-array>
+    <string-array name="tsp_test_devs">
+        <item>发布环境</item>
+        <item>开发环境</item>
+        <item>国内测试环境</item>
+        <item>海外测试环境</item>
+    </string-array>
+    <string-array name="version_info">
+        <item>DMC内各软件版本信息</item>
+        <item>周边件版本信息</item>
+        <item>DMC生产物流信息</item>
+        <item>DMC内部硬件版本信息</item>
+    </string-array>
+    <string-array name="wifi_eap_method">
+        <item>PEAP</item>
+        <item>TLS</item>
+        <item>TTLS</item>
+        <item>PWD</item>
+        <item>SIM</item>
+        <item>AKA</item>
+        <item>"AKA'"</item>
+    </string-array>
+    <string-array name="wifi_ip_settings">
+        <item>DHCP</item>
+        <item>静态</item>
+    </string-array>
+    <string-array name="wifi_peap_phase2_entries_with_sim_auth">
+        <item>无</item>
+        <item>MSCHAPV2</item>
+        <item>GTC</item>
+        <item>SIM</item>
+        <item>AKA</item>
+        <item>"AKA'"</item>
+    </string-array>
+    <string-array name="wifi_phase2_entries">
+        <item>无</item>
+        <item>PAP</item>
+        <item>MSCHAP</item>
+        <item>MSCHAPV2</item>
+        <item>GTC</item>
+    </string-array>
+    <string-array name="wifi_proxy_settings">
+        <item>无</item>
+        <item>手动</item>
+        <item>代理自动配置</item>
+    </string-array>
+    <string-array name="wifi_signal">
+        <item>弱</item>
+        <item>微弱</item>
+        <item>一般</item>
+        <item>良好</item>
+        <item>极佳</item>
+    </string-array>
+</resources>

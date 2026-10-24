@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/shape_bg_dialog" android:layout_width="@dimen/reset_dialog_width" android:layout_height="@dimen/reset_dialog_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/text_size_content" android:textColor="@color/white" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/dialog_title" android:layout_width="620.0dp" android:layout_height="270.0dp" android:layout_marginTop="100.0dp" android:text="@string/system_reset_dialog_title" />
+    <LinearLayout android:gravity="center_horizontal" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="24.0dp">
+        <TextView android:gravity="center" android:id="@id/dialog_confirm" android:background="@drawable/shape_bg_submit_btn" android:text="@string/main_encryption_confirm" style="@style/select_btn" />
+        <TextView android:gravity="center" android:id="@id/dialog_cancel" android:background="@drawable/shape_bg_cancel_btn" android:text="@string/main_encryption_cancel" android:layout_marginStart="40.0dp" style="@style/select_btn" />
+    </LinearLayout>
+</LinearLayout>

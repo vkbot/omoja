@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:compileSdkVersion="32" android:compileSdkVersionCodename="12" android:sharedUserId="android.uid.system" coreApp="true" package="com.mega.engineeringmode" platformBuildVersionCode="32" platformBuildVersionName="12">
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_FIND_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.BLUETOOTH"/>
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN"/>
+    <uses-permission android:name="android.permission.LOCAL_MAC_ADDRESS"/>
+    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+    <uses-permission android:name="android.permission.REBOOT"/>
+    <uses-permission android:name="android.permission.BLUETOOTH_PRIVILEGED"/>
+    <uses-permission android:name="android.Manifest.permission.NETWORK_SETTINGS"/>
+    <uses-permission android:name="android.permission.READ_PRIVILEGED_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+    <uses-permission android:name="android.permission.INTERNAL_SYSTEM_WINDOW"/>
+    <uses-permission android:name="android.permission.BLUETOOTH_CONNECT"/>
+    <uses-feature android:name="android.hardware.camera" android:required="false"/>
+    <uses-feature android:name="android.hardware.camera.autofocus" android:required="false"/>
+    <uses-permission android:name="android.permission.BLUETOOTH"/>
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN"/>
+    <uses-permission android:name="mega.car.permission.KeyInput"/>
+    <uses-permission android:name="mega.car.permission.ELEC_POWER"/>
+    <uses-permission android:name="mega.car.permission.VEHICLE_CONTROL"/>
+    <permission android:name="com.mega.engineeringmode.internal.communication" android:protectionLevel="signatureOrSystem"/>
+    <protected-broadcast android:name="mega.intent.action.PREPARE_FORCE_SLEEP"/>
+    <protected-broadcast android:name="mega.intent.action.AWAKE_FORCE_SLEEP"/>
+    <protected-broadcast android:name="mega_action_close_dialog"/>
+    <uses-permission android:name="android.permission.INTERACT_ACROSS_USERS"/>
+    <uses-permission android:name="android.permission.MODIFY_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.DEVICE_POWER"/>
+    <uses-permission android:name="android.permission.WRITE_SETTINGS"/>
+    <uses-permission android:name="android.permission.WRITE_SECURE_SETTINGS"/>
+    <uses-permission android:name="android.permission.INTERACT_ACROSS_USERS_FULL"/>
+    <uses-permission android:name="mega.permission.ACCESS_THEME_SERVICE"/>
+    <uses-permission android:name="mega.permission.ACCESS_MEGA_ACCOUNT_API"/>
+    <uses-permission android:name="android.permission.MANAGE_USERS"/>
+    <uses-permission android:name="android.permission.SET_TIME"/>
+    <uses-permission android:name="mega.car.permission.CAR_WINDOWS"/>
+    <uses-permission android:name="mega.car.permission.CAR_WARNING"/>
+    <uses-permission android:name="mega.car.permission.CARCABIN"/>
+    <uses-permission android:name="mega.car.permission.CAR_DRIVING"/>
+    <uses-permission android:name="mega.car.permission.LIGHTING"/>
+    <uses-permission android:name="mega.car.permission.ENTRY_LOCK"/>
+    <uses-permission android:name="mega.car.permission.CLIMATE"/>
+    <uses-permission android:name="mega.car.permission.VEHICLE_BODY"/>
+    <uses-permission android:name="mega.car.permission.VEHICLE_MOTION"/>
+    <uses-permission android:name="mega.car.permission.COMFORTS_SETTINGS"/>
+    <uses-permission android:name="mega.car.permission.INFOTAINMENT"/>
+    <uses-permission android:name="mega.car.permission.LOCAL_EVENT"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.BROADCAST_STICKY"/>
+    <uses-permission android:name="android.permission.PACKAGE_USAGE_STATS"/>
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS"/>
+    <uses-permission android:name="android.permission.INJECT_EVENTS"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <application android:allowBackup="false" android:allowClearUserData="false" android:appComponentFactory="androidx.core.app.CoreComponentFactory" android:extractNativeLibs="false" android:icon="@drawable/ic_engineeringmode_test" android:killAfterRestore="false" android:label="@string/app_name_engineering" android:name="com.mega.engineeringmode.EngineeringModeApplication" android:supportsRtl="true" android:theme="@style/Theme.EngineeringMode">
+        <activity android:exported="false" android:name="com.mega.engineeringmode.function.icm.IcmSettingActivity"/>
+        <activity android:exported="false" android:name="com.mega.engineeringmode.function.internalconfig.InternalConfigActivity"/>
+        <activity android:exported="false" android:name="com.mega.engineeringmode.function.temperature.TemperatureInfoActivity"/>
+        <activity android:exported="false" android:name="com.mega.engineeringmode.function.ethernet.EthernetTestActivity"/>
+        <activity android:exported="false" android:name="com.mega.engineeringmode.function.radio.RadioWireActivity"/>
+        <activity android:exported="false" android:name="com.mega.engineeringmode.function.icmdata.IcmDataActivity"/>
+        <activity android:exported="false" android:name="com.mega.engineeringmode.function.screen.IhuStatusActivity"/>
+        <activity android:exported="false" android:name="com.mega.engineeringmode.function.screen.IcmStatusActivity"/>
+        <activity android:exported="false" android:name="com.mega.engineeringmode.function.carplay.CarplayActivity"/>
+        <activity android:exported="false" android:name="com.mega.engineeringmode.function.hicar.HiCarActivity"/>
+        <activity android:exported="false" android:name="com.mega.engineeringmode.function.dtc.DtcActivity"/>
+        <activity android:exported="false" android:name="com.mega.engineeringmode.function.candata.CanDataActivity"/>
+        <activity android:exported="false" android:name="com.mega.engineeringmode.function.connector.ConnectorStatusActivity"/>
+        <activity android:exported="false" android:name="com.mega.engineeringmode.function.usb.CertificateUSBActivity"/>
+        <activity android:exported="false" android:name="com.mega.engineeringmode.function.dsp.DspActivity"/>
+        <activity android:exported="false" android:name="com.mega.engineeringmode.function.display.AudioActivity"/>
+        <activity android:exported="false" android:name="com.mega.engineeringmode.function.display.VideoActivity"/>
+        <activity android:exported="false" android:name="com.mega.engineeringmode.function.radio.RadioActivity"/>
+        <activity android:exported="false" android:name="com.mega.engineeringmode.function.offlineconfiguration.OfflineConfigurationActivity"/>
+        <activity android:exported="false" android:name="com.mega.engineeringmode.function.display.DisplayActivity"/>
+        <activity android:exported="false" android:name="com.mega.engineeringmode.function.versioninfo.VersionInfoActivity"/>
+        <activity android:exported="false" android:name="com.mega.engineeringmode.function.versioninfo.DmcSoftwareActivity"/>
+        <activity android:exported="false" android:name="com.mega.engineeringmode.function.versioninfo.PeripheralSoftwareActivity"/>
+        <activity android:exported="false" android:name="com.mega.engineeringmode.function.versioninfo.DmcProductionActivity"/>
+        <activity android:exported="false" android:name="com.mega.engineeringmode.function.versioninfo.DmcHardwareActivity"/>
+        <activity android:exported="false" android:name="com.mega.engineeringmode.function.versioninfo.AppVersionActivity"/>
+        <activity android:exported="false" android:name="com.mega.engineeringmode.function.upgrade.UpgradeActivity"/>
+        <activity android:exported="false" android:name="com.mega.engineeringmode.function.communication.CommunicationActivity"/>
+        <activity android:exported="false" android:name="com.mega.engineeringmode.function.presskey.KeySimulationActivity"/>
+        <activity android:exported="false" android:name="com.mega.engineeringmode.function.presskey.KeyInputActivity"/>
+        <activity android:exported="false" android:name="com.mega.engineeringmode.function.presskey.PressKeyActivity"/>
+        <activity android:exported="false" android:name="com.mega.engineeringmode.function.backlight.MainScreenLightActivity"/>
+        <activity android:exported="false" android:name="com.mega.engineeringmode.function.backlight.DashboardLightActivity"/>
+        <activity android:exported="false" android:name="com.mega.engineeringmode.function.backlight.BackLightActivity"/>
+        <activity android:exported="false" android:name="com.mega.engineeringmode.function.battery.BatteryInfoActivity"/>
+        <activity android:exported="false" android:name="com.mega.engineeringmode.function.sources.SourceActivity"/>
+        <activity android:exported="false" android:name="com.mega.engineeringmode.function.mic.MicActivity"/>
+        <activity android:exported="false" android:name="com.mega.engineeringmode.function.speaker.SpeakerActivity"/>
+        <activity android:exported="false" android:label="@string/master_sceen_touch_test" android:name="com.mega.engineeringmode.function.screen.MasterTouchActivity"/>
+        <activity android:exported="false" android:name="com.mega.engineeringmode.function.screen.DashBoardActivity"/>
+        <activity android:exported="false" android:name="com.mega.engineeringmode.function.screen.DashboardStatusActivity"/>
+        <activity android:exported="false" android:label="@string/master_screen_status" android:name="com.mega.engineeringmode.function.screen.MasterScreenStatusActivity"/>
+        <activity android:exported="false" android:name="com.mega.engineeringmode.function.screen.MasterScreenActivity"/>
+        <activity android:exported="false" android:label="@string/main_btn_screen_display" android:name="com.mega.engineeringmode.function.screen.ScreenFunctionActivity"/>
+        <activity android:configChanges="uiMode" android:exported="true" android:name="com.mega.engineeringmode.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.mega.engineeringmode.function.AdbActivity"/>
+        <activity android:name="com.mega.engineeringmode.function.ScreenCaptureActivity"/>
+        <activity android:name="com.mega.engineeringmode.function.StrActivity"/>
+        <activity android:label="@string/main_btn_location" android:name="com.mega.engineeringmode.function.location.LocationActivity"/>
+        <activity android:label="@string/location_info_gps" android:name="com.mega.engineeringmode.function.location.GpsActivity"/>
+        <activity android:label="@string/location_info_inertial" android:name="com.mega.engineeringmode.function.location.InertialActivity"/>
+        <activity android:label="@string/all_sensor" android:name="com.mega.engineeringmode.function.location.AllSensorActivity"/>
+        <activity android:label="@string/main_btn_recovery" android:name="com.mega.engineeringmode.function.SystemResetActivity"/>
+        <activity android:label="@string/main_btn_reboot" android:name="com.mega.engineeringmode.function.SystemRebootActivity"/>
+        <activity android:label="@string/main_btn_wifi" android:name="com.mega.engineeringmode.function.wifi.WifiTestActivity"/>
+        <activity android:label="@string/main_btn_camera" android:name="com.mega.engineeringmode.function.camera.CameraPreviewActivity"/>
+        <activity android:label="@string/main_btn_camera" android:name="com.mega.engineeringmode.function.camera.CameraTestActivity"/>
+        <activity android:label="@string/main_btn_bluetooth" android:name="com.mega.engineeringmode.function.bluetooth.BluetoothTestActivity"/>
+        <activity android:name="com.mega.engineeringmode.function.LogExportActivity"/>
+        <activity android:name="com.mega.engineeringmode.function.LogLevelActivity"/>
+        <activity android:exported="true" android:launchMode="singleTask" android:name="com.mega.engineeringmode.function.radio.RadioTestActivity"/>
+        <activity android:configChanges="screenLayout|uiMode|screenSize|smallestScreenSize|density|colorMode|fontScale" android:label="@string/main_btn_tbox" android:name="com.mega.engineeringmode.function.tbox.TBoxTestActivity"/>
+        <activity android:label="@string/main_btn_TSP" android:launchMode="singleTop" android:name="com.mega.engineeringmode.function.offlineconfiguration.TspTestActivity" android:screenOrientation="landscape"/>
+        <activity android:name="com.mega.engineeringmode.function.exhibition.ExhibitionModeActivity" android:screenOrientation="landscape"/>
+        <activity android:name="com.mega.engineeringmode.function.enc.EncActivity" android:screenOrientation="landscape"/>
+        <activity android:name="com.mega.engineeringmode.function.carlink.CarLinkTestActivity" android:screenOrientation="landscape"/>
+        <activity android:name="com.mega.engineeringmode.function.androidauto.AndroidAutoTestActivity" android:screenOrientation="landscape"/>
+        <activity android:label="@string/title_function_safe" android:name="com.mega.engineeringmode.function.safe.FunctionSafeActivity"/>
+        <activity android:exported="false" android:name="com.mega.engineeringmode.function.log.QXDMLogActivity"/>
+        <activity android:exported="false" android:name="com.mega.engineeringmode.function.channel.ChannelActivity"/>
+        <service android:name="com.mega.engineeringmode.service.ScreenCaptureFloatingViewService"/>
+        <service android:enabled="true" android:exported="true" android:name="com.mega.engineeringmode.service.DidControllerService">
+            <intent-filter>
+                <action android:name="mega.intent.action.DidControllerService"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </service>
+        <service android:enabled="true" android:exported="true" android:name="com.mega.engineeringmode.service.IcEngService">
+            <intent-filter>
+                <action android:name="mega.intent.action.IcEngService"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </service>
+        <receiver android:exported="true" android:name="com.mega.engineeringmode.export.OuterBroadcastReceiver" android:permission="com.mega.engineeringmode.internal.communication">
+            <intent-filter>
+                <action android:name="com.mega.carsettings.engineeringmode"/>
+            </intent-filter>
+        </receiver>
+        <provider android:authorities="com.mega.engineeringmode.mega.car.propertyInitializer" android:exported="false" android:name="mega.car.MegaCarPropertyInitializer"/>
+        <provider android:authorities="com.mega.engineeringmode.workmanager-init" android:directBootAware="false" android:exported="false" android:multiprocess="true" android:name="androidx.work.impl.WorkManagerInitializer"/>
+        <service android:directBootAware="false" android:enabled="@bool/enable_system_alarm_service_default" android:exported="false" android:name="androidx.work.impl.background.systemalarm.SystemAlarmService"/>
+        <service android:directBootAware="false" android:enabled="@bool/enable_system_job_service_default" android:exported="true" android:name="androidx.work.impl.background.systemjob.SystemJobService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <receiver android:directBootAware="false" android:enabled="true" android:exported="false" android:name="androidx.work.impl.utils.ForceStopRunnable$BroadcastReceiver"/>
+        <receiver android:directBootAware="false" android:enabled="false" android:exported="false" android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy">
+            <intent-filter>
+                <action android:name="android.intent.action.ACTION_POWER_CONNECTED"/>
+                <action android:name="android.intent.action.ACTION_POWER_DISCONNECTED"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="false" android:exported="false" android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy">
+            <intent-filter>
+                <action android:name="android.intent.action.BATTERY_OKAY"/>
+                <action android:name="android.intent.action.BATTERY_LOW"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="false" android:exported="false" android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy">
+            <intent-filter>
+                <action android:name="android.intent.action.DEVICE_STORAGE_LOW"/>
+                <action android:name="android.intent.action.DEVICE_STORAGE_OK"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="false" android:exported="false" android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="false" android:exported="false" android:name="androidx.work.impl.background.systemalarm.RescheduleReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+                <action android:name="android.intent.action.TIME_SET"/>
+                <action android:name="android.intent.action.TIMEZONE_CHANGED"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="@bool/enable_system_alarm_service_default" android:exported="false" android:name="androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver">
+            <intent-filter>
+                <action android:name="androidx.work.impl.background.systemalarm.UpdateProxies"/>
+            </intent-filter>
+        </receiver>
+        <service android:exported="false" android:name="androidx.room.MultiInstanceInvalidationService"/>
+    </application>
+</manifest>

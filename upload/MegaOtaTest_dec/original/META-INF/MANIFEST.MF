@@ -1,0 +1,36 @@
+Manifest-Version: 1.0
+Created-By: 11.0.4 (Oracle Corporation)
+
+Name: AndroidManifest.xml
+SHA-256-Digest: sYnNTnEzV+5USsul5iBfNrjoIYE+hcCIIvpuOe+qquM=
+
+Name: classes.dex
+SHA-256-Digest: 5u+0Q0VWC1pR4BJIJudBr7QsRGOiABr723y1is0GMXI=
+
+Name: res/drawable-v24/$ic_launcher_foreground__0.xml
+SHA-256-Digest: UodxuxvXhUCP6f1z3s+nMcOQgVTt1GNDEzIRAYKAMyU=
+
+Name: res/drawable-v24/ic_launcher_foreground.xml
+SHA-256-Digest: OaewhwJa7q17iJENbLAOdtVVpH52/nCzqoV3mMS85Tw=
+
+Name: res/drawable/ic_launcher_background.xml
+SHA-256-Digest: wuGPl8WLvEtEZrK0+kcE6M0GK+BbRefw32lHmupfUdM=
+
+Name: res/layout/dialog_list_item.xml
+SHA-256-Digest: ITY+pFVtxg6xYNlvPmUp2I2JzZXZXS+dmbHsqRPNiog=
+
+Name: res/layout/dialog_main.xml
+SHA-256-Digest: qHX3weINtCBr0Fk5HY/wIhi46T7Fz1n7P3E8DDNjtXE=
+
+Name: res/layout/floating_progress.xml
+SHA-256-Digest: 3m+SAk7GIkwC+XyUh3JRJtXTYi7fxLxHcvXHZrzzdyA=
+
+Name: res/mipmap-anydpi-v26/ic_launcher.xml
+SHA-256-Digest: IRiNOt0hUiE2j1xr434MkNIOPNVtDs/k8bNOewCK4hE=
+
+Name: res/mipmap-anydpi-v26/ic_launcher_round.xml
+SHA-256-Digest: IRiNOt0hUiE2j1xr434MkNIOPNVtDs/k8bNOewCK4hE=
+
+Name: resources.arsc
+SHA-256-Digest: WAzx7y5vNd17nPsQ9JTkL8a7sWHwpPWrCi0y2D2nRHk=
+

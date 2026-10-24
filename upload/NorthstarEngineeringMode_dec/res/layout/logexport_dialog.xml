@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_gravity="center_horizontal" android:orientation="vertical" android:layout_width="800.0dp" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:gravity="center_vertical" android:background="@android:color/darker_gray" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="@dimen/text_size_content" android:textColor="@color/white" android:id="@id/tv_logexport" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin16" android:text="@string/text_export" android:layout_centerVertical="true" android:layout_marginStart="@dimen/margin16" />
+    </RelativeLayout>
+    <TextView android:textSize="24.0sp" android:textColor="@color/black" android:id="@id/tv_logfile" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dp" android:text="@string/text_file" android:layout_marginStart="10.0dp" />
+    <EditText android:textSize="24.0sp" android:id="@id/tv_logfile_name" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="10.0dp" android:layout_marginTop="10.0dp" android:inputType="text" android:autofillHints="" />
+    <TextView android:textSize="16.0sp" android:textColor="@color/red" android:id="@id/file_name_tips" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin16" android:text="@string/log_file_name_tips" android:layout_marginStart="@dimen/margin16" />
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin64" android:layout_marginBottom="@dimen/margin16">
+        <Button android:textSize="24.0sp" android:id="@id/btn_logexport_cancel" android:background="@android:color/darker_gray" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/main_encryption_cancel" android:layout_marginStart="@dimen/margin16" />
+        <Button android:textSize="24.0sp" android:id="@id/btn_logexport_confirm" android:background="@android:color/darker_gray" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/main_encryption_confirm" android:layout_marginEnd="@dimen/margin16" android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+</LinearLayout>

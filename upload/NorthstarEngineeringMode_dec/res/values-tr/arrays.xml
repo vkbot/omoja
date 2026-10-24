@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="internal_upgrade">
+        <item>MCU yükseltmesi</item>
+        <item>Dahili AVM yükseltmesi</item>
+        <item>DSP yükseltmesi</item>
+        <item>Gösterge paneli alarm sesi yükseltmesi</item>
+        <item>Gösterge paneli etki alanı yükseltmesi</item>
+        <item>Ana bilgisayar etki alanı yükseltmesi</item>
+        <item>SOC genel yükseltmesi</item>
+        <item>DMC tüm paket yükseltmesi</item>
+    </string-array>
+    <string-array name="periphery_upgrade">
+        <item>Orta konsol ekranı MCU yazılımı yükseltmesi</item>
+        <item>Orta konsol ekranı dokunmatik yazılım yükseltmesi</item>
+        <item>Gösterge paneli ekranı MCU yükseltmesi</item>
+        <item>Gösterge paneli ekranı dokunmatik panel yazılımı yükseltmesi</item>
+        <item>TBOX yükseltmesi</item>
+        <item>APA yükseltmesi</item>
+    </string-array>
+    <string-array name="tsp_test_devs">
+        <item>Yayın ortamı</item>
+        <item>Geliştirme ortamı</item>
+        <item>Yurtiçi test ortamı</item>
+        <item>Yurtdışı test ortamı</item>
+    </string-array>
+    <string-array name="version_info">
+        <item>DMC içindeki yazılımın sürüm bilgileri</item>
+        <item>Çevresel parçaların sürüm bilgileri</item>
+        <item>DMC üretim lojistiği bilgileri</item>
+        <item>DMC dâhili donanım sürümü bilgileri</item>
+    </string-array>
+</resources>

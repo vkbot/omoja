@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen android:title="@string/bluetooth_settings"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.mega.carsettings.preference.MegaSwitchPreference android:minHeight="?listPreferredItemHeightSmall" android:title="@string/bluetooth_settings_title" android:key="toggle_bluetooth" android:order="-7" app:allowDividerBelow="false" />
+    <com.mega.carsettings.preference.MegaSwitchPreference android:minHeight="?listPreferredItemHeightSmall" android:title="@string/bluetooth_device_name" android:key="device_name" app:allowDividerAbove="false" />
+</PreferenceScreen>

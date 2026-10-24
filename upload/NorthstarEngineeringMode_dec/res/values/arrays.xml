@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="date_time_formats">
+        <item>yyyy/MM/dd HH:mm:ss</item>
+        <item>MM/dd/yyyy HH:mm:ss</item>
+        <item>dd/MM/yyyy HH:mm:ss</item>
+    </string-array>
+    <string-array name="date_time_formats_12">
+        <item>yyyy/MM/dd hh:mm:ss a</item>
+        <item>MM/dd/yyyy hh:mm:ss a</item>
+        <item>dd/MM/yyyy hh:mm:ss a</item>
+    </string-array>
+    <string-array name="des_mars_timbre_mode">
+        <item>@string/des_mars_timbre_female</item>
+        <item>@string/des_mars_timbre_male</item>
+    </string-array>
+    <string-array name="internal_upgrade">
+        <item>MCU升级</item>
+        <item>内置AVM升级</item>
+        <item>DSP升级</item>
+        <item>仪表报警音升级</item>
+        <item>仪表域升级</item>
+        <item>主机域升级</item>
+        <item>SOC整体升级</item>
+        <item>DMC整包升级</item>
+    </string-array>
+    <string-array name="mars_timbre">
+        <item>Female voice</item>
+        <item>Male voice</item>
+    </string-array>
+    <integer-array name="mars_timbre_value">
+        <item>1</item>
+        <item>2</item>
+    </integer-array>
+    <string-array name="periphery_upgrade">
+        <item>中控显示屏MCU软件升级</item>
+        <item>中控显示屏触摸软件升级</item>
+        <item>仪表显示屏MCU升级</item>
+        <item>仪表显示屏触摸面板软件升级</item>
+        <item>TBOX升级</item>
+        <item>APA升级</item>
+    </string-array>
+    <string-array name="tsp_test_devs">
+        <item>发布环境</item>
+        <item>开发环境</item>
+        <item>国内测试环境</item>
+        <item>海外测试环境</item>
+    </string-array>
+    <string-array name="version_info">
+        <item>DMC内各软件版本信息</item>
+        <item>周边件版本信息</item>
+        <item>DMC生产物流信息</item>
+        <item>DMC内部硬件版本信息</item>
+    </string-array>
+    <string-array name="wifi_eap_method">
+        <item>PEAP</item>
+        <item>TLS</item>
+        <item>TTLS</item>
+        <item>PWD</item>
+        <item>SIM</item>
+        <item>AKA</item>
+        <item>"AKA'"</item>
+    </string-array>
+    <string-array name="wifi_ip_settings">
+        <item>DHCP</item>
+        <item>static</item>
+    </string-array>
+    <string-array name="wifi_peap_phase2_entries_with_sim_auth">
+        <item>None</item>
+        <item>MSCHAPV2</item>
+        <item>GTC</item>
+        <item>SIM</item>
+        <item>AKA</item>
+        <item>"AKA'"</item>
+    </string-array>
+    <string-array name="wifi_phase2_entries">
+        <item>None</item>
+        <item>PAP</item>
+        <item>MSCHAP</item>
+        <item>MSCHAPV2</item>
+        <item>GTC</item>
+    </string-array>
+    <string-array name="wifi_proxy_settings">
+        <item>None</item>
+        <item>manual</item>
+        <item>Proxy auto-configuration</item>
+    </string-array>
+    <string-array name="wifi_signal">
+        <item>weak</item>
+        <item>a little weak</item>
+        <item>general</item>
+        <item>Good</item>
+        <item>excellent</item>
+    </string-array>
+</resources>

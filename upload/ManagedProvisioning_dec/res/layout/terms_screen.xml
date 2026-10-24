@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <Toolbar android:theme="?actionBarTheme" android:id="@id/toolbar" android:layout_width="match_parent" android:layout_height="?android:actionBarSize" android:title="@string/terms" />
+    <ExpandableListView android:id="@id/terms_container" android:paddingLeft="@dimen/terms_screen_padding" android:paddingRight="@dimen/terms_screen_padding" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="@dimen/terms_screen_margin" android:layout_marginRight="@dimen/terms_screen_margin" android:groupIndicator="@null" android:divider="@null" />
+</LinearLayout>

@@ -1,0 +1,93 @@
+.class public final Lx/f$a;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lx/f;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x19
+    name = "a"
+.end annotation
+
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "<Z:",
+        "Ljava/lang/Object;",
+        "R:",
+        "Ljava/lang/Object;",
+        ">",
+        "Ljava/lang/Object;"
+    }
+.end annotation
+
+
+# instance fields
+.field public final a:Ljava/lang/Class;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ljava/lang/Class<",
+            "TZ;>;"
+        }
+    .end annotation
+.end field
+
+.field public final b:Ljava/lang/Class;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ljava/lang/Class<",
+            "TR;>;"
+        }
+    .end annotation
+.end field
+
+.field public final c:Lx/e;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Lx/e<",
+            "TZ;TR;>;"
+        }
+    .end annotation
+.end field
+
+
+# direct methods
+.method public constructor <init>(Ljava/lang/Class;Ljava/lang/Class;Lx/e;)V
+    .locals 0
+    .param p1    # Ljava/lang/Class;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
+    .param p2    # Ljava/lang/Class;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
+    .param p3    # Lx/e;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Ljava/lang/Class<",
+            "TZ;>;",
+            "Ljava/lang/Class<",
+            "TR;>;",
+            "Lx/e<",
+            "TZ;TR;>;)V"
+        }
+    .end annotation
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    iput-object p1, p0, Lx/f$a;->a:Ljava/lang/Class;
+
+    iput-object p2, p0, Lx/f$a;->b:Ljava/lang/Class;
+
+    iput-object p3, p0, Lx/f$a;->c:Lx/e;
+
+    return-void
+.end method

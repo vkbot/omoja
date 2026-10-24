@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:settings="http://schemas.android.com/apk/res-auto">
+    <com.mega.carsettings.preference.MegaSwitchPreference android:minHeight="?listPreferredItemHeightSmall" android:title="@string/wifi_hotspot_checkbox_text" android:key="enable_wifi_ap" settings:allowDividerAbove="false" settings:allowDividerBelow="false" />
+    <Preference android:layout="@layout/preference_hotspot" android:title="@string/wifi_hotspot_name_title" android:key="wifi_hotspot_name" settings:allowDividerAbove="false" settings:allowDividerBelow="false" />
+    <com.mega.carsettings.preference.ProgressCategory android:title="@string/wifi_hotspot_configure_ap_text" android:key="wifi_hotspot_configure_ap">
+        <Preference android:layout="@layout/preference_hotspot" android:title="@string/wifi_hotspot_password_title" android:key="wifi_hotspot_password" settings:allowDividerAbove="false" settings:allowDividerBelow="false" />
+        <Preference android:layout="@layout/preference_hotspot" android:title="@string/wifi_hotspot_traffic_limit_title" android:key="wifi_hotspot_traffic_limit" settings:allowDividerAbove="false" settings:allowDividerBelow="false" />
+        <com.mega.carsettings.wifi.tether.TetherEditPreference android:layout="@layout/preference_hotspot" android:title="@string/wifi_hotspot_device_limit_title" android:key="wifi_hotspot_device_limit" android:widgetLayout="@layout/preference_widget_tether_device_limit" settings:allowDividerAbove="false" />
+    </com.mega.carsettings.preference.ProgressCategory>
+</PreferenceScreen>

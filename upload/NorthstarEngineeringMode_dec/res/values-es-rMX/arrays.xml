@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="internal_upgrade">
+        <item>Actualización de MCU</item>
+        <item>Actualización de AVM incorporado</item>
+        <item>Actualización de DSP</item>
+        <item>Actualización de sonido de alarma de IPC</item>
+        <item>Actualización de dominio de IPC</item>
+        <item>Actualización de dominio de Host</item>
+        <item>Actualización general de SOC</item>
+        <item>Actualización de paquete completo de DMC</item>
+    </string-array>
+    <string-array name="periphery_upgrade">
+        <item>Actualización de software de MCU de pantalla de consola central</item>
+        <item>Actualización de software de pantalla táctil de consola central</item>
+        <item>Actualización de MCU de pantalla de IPC</item>
+        <item>Actualización de software de panel de pantalla táctil de IPC</item>
+        <item>Actualización de TBOX</item>
+        <item>Actualización de APA</item>
+    </string-array>
+    <string-array name="tsp_test_devs">
+        <item>Ambiente del problema</item>
+        <item>Ambiente de desarrollo</item>
+        <item>Ambiente de prueba nacional</item>
+        <item>Ambiente de prueba en el extranjero</item>
+    </string-array>
+    <string-array name="version_info">
+        <item>Información de la versión de software en DMC</item>
+        <item>Información de la versión de partes periféricas</item>
+        <item>Información de logística de producción de DMC</item>
+        <item>Información interna de versión de hardware de DMC</item>
+    </string-array>
+</resources>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="80.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.mega.chery.widget.EasyTextView android:textSize="24.0sp" android:textColor="@color/white" android:id="@id/app_name" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_weight="3.0" app:keep_start="true" />
+    <com.mega.chery.widget.EasyTextView android:textSize="24.0sp" android:textColor="@color/white" android:id="@id/app_package_name" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_weight="4.0" android:layout_marginStart="20.0dp" app:keep_start="true" />
+    <com.mega.chery.widget.EasyTextView android:textSize="24.0sp" android:textColor="@color/white" android:id="@id/app_version_code" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_weight="1.0" android:layout_marginStart="20.0dp" app:keep_start="true" />
+</LinearLayout>

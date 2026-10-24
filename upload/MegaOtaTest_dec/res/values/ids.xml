@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <id name="apa" />
+    <id name="backDisplay" />
+    <id name="btn_ok" />
+    <id name="button_content" />
+    <id name="button_content1" />
+    <id name="cancel" />
+    <id name="confirm" />
+    <id name="dashBoardDisplay" />
+    <id name="device_info" />
+    <id name="display1" />
+    <id name="dmc" />
+    <id name="iviDisplay" />
+    <id name="message_content" />
+    <id name="message_title" />
+    <id name="progress" />
+    <id name="progress_bar" />
+    <id name="resume" />
+    <id name="text_view_dialog_item" />
+</resources>

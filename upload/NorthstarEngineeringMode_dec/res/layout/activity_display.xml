@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="vertical" android:id="@id/fl_content" android:tag="layout/activity_display_0" android:background="@color/black" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textSize="36.0sp" android:textColor="@color/white" android:gravity="center" android:id="@id/insert_usb_notice" android:layout_width="match_parent" android:layout_height="match_parent" android:text="@string/insert_usb_notice" />
+    <LinearLayout android:orientation="vertical" android:id="@id/media_ll" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="40.0dp" android:layout_marginBottom="20.0dp" android:layout_marginStart="120.0dp">
+        <LinearLayout android:orientation="horizontal" android:id="@id/item_tab" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <Button android:textSize="30.0sp" android:id="@id/audio_tab" android:tag="binding_1" android:text="@string/display_music" style="@style/item_log_btn" />
+            <Button android:id="@id/vedio_tab" android:tag="binding_2" android:text="@string/display_vedio" android:layout_marginStart="40.0dp" style="@style/item_log_btn" />
+            <LinearLayout android:gravity="center" android:layout_gravity="end|center" android:orientation="horizontal" android:id="@id/ll_switch" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/display_mode_usb" style="@style/content_text" />
+                <com.mega.engineeringmode.ui.MegaSwitch android:id="@id/switch_signal" android:layout_marginStart="10.0dp" app:layout_constraintBottom_toBottomOf="@id/tv_title" app:layout_constraintLeft_toRightOf="@id/tv_title" app:layout_constraintStart_toEndOf="@id/tv_title" app:layout_constraintTop_toTopOf="@id/tv_title" style="@style/switch_custom" />
+            </LinearLayout>
+        </LinearLayout>
+        <FrameLayout android:id="@id/meida_container" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="20.0dp" />
+    </LinearLayout>
+    <ImageView android:id="@id/iv_bg" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" />
+</FrameLayout>

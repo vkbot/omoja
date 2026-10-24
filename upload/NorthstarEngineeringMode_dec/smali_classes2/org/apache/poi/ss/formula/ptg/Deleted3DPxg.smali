@@ -1,0 +1,280 @@
+.class public final Lorg/apache/poi/ss/formula/ptg/Deleted3DPxg;
+.super Lorg/apache/poi/ss/formula/ptg/OperandPtg;
+.source "SourceFile"
+
+# interfaces
+.implements Lorg/apache/poi/ss/formula/ptg/Pxg;
+
+
+# instance fields
+.field private externalWorkbookNumber:I
+
+.field private sheetName:Ljava/lang/String;
+
+
+# direct methods
+.method public constructor <init>(ILjava/lang/String;)V
+    .locals 0
+
+    .line 1
+    invoke-direct {p0}, Lorg/apache/poi/ss/formula/ptg/OperandPtg;-><init>()V
+
+    iput p1, p0, Lorg/apache/poi/ss/formula/ptg/Deleted3DPxg;->externalWorkbookNumber:I
+
+    iput-object p2, p0, Lorg/apache/poi/ss/formula/ptg/Deleted3DPxg;->sheetName:Ljava/lang/String;
+
+    return-void
+.end method
+
+.method public constructor <init>(Ljava/lang/String;)V
+    .locals 1
+
+    const/4 v0, -0x1
+
+    .line 5
+    invoke-direct {p0, v0, p1}, Lorg/apache/poi/ss/formula/ptg/Deleted3DPxg;-><init>(ILjava/lang/String;)V
+
+    return-void
+.end method
+
+.method public constructor <init>(Lorg/apache/poi/ss/formula/ptg/Deleted3DPxg;)V
+    .locals 1
+
+    .line 2
+    invoke-direct {p0, p1}, Lorg/apache/poi/ss/formula/ptg/OperandPtg;-><init>(Lorg/apache/poi/ss/formula/ptg/OperandPtg;)V
+
+    const/4 v0, -0x1
+
+    iput v0, p0, Lorg/apache/poi/ss/formula/ptg/Deleted3DPxg;->externalWorkbookNumber:I
+
+    .line 3
+    iget v0, p1, Lorg/apache/poi/ss/formula/ptg/Deleted3DPxg;->externalWorkbookNumber:I
+
+    iput v0, p0, Lorg/apache/poi/ss/formula/ptg/Deleted3DPxg;->externalWorkbookNumber:I
+
+    .line 4
+    iget-object p1, p1, Lorg/apache/poi/ss/formula/ptg/Deleted3DPxg;->sheetName:Ljava/lang/String;
+
+    iput-object p1, p0, Lorg/apache/poi/ss/formula/ptg/Deleted3DPxg;->sheetName:Ljava/lang/String;
+
+    return-void
+.end method
+
+.method public static synthetic a()Ljava/lang/Object;
+    .locals 1
+
+    invoke-static {}, Lorg/apache/poi/ss/formula/ptg/Deleted3DPxg;->lambda$getGenericProperties$0()Ljava/lang/Object;
+
+    move-result-object v0
+
+    return-object v0
+.end method
+
+.method private static synthetic lambda$getGenericProperties$0()Ljava/lang/Object;
+    .locals 1
+
+    sget-object v0, Lorg/apache/poi/ss/usermodel/FormulaError;->REF:Lorg/apache/poi/ss/usermodel/FormulaError;
+
+    return-object v0
+.end method
+
+
+# virtual methods
+.method public bridge synthetic copy()Lorg/apache/poi/common/Duplicatable;
+    .locals 0
+
+    .line 1
+    invoke-virtual {p0}, Lorg/apache/poi/ss/formula/ptg/Deleted3DPxg;->copy()Lorg/apache/poi/ss/formula/ptg/Deleted3DPxg;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+.method public copy()Lorg/apache/poi/ss/formula/ptg/Deleted3DPxg;
+    .locals 1
+
+    .line 4
+    new-instance v0, Lorg/apache/poi/ss/formula/ptg/Deleted3DPxg;
+
+    invoke-direct {v0, p0}, Lorg/apache/poi/ss/formula/ptg/Deleted3DPxg;-><init>(Lorg/apache/poi/ss/formula/ptg/Deleted3DPxg;)V
+
+    return-object v0
+.end method
+
+.method public bridge synthetic copy()Lorg/apache/poi/ss/formula/ptg/OperandPtg;
+    .locals 0
+
+    .line 2
+    invoke-virtual {p0}, Lorg/apache/poi/ss/formula/ptg/Deleted3DPxg;->copy()Lorg/apache/poi/ss/formula/ptg/Deleted3DPxg;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+.method public bridge synthetic copy()Lorg/apache/poi/ss/formula/ptg/Ptg;
+    .locals 0
+
+    .line 3
+    invoke-virtual {p0}, Lorg/apache/poi/ss/formula/ptg/Deleted3DPxg;->copy()Lorg/apache/poi/ss/formula/ptg/Deleted3DPxg;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+.method public getDefaultOperandClass()B
+    .locals 0
+
+    const/16 p0, 0x20
+
+    return p0
+.end method
+
+.method public getExternalWorkbookNumber()I
+    .locals 0
+
+    iget p0, p0, Lorg/apache/poi/ss/formula/ptg/Deleted3DPxg;->externalWorkbookNumber:I
+
+    return p0
+.end method
+
+.method public getGenericProperties()Ljava/util/Map;
+    .locals 6
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()",
+            "Ljava/util/Map<",
+            "Ljava/lang/String;",
+            "Ljava/util/function/Supplier<",
+            "*>;>;"
+        }
+    .end annotation
+
+    const-string v0, "externalWorkbookNumber"
+
+    new-instance v1, Lorg/apache/poi/ss/formula/ptg/i;
+
+    const/4 v2, 0x5
+
+    invoke-direct {v1, p0, v2}, Lorg/apache/poi/ss/formula/ptg/i;-><init>(Lorg/apache/poi/ss/formula/ptg/Ptg;I)V
+
+    const-string v2, "sheetName"
+
+    new-instance v3, Lorg/apache/poi/ss/formula/ptg/g;
+
+    const/4 v4, 0x1
+
+    invoke-direct {v3, p0, v4}, Lorg/apache/poi/ss/formula/ptg/g;-><init>(Lorg/apache/poi/ss/formula/ptg/Ptg;I)V
+
+    const-string v4, "formulaError"
+
+    new-instance v5, Lorg/apache/commons/compress/archivers/zip/i;
+
+    const/16 p0, 0x15
+
+    invoke-direct {v5, p0}, Lorg/apache/commons/compress/archivers/zip/i;-><init>(I)V
+
+    invoke-static/range {v0 .. v5}, Lorg/apache/poi/util/GenericRecordUtil;->getGenericProperties(Ljava/lang/String;Ljava/util/function/Supplier;Ljava/lang/String;Ljava/util/function/Supplier;Ljava/lang/String;Ljava/util/function/Supplier;)Ljava/util/Map;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+.method public getSheetName()Ljava/lang/String;
+    .locals 0
+
+    iget-object p0, p0, Lorg/apache/poi/ss/formula/ptg/Deleted3DPxg;->sheetName:Ljava/lang/String;
+
+    return-object p0
+.end method
+
+.method public getSid()B
+    .locals 0
+
+    const/4 p0, -0x1
+
+    return p0
+.end method
+
+.method public getSize()I
+    .locals 0
+
+    const/4 p0, 0x1
+
+    return p0
+.end method
+
+.method public setSheetName(Ljava/lang/String;)V
+    .locals 0
+
+    iput-object p1, p0, Lorg/apache/poi/ss/formula/ptg/Deleted3DPxg;->sheetName:Ljava/lang/String;
+
+    return-void
+.end method
+
+.method public toFormulaString()Ljava/lang/String;
+    .locals 2
+
+    new-instance v0, Ljava/lang/StringBuilder;
+
+    const/16 v1, 0x40
+
+    invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(I)V
+
+    iget v1, p0, Lorg/apache/poi/ss/formula/ptg/Deleted3DPxg;->externalWorkbookNumber:I
+
+    if-ltz v1, :cond_0
+
+    const/16 v1, 0x5b
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
+
+    iget v1, p0, Lorg/apache/poi/ss/formula/ptg/Deleted3DPxg;->externalWorkbookNumber:I
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    const/16 v1, 0x5d
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
+
+    :cond_0
+    iget-object p0, p0, Lorg/apache/poi/ss/formula/ptg/Deleted3DPxg;->sheetName:Ljava/lang/String;
+
+    if-eqz p0, :cond_1
+
+    invoke-static {v0, p0}, Lorg/apache/poi/ss/formula/SheetNameFormatter;->appendFormat(Ljava/lang/Appendable;Ljava/lang/String;)V
+
+    :cond_1
+    const/16 p0, 0x21
+
+    invoke-virtual {v0, p0}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
+
+    sget-object p0, Lorg/apache/poi/ss/usermodel/FormulaError;->REF:Lorg/apache/poi/ss/usermodel/FormulaError;
+
+    invoke-virtual {p0}, Lorg/apache/poi/ss/usermodel/FormulaError;->getString()Ljava/lang/String;
+
+    move-result-object p0
+
+    invoke-virtual {v0, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+.method public write(Lorg/apache/poi/util/LittleEndianOutput;)V
+    .locals 0
+
+    new-instance p0, Ljava/lang/IllegalStateException;
+
+    const-string p1, "XSSF-only Ptg, should not be serialised"
+
+    invoke-direct {p0, p1}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
+
+    throw p0
+.end method

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set android:ordering="together"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt">
+    <objectAnimator android:interpolator="@drawable/$$connect_on_the_go_animation__15__0" android:duration="483" android:startOffset="0" android:propertyName="translateXY" android:pathData="M 220.567,144.415C 220.567,144.415 220.567,144.415 220.567,144.415" android:propertyXName="translateX" android:propertyYName="translateY" />
+    <objectAnimator android:interpolator="@drawable/$$connect_on_the_go_animation__15__1" android:duration="950" android:startOffset="483" android:propertyName="translateXY" android:pathData="M 220.567,144.415C 215.317,131.5816669845581 194.317,80.2483330154419 189.067,67.415" android:propertyXName="translateX" android:propertyYName="translateY" />
+    <objectAnimator android:interpolator="@drawable/$$connect_on_the_go_animation__15__2" android:duration="200" android:startOffset="1433" android:propertyName="translateXY" android:pathData="M 189.067,67.415C 189.067,67.415 189.067,67.415 189.067,67.415" android:propertyXName="translateX" android:propertyYName="translateY" />
+    <objectAnimator android:interpolator="@drawable/$$connect_on_the_go_animation__15__3" android:duration="900" android:startOffset="1633" android:propertyName="translateXY" android:pathData="M 189.067,67.415C 194.317,80.2483330154419 215.317,131.5816669845581 220.567,144.415" android:propertyXName="translateX" android:propertyYName="translateY" />
+</set>

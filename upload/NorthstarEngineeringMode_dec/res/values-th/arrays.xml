@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="internal_upgrade">
+        <item>การอัปเกรด MCU</item>
+        <item>การอัปเกรด AVM ในตัว</item>
+        <item>การอัปเกรด DSP</item>
+        <item>การอัปเกรดเสียงปลุก IPC</item>
+        <item>การอัปเกรดโดเมน IPC</item>
+        <item>การอัปเกรดโดเมนโฮสต์</item>
+        <item>การอัปเกรดโดยรวม SOC</item>
+        <item>การอัปเกรดแพ็คเกจ DMC ทั้งหมด</item>
+    </string-array>
+    <string-array name="periphery_upgrade">
+        <item>การอัปเกรดซอฟต์แวร์ MCU จอแสดงผลคอนโซลกลาง</item>
+        <item>การอัปเกรดซอฟต์แวร์แผงสัมผัสของจอแสดงผลคอนโซลกลาง</item>
+        <item>การอัปเกรดซอฟต์แวร์ MCU จอแสดงผล IPC</item>
+        <item>การอัปเกรดซอฟต์แวร์แผงสัมผัสของจอแสดงผล IPC</item>
+        <item>การอัปเกรด TBOX</item>
+        <item>การอัปเกรด APA</item>
+    </string-array>
+    <string-array name="tsp_test_devs">
+        <item>สภาพแวดล้อมปัญหา</item>
+        <item>สภาพแวดล้อมการพัฒนา</item>
+        <item>สภาพแวดล้อมการทดสอบในประเทศ</item>
+        <item>สภาพแวดล้อมการทดสอบในต่างประเทศ</item>
+    </string-array>
+    <string-array name="version_info">
+        <item>ข้อมูลเวอร์ชันของซอฟต์แวร์ใน DMC</item>
+        <item>ข้อมูลเวอร์ชันของชิ้นส่วนต่อพ่วง</item>
+        <item>ข้อมูลโลจิสติกส์ของการผลิต DMC ()</item>
+        <item>ข้อมูลเวอร์ชันฮาร์ดแวร์ภายใน DMC</item>
+    </string-array>
+</resources>

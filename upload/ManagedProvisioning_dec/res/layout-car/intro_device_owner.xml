@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.setupdesign.GlifLayout android:id="@id/setup_wizard_layout" android:layout="@layout/car_managed_provisioning" android:layout_width="match_parent" android:layout_height="match_parent" app:sucLayoutFullscreen="false" app:sudStickyHeader="@layout/accept_and_continue_header"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" />

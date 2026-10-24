@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@drawable/btn_select_bg" android:layout_width="match_parent" android:layout_height="80.0dp" android:minHeight="80.0dp" android:paddingStart="10.0dp" android:paddingEnd="10.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="0.0dp" android:layout_height="80.0dp" android:layout_weight="1.0">
+        <TextView android:textSize="24.0sp" android:textColor="@color/white" android:ellipsize="end" android:id="@id/bluetooth_device_name" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxLines="1" style="@style/common_btn" />
+        <TextView android:textSize="24.0sp" android:textColor="@color/white_50" android:ellipsize="end" android:id="@id/bluetooth_device_mac" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dp" android:maxLines="1" style="@style/common_btn" />
+    </LinearLayout>
+    <Button android:textSize="24.0sp" android:textColor="@color/white" android:gravity="center" android:id="@id/blue_tooth_connected" android:background="@drawable/btn_bluetooth" android:visibility="invisible" android:layout_width="120.0dp" android:layout_height="52.0dp" android:text="@string/connect_on" android:maxLines="1" style="@style/common_btn" />
+</LinearLayout>

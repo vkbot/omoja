@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set android:ordering="together"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt">
+    <objectAnimator android:interpolator="@drawable/$$everything_else_animation_intro__48__0" android:duration="300" android:startOffset="0" android:valueFrom="1" android:valueTo="1" android:valueType="floatType" android:propertyName="fillAlpha" />
+    <objectAnimator android:interpolator="@drawable/$$everything_else_animation_intro__48__1" android:duration="233" android:startOffset="300" android:valueFrom="1" android:valueTo="0" android:valueType="floatType" android:propertyName="fillAlpha" />
+    <objectAnimator android:interpolator="@drawable/$$everything_else_animation_intro__48__2" android:duration="633" android:startOffset="533" android:valueFrom="0" android:valueTo="1" android:valueType="floatType" android:propertyName="fillAlpha" />
+    <objectAnimator android:interpolator="@drawable/$$everything_else_animation_intro__48__3" android:duration="233" android:startOffset="1167" android:valueFrom="1" android:valueTo="0" android:valueType="floatType" android:propertyName="fillAlpha" />
+    <objectAnimator android:interpolator="@drawable/$$everything_else_animation_intro__48__4" android:duration="533" android:startOffset="1400" android:valueFrom="0" android:valueTo="1" android:valueType="floatType" android:propertyName="fillAlpha" />
+    <objectAnimator android:interpolator="@drawable/$$everything_else_animation_intro__48__5" android:duration="233" android:startOffset="1933" android:valueFrom="1" android:valueTo="0" android:valueType="floatType" android:propertyName="fillAlpha" />
+    <objectAnimator android:interpolator="@drawable/$$everything_else_animation_intro__48__6" android:duration="467" android:startOffset="2167" android:valueFrom="0" android:valueTo="1" android:valueType="floatType" android:propertyName="fillAlpha" />
+    <objectAnimator android:interpolator="@drawable/$$everything_else_animation_intro__48__7" android:duration="233" android:startOffset="2633" android:valueFrom="1" android:valueTo="0" android:valueType="floatType" android:propertyName="fillAlpha" />
+</set>

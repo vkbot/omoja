@@ -1,0 +1,31 @@
+.class public interface abstract annotation Landroidx/annotation/k;
+.super Ljava/lang/Object;
+.source ""
+
+# interfaces
+.implements Ljava/lang/annotation/Annotation;
+
+
+# annotations
+.annotation system Ldalvik/annotation/AnnotationDefault;
+    value = .subannotation Landroidx/annotation/k;
+        api = -0x1
+        codename = ""
+        lambda = -0x1
+        parameter = -0x1
+    .end subannotation
+.end annotation
+
+
+# virtual methods
+.method public abstract api()I
+.end method
+
+.method public abstract codename()Ljava/lang/String;
+.end method
+
+.method public abstract lambda()I
+.end method
+
+.method public abstract parameter()I
+.end method

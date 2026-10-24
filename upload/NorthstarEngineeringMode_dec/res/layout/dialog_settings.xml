@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/dialog_container" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/dialog_container">
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+            <ImageView android:id="@android:id/icon" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="20.0dp" />
+            <TextView android:id="@android:id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/dialog_title" />
+            <ImageView android:id="@android:id/icon1" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <TextView android:id="@android:id/message" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="40.0dp" style="@style/dialog_message" />
+        </LinearLayout>
+        <FrameLayout android:id="@id/dialog_custom" android:paddingTop="60.0dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" />
+        <LinearLayout android:gravity="center_horizontal" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="match_parent">
+            <TextView android:id="@android:id/button1" android:layout_marginRight="10.0dp" style="@style/dialog_button1" />
+            <TextView android:id="@android:id/button3" style="@style/dialog_button3" />
+            <TextView android:id="@android:id/button2" android:layout_marginLeft="10.0dp" style="@style/dialog_button2" />
+        </LinearLayout>
+    </LinearLayout>
+    <ImageView android:gravity="center" android:id="@android:id/closeButton" android:visibility="gone" android:layout_width="68.0dp" android:layout_height="68.0dp" android:src="@drawable/ic_dialog_close" android:layout_alignLeft="@id/dialog_container" android:layout_alignTop="@id/dialog_container" />
+</RelativeLayout>

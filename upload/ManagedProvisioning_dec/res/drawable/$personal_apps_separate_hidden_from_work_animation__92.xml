@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set android:ordering="together"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt">
+    <objectAnimator android:interpolator="@drawable/$$personal_apps_separate_hidden_from_work_animation__92__0" android:duration="1400" android:startOffset="0" android:valueFrom="0.2" android:valueTo="0.2" android:valueType="floatType" android:propertyName="scaleX" />
+    <objectAnimator android:interpolator="@drawable/$$personal_apps_separate_hidden_from_work_animation__92__1" android:duration="1400" android:startOffset="0" android:valueFrom="0.2" android:valueTo="0.2" android:valueType="floatType" android:propertyName="scaleY" />
+    <objectAnimator android:interpolator="@drawable/$$personal_apps_separate_hidden_from_work_animation__92__2" android:duration="367" android:startOffset="1400" android:valueFrom="0.2" android:valueTo="1" android:valueType="floatType" android:propertyName="scaleX" />
+    <objectAnimator android:interpolator="@drawable/$$personal_apps_separate_hidden_from_work_animation__92__3" android:duration="367" android:startOffset="1400" android:valueFrom="0.2" android:valueTo="1" android:valueType="floatType" android:propertyName="scaleY" />
+    <objectAnimator android:interpolator="@drawable/$$personal_apps_separate_hidden_from_work_animation__92__4" android:duration="417" android:startOffset="1767" android:valueFrom="1" android:valueTo="1" android:valueType="floatType" android:propertyName="scaleX" />
+    <objectAnimator android:interpolator="@drawable/$$personal_apps_separate_hidden_from_work_animation__92__5" android:duration="417" android:startOffset="1767" android:valueFrom="1" android:valueTo="1" android:valueType="floatType" android:propertyName="scaleY" />
+    <objectAnimator android:interpolator="@drawable/$$personal_apps_separate_hidden_from_work_animation__92__6" android:duration="950" android:startOffset="2183" android:valueFrom="1" android:valueTo="0.73096" android:valueType="floatType" android:propertyName="scaleX" />
+    <objectAnimator android:interpolator="@drawable/$$personal_apps_separate_hidden_from_work_animation__92__7" android:duration="950" android:startOffset="2183" android:valueFrom="1" android:valueTo="0.73096" android:valueType="floatType" android:propertyName="scaleY" />
+</set>

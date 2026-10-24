@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minHeight="64.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:id="@id/item_did" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/dmc_production_did" android:layout_centerVertical="true" android:layout_alignParentStart="true" style="@style/content_text" />
+    <TextView android:id="@id/item_info" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/dmc_production_info" android:layout_centerVertical="true" android:layout_marginStart="349.0dp" android:layout_alignParentStart="true" style="@style/content_text" />
+    <TextView android:id="@id/item_value" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/dmc_production_info" android:layout_centerVertical="true" android:layout_marginStart="1099.0dp" android:layout_alignParentStart="true" style="@style/content_text" />
+</RelativeLayout>

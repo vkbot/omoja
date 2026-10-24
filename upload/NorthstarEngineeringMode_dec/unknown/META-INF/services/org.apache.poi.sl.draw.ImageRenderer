@@ -1,0 +1,2 @@
+org.apache.poi.xslf.draw.SVGImageRenderer
+org.apache.poi.sl.draw.BitmapImageRenderer

@@ -1,0 +1,704 @@
+﻿{
+    "data": [
+        {
+            "signal_id": 440,
+            "signal_name": "LHRRadarSensorDistance"
+        },
+        {
+            "signal_id": 440,
+            "signal_name": "RHMRRadarSensorDistance"
+        },
+        {
+            "signal_id": 440,
+            "signal_name": "LHMRRadarSensorDistance"
+        },
+        {
+            "signal_id": 440,
+            "signal_name": "RHRRadarSensorDistance"
+        },
+        {
+            "signal_id": 440,
+            "signal_name": "LHFRadarSensorDistance"
+        },
+        {
+            "signal_id": 440,
+            "signal_name": "RHFRadarSensorDistance"
+        },
+        {
+            "signal_id": 440,
+            "signal_name": "RHMFRadarSensorDistance"
+        },
+        {
+            "signal_id": 440,
+            "signal_name": "LHMFRadarSensorDistance"
+        },
+        {
+            "signal_id": 440,
+            "signal_name": "AudibleBeepRate"
+        },
+        {
+            "signal_id": 440,
+            "signal_name": "RadarDetectSts"
+        },
+        {
+            "signal_id": 440,
+            "signal_name": "RadarWorkSts"
+        },
+        {
+            "signal_id": 392,
+            "signal_name": "KeyRemindWarning"
+        },
+        {
+            "signal_id": 392,
+            "signal_name": "BrakelampFaultSts"
+        },
+        {
+            "signal_id": 392,
+            "signal_name": "ReversinglampFaultSts"
+        },
+        {
+            "signal_id": "51B",
+            "signal_name": "TirePressureSystemFailSts"
+        },
+        {
+            "signal_id": "51B",
+            "signal_name": "TirePressureWarningLampSts"
+        },
+        {
+            "signal_id": "51B",
+            "signal_name": "TirePositionWarning_LHFTire"
+        },
+        {
+            "signal_id": "51B",
+            "signal_name": "TirePositionWarning_RHFTire"
+        },
+        {
+            "signal_id": "51B",
+            "signal_name": "TirePositionWarning_LHRTire"
+        },
+        {
+            "signal_id": "51B",
+            "signal_name": "TirePositionWarning_RHRTire"
+        },
+        {
+            "signal_id": "5EA",
+            "signal_name": "OverSpeedWarningFunction"
+        },
+        {
+            "signal_id": 401,
+            "signal_name": "ESCLCriticalFailure"
+        },
+        {
+            "signal_id": 401,
+            "signal_name": "ESCLFunctionFailure"
+        },
+        {
+            "signal_id": 401,
+            "signal_name": "ESCLUnlockJamming"
+        },
+        {
+            "signal_id": 480,
+            "signal_name": "SmartSystemWarning2_2"
+        },
+        {
+            "signal_id": 480,
+            "signal_name": "SmartSystemWarning1_1"
+        },
+        {
+            "signal_id": 480,
+            "signal_name": "SmartSystemWarning3_2"
+        },
+        {
+            "signal_id": 480,
+            "signal_name": "SmartSystemWarning4_2"
+        },
+        {
+            "signal_id": 480,
+            "signal_name": "SmartSystemWarning4_3"
+        },
+        {
+            "signal_id": 480,
+            "signal_name": "SmartSystemWarning1_3"
+        },
+        {
+            "signal_id": 480,
+            "signal_name": "SmartSystemWarning1_0"
+        },
+        {
+            "signal_id": 480,
+            "signal_name": "SmartSystemWarning2_0"
+        },
+        {
+            "signal_id": 480,
+            "signal_name": "SmartSystemWarning3_1"
+        },
+        {
+            "signal_id": 436,
+            "signal_name": "PLG_PositionSts"
+        },
+        {
+            "signal_id": 320,
+            "signal_name": "AirBagFailSts"
+        },
+        {
+            "signal_id": 320,
+            "signal_name": "PsngrSeatBeltWarning"
+        },
+        {
+            "signal_id": 320,
+            "signal_name": "SecRowLBeltWarning"
+        },
+        {
+            "signal_id": 320,
+            "signal_name": "SecRowMBeltWarning"
+        },
+        {
+            "signal_id": 320,
+            "signal_name": "SecRowRBeltWarning"
+        },
+        {
+            "signal_id": 320,
+            "signal_name": "ABM_1_MessageCounter"
+        },
+        {
+            "signal_id": 320,
+            "signal_name": "ThdRowLBeltWarning"
+        },
+        {
+            "signal_id": 320,
+            "signal_name": "ThdRowRBeltWarning"
+        },
+        {
+            "signal_id": "2C0",
+            "signal_name": "CDPFailSts"
+        },
+        {
+            "signal_id": "2C0",
+            "signal_name": "CDPActive"
+        },
+        {
+            "signal_id": "2C0",
+            "signal_name": "AVHWainingMessage"
+        },
+        {
+            "signal_id": "2C0",
+            "signal_name": "AVHSts"
+        },
+        {
+            "signal_id": "2C0",
+            "signal_name": "AVHFailSts"
+        },
+        {
+            "signal_id": "2C0",
+            "signal_name": "CDPFailSts"
+        },
+        {
+            "signal_id": "2C0",
+            "signal_name": "CDPActive"
+        },
+        {
+            "signal_id": "2C0",
+            "signal_name": "ABSFailSts"
+        },
+        {
+            "signal_id": "2C0",
+            "signal_name": "EBDFailSts"
+        },
+        {
+            "signal_id": "2C0",
+            "signal_name": "ESPSwitchStatus"
+        },
+        {
+            "signal_id": "2C0",
+            "signal_name": "TCSFailSts"
+        },
+        {
+            "signal_id": "2C0",
+            "signal_name": "VDCFailSts"
+        },
+        {
+            "signal_id": "2C0",
+            "signal_name": "TCSActive"
+        },
+        {
+            "signal_id": "2C0",
+            "signal_name": "VDCActive"
+        },
+        {
+            "signal_id": "2C0",
+            "signal_name": "HHCFailSts"
+        },
+        {
+            "signal_id": "2C0",
+            "signal_name": "HDCCtrlSts"
+        },
+        {
+            "signal_id": "2C0",
+            "signal_name": "HDCFailSts"
+        },
+        {
+            "signal_id": "2C0",
+            "signal_name": "ABS_ESP_MessageCounter"
+        },
+        {
+            "signal_id": "2C0",
+            "signal_name": "DiagnosticSessionSts"
+        },
+        {
+            "signal_id": "2C0",
+            "signal_name": "ABS_ESP_Checksum"
+        },
+        {
+            "signal_id": 508,
+            "signal_name": "AVMFaultStatusCameraFront"
+        },
+        {
+            "signal_id": 508,
+            "signal_name": "AVMFaultStatusCameraLeft"
+        },
+        {
+            "signal_id": 508,
+            "signal_name": "AVMFaultStatusCameraRear"
+        },
+        {
+            "signal_id": 508,
+            "signal_name": "AVMFaultStatusCameraRight"
+        },
+        {
+            "signal_id": 508,
+            "signal_name": "AVMStatusFault"
+        },
+        {
+            "signal_id": "22A",
+            "signal_name": "ReasonForDVDnotDisplyAPA"
+        },
+        {
+            "signal_id": 486,
+            "signal_name": "AWDoutserviceDispRq"
+        },
+        {
+            "signal_id": "47A",
+            "signal_name": "AllWarningInfo"
+        },
+        {
+            "signal_id": 280,
+            "signal_name": "GPFWarning"
+        },
+        {
+            "signal_id": 280,
+            "signal_name": "IEMSts"
+        },
+        {
+            "signal_id": 280,
+            "signal_name": "MILSts"
+        },
+        {
+            "signal_id": 280,
+            "signal_name": "EngineCoolantTempertureFailSts"
+        },
+        {
+            "signal_id": 280,
+            "signal_name": "EPCSts"
+        },
+        {
+            "signal_id": "4F6",
+            "signal_name": "EPBWarningMessage"
+        },
+        {
+            "signal_id": "4F6",
+            "signal_name": "EPBStatus"
+        },
+        {
+            "signal_id": "4F6",
+            "signal_name": "RWUActive"
+        },
+        {
+            "signal_id": "4F6",
+            "signal_name": "Redwarning"
+        },
+        {
+            "signal_id": "4F6",
+            "signal_name": "Yellowwarning"
+        },
+        {
+            "signal_id": 380,
+            "signal_name": "EPSFailSts"
+        },
+        {
+            "signal_id": 380,
+            "signal_name": "EPSSteeringAngleCalibrationSts"
+        },
+        {
+            "signal_id": 380,
+            "signal_name": "EPS_EOTLearning_Sts"
+        },
+        {
+            "signal_id": 307,
+            "signal_name": "HMA_Status"
+        },
+        {
+            "signal_id": 307,
+            "signal_name": "SLAState"
+        },
+        {
+            "signal_id": 307,
+            "signal_name": "SLASpdlimit"
+        },
+        {
+            "signal_id": 307,
+            "signal_name": "SLASpdlimitWarning"
+        },
+        {
+            "signal_id": 307,
+            "signal_name": "Camera_textinfo"
+        },
+        {
+            "signal_id": 307,
+            "signal_name": "TJA_ICA_mode"
+        },
+        {
+            "signal_id": "3DC",
+            "signal_name": "FCM_6_EgoLeLineColor"
+        },
+        {
+            "signal_id": "3DC",
+            "signal_name": "FCM_6_EgoLeLineTyp"
+        },
+        {
+            "signal_id": "3DC",
+            "signal_name": "FCM_6_EgoLeLineHozlDst"
+        },
+        {
+            "signal_id": "3DC",
+            "signal_name": "FCM_6_EgoLeLineCrvt"
+        },
+        {
+            "signal_id": "3DC",
+            "signal_name": "FCM_6_EgoRiLineColor"
+        },
+        {
+            "signal_id": "3DC",
+            "signal_name": "FCM_6_EgoRiLineTyp"
+        },
+        {
+            "signal_id": "3DC",
+            "signal_name": "FCM_6_EgoRiLineHozlDst"
+        },
+        {
+            "signal_id": "3DC",
+            "signal_name": "FCM_6_EgoRiLineCrvt"
+        },
+        {
+            "signal_id": "3DE",
+            "signal_name": "FCM_7_NeborLeLineColor"
+        },
+        {
+            "signal_id": "3DE",
+            "signal_name": "FCM_7_NeborLeLineTyp"
+        },
+        {
+            "signal_id": "3DE",
+            "signal_name": "FCM_7_NeborLeLineHozlDst"
+        },
+        {
+            "signal_id": "3DE",
+            "signal_name": "FCM_7_NeborLeLineCrvt"
+        },
+        {
+            "signal_id": "3DE",
+            "signal_name": "FCM_7_NeborRiLineColor"
+        },
+        {
+            "signal_id": "3DE",
+            "signal_name": "FCM_7_NeborRiLineTyp"
+        },
+        {
+            "signal_id": "3DE",
+            "signal_name": "FCM_7_NeborRiLineHozlDst"
+        },
+        {
+            "signal_id": "3DE",
+            "signal_name": "FCM_7_NeborRiLineCrvt"
+        },
+        {
+            "signal_id": "3ED",
+            "signal_name": "FCM_FRM_8_ACCObjTyp"
+        },
+        {
+            "signal_id": "3ED",
+            "signal_name": "FCM_FRM_8_ACCObjLgtDstX"
+        },
+        {
+            "signal_id": "3ED",
+            "signal_name": "FCM_FRM_8_ACCObjHozDstY"
+        },
+        {
+            "signal_id": "3ED",
+            "signal_name": "FCM_FRM_8_FrntFarObjTyp"
+        },
+        {
+            "signal_id": "3ED",
+            "signal_name": "FCM_FRM_8_FrntFarObjLgtDstX"
+        },
+        {
+            "signal_id": "3ED",
+            "signal_name": "FCM_FRM_8_FrntFarObjHozDstY"
+        },
+        {
+            "signal_id": "3FA",
+            "signal_name": "FCM_FRM_9_LeObjTyp"
+        },
+        {
+            "signal_id": "3FA",
+            "signal_name": "FCM_FRM_9_LeObjLgtDstX"
+        },
+        {
+            "signal_id": "3FA",
+            "signal_name": "FCM_FRM_9_LeObjHozDstY"
+        },
+        {
+            "signal_id": "3FA",
+            "signal_name": "FCM_FRM_9_RiObjTyp"
+        },
+        {
+            "signal_id": "3FA",
+            "signal_name": "FCM_FRM_9_RiObjLgtDstX"
+        },
+        {
+            "signal_id": "3FA",
+            "signal_name": "FCM_FRM_9_RiObjHozDstY"
+        },
+        {
+            "signal_id": "3FC",
+            "signal_name": "FCM_10_TSISysSts"
+        },
+        {
+            "signal_id": "3FC",
+            "signal_name": "FCM_10_TSISgnGiWay"
+        },
+        {
+            "signal_id": "3FC",
+            "signal_name": "FCM_10_TSISgnForb"
+        },
+        {
+            "signal_id": "3FC",
+            "signal_name": "FCM_10_TSISgnLongStayDisp"
+        },
+        {
+            "signal_id": "3FC",
+            "signal_name": "FCM_10_TLITrfcLi"
+        },
+        {
+            "signal_id": "3FC",
+            "signal_name": "FCM_10_LDPSysSts"
+        },
+        {
+            "signal_id": "3FC",
+            "signal_name": "FCM_10_LDWSysSts"
+        },
+        {
+            "signal_id": "3FC",
+            "signal_name": "FCM_10_ELKSysSts"
+        },
+        {
+            "signal_id": "3FC",
+            "signal_name": "FCM_10_TSINoParkWarn"
+        },
+        {
+            "signal_id": "3FC",
+            "signal_name": "FCM_10_TJAICATextinfo"
+        },
+        {
+            "signal_id": "3FC",
+            "signal_name": "FCM_10_TJAICAEnaRcmend"
+        },
+        {
+            "signal_id": "3FC",
+            "signal_name": "FCM_10_LDPTJAELKTakeoverReq"
+        },
+        {
+            "signal_id": "3FC",
+            "signal_name": "FCM_10_SLAONOFFSts"
+        },
+        {
+            "signal_id": "3FC",
+            "signal_name": "FCM_10_WarnModSts"
+        },
+        {
+            "signal_id": "3FC",
+            "signal_name": "FCM_10_ELKIntvMod"
+        },
+        {
+            "signal_id": 387,
+            "signal_name": "FCM_FRM_6_Textinfo_Info"
+        },
+        {
+            "signal_id": 387,
+            "signal_name": "FCM_FRM_6_TextinfoWarn"
+        },
+        {
+            "signal_id": 387,
+            "signal_name": "FCM_FRM_6_ACCMode"
+        },
+        {
+            "signal_id": 387,
+            "signal_name": "FCM_FRM_6_TimeGapSetICM"
+        },
+        {
+            "signal_id": 387,
+            "signal_name": "FCM_FRM_6_SCF_PopoverReq"
+        },
+        {
+            "signal_id": 387,
+            "signal_name": "FCM_FRM_6_FCWMode"
+        },
+        {
+            "signal_id": 387,
+            "signal_name": "FCM_FRM_6_AEBMode"
+        },
+        {
+            "signal_id": 387,
+            "signal_name": "FCM_FRM_6_VSetDis"
+        },
+        {
+            "signal_id": "38A",
+            "signal_name": "IDCU_12CPMod"
+        },
+        {
+            "signal_id": "38A",
+            "signal_name": "IDCU_12Rmninfo"
+        },
+        {
+            "signal_id": 360,
+            "signal_name": "MFS_Menu"
+        },
+        {
+            "signal_id": 360,
+            "signal_name": "MFS_ICM_UP"
+        },
+        {
+            "signal_id": 360,
+            "signal_name": "MFS_ICM_Down"
+        },
+        {
+            "signal_id": 360,
+            "signal_name": "MFS_ICM_Left"
+        },
+        {
+            "signal_id": 360,
+            "signal_name": "MFS_ICM_Right"
+        },
+        {
+            "signal_id": 475,
+            "signal_name": "RHSRRadarSensorDistance"
+        },
+        {
+            "signal_id": 475,
+            "signal_name": "LHSRRadarSensorDistance"
+        },
+        {
+            "signal_id": 475,
+            "signal_name": "RHSFRadarSensorDistance"
+        },
+        {
+            "signal_id": 475,
+            "signal_name": "LHSFRadarSensorDistance"
+        },
+        {
+            "signal_id": "4B1",
+            "signal_name": "RLCR_1_SysSt"
+        },
+        {
+            "signal_id": "4B1",
+            "signal_name": "RLCR_1_RCTBWarn"
+        },
+        {
+            "signal_id": "4B1",
+            "signal_name": "RLCR_1_RAEBWarn"
+        },
+        {
+            "signal_id": "4B1",
+            "signal_name": "RLCR_1_BlkSts"
+        },
+        {
+            "signal_id": "4B1",
+            "signal_name": "RLCR_1_BSDWarn"
+        },
+        {
+            "signal_id": "4B1",
+            "signal_name": "RLCR_1_RCTAWarn"
+        },
+        {
+            "signal_id": "4B1",
+            "signal_name": "RLCR_1_DOWWarn"
+        },
+        {
+            "signal_id": "4B1",
+            "signal_name": "RLCR_1_RCWWarn"
+        },
+        {
+            "signal_id": "4B3",
+            "signal_name": "RRCR_1_SysSt"
+        },
+        {
+            "signal_id": "4B3",
+            "signal_name": "RRCR_1_BSDWarn"
+        },
+        {
+            "signal_id": "4B3",
+            "signal_name": "RRCR_1_RCTAWarn"
+        },
+        {
+            "signal_id": "4B3",
+            "signal_name": "RRCR_1_DOWWarn"
+        },
+        {
+            "signal_id": "4B3",
+            "signal_name": "RRCR_1_BlkSts"
+        },
+        {
+            "signal_id": 301,
+            "signal_name": "ClutchTemperature"
+        },
+        {
+            "signal_id": 301,
+            "signal_name": "GBFaultstatus"
+        },
+        {
+            "signal_id": 301,
+            "signal_name": "GBPositoionDisplay"
+        },
+        {
+            "signal_id": 301,
+            "signal_name": "STAT_LeverModeDisp"
+        },
+        {
+            "signal_id": 515,
+            "signal_name": "OverSpeedValue"
+        },
+        {
+            "signal_id": 517,
+            "signal_name": "DVD_SetThemeType"
+        },
+        {
+            "signal_id": 517,
+            "signal_name": "IHU_SET_ICMBrightnessLevel"
+        },
+        {
+            "signal_id": "5A3",
+            "signal_name": "WarningMessageID_TCU"
+        },
+        {
+            "signal_id": "5A3",
+            "signal_name": "BitStatus_TCU"
+        },
+        {
+            "signal_id": "5A3",
+            "signal_name": "BitRefreshRate_TCU"
+        },
+        {
+            "signal_id": "5A3",
+            "signal_name": "BitBlinking_TCU"
+        }
+    ]
+}

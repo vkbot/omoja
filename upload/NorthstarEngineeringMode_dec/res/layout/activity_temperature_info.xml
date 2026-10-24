@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:tag="layout/activity_temperature_info_0" android:background="@color/black" android:layout_width="match_parent" android:layout_height="match_parent" android:paddingStart="20.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/CommonLine">
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/soc_temp" style="@style/title_text_small" />
+        <TextView android:id="@id/tv_soc_temp" android:tag="binding_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/char_concat" style="@style/right_text" />
+    </LinearLayout>
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/CommonLine">
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/ihu_temp_state" style="@style/title_text_small" />
+        <TextView android:id="@id/tv_ihu_screen_temp_state" android:tag="binding_2" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/right_text" />
+    </LinearLayout>
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/CommonLine">
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/icm_temp_state" style="@style/title_text_small" />
+        <TextView android:id="@id/tv_acceleration_z" android:tag="binding_3" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/right_text" />
+    </LinearLayout>
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/CommonLine">
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/cpu_rate" style="@style/title_text_small" />
+        <TextView android:id="@id/tv_gyro_x" android:tag="binding_4" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/right_text" />
+    </LinearLayout>
+</LinearLayout>

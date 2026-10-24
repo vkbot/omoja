@@ -1,0 +1,38 @@
+Signature-Version: 1.0
+Created-By: 1.0 (Android SignApk)
+SHA-256-Digest-Manifest: QIR5CQ0DPea8T9hS0ejfuWK9QvEbKZFwYO2St19CQwY=
+X-Android-APK-Signed: 2, 3
+
+Name: AndroidManifest.xml
+SHA-256-Digest: VJouL4GE93FOHF+W9DkdSIkhZ3QU7wgoNJwd3lqlfE0=
+
+Name: classes.dex
+SHA-256-Digest: 3ZwIVqXcB4tTwt/8rezkO6ewlOVIyvw+Tskle7VA5Eo=
+
+Name: res/drawable-v24/$ic_launcher_foreground__0.xml
+SHA-256-Digest: DySnvHlh5mqg5wGkT3kH7QXB6JCbdWMnlylBe+ZoRyc=
+
+Name: res/drawable-v24/ic_launcher_foreground.xml
+SHA-256-Digest: PkaIZwBavJDplNjKGrLA0j6qBMeq9JHyGJlaS6wQAQ0=
+
+Name: res/drawable/ic_launcher_background.xml
+SHA-256-Digest: 9Y/KmNPKTbkYMhWCtwSNHjRXk1kG1FLh90E/NoCmG6k=
+
+Name: res/layout/dialog_list_item.xml
+SHA-256-Digest: o92uObt3U8/YPxjurWNH70B05qsdiDj58KHfKi2FXtQ=
+
+Name: res/layout/dialog_main.xml
+SHA-256-Digest: 7hmWredmMP1PpihpESpVZ2FfqKnsg4ucijAsB1CF5ug=
+
+Name: res/layout/floating_progress.xml
+SHA-256-Digest: dwohuHgaAY/U+dRhSudmTW68AJ1XWrU/O68c1y7DkWE=
+
+Name: res/mipmap-anydpi-v26/ic_launcher.xml
+SHA-256-Digest: XOmgenpR01xemO0Mj4wlJDJjgR6NkN+LsMs0nil2wpo=
+
+Name: res/mipmap-anydpi-v26/ic_launcher_round.xml
+SHA-256-Digest: Tu17Vvva8ido7qnu5u0TD9SLmKioAdeMDBym4LAD7nA=
+
+Name: resources.arsc
+SHA-256-Digest: 0ErUC0X0wBhGFM5g2seSarbjToJWwYVBVavJPHILBcw=
+

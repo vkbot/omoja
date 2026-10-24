@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@color/black" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:id="@id/ll_tilte" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="30.0dp" android:layout_alignParentTop="true" android:layout_marginStart="120.0dp">
+        <TextView android:textSize="@dimen/text_size_content" android:textColor="@color/white" android:id="@id/log_state" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/toast_log_select" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@id/ll_log" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dp" android:layout_below="@id/ll_tilte" android:layout_marginStart="120.0dp">
+        <Button android:gravity="center" android:id="@id/btn_log_all" android:text="@string/btn_log_all" style="@style/item_log_btn" />
+        <Button android:textSize="@dimen/text_size_content" android:id="@id/btn_log_mcu" android:text="@string/btn_log_mcu" style="@style/item_log_btn" />
+        <Button android:gravity="center" android:id="@id/btn_log_qnx" android:text="@string/btn_log_qnx" style="@style/item_log_btn" />
+        <Button android:gravity="center" android:id="@id/btn_log_android" android:text="@string/btn_log_android" style="@style/item_log_btn" />
+        <Button android:gravity="center" android:id="@id/btn_log_oil" android:text="@string/btn_log_oil" style="@style/item_log_btn" />
+        <Button android:gravity="center" android:id="@id/btn_log_other" android:text="@string/btn_log_other" style="@style/item_log_btn" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@id/ll_log2" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dp" android:layout_below="@id/ll_log" android:layout_marginStart="120.0dp">
+        <Button android:gravity="center" android:id="@id/btn_log_instuction" android:text="@string/icm_log_export" style="@style/item_log_btn" />
+        <Button android:gravity="center" android:id="@id/btn_log_central" android:text="@string/central_log_export" style="@style/item_log_btn" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@id/ll_usb_des" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dp" android:layout_below="@id/ll_log2" android:layout_marginStart="120.0dp">
+        <TextView android:textSize="24.0sp" android:textColor="@color/red" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/usb_path" />
+        <TextView android:textSize="24.0sp" android:textColor="@color/red" android:id="@id/tv_usb_state" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/usb_error" android:layout_marginStart="@dimen/margin16" />
+    </LinearLayout>
+    <LinearLayout android:id="@id/ll_des" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dp" android:layout_below="@id/ll_usb_des" android:layout_marginStart="120.0dp">
+        <TextView android:textSize="18.0sp" android:textColor="@color/white_50" android:id="@id/mcu_log_tips" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/mcu_log_tips" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@id/ll_log_del" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dp" android:layout_below="@id/ll_des" android:layout_marginStart="120.0dp">
+        <Button android:gravity="center" android:id="@id/btn_log_qnx_del" android:visibility="gone" android:text="@string/btn_log_qnx_del" style="@style/item_log_btn" />
+        <Button android:gravity="center" android:id="@id/btn_log_android_del" android:visibility="gone" android:text="@string/btn_log_android_del" style="@style/item_log_btn" />
+        <Button android:gravity="center" android:id="@id/btn_log_oil_del" android:visibility="gone" android:text="@string/btn_log_oil_del" style="@style/item_log_btn" />
+        <Button android:gravity="center" android:id="@id/btn_log_other_del" android:visibility="gone" android:text="@string/btn_log_other_del" style="@style/item_log_btn" />
+        <Button android:gravity="center" android:id="@id/btn_log_all_del" android:text="@string/btn_log_all_del" style="@style/item_log_btn" />
+    </LinearLayout>
+</RelativeLayout>

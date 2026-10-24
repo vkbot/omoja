@@ -1,0 +1,20 @@
+version: 3.0.3
+apkFileName: LajollaCalllistVDR_ONLINE.apk
+usesFramework:
+  ids:
+  - 1
+sdkInfo:
+  minSdkVersion: 26
+  targetSdkVersion: 31
+  maxSdkVersion: 31
+versionInfo:
+  versionCode: 4
+  versionName: 1.2.3
+resourcesInfo:
+  packageId: 127
+doNotCompress:
+- arsc
+- dex
+- png
+- so
+- webp

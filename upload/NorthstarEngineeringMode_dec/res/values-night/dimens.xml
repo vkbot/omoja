@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="toast_margin_bottom">40.0dp</dimen>
+    <dimen name="toast_min_height">120.0dp</dimen>
+    <dimen name="toast_padding">30.0dp</dimen>
+</resources>

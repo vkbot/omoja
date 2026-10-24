@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set android:ordering="together"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt">
+    <objectAnimator android:interpolator="@drawable/$$connect_on_the_go_animation__131__0" android:duration="1000" android:startOffset="0" android:valueFrom="13.813" android:valueTo="13.813" android:valueType="floatType" android:propertyName="translateX" />
+    <objectAnimator android:interpolator="@drawable/$$connect_on_the_go_animation__131__1" android:duration="500" android:startOffset="1000" android:valueFrom="13.813" android:valueTo="28.813" android:valueType="floatType" android:propertyName="translateX" />
+    <objectAnimator android:interpolator="@drawable/$$connect_on_the_go_animation__131__2" android:duration="500" android:startOffset="1500" android:valueFrom="28.813" android:valueTo="13.813" android:valueType="floatType" android:propertyName="translateX" />
+</set>

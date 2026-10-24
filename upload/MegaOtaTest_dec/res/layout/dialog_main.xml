@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:background="@color/colorPrimaryDark" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="20.0dp" android:textColor="@color/colorPrimary" android:id="@id/device_info" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dp" android:layout_marginBottom="10.0dp" android:text="@string/device_version_info" android:layout_marginStart="150.0dp" android:layout_marginEnd="60.0dp" />
+        <TextView android:textSize="20.0dp" android:textColor="@color/colorPrimary" android:id="@id/message_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dp" android:layout_marginBottom="10.0dp" android:text="@string/start_upgrade" android:layout_below="@id/device_info" android:layout_centerHorizontal="true" android:layout_marginStart="10.0dp" android:layout_marginEnd="10.0dp" />
+        <TextView android:textSize="18.0dp" android:textColor="@color/colorPrimary" android:id="@id/message_content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="10.0dp" android:text="@string/current_progress" android:layout_below="@id/message_title" android:layout_centerHorizontal="true" android:layout_marginStart="10.0dp" android:layout_marginEnd="10.0dp" />
+        <ProgressBar android:id="@id/progress" android:visibility="visible" android:layout_width="10.0dp" android:layout_height="10.0dp" android:layout_marginBottom="10.0dp" android:progress="50" android:layout_below="@id/message_content" android:layout_alignParentLeft="true" android:layout_alignParentRight="true" android:layout_centerHorizontal="true" android:layout_marginStart="60.0dp" android:layout_marginEnd="60.0dp" style="?android:progressBarStyleHorizontal" />
+        <LinearLayout android:orientation="horizontal" android:id="@id/button_content" android:layout_width="wrap_content" android:layout_height="80.0dp" android:layout_below="@id/progress" android:layout_centerHorizontal="true">
+            <Button android:textSize="20.0dp" android:id="@id/dmc" android:layout_width="wrap_content" android:layout_height="55.0dp" android:layout_margin="10.0dp" android:text="DMC" android:layout_weight="1.0" />
+            <Button android:textSize="20.0dp" android:id="@id/display1" android:layout_width="wrap_content" android:layout_height="55.0dp" android:layout_margin="10.0dp" android:text="@string/button_display" android:layout_weight="1.0" />
+            <Button android:textSize="20.0dp" android:id="@id/apa" android:layout_width="wrap_content" android:layout_height="55.0dp" android:layout_margin="10.0dp" android:text="APA" android:layout_weight="1.0" />
+            <Button android:textSize="20.0dp" android:id="@id/dashBoardDisplay" android:layout_width="wrap_content" android:layout_height="55.0dp" android:layout_margin="10.0dp" android:text="@string/button_icm_display" android:layout_weight="1.0" />
+            <Button android:textSize="20.0dp" android:id="@id/iviDisplay" android:layout_width="wrap_content" android:layout_height="55.0dp" android:layout_margin="10.0dp" android:text="@string/button_ihu_display" android:layout_weight="1.0" />
+            <Button android:textSize="20.0dp" android:id="@id/backDisplay" android:layout_width="wrap_content" android:layout_height="55.0dp" android:layout_margin="10.0dp" android:text="@string/button_rccp_display" android:layout_weight="1.0" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:id="@id/button_content1" android:layout_width="wrap_content" android:layout_height="80.0dp" android:layout_below="@id/button_content" android:layout_centerHorizontal="true">
+            <Button android:textSize="20.0dp" android:id="@id/resume" android:layout_width="wrap_content" android:layout_height="55.0dp" android:layout_margin="10.0dp" android:text="@string/button_contine" android:layout_weight="1.0" />
+            <Button android:textSize="20.0dp" android:id="@id/confirm" android:layout_width="wrap_content" android:layout_height="55.0dp" android:layout_margin="10.0dp" android:text="@string/button_confirm" android:layout_weight="1.0" />
+            <Button android:textSize="20.0dp" android:id="@id/cancel" android:layout_width="wrap_content" android:layout_height="55.0dp" android:layout_margin="10.0dp" android:text="@string/button_cancel" android:layout_weight="1.0" />
+        </LinearLayout>
+    </RelativeLayout>
+</ScrollView>

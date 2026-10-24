@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_gravity="center" android:orientation="vertical" android:background="@drawable/shape_bg_dialog" android:layout_width="match_parent" android:layout_height="match_parent" android:paddingHorizontal="60.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/dimen_20sp" android:textColor="@color/white" android:id="@id/tv_random_number" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="56.0dp" />
+    <TextView android:textSize="@dimen/dimen_20sp" android:textColor="@color/white" android:id="@id/tv_vin_code" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin16" />
+    <TextView android:textSize="@dimen/dimen_20sp" android:textColor="@color/white" android:id="@id/tv_tip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dp" android:text="@string/login_show_warm_tip" />
+    <EditText android:textSize="@dimen/dimen_20sp" android:textColor="@color/white" android:textColorHint="@color/white_50" android:id="@id/edittext_password" android:background="@drawable/img_search_bg" android:layout_width="600.0dp" android:layout_height="70.0dp" android:layout_marginTop="10.0dp" android:hint="@string/main_encryption_text" android:inputType="textPassword" android:paddingStart="20.0dp" android:paddingEnd="20.0dp" android:autofillHints="@string/main_encryption_text" />
+    <TextView android:textSize="18.0sp" android:textColor="#ff2525" android:gravity="left" android:id="@id/textview_login_error" android:visibility="invisible" android:layout_width="600.0dp" android:layout_height="wrap_content" android:layout_marginTop="10.0dp" android:text="" android:alpha="0.75" />
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/bottom_container" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dp" android:layout_marginBottom="10.0dp" android:layoutDirection="ltr">
+        <TextView android:gravity="center" android:id="@id/tv_sure" android:background="@drawable/shape_bg_submit_btn" android:text="@string/main_encryption_confirm" style="@style/select_btn" />
+        <TextView android:gravity="center" android:id="@id/tv_cancel" android:background="@drawable/shape_bg_cancel_btn" android:text="@string/main_encryption_cancel" android:layout_marginStart="40.0dp" style="@style/select_btn" />
+    </LinearLayout>
+</LinearLayout>

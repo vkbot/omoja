@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.mega.chery.widget.EasyTextView android:id="@id/dtc_num" android:layout_width="200.0dp" android:layout_height="wrap_content" android:text="@string/dtc_num" app:keep_start="true" style="@style/title_text_small" />
+        <com.mega.chery.widget.EasyTextView android:id="@id/dtc_status" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/dtc_status" android:layout_marginStart="80.0dp" app:keep_start="true" style="@style/title_text_small" />
+        <Button android:id="@id/get_dtc" android:text="@string/get_history_dtc" android:layout_marginStart="80.0dp" style="@style/item_btn_small" />
+    </LinearLayout>
+    <View android:background="@color/white_90" android:layout_width="match_parent" android:layout_height="1.0dp" android:layout_marginTop="20.0dp" />
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/dtc_history_list" android:layout_width="match_parent" android:layout_height="wrap_content" />
+</LinearLayout>

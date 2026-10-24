@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set android:ordering="together"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt">
+    <objectAnimator android:interpolator="@drawable/$$pause_work_apps_animation__44__0" android:duration="1100" android:startOffset="0" android:valueFrom="#1a73e8" android:valueTo="#1a73e8" android:valueType="colorType" android:propertyName="fillColor" />
+    <objectAnimator android:interpolator="@drawable/$$pause_work_apps_animation__44__1" android:duration="283" android:startOffset="1100" android:valueFrom="#1a73e8" android:valueTo="#80868b" android:valueType="colorType" android:propertyName="fillColor" />
+    <objectAnimator android:interpolator="@drawable/$$pause_work_apps_animation__44__2" android:duration="1967" android:startOffset="1383" android:valueFrom="#80868b" android:valueTo="#80868b" android:valueType="colorType" android:propertyName="fillColor" />
+    <objectAnimator android:interpolator="@drawable/$$pause_work_apps_animation__44__3" android:duration="283" android:startOffset="3350" android:valueFrom="#80868b" android:valueTo="#1476e0" android:valueType="colorType" android:propertyName="fillColor" />
+</set>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/black" android:layout_width="match_parent" android:layout_height="match_parent" android:paddingStart="50.0dp" android:paddingEnd="50.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="64.0dp">
+        <TextView android:gravity="center_vertical" android:layout_width="@dimen/title_text" android:layout_height="match_parent" android:text="@string/tsp_test" style="@style/content_text" />
+        <Button android:id="@id/btnTestMode" android:background="@drawable/btn_switch_n" android:layout_width="105.0dp" android:layout_height="58.0dp" android:layout_marginStart="24.0dp" />
+        <TextView android:gravity="center_vertical" android:layout_width="@dimen/title_text" android:layout_height="match_parent" android:text="@string/test_dev" android:layout_marginStart="50.0dp" style="@style/content_text" />
+        <Button android:id="@id/btnTestDev" android:background="@drawable/btn_switch_n" android:layout_width="105.0dp" android:layout_height="58.0dp" android:layout_marginStart="24.0dp" />
+        <Spinner android:entries="@array/tsp_test_devs" android:id="@id/sp" android:background="@color/white" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="58.0dp" android:layout_marginStart="24.0dp" />
+        <TextView android:gravity="center_vertical" android:layout_width="@dimen/title_text" android:layout_height="match_parent" android:text="@string/card_activation_status" android:layout_marginStart="50.0dp" style="@style/content_text" />
+        <Button android:id="@id/btn_card_activation" android:background="@drawable/btn_switch_n" android:layout_width="105.0dp" android:layout_height="58.0dp" android:layout_marginStart="24.0dp" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/layout_vin" android:layout_width="600.0dp" android:layout_height="64.0dp">
+            <TextView android:layout_width="200.0dp" android:layout_height="wrap_content" android:text="@string/ecology_vin" style="@style/content_text" />
+            <EditText android:id="@id/et_vin" android:layout_width="400.0dp" android:layout_height="wrap_content" android:hint="@string/ecology_vin" android:maxLines="1" android:inputType="text" style="@style/content_text" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/layout_huid" android:layout_width="600.0dp" android:layout_height="64.0dp" android:layout_marginStart="20.0dp">
+            <TextView android:layout_width="200.0dp" android:layout_height="wrap_content" android:text="@string/ecology_huid" style="@style/content_text" />
+            <EditText android:id="@id/et_huid" android:layout_width="400.0dp" android:layout_height="wrap_content" android:hint="@string/ecology_huid" android:maxLines="1" android:inputType="text" style="@style/content_text" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/layout_sn" android:layout_width="600.0dp" android:layout_height="64.0dp">
+            <TextView android:layout_width="200.0dp" android:layout_height="wrap_content" android:text="@string/ecology_sn" style="@style/content_text" />
+            <EditText android:id="@id/et_sn" android:layout_width="400.0dp" android:layout_height="wrap_content" android:hint="@string/ecology_sn" android:maxLines="1" android:inputType="text" style="@style/content_text" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/layout_iccid" android:layout_width="600.0dp" android:layout_height="64.0dp" android:layout_marginStart="20.0dp">
+            <TextView android:layout_width="200.0dp" android:layout_height="wrap_content" android:text="@string/ecology_iccid" style="@style/content_text" />
+            <EditText android:id="@id/et_iccid" android:layout_width="400.0dp" android:layout_height="wrap_content" android:hint="@string/ecology_iccid" android:maxLines="1" android:inputType="text" style="@style/content_text" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="600.0dp" android:layout_height="64.0dp">
+            <TextView android:layout_width="200.0dp" android:layout_height="wrap_content" android:text="@string/tsp_token" style="@style/content_text" />
+            <TextView android:id="@id/tsp_token" android:layout_width="400.0dp" android:layout_height="wrap_content" android:maxLines="1" style="@style/content_text" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dp">
+        <Button android:textSize="24.0sp" android:id="@id/btnEnsure" android:background="@drawable/btn_ensure" android:layout_width="200.0dp" android:layout_height="58.0dp" android:text="@string/text_ensure" style="@style/content_text" />
+        <Button android:id="@id/btn_reboot" android:background="@drawable/btn_ensure" android:layout_width="200.0dp" android:layout_height="58.0dp" android:text="@string/main_btn_reboot" android:layout_marginStart="100.0dp" style="@style/content_text" />
+    </LinearLayout>
+</LinearLayout>

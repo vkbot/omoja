@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.setupdesign.GlifLayout android:id="@id/setup_wizard_layout" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" style="@style/SudContentFrame">
+        <TextView android:gravity="center_horizontal" android:id="@id/subheader" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/now_lets_set_up_everything_else_explanation" style="@style/SudDescription.Glif" />
+        <RelativeLayout android:layout_width="wrap_content" android:layout_height="match_parent">
+            <ImageView android:id="@id/animation" android:layout_width="wrap_content" android:layout_height="@dimen/animation_height" android:src="@drawable/everything_else_animation_intro" android:scaleType="centerCrop" android:layout_centerInParent="true" />
+        </RelativeLayout>
+    </LinearLayout>
+</com.google.android.setupdesign.GlifLayout>

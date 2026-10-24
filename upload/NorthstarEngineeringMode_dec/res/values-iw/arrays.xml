@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="internal_upgrade">
+        <item>שדרוג MCU</item>
+        <item>שדרוג AVM מובנה</item>
+        <item>שדרוג DSP</item>
+        <item>שדרוג צליל התראה של מודול המחוונים המשולב</item>
+        <item>שדרוג תחום מודול המחוונים המשולב()שדרוג תחום המארח</item>
+        <item>שדרוג כולל של SOC</item>
+        <item>שדרוג חבילת DMC הכוללת</item>
+    </string-array>
+    <string-array name="periphery_upgrade">
+        <item>שדרוג תוכנת MCU בתצוגת הקונסולה המרכזית</item>
+        <item>שדרוג תוכנת מגע בתצוגת הקונסולה המרכזית</item>
+        <item>שדרוג MCU של תצוגת מודול המחוונים המשולב</item>
+        <item>שדרוג תוכנת לוח מגע בתצוגת מודול המחוונים המשולב</item>
+        <item>שדרוג TBOX</item>
+        <item>שדרוג APA</item>
+    </string-array>
+    <string-array name="tsp_test_devs">
+        <item>סביבת הנפקה</item>
+        <item>סביבת פיתוח</item>
+        <item>סביבת בדיקות מקומיות</item>
+        <item>סביבת בדיקות חו\"ל</item>
+    </string-array>
+    <string-array name="version_info">
+        <item>פרטי גרסת התוכנה ב-DMC</item>
+        <item>פרטי גרסה של חלקים היקפיים</item>
+        <item>מידע לוגיסטי של ייצור DMC</item>
+        <item>פרטי גרסת חומרה פנימית של DMC</item>
+    </string-array>
+</resources>

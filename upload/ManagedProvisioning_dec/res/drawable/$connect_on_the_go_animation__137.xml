@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set android:ordering="together"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt">
+    <objectAnimator android:interpolator="@drawable/$$connect_on_the_go_animation__137__0" android:duration="1000" android:startOffset="0" android:valueFrom="0" android:valueTo="0" android:valueType="floatType" android:propertyName="rotation" />
+    <objectAnimator android:interpolator="@drawable/$$connect_on_the_go_animation__137__1" android:duration="133" android:startOffset="1000" android:valueFrom="0" android:valueTo="-31" android:valueType="floatType" android:propertyName="rotation" />
+    <objectAnimator android:interpolator="@drawable/$$connect_on_the_go_animation__137__2" android:duration="167" android:startOffset="1133" android:valueFrom="-31" android:valueTo="24" android:valueType="floatType" android:propertyName="rotation" />
+    <objectAnimator android:interpolator="@drawable/$$connect_on_the_go_animation__137__3" android:duration="200" android:startOffset="1300" android:valueFrom="24" android:valueTo="11" android:valueType="floatType" android:propertyName="rotation" />
+    <objectAnimator android:interpolator="@drawable/$$connect_on_the_go_animation__137__4" android:duration="500" android:startOffset="1500" android:valueFrom="11" android:valueTo="0" android:valueType="floatType" android:propertyName="rotation" />
+</set>

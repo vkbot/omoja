@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animated-vector android:drawable="@drawable/$consent_animation_do__0"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt">
+    <target android:name="_R_G_L_30_G_T_1" android:animation="@drawable/$consent_animation_do__1" />
+    <target android:name="_R_G_L_29_G_T_1" android:animation="@drawable/$consent_animation_do__2" />
+    <target android:name="_R_G_L_28_G_T_1" android:animation="@drawable/$consent_animation_do__3" />
+    <target android:name="_R_G_L_27_G_T_1" android:animation="@drawable/$consent_animation_do__4" />
+    <target android:name="_R_G_L_26_G_T_1" android:animation="@drawable/$consent_animation_do__5" />
+    <target android:name="_R_G_L_25_G_T_1" android:animation="@drawable/$consent_animation_do__6" />
+    <target android:name="_R_G_L_24_G_N_30_T_1" android:animation="@drawable/$consent_animation_do__7" />
+    <target android:name="_R_G_L_23_G_D_0_P_0" android:animation="@drawable/$consent_animation_do__8" />
+    <target android:name="_R_G_L_23_G_N_29_T_1" android:animation="@drawable/$consent_animation_do__9" />
+    <target android:name="_R_G_L_22_G" android:animation="@drawable/$consent_animation_do__10" />
+    <target android:name="_R_G_L_22_G_N_31_T_1" android:animation="@drawable/$consent_animation_do__11" />
+    <target android:name="_R_G_L_21_G_D_0_P_0" android:animation="@drawable/$consent_animation_do__12" />
+    <target android:name="_R_G_L_21_G_N_28_T_1" android:animation="@drawable/$consent_animation_do__13" />
+    <target android:name="_R_G_L_20_G" android:animation="@drawable/$consent_animation_do__14" />
+    <target android:name="_R_G_L_19_G" android:animation="@drawable/$consent_animation_do__15" />
+    <target android:name="_R_G_L_16_G" android:animation="@drawable/$consent_animation_do__16" />
+    <target android:name="_R_G_L_14_G" android:animation="@drawable/$consent_animation_do__17" />
+    <target android:name="_R_G_L_14_G_N_18_T_0" android:animation="@drawable/$consent_animation_do__18" />
+    <target android:name="_R_G_L_12_G_D_0_P_0" android:animation="@drawable/$consent_animation_do__19" />
+    <target android:name="_R_G_L_12_G_D_1_P_0" android:animation="@drawable/$consent_animation_do__20" />
+    <target android:name="_R_G_L_12_G_D_1_P_0" android:animation="@drawable/$consent_animation_do__21" />
+    <target android:name="_R_G_L_12_G_N_13_N_16_T_0" android:animation="@drawable/$consent_animation_do__22" />
+    <target android:name="_R_G_L_12_G_N_13_N_16_N_18_T_0" android:animation="@drawable/$consent_animation_do__23" />
+    <target android:name="_R_G_L_11_C_0" android:animation="@drawable/$consent_animation_do__24" />
+    <target android:name="_R_G_L_11_G_N_16_T_0" android:animation="@drawable/$consent_animation_do__25" />
+    <target android:name="_R_G_L_11_G_N_16_N_18_T_0" android:animation="@drawable/$consent_animation_do__26" />
+    <target android:name="_R_G_L_10_G_D_0_P_0" android:animation="@drawable/$consent_animation_do__27" />
+    <target android:name="_R_G_L_10_G_N_13_N_16_T_0" android:animation="@drawable/$consent_animation_do__28" />
+    <target android:name="_R_G_L_10_G_N_13_N_16_N_18_T_0" android:animation="@drawable/$consent_animation_do__29" />
+    <target android:name="_R_G_L_8_G_D_0_P_0" android:animation="@drawable/$consent_animation_do__30" />
+    <target android:name="_R_G_L_7_G_T_1" android:animation="@drawable/$consent_animation_do__31" />
+    <target android:name="_R_G_L_7_G_T_1" android:animation="@drawable/$consent_animation_do__32" />
+    <target android:name="_R_G_L_6_C_0" android:animation="@drawable/$consent_animation_do__33" />
+    <target android:name="_R_G_L_6_G_N_9_T_1" android:animation="@drawable/$consent_animation_do__34" />
+    <target android:name="_R_G_L_6_G_N_9_T_1" android:animation="@drawable/$consent_animation_do__35" />
+    <target android:name="_R_G_L_5_C_0" android:animation="@drawable/$consent_animation_do__36" />
+    <target android:name="_R_G_L_5_G_N_5_T_1" android:animation="@drawable/$consent_animation_do__37" />
+    <target android:name="_R_G_L_4_C_0" android:animation="@drawable/$consent_animation_do__38" />
+    <target android:name="_R_G_L_4_G_T_1" android:animation="@drawable/$consent_animation_do__39" />
+    <target android:name="_R_G_L_3_G_D_4_P_0" android:animation="@drawable/$consent_animation_do__40" />
+    <target android:name="_R_G_L_3_G_T_1" android:animation="@drawable/$consent_animation_do__41" />
+    <target android:name="_R_G_L_2_G_N_4_T_1" android:animation="@drawable/$consent_animation_do__42" />
+    <target android:name="time_group" android:animation="@drawable/$consent_animation_do__43" />
+</animated-vector>

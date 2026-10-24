@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="internal_upgrade">
+        <item>MCU-upgrade</item>
+        <item>Ingebouwde AVM-upgrade</item>
+        <item>DSP-upgrade</item>
+        <item>Upgrade van IPC-alarmgeluid</item>
+        <item>Upgrade van IPC-domein</item>
+        <item>Upgrade van hostdomein</item>
+        <item>Totale SOC-upgrade</item>
+        <item>DMC-upgrade van compleet pakket</item>
+    </string-array>
+    <string-array name="periphery_upgrade">
+        <item>MCU-software-upgrade middenconsoledisplay</item>
+        <item>Aanraaksoftware-upgrade middenconsoledisplay</item>
+        <item>MCU-upgrade IPC-display</item>
+        <item>Aanraakpaneelsoftware-upgrade IPC-display</item>
+        <item>TBOX-upgrade</item>
+        <item>APA-upgrade</item>
+    </string-array>
+    <string-array name="tsp_test_devs">
+        <item>Uitgaveomgeving</item>
+        <item>Ontwikkelingsomgeving</item>
+        <item>Binnenlandse testomgeving</item>
+        <item>Buitenlandse testomgeving</item>
+    </string-array>
+    <string-array name="version_info">
+        <item>Softwareversie-info van DMC</item>
+        <item>Versie-info van randapparatuur</item>
+        <item>Productielogistieke info van DMC</item>
+        <item>Versie-info van interne hardware van DMC</item>
+    </string-array>
+</resources>

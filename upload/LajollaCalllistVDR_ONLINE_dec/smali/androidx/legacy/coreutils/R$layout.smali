@@ -1,0 +1,27 @@
+.class public final Landroidx/legacy/coreutils/R$layout;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+
+# static fields
+.field public static notification_action:I = 0x7f0b005b
+
+.field public static notification_action_tombstone:I = 0x7f0b005c
+
+.field public static notification_template_custom_big:I = 0x7f0b005d
+
+.field public static notification_template_icon_group:I = 0x7f0b005e
+
+.field public static notification_template_part_chronometer:I = 0x7f0b005f
+
+.field public static notification_template_part_time:I = 0x7f0b0060
+
+
+# direct methods
+.method private constructor <init>()V
+    .locals 0
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method

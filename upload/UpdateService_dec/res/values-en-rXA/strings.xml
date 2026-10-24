@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="USB_offline">[ÛŠβ öƒƒļîñé one two]</string>
+    <string name="cancel_button">[çåñçļé one two]</string>
+    <string name="check_upgrade_package">[Çĥéçķ ûþĝŕåðé þåçķåĝé one two three]</string>
+    <string name="file_download">[Fîļé ðöŵñļöåð one two]</string>
+    <string name="hide_button">[ĥîðé one]</string>
+    <string name="no_upgrade_package_found">[Ñö ûþĝŕåðé þåçķåĝé ƒöûñð one two three]</string>
+    <string name="ok_button">[öķ one]</string>
+    <string name="other_upgrade_task_is_running">[Öţĥéŕ ûþĝŕåðé ţåšķ îš ŕûññîñĝ one two three four]</string>
+    <string name="please_wait">[Þļéåšé ŵåîţ one two]</string>
+    <string name="start_upgrade">[Šţåŕţ ûþĝŕåðé one two]</string>
+    <string name="upgrade_fail">[Ûþĝŕåðé ƒåîļ one two]</string>
+    <string name="upgrade_success">[Ûþĝŕåðé šûççéšš one two three]</string>
+    <string name="upgrading">[Ûþĝŕåðîñĝ one two]</string>
+    <string name="upload_fail">[Ûþļöåð ƒåîļ one two]</string>
+</resources>

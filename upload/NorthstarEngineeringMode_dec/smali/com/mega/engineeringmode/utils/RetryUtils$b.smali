@@ -1,0 +1,14 @@
+.class public interface abstract Lcom/mega/engineeringmode/utils/RetryUtils$b;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lcom/mega/engineeringmode/utils/RetryUtils;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x609
+    name = "b"
+.end annotation

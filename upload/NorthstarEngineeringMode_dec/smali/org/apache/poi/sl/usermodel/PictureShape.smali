@@ -1,0 +1,39 @@
+.class public interface abstract Lorg/apache/poi/sl/usermodel/PictureShape;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+# interfaces
+.implements Lorg/apache/poi/sl/usermodel/SimpleShape;
+
+
+# annotations
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "<S::",
+        "Lorg/apache/poi/sl/usermodel/Shape<",
+        "TS;TP;>;P::",
+        "Lorg/apache/poi/sl/usermodel/TextParagraph<",
+        "TS;TP;+",
+        "Lorg/apache/poi/sl/usermodel/TextRun;",
+        ">;>",
+        "Ljava/lang/Object;",
+        "Lorg/apache/poi/sl/usermodel/SimpleShape<",
+        "TS;TP;>;"
+    }
+.end annotation
+
+
+# virtual methods
+.method public getAlternativePictureData()Lorg/apache/poi/sl/usermodel/PictureData;
+    .locals 0
+
+    const/4 p0, 0x0
+
+    return-object p0
+.end method
+
+.method public abstract getClipping()Ljava/awt/Insets;
+.end method
+
+.method public abstract getPictureData()Lorg/apache/poi/sl/usermodel/PictureData;
+.end method

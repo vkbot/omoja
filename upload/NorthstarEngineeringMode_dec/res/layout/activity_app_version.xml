@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/black" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="horizontal" android:id="@id/title" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="30.0dp" android:layout_marginStart="40.0dp">
+        <com.mega.chery.widget.EasyTextView android:textSize="24.0sp" android:textColor="@color/white" android:id="@id/app_name" android:layout_width="0.0dp" android:layout_height="wrap_content" android:text="@string/app_info_name" android:layout_weight="3.0" app:keep_start="true" />
+        <com.mega.chery.widget.EasyTextView android:textSize="24.0sp" android:textColor="@color/white" android:id="@id/app_package_name" android:layout_width="0.0dp" android:layout_height="wrap_content" android:text="@string/app_package" android:layout_weight="4.0" android:layout_marginStart="20.0dp" app:keep_start="true" />
+        <com.mega.chery.widget.EasyTextView android:textSize="24.0sp" android:textColor="@color/white" android:id="@id/app_version_code" android:layout_width="0.0dp" android:layout_height="wrap_content" android:text="@string/app_versioncode" android:layout_weight="1.0" android:layout_marginStart="20.0dp" app:keep_start="true" />
+    </LinearLayout>
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/app_container" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="20.0dp" android:layout_marginStart="40.0dp" />
+</LinearLayout>

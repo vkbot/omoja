@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set android:ordering="together"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt">
+    <objectAnimator android:interpolator="@drawable/$$it_admin_control_device_block_apps_animation__16__0" android:duration="533" android:startOffset="0" android:propertyName="translateXY" android:pathData="M 204.071,141.641C 139.321,130.308 258.321,111.47399999999999 204.071,141.641" android:propertyXName="translateX" android:propertyYName="translateY" />
+    <objectAnimator android:interpolator="@drawable/$$it_admin_control_device_block_apps_animation__16__1" android:duration="1183" android:startOffset="533" android:propertyName="translateXY" android:pathData="M 204.071,141.641C 139.321,130.308 102.321,131.974 48.071,162.141" android:propertyXName="translateX" android:propertyYName="translateY" />
+    <objectAnimator android:interpolator="@drawable/$$it_admin_control_device_block_apps_animation__16__2" android:duration="2317" android:startOffset="1717" android:propertyName="translateXY" android:pathData="M 48.071,162.141C 47.994,162.184 48.071,162.141 48.071,162.141" android:propertyXName="translateX" android:propertyYName="translateY" />
+    <objectAnimator android:interpolator="@drawable/$$it_admin_control_device_block_apps_animation__16__3" android:duration="933" android:startOffset="4033" android:propertyName="translateXY" android:pathData="M 48.071,162.141C 48.071,162.141 105.25,186.25 167.571,162.391" android:propertyXName="translateX" android:propertyYName="translateY" />
+</set>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textSize="20.0sp" android:layout_gravity="center_horizontal" android:id="@id/cpu_usage" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="20.0dp" />
+    <TextView android:textSize="20.0sp" android:layout_gravity="center_horizontal" android:id="@id/disk_usage" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="20.0dp" />
+    <TextView android:textSize="20.0sp" android:layout_gravity="center_horizontal" android:id="@id/memory_usage" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="20.0dp" />
+    <TextView android:textSize="20.0sp" android:layout_gravity="center_horizontal" android:id="@id/release_info" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="20.0dp" />
+    <Button android:textSize="20.0sp" android:layout_gravity="center_horizontal" android:id="@id/adb_status" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="20.0dp" />
+    <Button android:textSize="20.0sp" android:layout_gravity="center_horizontal" android:id="@id/usb_debug" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="20.0dp" />
+    <TextView android:textSize="20.0sp" android:layout_gravity="center_horizontal" android:id="@id/selinux_status" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="20.0dp" />
+</LinearLayout>

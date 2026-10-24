@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:orientation="vertical" android:background="@color/black" android:paddingTop="15.0dp" android:paddingBottom="15.0dp" android:layout_width="match_parent" android:layout_height="match_parent" android:paddingStart="120.0dp" android:paddingEnd="120.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RadioGroup android:orientation="horizontal" android:background="@drawable/bg_radio_button" android:layout_width="783.0dp" android:layout_height="85.0dp" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent">
+        <RadioButton android:textSize="30.0sp" android:textColor="#ffffffff" android:gravity="center" android:id="@id/btnTBoxBase" android:background="@drawable/btn_radio_button" android:layout_width="261.0dp" android:layout_height="match_parent" android:checked="true" android:button="@null" android:text="@string/text_tbox_base_info" android:autoSizeMaxTextSize="30.0sp" style="@style/common_btn" />
+        <RadioButton android:textSize="30.0sp" android:textColor="#ffffffff" android:gravity="center" android:id="@id/btnTBoxExtra" android:background="@drawable/btn_radio_button" android:layout_width="261.0dp" android:layout_height="match_parent" android:button="@null" android:text="@string/text_tbox_extra_info" android:autoSizeMaxTextSize="30.0sp" style="@style/common_btn" />
+        <RadioButton android:textSize="30.0sp" android:textColor="#ffffffff" android:gravity="center" android:id="@id/btnTBoxLog" android:background="@drawable/btn_radio_button" android:layout_width="261.0dp" android:layout_height="match_parent" android:button="@null" android:text="@string/text_log_request" android:autoSizeMaxTextSize="30.0sp" style="@style/common_btn" />
+    </RadioGroup>
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="70.0dp" android:layout_marginStart="900.0dp" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent">
+        <TextView android:textSize="30.0sp" android:textColor="#ffffffff" android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="@string/text_tbox_status" />
+        <TextView android:textSize="30.0sp" android:textColor="#ffffffff" android:gravity="center_vertical" android:id="@id/tvTBoxStatus" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginStart="40.0dp" />
+    </LinearLayout>
+    <FrameLayout android:id="@id/fragment_container" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="110.0dp" />
+</androidx.constraintlayout.widget.ConstraintLayout>

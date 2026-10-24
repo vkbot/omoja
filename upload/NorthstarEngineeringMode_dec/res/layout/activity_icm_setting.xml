@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:id="@id/main" android:tag="layout/activity_icm_setting_0" android:background="@color/black" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <GridLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dp" android:columnCount="7" android:paddingStart="108.0dp" android:paddingEnd="108.0dp" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent">
+        <com.mega.engineeringmode.ui.custom.EasyButton android:id="@id/rang_data_reset" android:text="@string/icm_range_data_reset" app:disable="true" style="@style/item_btn" />
+    </GridLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

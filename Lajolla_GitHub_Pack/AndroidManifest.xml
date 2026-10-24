@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:compileSdkVersion="30" android:compileSdkVersionCodename="11" android:sharedUserId="android.uid.system" package="com.mega.update" platformBuildVersionCode="30" platformBuildVersionName="11">
+    <permission android:name="com.mega.update.permission.usb"/>
+    <uses-permission android:name="android.permission.INTERACT_ACROSS_PROFILES"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+    <uses-permission android:name="android.permission.SYSTEM_OVERLAY_WINDOW"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <application android:extractNativeLibs="false" android:name=".UpdateApplication" android:persistent="true" android:usesNonSdkApi="true">
+        <activity android:enabled="true" android:exported="true" android:launchMode="singleInstance" android:name="com.mega.update.usb.UsbDialog" android:permission="com.mega.update.permission.usb" android:process=":usb" android:singleUser="true" android:theme="@android:style/Theme.DeviceDefault.Dialog.Alert">
+            <intent-filter>
+                <action android:name="com.mega.update.usb.dialog"/>
+            </intent-filter>
+        </activity>
+        <service android:exported="false" android:name=".service.UpdateService" android:requestLegacyExternalStorage="true" android:singleUser="true"/>
+        <service android:exported="false" android:name=".peripheral.TboxService" android:process=":tbox" android:requestLegacyExternalStorage="true" android:singleUser="true"/>
+        <service android:exported="false" android:name=".usb.UsbService" android:process=":usb" android:requestLegacyExternalStorage="true" android:singleUser="true"/>
+    </application>
+</manifest>

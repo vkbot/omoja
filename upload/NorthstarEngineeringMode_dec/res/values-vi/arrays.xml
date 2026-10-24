@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="internal_upgrade">
+        <item>Nâng cấp MCU</item>
+        <item>Nâng cấp AVM tích hợp</item>
+        <item>Nâng cấp DSP</item>
+        <item>Nâng cấp âm thanh cảnh báo IPC</item>
+        <item>Nâng cấp miền IPC</item>
+        <item>Nâng cấp miền máy chủ</item>
+        <item>Nâng cấp tổng thể SOC</item>
+        <item>Nâng cấp toàn bộ gói DMC</item>
+    </string-array>
+    <string-array name="periphery_upgrade">
+        <item>Nâng cấp phần mềm MCU màn hình điều khiển trung tâm</item>
+        <item>Nâng cấp phần mềm cảm ứng màn hình điều khiển trung tâm</item>
+        <item>Nâng cấp MCU màn hình IPC</item>
+        <item>Nâng cấp phần mềm bảng điều khiển cảm ứng màn hình IPC</item>
+        <item>Nâng cấp TBOX</item>
+        <item>Nâng cấp APA</item>
+    </string-array>
+    <string-array name="tsp_test_devs">
+        <item>Môi trường phát hành</item>
+        <item>Môi trường phát triển</item>
+        <item>Môi trường kiểm tra trong nước</item>
+        <item>Môi trường kiểm tra ở nước ngoài</item>
+    </string-array>
+    <string-array name="version_info">
+        <item>Thông tin phiên bản của phần mềm trong DMC</item>
+        <item>Thông tin phiên bản của các bộ phận ngoại vi</item>
+        <item>Thông tin kho vận sản xuất DMC</item>
+        <item>Thông tin phiên bản phần cứng nội bộ DMC</item>
+    </string-array>
+</resources>

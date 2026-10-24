@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="internal_upgrade">
+        <item>Unowocześnienie MCU</item>
+        <item>Wbudowane unowocześnienie AVM</item>
+        <item>Unowocześnienie DSP</item>
+        <item>Unowocześnienie dźwięku alarmu IPC</item>
+        <item>Unowocześnienie domeny IPC</item>
+        <item>Unowocześnienie domeny hosta</item>
+        <item>Ogólne unowocześnienie SOC</item>
+        <item>Unowocześnienie całego pakietu DMC</item>
+    </string-array>
+    <string-array name="periphery_upgrade">
+        <item>Unowocześnienie oprogramowania MCU wyświetlacza konsoli środkowej</item>
+        <item>Unowocześnienie oprogramowania dotykowego wyświetlacza konsoli środkowej</item>
+        <item>Unowocześnienie oprogramowania MCU wyświetlacza IPC</item>
+        <item>Unowocześnienie oprogramowania panelu dotykowego wyświetlacza IPC</item>
+        <item>Unowocześnienie TBOX</item>
+        <item>Unowocześnienie APA</item>
+    </string-array>
+    <string-array name="tsp_test_devs">
+        <item>Środowisko wydania</item>
+        <item>Środowisko programistyczne</item>
+        <item>Krajowe środowisko testowe</item>
+        <item>Zagraniczne środowisko testowe</item>
+    </string-array>
+    <string-array name="version_info">
+        <item>Informacje o wersji oprogramowania w DMC</item>
+        <item>Informacje o wersji części peryferyjnych</item>
+        <item>Informacje o logistyce produkcji DMC</item>
+        <item>Informacje o wewnętrznej wersji sprzętu DMC</item>
+    </string-array>
+</resources>

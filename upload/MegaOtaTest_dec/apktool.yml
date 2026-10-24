@@ -1,0 +1,16 @@
+version: 3.0.3
+apkFileName: MegaOtaTest.apk
+usesFramework:
+  ids:
+  - 1
+sdkInfo:
+  minSdkVersion: 30
+  targetSdkVersion: 30
+versionInfo:
+  versionCode: 30
+  versionName: 11
+resourcesInfo:
+  packageId: 127
+doNotCompress:
+- arsc
+- dex

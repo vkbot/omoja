@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:background="@drawable/shape_bg_dialog" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/top_container" android:layout_width="720.0dp" android:layout_height="wrap_content" />
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/bottom_container" android:layout_width="720.0dp" android:layout_height="wrap_content" android:layout_marginBottom="50.0dp">
+        <TextView android:gravity="center" android:id="@id/tv_sure" android:background="@drawable/shape_bg_submit_btn" android:text="@string/main_encryption_confirm" style="@style/select_btn" />
+        <TextView android:gravity="center" android:id="@id/tv_cancel" android:background="@drawable/shape_bg_cancel_btn" android:text="@string/main_encryption_cancel" android:layout_marginStart="40.0dp" style="@style/select_btn" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,344 @@
+.class public interface abstract Lorg/openxmlformats/schemas/wordprocessingml/x2006/main/CTBorder;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+# interfaces
+.implements Lorg/apache/xmlbeans/XmlObject;
+
+
+# static fields
+.field public static final Factory:Lorg/apache/xmlbeans/impl/schema/b;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Lorg/apache/xmlbeans/impl/schema/b<",
+            "Lorg/openxmlformats/schemas/wordprocessingml/x2006/main/CTBorder;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field public static final type:Li5/c0;
+
+
+# direct methods
+.method static constructor <clinit>()V
+    .locals 3
+
+    new-instance v0, Lorg/apache/xmlbeans/impl/schema/b;
+
+    sget-object v1, Lorg/apache/poi/schemas/ooxml/system/ooxml/TypeSystemHolder;->typeSystem:Lorg/apache/poi/schemas/ooxml/system/ooxml/TypeSystemHolder;
+
+    const-string v2, "ctbordercdfctype"
+
+    invoke-direct {v0, v1, v2}, Lorg/apache/xmlbeans/impl/schema/c;-><init>(Li5/f0;Ljava/lang/String;)V
+
+    sput-object v0, Lorg/openxmlformats/schemas/wordprocessingml/x2006/main/CTBorder;->Factory:Lorg/apache/xmlbeans/impl/schema/b;
+
+    iget-object v0, v0, Lorg/apache/xmlbeans/impl/schema/c;->a:Li5/c0;
+
+    sput-object v0, Lorg/openxmlformats/schemas/wordprocessingml/x2006/main/CTBorder;->type:Li5/c0;
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public abstract synthetic changeType(Li5/c0;)Lorg/apache/xmlbeans/XmlObject;
+.end method
+
+.method public abstract synthetic compareTo(Ljava/lang/Object;)I
+.end method
+
+.method public abstract synthetic compareValue(Lorg/apache/xmlbeans/XmlObject;)I
+.end method
+
+.method public abstract synthetic copy()Lorg/apache/xmlbeans/XmlObject;
+.end method
+
+.method public abstract synthetic copy(Li5/z1;)Lorg/apache/xmlbeans/XmlObject;
+.end method
+
+.method public abstract synthetic documentProperties()Li5/t0;
+.end method
+
+.method public abstract synthetic dump()V
+.end method
+
+.method public abstract synthetic execQuery(Ljava/lang/String;)[Lorg/apache/xmlbeans/XmlObject;
+.end method
+
+.method public abstract synthetic execQuery(Ljava/lang/String;Li5/z1;)[Lorg/apache/xmlbeans/XmlObject;
+.end method
+
+.method public abstract getColor()Ljava/lang/Object;
+.end method
+
+.method public abstract synthetic getDomNode()Lorg/w3c/dom/Node;
+.end method
+
+.method public abstract getFrame()Ljava/lang/Object;
+.end method
+
+.method public abstract getShadow()Ljava/lang/Object;
+.end method
+
+.method public abstract getSpace()Ljava/math/BigInteger;
+.end method
+
+.method public abstract getSz()Ljava/math/BigInteger;
+.end method
+
+.method public abstract getThemeColor()Lorg/openxmlformats/schemas/wordprocessingml/x2006/main/STThemeColor$Enum;
+.end method
+
+.method public abstract getThemeShade()[B
+.end method
+
+.method public abstract getThemeTint()[B
+.end method
+
+.method public abstract getVal()Lorg/openxmlformats/schemas/wordprocessingml/x2006/main/STBorder$Enum;
+.end method
+
+.method public abstract synthetic isImmutable()Z
+.end method
+
+.method public abstract synthetic isNil()Z
+.end method
+
+.method public abstract isSetColor()Z
+.end method
+
+.method public abstract isSetFrame()Z
+.end method
+
+.method public abstract isSetShadow()Z
+.end method
+
+.method public abstract isSetSpace()Z
+.end method
+
+.method public abstract isSetSz()Z
+.end method
+
+.method public abstract isSetThemeColor()Z
+.end method
+
+.method public abstract isSetThemeShade()Z
+.end method
+
+.method public abstract isSetThemeTint()Z
+.end method
+
+.method public abstract synthetic monitor()Ljava/lang/Object;
+.end method
+
+.method public abstract synthetic newCursor()Li5/p0;
+.end method
+
+.method public abstract synthetic newDomNode()Lorg/w3c/dom/Node;
+.end method
+
+.method public abstract synthetic newDomNode(Li5/z1;)Lorg/w3c/dom/Node;
+.end method
+
+.method public abstract synthetic newInputStream()Ljava/io/InputStream;
+.end method
+
+.method public abstract synthetic newInputStream(Li5/z1;)Ljava/io/InputStream;
+.end method
+
+.method public abstract synthetic newReader()Ljava/io/Reader;
+.end method
+
+.method public abstract synthetic newReader(Li5/z1;)Ljava/io/Reader;
+.end method
+
+.method public abstract synthetic newXMLStreamReader()Ljavax/xml/stream/XMLStreamReader;
+.end method
+
+.method public abstract synthetic newXMLStreamReader(Li5/z1;)Ljavax/xml/stream/XMLStreamReader;
+.end method
+
+.method public abstract synthetic save(Ljava/io/File;)V
+.end method
+
+.method public abstract synthetic save(Ljava/io/File;Li5/z1;)V
+.end method
+
+.method public abstract synthetic save(Ljava/io/OutputStream;)V
+.end method
+
+.method public abstract synthetic save(Ljava/io/OutputStream;Li5/z1;)V
+.end method
+
+.method public abstract synthetic save(Ljava/io/Writer;)V
+.end method
+
+.method public abstract synthetic save(Ljava/io/Writer;Li5/z1;)V
+.end method
+
+.method public abstract synthetic save(Lorg/xml/sax/ContentHandler;Lorg/xml/sax/ext/LexicalHandler;)V
+.end method
+
+.method public abstract synthetic save(Lorg/xml/sax/ContentHandler;Lorg/xml/sax/ext/LexicalHandler;Li5/z1;)V
+.end method
+
+.method public abstract synthetic schemaType()Li5/c0;
+.end method
+
+.method public abstract synthetic selectAttribute(Ljava/lang/String;Ljava/lang/String;)Lorg/apache/xmlbeans/XmlObject;
+.end method
+
+.method public abstract synthetic selectAttribute(Ljavax/xml/namespace/QName;)Lorg/apache/xmlbeans/XmlObject;
+.end method
+
+.method public abstract synthetic selectAttributes(Li5/k;)[Lorg/apache/xmlbeans/XmlObject;
+.end method
+
+.method public abstract synthetic selectChildren(Li5/k;)[Lorg/apache/xmlbeans/XmlObject;
+.end method
+
+.method public abstract synthetic selectChildren(Ljava/lang/String;Ljava/lang/String;)[Lorg/apache/xmlbeans/XmlObject;
+.end method
+
+.method public abstract synthetic selectChildren(Ljavax/xml/namespace/QName;)[Lorg/apache/xmlbeans/XmlObject;
+.end method
+
+.method public abstract synthetic selectPath(Ljava/lang/String;)[Lorg/apache/xmlbeans/XmlObject;
+.end method
+
+.method public abstract synthetic selectPath(Ljava/lang/String;Li5/z1;)[Lorg/apache/xmlbeans/XmlObject;
+.end method
+
+.method public abstract synthetic set(Lorg/apache/xmlbeans/XmlObject;)Lorg/apache/xmlbeans/XmlObject;
+.end method
+
+.method public abstract setColor(Ljava/lang/Object;)V
+.end method
+
+.method public abstract setFrame(Ljava/lang/Object;)V
+.end method
+
+.method public abstract synthetic setNil()V
+.end method
+
+.method public abstract setShadow(Ljava/lang/Object;)V
+.end method
+
+.method public abstract setSpace(Ljava/math/BigInteger;)V
+.end method
+
+.method public abstract setSz(Ljava/math/BigInteger;)V
+.end method
+
+.method public abstract setThemeColor(Lorg/openxmlformats/schemas/wordprocessingml/x2006/main/STThemeColor$Enum;)V
+.end method
+
+.method public abstract setThemeShade([B)V
+.end method
+
+.method public abstract setThemeTint([B)V
+.end method
+
+.method public abstract setVal(Lorg/openxmlformats/schemas/wordprocessingml/x2006/main/STBorder$Enum;)V
+.end method
+
+.method public abstract synthetic substitute(Ljavax/xml/namespace/QName;Li5/c0;)Lorg/apache/xmlbeans/XmlObject;
+.end method
+
+.method public abstract unsetColor()V
+.end method
+
+.method public abstract unsetFrame()V
+.end method
+
+.method public abstract unsetShadow()V
+.end method
+
+.method public abstract unsetSpace()V
+.end method
+
+.method public abstract unsetSz()V
+.end method
+
+.method public abstract unsetThemeColor()V
+.end method
+
+.method public abstract unsetThemeShade()V
+.end method
+
+.method public abstract unsetThemeTint()V
+.end method
+
+.method public abstract synthetic validate()Z
+.end method
+
+.method public abstract synthetic validate(Li5/z1;)Z
+.end method
+
+.method public abstract synthetic valueEquals(Lorg/apache/xmlbeans/XmlObject;)Z
+.end method
+
+.method public abstract synthetic valueHashCode()I
+.end method
+
+.method public abstract xgetColor()Lorg/openxmlformats/schemas/wordprocessingml/x2006/main/STHexColor;
+.end method
+
+.method public abstract xgetFrame()Lorg/openxmlformats/schemas/officeDocument/x2006/sharedTypes/STOnOff;
+.end method
+
+.method public abstract xgetShadow()Lorg/openxmlformats/schemas/officeDocument/x2006/sharedTypes/STOnOff;
+.end method
+
+.method public abstract xgetSpace()Lorg/openxmlformats/schemas/wordprocessingml/x2006/main/STPointMeasure;
+.end method
+
+.method public abstract xgetSz()Lorg/openxmlformats/schemas/wordprocessingml/x2006/main/STEighthPointMeasure;
+.end method
+
+.method public abstract xgetThemeColor()Lorg/openxmlformats/schemas/wordprocessingml/x2006/main/STThemeColor;
+.end method
+
+.method public abstract xgetThemeShade()Lorg/openxmlformats/schemas/wordprocessingml/x2006/main/STUcharHexNumber;
+.end method
+
+.method public abstract xgetThemeTint()Lorg/openxmlformats/schemas/wordprocessingml/x2006/main/STUcharHexNumber;
+.end method
+
+.method public abstract xgetVal()Lorg/openxmlformats/schemas/wordprocessingml/x2006/main/STBorder;
+.end method
+
+.method public abstract synthetic xmlText()Ljava/lang/String;
+.end method
+
+.method public abstract synthetic xmlText(Li5/z1;)Ljava/lang/String;
+.end method
+
+.method public abstract xsetColor(Lorg/openxmlformats/schemas/wordprocessingml/x2006/main/STHexColor;)V
+.end method
+
+.method public abstract xsetFrame(Lorg/openxmlformats/schemas/officeDocument/x2006/sharedTypes/STOnOff;)V
+.end method
+
+.method public abstract xsetShadow(Lorg/openxmlformats/schemas/officeDocument/x2006/sharedTypes/STOnOff;)V
+.end method
+
+.method public abstract xsetSpace(Lorg/openxmlformats/schemas/wordprocessingml/x2006/main/STPointMeasure;)V
+.end method
+
+.method public abstract xsetSz(Lorg/openxmlformats/schemas/wordprocessingml/x2006/main/STEighthPointMeasure;)V
+.end method
+
+.method public abstract xsetThemeColor(Lorg/openxmlformats/schemas/wordprocessingml/x2006/main/STThemeColor;)V
+.end method
+
+.method public abstract xsetThemeShade(Lorg/openxmlformats/schemas/wordprocessingml/x2006/main/STUcharHexNumber;)V
+.end method
+
+.method public abstract xsetThemeTint(Lorg/openxmlformats/schemas/wordprocessingml/x2006/main/STUcharHexNumber;)V
+.end method
+
+.method public abstract xsetVal(Lorg/openxmlformats/schemas/wordprocessingml/x2006/main/STBorder;)V
+.end method

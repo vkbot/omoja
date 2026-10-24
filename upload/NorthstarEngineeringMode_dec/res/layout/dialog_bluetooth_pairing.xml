@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="380.0dp" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="24.0sp" android:textColor="#afb6bf" android:gravity="center_vertical" android:id="@id/pairing_caption" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/bluetooth_pairing_key_msg" />
+    <TextView android:textSize="48.0sp" android:textColor="#ffffff" android:gravity="center_vertical" android:layout_gravity="center_horizontal" android:id="@id/pairing_subhead" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="40.0dp" />
+</LinearLayout>

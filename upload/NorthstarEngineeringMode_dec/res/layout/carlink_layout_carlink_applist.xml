@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@color/hicar_main_bg" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/rl_hicar_app_list" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+        <androidx.recyclerview.widget.RecyclerView android:id="@id/rv_hicar_app_list" android:layout_width="match_parent" android:layout_height="@dimen/hicar_applist_height" android:overScrollMode="never" />
+        <com.mega.carlink.view.widget.CarLinkAppListIndicator android:layout_gravity="center" android:id="@id/hicar_app_indicator" android:layout_width="match_parent" android:layout_height="16.0dp" android:layout_marginTop="9.0dp" android:layout_below="@id/rv_hicar_app_list" />
+    </RelativeLayout>
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/ll_bluetooth_opening" android:visibility="visible" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="170.0dp">
+        <ImageView android:layout_width="64.0dp" android:layout_height="64.0dp" android:src="@drawable/hicar_ic_bluetooth" />
+        <TextView android:textSize="32.0sp" android:textColor="@color/font_main_hicar" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="33.0dp" android:text="@string/bluetooth_opening" />
+        <TextView android:textSize="27.0sp" android:textColor="@color/text_pin_code_title_hint" android:id="@id/carlink_bluetooth_prompt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="33.0dp" android:text="@string/carlink_bluetooth_needed" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/ll_hicar_connecting" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="170.0dp">
+        <RelativeLayout android:layout_gravity="center_horizontal" android:id="@id/rl_progress" android:layout_width="128.0dp" android:layout_height="128.0dp">
+            <ImageView android:layout_width="76.0dp" android:layout_height="77.0dp" android:src="@drawable/ic_phone" android:layout_centerInParent="true" />
+            <ImageView android:id="@id/iv_loading" android:visibility="visible" android:layout_width="128.0dp" android:layout_height="128.0dp" android:src="@drawable/loading_anim" android:layout_centerInParent="true" />
+        </RelativeLayout>
+        <TextView android:textSize="24.0sp" android:textColor="@color/font_main_hicar" android:layout_gravity="center_horizontal" android:id="@id/tv_connecting_progress" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="23.0dp" />
+        <TextView android:textSize="24.0sp" android:textColor="@color/font_main_hicar" android:layout_gravity="center_horizontal" android:id="@id/tv_connecting_notice" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="33.0dp" android:text="@string/connecting_device_notice_gc" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/ll_pin_code" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="40.0dp" android:layout_alignParentTop="true">
+        <TextView android:textSize="34.0sp" android:textColor="@color/font_main_hicar" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/carlink_text_pin_code_title" android:fontFamily="sans-serif-medium" />
+        <TextView android:textSize="24.0sp" android:textColor="@color/text_pin_code_title_hint" android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="13.0dp" android:text="@string/text_pin_code_title_hint" />
+        <TextView android:textSize="24.0sp" android:textColor="@color/font_main_hicar" android:gravity="center" android:layout_width="@dimen/dimen_1200dp" android:layout_height="wrap_content" android:layout_marginTop="101.0dp" android:text="@string/carlink_text_pin_code_hint" android:fontFamily="sans-serif-medium" />
+        <LinearLayout android:gravity="center_horizontal" android:orientation="horizontal" android:id="@id/ll_pin_code_input" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="45.0dp">
+            <TextView android:id="@id/hicar_tv_number1" style="@style/Hicar_Pin_Item" />
+            <TextView android:id="@id/hicar_tv_number2" android:layout_marginStart="20.0dp" style="@style/Hicar_Pin_Item" />
+            <TextView android:id="@id/hicar_tv_number3" android:layout_marginStart="20.0dp" style="@style/Hicar_Pin_Item" />
+            <TextView android:id="@id/hicar_tv_number4" android:layout_marginStart="20.0dp" style="@style/Hicar_Pin_Item" />
+            <TextView android:id="@id/hicar_tv_number5" android:layout_marginStart="20.0dp" style="@style/Hicar_Pin_Item" />
+            <TextView android:id="@id/hicar_tv_number6" android:layout_marginStart="20.0dp" style="@style/Hicar_Pin_Item" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

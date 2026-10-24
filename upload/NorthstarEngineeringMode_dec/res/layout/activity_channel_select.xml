@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:tag="layout/activity_channel_select_0" android:background="@color/black" android:padding="10.0dp" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:id="@id/tv_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/current_country" style="@style/common_text" />
+    <TextView android:id="@id/tv_country" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="20.0dp" app:layout_constraintBottom_toBottomOf="@id/tv_title" app:layout_constraintStart_toEndOf="@id/tv_title" app:layout_constraintTop_toTopOf="@id/tv_title" style="@style/common_text" />
+    <TextView android:id="@id/tv_channel" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dp" android:text="@string/channel" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/tv_title" style="@style/common_text" />
+    <androidx.appcompat.widget.AppCompatSpinner android:id="@id/sp_channel" android:background="@color/white" android:layout_width="@dimen/dimen_100dp" android:layout_height="58.0dp" android:layout_marginStart="20.0dp" app:layout_constraintBottom_toBottomOf="@id/tv_channel" app:layout_constraintStart_toEndOf="@id/tv_channel" app:layout_constraintTop_toTopOf="@id/tv_channel" />
+</androidx.constraintlayout.widget.ConstraintLayout>

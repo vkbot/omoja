@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:background="@color/white_50" android:padding="10.0dp" android:layout_width="1000.0dp" android:layout_height="750.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/rv" android:layout_width="match_parent" android:layout_height="400.0dp" />
+    <TextView android:id="@id/tv_result" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="10.0dp" />
+    <Button android:gravity="center" android:id="@id/tv_cbf" android:visibility="gone" android:layout_width="match_parent" android:layout_height="60.0dp" android:text="CBF" />
+    <Button android:gravity="center" android:id="@id/tv_tar" android:visibility="gone" android:layout_width="match_parent" android:layout_height="60.0dp" android:layout_marginTop="20.0dp" android:text="TAR" />
+    <Button android:gravity="center" android:id="@id/tv_cancel" android:layout_width="match_parent" android:layout_height="60.0dp" android:layout_marginTop="20.0dp" android:text="CANCEL" />
+</LinearLayout>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <Button android:textSize="24.0sp" android:textColor="#ffffffff" android:gravity="center" android:id="@id/btnGetLog" android:background="@drawable/reset_confirm_button" android:visibility="gone" android:layout_width="261.0dp" android:layout_height="70.0dp" android:text="@string/text_log_request" />
+    <TextView android:textSize="24.0sp" android:textColor="#77ffffff" android:gravity="center_vertical" android:id="@id/tvTBoxLog" android:background="#77ffffff" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" />
+    <Button android:textSize="24.0sp" android:textColor="#ffffffff" android:gravity="center" android:id="@id/btnSaveLog" android:background="@drawable/btn_tbox" android:layout_width="261.0dp" android:layout_height="70.0dp" android:layout_marginTop="20.0dp" android:text="@string/text_log_request" />
+    <TextView android:textSize="24.0sp" android:textColor="#ffffffff" android:gravity="center_vertical" android:id="@id/tvTBoxLogState" android:background="#77ffffff" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="40.0dp" android:minHeight="96.0dp" />
+</LinearLayout>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="internal_upgrade">
+        <item>Mise à niveau de la MCU</item>
+        <item>"Mise à niveau de l'AVM intégré"</item>
+        <item>Mise à niveau du DSP</item>
+        <item>"Mise à niveau du son d'alarme de l'IPC"</item>
+        <item>Mise à niveau du domaine IPC</item>
+        <item>Mise à niveau du domaine hôte</item>
+        <item>Mise à niveau globale du SOC</item>
+        <item>"Mise à niveau de tout l'ensemble du DMC"</item>
+    </string-array>
+    <string-array name="periphery_upgrade">
+        <item>"Mise à niveau du logiciel MCU de l'affichage de la console centrale"</item>
+        <item>"Mise à niveau du logiciel des touches de l'affichage de la console centrale"</item>
+        <item>"Mise à niveau de la MCU d'affichage de l'IPC"</item>
+        <item>"Mise à niveau du logiciel du panneau tactile d'affichage de l'IPC"</item>
+        <item>Mise à niveau de la TBOX</item>
+        <item>"Mise à niveau de l'APA"</item>
+    </string-array>
+    <string-array name="tsp_test_devs">
+        <item>"Environnement d'émission"</item>
+        <item>Environnement de développement</item>
+        <item>Environnement de test national</item>
+        <item>"Environnement de test à l'étranger"</item>
+    </string-array>
+    <string-array name="version_info">
+        <item>Informations sur la version du logiciel dans le DMC</item>
+        <item>Informations sur la version des pièces périphériques</item>
+        <item>Informations sur la logistique de production du DMC</item>
+        <item>Informations sur la version du matériel interne du DMC</item>
+    </string-array>
+</resources>

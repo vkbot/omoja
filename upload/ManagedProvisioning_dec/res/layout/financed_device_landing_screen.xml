@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.setupdesign.GlifLayout android:id="@id/setup_wizard_layout" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="?sudMarginSides" android:layout_marginRight="?sudMarginSides">
+        <TextView android:gravity="center_horizontal" android:id="@id/creditor_capabilities_header" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/spacer_8" style="@style/Provisioning2Theme.Text.Secondary.SmallerLineSpacing" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/spacer_36">
+            <ImageView android:layout_width="@dimen/spacer_24" android:layout_height="@dimen/spacer_24" android:src="@drawable/ic_install_app_good" />
+            <TextView android:id="@id/install_creditor_app" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/install_creditor_app_description" android:layout_marginStart="@dimen/spacer_16" style="@style/Provisioning2Theme.Text.Secondary.SmallerLineSpacing" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/spacer_12">
+            <ImageView android:layout_width="@dimen/spacer_24" android:layout_height="@dimen/spacer_24" android:src="@drawable/ic_lock" />
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/lock_device_description" android:layout_marginStart="@dimen/spacer_16" style="@style/Provisioning2Theme.Text.Secondary.SmallerLineSpacing" />
+        </LinearLayout>
+    </LinearLayout>
+</com.google.android.setupdesign.GlifLayout>

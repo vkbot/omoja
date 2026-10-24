@@ -1,0 +1,4 @@
+version: 3.0.3
+apkFileName: mega.services.core.jar
+sdkInfo:
+  minSdkVersion: 29

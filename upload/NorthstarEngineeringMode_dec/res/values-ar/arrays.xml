@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="internal_upgrade">
+        <item>ترقية وحدة MCU</item>
+        <item>ترقية نظام AVM المدمج</item>
+        <item>ترقية لوحة DSP</item>
+        <item>ترقية صوت جهاز الإنذار لوحدة IPC</item>
+        <item>ترقية مجال وحدة IPC</item>
+        <item>ترقية مجال المضيف</item>
+        <item>ترقية حالة SOC الشاملة</item>
+        <item>ترقية حزمة DMC الكاملة</item>
+    </string-array>
+    <string-array name="periphery_upgrade">
+        <item>ترقية برنامج وحدة MCU الخاصة بشاشة الكونسول المركزي</item>
+        <item>ترقية برنامج الشاشة اللمسية للكونسول المركزي</item>
+        <item>ترقية وحدة MCU الخاصة بشاشة وحدة IPC</item>
+        <item>ترقية برنامج اللوحة اللمسية الخاصة بشاشة وحدة IPC</item>
+        <item>ترقية صندوق TBox</item>
+        <item>ترقية المساعِد APA</item>
+    </string-array>
+    <string-array name="tsp_test_devs">
+        <item>بيئة الإصدار</item>
+        <item>بيئة التطوير</item>
+        <item>بيئة الاختبار المحلية</item>
+        <item>بيئة الاختبار في الخارج</item>
+    </string-array>
+    <string-array name="version_info">
+        <item>معلومات إصدار البرنامج في وحدة DMC</item>
+        <item>معلومات إصدار القطع الطرفية</item>
+        <item>المعلومات اللوجستية الخاصة بإنتاج وحدة DMC</item>
+        <item>معلومات إصدار الأجهزة الداخلية في وحدة DMC</item>
+    </string-array>
+</resources>

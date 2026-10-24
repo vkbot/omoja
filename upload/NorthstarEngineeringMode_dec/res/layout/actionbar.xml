@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center_vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:minHeight="70.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.mega.chery.widget.EasyImageView android:layout_gravity="start|center" android:id="@id/actionbar_btn_back" android:background="@drawable/btn_back" android:layout_width="60.0dp" android:layout_height="60.0dp" android:layout_centerVertical="true" android:autoMirrored="true" />
+    <TextView android:textSize="@dimen/text_size_title" android:textColor="@color/white" android:gravity="center_vertical" android:id="@id/actionbar_title" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="@string/app_name_engineering" android:layout_marginEnd="@dimen/margin16" android:layout_toEndOf="@id/actionbar_btn_back" />
+    <com.mega.engineeringmode.utils.TextClock android:textSize="@dimen/text_size_title" android:textColor="@color/white" android:gravity="end|center" android:id="@id/actionbar_time" android:layout_width="wrap_content" android:layout_height="match_parent" android:minWidth="500.0dp" android:maxLines="1" android:layout_marginEnd="60.0dp" android:layout_alignParentEnd="true" android:format24Hour="yyyy/MM/dd HH:mm:ss" />
+    <ImageView android:id="@id/actionbar_btn_screencap" android:background="@drawable/btn_screencap" android:visibility="gone" android:layout_width="70.0dp" android:layout_height="70.0dp" android:layout_alignParentEnd="true" />
+</RelativeLayout>

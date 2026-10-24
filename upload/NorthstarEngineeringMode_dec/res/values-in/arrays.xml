@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="internal_upgrade">
+        <item>Upgrade MCU</item>
+        <item>Upgrade AVM bawaan</item>
+        <item>Upgrade DSP</item>
+        <item>Upgrade suara alarm IPC</item>
+        <item>Upgrade domain IPC</item>
+        <item>Upgrade domain host</item>
+        <item>Upgrade keseluruhan SOC</item>
+        <item>Upgrade seluruh paket DMC</item>
+    </string-array>
+    <string-array name="periphery_upgrade">
+        <item>Upgrade perangkat lunak MCU layar konsol tengah</item>
+        <item>Upgrade perangkat lunak sentuh layar konsol tengah</item>
+        <item>Upgrade MCU layar IPC</item>
+        <item>Upgrade perangkat lunak panel sentuh layar IPC</item>
+        <item>Upgrade TBOX</item>
+        <item>Upgrade APA</item>
+    </string-array>
+    <string-array name="tsp_test_devs">
+        <item>Lingkungan masalah</item>
+        <item>Lingkungan pengembangan</item>
+        <item>Lingkungan pengujian dalam negeri</item>
+        <item>Lingkungan pengujian luar negeri</item>
+    </string-array>
+    <string-array name="version_info">
+        <item>Info versi perangkat lunak di DMC</item>
+        <item>Info versi komponen periferal</item>
+        <item>Info logistik produksi DMC</item>
+        <item>Info versi perangkat keras internal DMC</item>
+    </string-array>
+</resources>

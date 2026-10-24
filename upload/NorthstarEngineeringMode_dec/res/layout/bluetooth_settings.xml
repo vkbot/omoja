@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView android:orientation="vertical" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+        <FrameLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+            <fragment android:name="com.mega.carsettings.bluetooth.BluetoothMasterSettingsFragment" android:tag="bluetooth_master" android:layout_width="match_parent" android:layout_height="wrap_content" />
+        </FrameLayout>
+        <LinearLayout android:gravity="center_vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:id="@id/bluetooth_paired_title" android:text="@string/bluetooth_preference_paired_devices" style="@style/PreferenceCategoryTitleStyle" />
+        </LinearLayout>
+        <FrameLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+            <fragment android:name="com.mega.carsettings.bluetooth.BluetoothPairedDeviceListFragment" android:tag="bluetooth_paired_list" android:layout_width="match_parent" android:layout_height="wrap_content" />
+        </FrameLayout>
+        <LinearLayout android:gravity="center_vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:id="@id/bluetooth_available_title" android:text="@string/bluetooth_preference_found_devices" style="@style/PreferenceCategoryTitleStyle" />
+            <ProgressBar android:layout_gravity="center_vertical" android:id="@id/progress_loading" android:visibility="gone" android:layout_width="32.0dp" android:layout_height="32.0dp" android:layout_marginLeft="20.0dp" android:indeterminateDuration="1000" />
+        </LinearLayout>
+        <FrameLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+            <fragment android:name="com.mega.carsettings.bluetooth.BluetoothAvailableDeviceListFragment" android:tag="bluetooth_available_list" android:layout_width="match_parent" android:layout_height="wrap_content" />
+        </FrameLayout>
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

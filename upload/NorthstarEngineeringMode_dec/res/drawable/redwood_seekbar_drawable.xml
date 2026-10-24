@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:gravity="center_vertical" android:height="6.0dp">
+        <shape android:shape="rectangle">
+            <solid android:color="@color/no_thumb_seekbar_bg" />
+            <corners android:radius="10.0dp" />
+        </shape>
+    </item>
+    <item android:gravity="center_vertical" android:id="@android:id/progress">
+        <scale android:scaleWidth="100%">
+            <shape android:shape="rectangle">
+                <solid android:color="@color/no_thumb_seekbar_seek" />
+                <corners android:radius="10.0dp" />
+            </shape>
+        </scale>
+    </item>
+</layer-list>

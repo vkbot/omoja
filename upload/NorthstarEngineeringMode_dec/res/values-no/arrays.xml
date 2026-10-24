@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="internal_upgrade">
+        <item>MCU upgrade</item>
+        <item>Built-in AVM upgrade</item>
+        <item>DSP upgrade</item>
+        <item>IPC alarm sound upgrade</item>
+        <item>IPC domain upgrade</item>
+        <item>Host domain upgrade</item>
+        <item>SOC overall upgrade</item>
+        <item>DMC whole package upgrade</item>
+    </string-array>
+    <string-array name="periphery_upgrade">
+        <item>Centre console display MCU software upgrade</item>
+        <item>Centre console display touch software upgrade</item>
+        <item>IPC display MCU upgrade</item>
+        <item>IPC display touch panel software upgrade</item>
+        <item>TBOX upgrade</item>
+        <item>APA upgrade</item>
+    </string-array>
+    <string-array name="tsp_test_devs">
+        <item>Issue environment</item>
+        <item>Development environment</item>
+        <item>Domestic test environment</item>
+        <item>Overseas test environment</item>
+    </string-array>
+    <string-array name="version_info">
+        <item>Version info of software in DMC</item>
+        <item>Version info of peripheral parts</item>
+        <item>DMC production logistics info</item>
+        <item>DMC internal hardware version info</item>
+    </string-array>
+</resources>

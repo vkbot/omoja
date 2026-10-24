@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/black" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:layout_width="match_parent" android:layout_height="60.0dp" android:layout_marginTop="40.0dp" android:layout_marginStart="120.0dp">
+        <TextView android:textSize="32.0sp" android:textColor="@color/white" android:layout_width="200.0dp" android:layout_height="wrap_content" android:text="@string/log_dmc" style="@style/common_btn" />
+        <com.mega.engineeringmode.ui.MegaSwitch android:id="@id/switch_log_dmc" android:scaleType="centerCrop" android:layout_marginStart="350.0dp" style="@style/switch_custom" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dp" android:layout_marginStart="120.0dp">
+        <TextView android:textSize="@dimen/text_size_content" android:textColor="@color/white" android:layout_width="200.0dp" android:layout_height="wrap_content" android:text="@string/log_qnx" style="@style/common_btn" />
+        <RadioGroup android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/radiogroup_log_level_qnx" android:background="@drawable/shape_bg_level" android:layout_width="1140.0dp" android:layout_height="72.0dp" android:layout_marginStart="40.0dp">
+            <RadioButton android:textSize="@dimen/text_size_18" android:textColor="@color/white" android:id="@id/radioBtn_qnx_level_debug2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/log_qnx_level_debug2" android:layout_marginStart="20.0dp" />
+            <RadioButton android:textSize="@dimen/text_size_18" android:textColor="@color/white" android:id="@id/radioBtn_qnx_level_debug" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/log_level_debug" android:layout_marginStart="20.0dp" />
+            <RadioButton android:textSize="@dimen/text_size_18" android:textColor="@color/white" android:id="@id/radioBtn_qnx_level_info" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/log_level_info" android:layout_marginStart="20.0dp" />
+            <RadioButton android:textSize="@dimen/text_size_18" android:textColor="@color/white" android:id="@id/radioBtn_qnx_level_notice" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/log_qnx_level_notice" android:layout_marginStart="20.0dp" />
+            <RadioButton android:textSize="@dimen/text_size_18" android:textColor="@color/white" android:id="@id/radioBtn_qnx_level_warn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/log_level_warn" android:layout_marginStart="20.0dp" />
+            <RadioButton android:textSize="@dimen/text_size_18" android:textColor="@color/white" android:id="@id/radioBtn_qnx_level_error" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/log_level_error" android:layout_marginStart="20.0dp" />
+            <RadioButton android:textSize="@dimen/text_size_18" android:textColor="@color/white" android:id="@id/radioBtn_qnx_level_critical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/log_qnx_level_critical" android:layout_marginStart="20.0dp" />
+        </RadioGroup>
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="40.0dp" android:layout_marginStart="120.0dp">
+        <TextView android:textSize="32.0sp" android:textColor="@color/white" android:layout_width="200.0dp" android:layout_height="wrap_content" android:text="@string/log_android" style="@style/common_btn" />
+        <RadioGroup android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/radiogroup_log_level_android" android:background="@drawable/shape_bg_level" android:layout_width="1140.0dp" android:layout_height="72.0dp" android:layout_marginStart="40.0dp">
+            <RadioButton android:textSize="@dimen/text_size_18" android:textColor="@color/white" android:id="@id/radioBtn_android_level_verbose" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/log_android_level_verbose" android:layout_marginStart="20.0dp" />
+            <RadioButton android:textSize="@dimen/text_size_18" android:textColor="@color/white" android:id="@id/radioBtn_android_level_debug" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/log_level_debug" android:layout_marginStart="20.0dp" />
+            <RadioButton android:textSize="@dimen/text_size_18" android:textColor="@color/white" android:id="@id/radioBtn_android_level_info" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/log_level_info" android:layout_marginStart="20.0dp" />
+            <RadioButton android:textSize="@dimen/text_size_18" android:textColor="@color/white" android:id="@id/radioBtn_android_level_warn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/log_level_warn" android:layout_marginStart="20.0dp" />
+            <RadioButton android:textSize="@dimen/text_size_18" android:textColor="@color/white" android:id="@id/radioBtn_android_level_error" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/log_level_error" android:layout_marginStart="20.0dp" />
+        </RadioGroup>
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:layout_width="match_parent" android:layout_height="60.0dp" android:layout_marginTop="40.0dp" android:layout_marginStart="120.0dp">
+        <TextView android:textSize="32.0sp" android:textColor="@color/white" android:layout_width="200.0dp" android:layout_height="wrap_content" android:text="@string/log_bury_point" style="@style/common_btn" />
+        <com.mega.engineeringmode.ui.MegaSwitch android:id="@id/switch_bury_point" android:layout_marginStart="350.0dp" style="@style/switch_custom" />
+    </LinearLayout>
+</LinearLayout>

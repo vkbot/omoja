@@ -1,0 +1,266 @@
+.class public interface abstract Lorg/openxmlformats/schemas/drawingml/x2006/main/CTTextField;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+# interfaces
+.implements Lorg/apache/xmlbeans/XmlObject;
+
+
+# static fields
+.field public static final Factory:Lorg/apache/xmlbeans/impl/schema/b;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Lorg/apache/xmlbeans/impl/schema/b<",
+            "Lorg/openxmlformats/schemas/drawingml/x2006/main/CTTextField;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field public static final type:Li5/c0;
+
+
+# direct methods
+.method static constructor <clinit>()V
+    .locals 3
+
+    new-instance v0, Lorg/apache/xmlbeans/impl/schema/b;
+
+    sget-object v1, Lorg/apache/poi/schemas/ooxml/system/ooxml/TypeSystemHolder;->typeSystem:Lorg/apache/poi/schemas/ooxml/system/ooxml/TypeSystemHolder;
+
+    const-string v2, "cttextfield187etype"
+
+    invoke-direct {v0, v1, v2}, Lorg/apache/xmlbeans/impl/schema/c;-><init>(Li5/f0;Ljava/lang/String;)V
+
+    sput-object v0, Lorg/openxmlformats/schemas/drawingml/x2006/main/CTTextField;->Factory:Lorg/apache/xmlbeans/impl/schema/b;
+
+    iget-object v0, v0, Lorg/apache/xmlbeans/impl/schema/c;->a:Li5/c0;
+
+    sput-object v0, Lorg/openxmlformats/schemas/drawingml/x2006/main/CTTextField;->type:Li5/c0;
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public abstract addNewPPr()Lorg/openxmlformats/schemas/drawingml/x2006/main/CTTextParagraphProperties;
+.end method
+
+.method public abstract addNewRPr()Lorg/openxmlformats/schemas/drawingml/x2006/main/CTTextCharacterProperties;
+.end method
+
+.method public abstract synthetic changeType(Li5/c0;)Lorg/apache/xmlbeans/XmlObject;
+.end method
+
+.method public abstract synthetic compareTo(Ljava/lang/Object;)I
+.end method
+
+.method public abstract synthetic compareValue(Lorg/apache/xmlbeans/XmlObject;)I
+.end method
+
+.method public abstract synthetic copy()Lorg/apache/xmlbeans/XmlObject;
+.end method
+
+.method public abstract synthetic copy(Li5/z1;)Lorg/apache/xmlbeans/XmlObject;
+.end method
+
+.method public abstract synthetic documentProperties()Li5/t0;
+.end method
+
+.method public abstract synthetic dump()V
+.end method
+
+.method public abstract synthetic execQuery(Ljava/lang/String;)[Lorg/apache/xmlbeans/XmlObject;
+.end method
+
+.method public abstract synthetic execQuery(Ljava/lang/String;Li5/z1;)[Lorg/apache/xmlbeans/XmlObject;
+.end method
+
+.method public abstract synthetic getDomNode()Lorg/w3c/dom/Node;
+.end method
+
+.method public abstract getId()Ljava/lang/String;
+.end method
+
+.method public abstract getPPr()Lorg/openxmlformats/schemas/drawingml/x2006/main/CTTextParagraphProperties;
+.end method
+
+.method public abstract getRPr()Lorg/openxmlformats/schemas/drawingml/x2006/main/CTTextCharacterProperties;
+.end method
+
+.method public abstract getT()Ljava/lang/String;
+.end method
+
+.method public abstract getType()Ljava/lang/String;
+.end method
+
+.method public abstract synthetic isImmutable()Z
+.end method
+
+.method public abstract synthetic isNil()Z
+.end method
+
+.method public abstract isSetPPr()Z
+.end method
+
+.method public abstract isSetRPr()Z
+.end method
+
+.method public abstract isSetT()Z
+.end method
+
+.method public abstract isSetType()Z
+.end method
+
+.method public abstract synthetic monitor()Ljava/lang/Object;
+.end method
+
+.method public abstract synthetic newCursor()Li5/p0;
+.end method
+
+.method public abstract synthetic newDomNode()Lorg/w3c/dom/Node;
+.end method
+
+.method public abstract synthetic newDomNode(Li5/z1;)Lorg/w3c/dom/Node;
+.end method
+
+.method public abstract synthetic newInputStream()Ljava/io/InputStream;
+.end method
+
+.method public abstract synthetic newInputStream(Li5/z1;)Ljava/io/InputStream;
+.end method
+
+.method public abstract synthetic newReader()Ljava/io/Reader;
+.end method
+
+.method public abstract synthetic newReader(Li5/z1;)Ljava/io/Reader;
+.end method
+
+.method public abstract synthetic newXMLStreamReader()Ljavax/xml/stream/XMLStreamReader;
+.end method
+
+.method public abstract synthetic newXMLStreamReader(Li5/z1;)Ljavax/xml/stream/XMLStreamReader;
+.end method
+
+.method public abstract synthetic save(Ljava/io/File;)V
+.end method
+
+.method public abstract synthetic save(Ljava/io/File;Li5/z1;)V
+.end method
+
+.method public abstract synthetic save(Ljava/io/OutputStream;)V
+.end method
+
+.method public abstract synthetic save(Ljava/io/OutputStream;Li5/z1;)V
+.end method
+
+.method public abstract synthetic save(Ljava/io/Writer;)V
+.end method
+
+.method public abstract synthetic save(Ljava/io/Writer;Li5/z1;)V
+.end method
+
+.method public abstract synthetic save(Lorg/xml/sax/ContentHandler;Lorg/xml/sax/ext/LexicalHandler;)V
+.end method
+
+.method public abstract synthetic save(Lorg/xml/sax/ContentHandler;Lorg/xml/sax/ext/LexicalHandler;Li5/z1;)V
+.end method
+
+.method public abstract synthetic schemaType()Li5/c0;
+.end method
+
+.method public abstract synthetic selectAttribute(Ljava/lang/String;Ljava/lang/String;)Lorg/apache/xmlbeans/XmlObject;
+.end method
+
+.method public abstract synthetic selectAttribute(Ljavax/xml/namespace/QName;)Lorg/apache/xmlbeans/XmlObject;
+.end method
+
+.method public abstract synthetic selectAttributes(Li5/k;)[Lorg/apache/xmlbeans/XmlObject;
+.end method
+
+.method public abstract synthetic selectChildren(Li5/k;)[Lorg/apache/xmlbeans/XmlObject;
+.end method
+
+.method public abstract synthetic selectChildren(Ljava/lang/String;Ljava/lang/String;)[Lorg/apache/xmlbeans/XmlObject;
+.end method
+
+.method public abstract synthetic selectChildren(Ljavax/xml/namespace/QName;)[Lorg/apache/xmlbeans/XmlObject;
+.end method
+
+.method public abstract synthetic selectPath(Ljava/lang/String;)[Lorg/apache/xmlbeans/XmlObject;
+.end method
+
+.method public abstract synthetic selectPath(Ljava/lang/String;Li5/z1;)[Lorg/apache/xmlbeans/XmlObject;
+.end method
+
+.method public abstract synthetic set(Lorg/apache/xmlbeans/XmlObject;)Lorg/apache/xmlbeans/XmlObject;
+.end method
+
+.method public abstract setId(Ljava/lang/String;)V
+.end method
+
+.method public abstract synthetic setNil()V
+.end method
+
+.method public abstract setPPr(Lorg/openxmlformats/schemas/drawingml/x2006/main/CTTextParagraphProperties;)V
+.end method
+
+.method public abstract setRPr(Lorg/openxmlformats/schemas/drawingml/x2006/main/CTTextCharacterProperties;)V
+.end method
+
+.method public abstract setT(Ljava/lang/String;)V
+.end method
+
+.method public abstract setType(Ljava/lang/String;)V
+.end method
+
+.method public abstract synthetic substitute(Ljavax/xml/namespace/QName;Li5/c0;)Lorg/apache/xmlbeans/XmlObject;
+.end method
+
+.method public abstract unsetPPr()V
+.end method
+
+.method public abstract unsetRPr()V
+.end method
+
+.method public abstract unsetT()V
+.end method
+
+.method public abstract unsetType()V
+.end method
+
+.method public abstract synthetic validate()Z
+.end method
+
+.method public abstract synthetic validate(Li5/z1;)Z
+.end method
+
+.method public abstract synthetic valueEquals(Lorg/apache/xmlbeans/XmlObject;)Z
+.end method
+
+.method public abstract synthetic valueHashCode()I
+.end method
+
+.method public abstract xgetId()Lorg/openxmlformats/schemas/officeDocument/x2006/sharedTypes/STGuid;
+.end method
+
+.method public abstract xgetT()Li5/g2;
+.end method
+
+.method public abstract xgetType()Li5/g2;
+.end method
+
+.method public abstract synthetic xmlText()Ljava/lang/String;
+.end method
+
+.method public abstract synthetic xmlText(Li5/z1;)Ljava/lang/String;
+.end method
+
+.method public abstract xsetId(Lorg/openxmlformats/schemas/officeDocument/x2006/sharedTypes/STGuid;)V
+.end method
+
+.method public abstract xsetT(Li5/g2;)V
+.end method
+
+.method public abstract xsetType(Li5/g2;)V
+.end method

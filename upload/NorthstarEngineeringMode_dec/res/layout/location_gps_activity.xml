@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/black" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center_vertical" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <Button android:id="@id/btn_report_bd" android:text="@string/report_bd" android:layout_marginStart="50.0dp" style="@style/item_btn_small" />
+            <TextView android:id="@id/tv_report_bd_suc" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/report_bd_success" android:layout_marginStart="20.0dp" style="@style/content_text" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <Button android:id="@id/btn_report_gl" android:text="@string/report_gl" android:layout_marginStart="50.0dp" style="@style/item_btn_small" />
+            <TextView android:id="@id/tv_report_gl_suc" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/report_gl_success" android:layout_marginStart="20.0dp" style="@style/content_text" />
+        </LinearLayout>
+    </LinearLayout>
+    <ScrollView android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout android:gravity="center_vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <Button android:id="@id/btn_gps_status" android:visibility="gone" android:text="@string/GpsStatus" android:layout_marginStart="50.0dp" style="@style/item_btn_small" />
+                <Button android:id="@id/btn_gnss" android:visibility="gone" android:text="@string/GnssMeasurements" android:layout_marginStart="50.0dp" style="@style/item_btn_small" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center_vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:id="@id/tv_nmea" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="20.0dp" style="@style/common_text" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center_vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:id="@id/tv_satellite" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="20.0dp" style="@style/common_text" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

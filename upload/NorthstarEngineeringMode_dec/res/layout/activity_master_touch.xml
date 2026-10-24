@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.mega.engineeringmode.function.screen.PaintView android:id="@id/paint_view" android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <Button android:textSize="24.0sp" android:textColor="@color/white" android:id="@id/exit_btn" android:background="@drawable/icon_btn_dark_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="40.0dp" android:text="@string/exit" android:layout_alignParentTop="true" android:layout_marginStart="40.0dp" android:layout_alignParentStart="true" />
+    <Button android:textSize="24.0sp" android:textColor="@color/white" android:id="@id/reset_btn" android:background="@drawable/icon_btn_dark_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="40.0dp" android:text="@string/reset_btn" android:layout_alignParentTop="true" android:layout_marginEnd="40.0dp" android:layout_alignParentEnd="true" />
+</RelativeLayout>

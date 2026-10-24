@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set android:ordering="together"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt">
+    <objectAnimator android:interpolator="@drawable/$$not_private_animation__12__0" android:duration="1500" android:startOffset="0" android:valueFrom="0.53" android:valueTo="0.77" android:valueType="floatType" android:propertyName="trimPathEnd" />
+    <objectAnimator android:interpolator="@drawable/$$not_private_animation__12__1" android:duration="1483" android:startOffset="1500" android:valueFrom="0.77" android:valueTo="0.53" android:valueType="floatType" android:propertyName="trimPathEnd" />
+</set>

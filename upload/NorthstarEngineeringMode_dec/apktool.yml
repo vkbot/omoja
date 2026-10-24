@@ -1,0 +1,20 @@
+version: 3.0.3
+apkFileName: NorthstarEngineeringMode.apk
+usesFramework:
+  ids:
+  - 1
+sdkInfo:
+  minSdkVersion: 30
+  targetSdkVersion: 30
+versionInfo:
+  versionCode: 1
+  versionName: 1.0.20251226035351-release/stanleypark_hqx.1.2.1_20251015
+resourcesInfo:
+  packageId: 127
+doNotCompress:
+- arsc
+- dex
+- jpeg
+- mp3
+- png
+- so

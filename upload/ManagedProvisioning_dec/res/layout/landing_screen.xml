@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.setupdesign.GlifLayout android:id="@id/setup_wizard_layout" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="?sudMarginSides" android:layout_marginRight="?sudMarginSides">
+        <TextView android:id="@id/provider_info" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/spacer_24" style="@style/SudDescription.Glif" />
+    </LinearLayout>
+</com.google.android.setupdesign.GlifLayout>

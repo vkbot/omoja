@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/black" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="40.0dp" android:text="@string/main_android_field_text" android:layout_marginStart="120.0dp" style="@style/title_text" />
+    <GridLayout android:orientation="horizontal" android:id="@id/gl" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dp" android:columnCount="7" android:paddingStart="108.0dp" android:paddingEnd="108.0dp">
+        <com.mega.engineeringmode.ui.custom.EasyButton android:id="@id/main_btn_ADB" android:layout_marginBottom="20.0dp" android:text="@string/main_btn_ADB" app:className="com.mega.engineeringmode.function.AdbActivity" style="@style/item_btn" />
+        <com.mega.engineeringmode.ui.custom.EasyButton android:id="@id/main_btn_back_light" android:text="@string/main_btn_back_light" app:className="com.mega.engineeringmode.function.backlight.BackLightActivity" style="@style/item_btn" />
+        <com.mega.engineeringmode.ui.custom.EasyButton android:id="@id/main_btn_camera" android:text="@string/main_btn_camera" app:className="com.mega.engineeringmode.function.camera.CameraTestActivity" style="@style/item_btn" />
+        <com.mega.engineeringmode.ui.custom.EasyButton android:id="@id/main_btn_radio" android:text="@string/main_btn_radio" app:className="com.mega.engineeringmode.function.radio.RadioActivity" style="@style/item_btn" />
+        <com.mega.engineeringmode.ui.custom.EasyButton android:id="@id/main_btn_bluetooth" android:text="@string/main_btn_bluetooth" app:className="com.mega.engineeringmode.function.bluetooth.BluetoothTestActivity" style="@style/item_btn" />
+        <com.mega.engineeringmode.ui.custom.EasyButton android:id="@id/main_btn_wifi" android:text="@string/main_btn_wifi" app:className="com.mega.engineeringmode.function.wifi.WifiTestActivity" style="@style/item_btn" />
+        <com.mega.engineeringmode.ui.custom.EasyButton android:id="@id/main_btn_tbox" android:text="@string/main_btn_tbox" app:className="com.mega.engineeringmode.function.tbox.TBoxTestActivity" style="@style/item_btn" />
+        <com.mega.engineeringmode.ui.custom.EasyButton android:id="@id/main_btn_source" android:layout_marginBottom="20.0dp" android:text="@string/main_btn_source" app:className="com.mega.engineeringmode.function.sources.SourceActivity" style="@style/item_btn" />
+        <com.mega.engineeringmode.ui.custom.EasyButton android:id="@id/main_btn_log_point" android:text="@string/main_btn_log_point" app:className="com.mega.engineeringmode.function.LogLevelActivity" style="@style/item_btn" />
+        <com.mega.engineeringmode.ui.custom.EasyButton android:id="@id/main_btn_carplay" android:text="@string/mian_btn_carplay" app:className="com.mega.engineeringmode.function.carplay.CarplayActivity" style="@style/item_btn" />
+        <com.mega.engineeringmode.ui.custom.EasyButton android:id="@id/main_btn_hicar" android:text="@string/mian_btn_hicar" app:className="com.mega.engineeringmode.function.hicar.HiCarActivity" style="@style/item_btn" />
+        <com.mega.engineeringmode.ui.custom.EasyButton android:id="@id/main_btn_usb" android:text="@string/usb_certficate" app:className="com.mega.engineeringmode.function.usb.CertificateUSBActivity" style="@style/item_btn" />
+        <com.mega.engineeringmode.ui.custom.EasyButton android:id="@id/main_btn_usb_test" android:text="@string/main_btn_usb" style="@style/item_btn" />
+        <com.mega.engineeringmode.ui.custom.EasyButton android:textSize="24.0sp" android:id="@id/main_btn_TSP" android:text="@string/main_btn_TSP" app:className="com.mega.engineeringmode.function.offlineconfiguration.TspTestActivity" style="@style/item_btn" />
+        <com.mega.engineeringmode.ui.custom.EasyButton android:id="@id/main_btn_ethernet" android:text="@string/main_btn_ethernet" app:className="com.mega.engineeringmode.function.ethernet.EthernetTestActivity" style="@style/item_btn" />
+        <com.mega.engineeringmode.ui.custom.EasyButton android:id="@id/btn_android_auto_test" android:text="@string/title_android_auto_test" app:className="com.mega.engineeringmode.function.androidauto.AndroidAutoTestActivity" style="@style/item_btn" />
+        <com.mega.engineeringmode.ui.custom.EasyButton android:text="@string/main_btn_qxdm" app:className="com.mega.engineeringmode.function.log.QXDMLogActivity" app:packageName="com.mega.engineeringmode" style="@style/item_btn" />
+    </GridLayout>
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="30.0dp" android:text="@string/main_ic_field_text" android:layout_marginStart="120.0dp" style="@style/title_text" />
+    <GridLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dp" android:columnCount="7" android:paddingStart="108.0dp" android:paddingEnd="108.0dp">
+        <com.mega.engineeringmode.ui.custom.EasyButton android:id="@id/main_btn_config" android:text="@string/main_btn_config" app:className="com.mega.engineeringmode.function.offlineconfiguration.OfflineConfigurationActivity" style="@style/item_btn" />
+        <com.mega.engineeringmode.ui.custom.EasyButton android:id="@id/main_btn_str" android:text="@string/main_btn_str" app:className="com.mega.engineeringmode.function.StrActivity" style="@style/item_btn" />
+        <com.mega.engineeringmode.ui.custom.EasyButton android:visibility="invisible" style="@style/item_btn" />
+        <com.mega.engineeringmode.ui.custom.EasyButton android:visibility="invisible" style="@style/item_btn" />
+    </GridLayout>
+</LinearLayout>

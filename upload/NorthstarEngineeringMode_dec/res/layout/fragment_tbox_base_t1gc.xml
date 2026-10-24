@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="24.0sp" android:textColor="#77ffffff" android:layout_width="170.0dp" android:layout_height="wrap_content" android:text="@string/tbox_version" />
+            <TextView android:textSize="24.0sp" android:textColor="#ffffffff" android:id="@id/tvTBoxVersion" android:layout_width="600.0dp" android:layout_height="wrap_content" android:layout_marginStart="40.0dp" />
+            <TextView android:textSize="24.0sp" android:textColor="#77ffffff" android:layout_width="170.0dp" android:layout_height="wrap_content" android:text="@string/text_ecu_hardware_number" android:layout_marginStart="60.0dp" />
+            <TextView android:textSize="24.0sp" android:textColor="#ffffffff" android:id="@id/tvECUHardwareNumber" android:layout_width="600.0dp" android:layout_height="wrap_content" android:layout_marginStart="40.0dp" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="40.0dp">
+            <TextView android:textSize="24.0sp" android:textColor="#77ffffff" android:layout_width="170.0dp" android:layout_height="wrap_content" android:text="@string/text_ecu_software_number" />
+            <TextView android:textSize="24.0sp" android:textColor="#ffffffff" android:id="@id/tvECUSoftwareNumber" android:layout_width="600.0dp" android:layout_height="wrap_content" android:layout_marginStart="40.0dp" />
+            <TextView android:textSize="24.0sp" android:textColor="#77ffffff" android:layout_width="170.0dp" android:layout_height="wrap_content" android:text="@string/text_product_id" android:layout_marginStart="60.0dp" />
+            <TextView android:textSize="24.0sp" android:textColor="#ffffffff" android:id="@id/tvProductID" android:layout_width="600.0dp" android:layout_height="wrap_content" android:layout_marginStart="40.0dp" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="40.0dp">
+            <TextView android:textSize="24.0sp" android:textColor="#77ffffff" android:layout_width="170.0dp" android:layout_height="wrap_content" android:text="@string/text_mcu_version" />
+            <TextView android:textSize="24.0sp" android:textColor="#ffffffff" android:id="@id/tvMCUVersion" android:layout_width="600.0dp" android:layout_height="wrap_content" android:layout_marginStart="40.0dp" />
+            <TextView android:textSize="24.0sp" android:textColor="#77ffffff" android:layout_width="170.0dp" android:layout_height="wrap_content" android:text="@string/text_arm_version" android:layout_marginStart="60.0dp" />
+            <TextView android:textSize="24.0sp" android:textColor="#ffffffff" android:id="@id/tvARMVersion" android:layout_width="600.0dp" android:layout_height="wrap_content" android:layout_marginStart="40.0dp" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="40.0dp">
+            <TextView android:textSize="24.0sp" android:textColor="#77ffffff" android:layout_width="170.0dp" android:layout_height="wrap_content" android:text="@string/text_modem_version" />
+            <TextView android:textSize="24.0sp" android:textColor="#ffffffff" android:id="@id/tvModemVersion" android:layout_width="600.0dp" android:layout_height="wrap_content" android:layout_marginStart="40.0dp" />
+            <TextView android:textSize="24.0sp" android:textColor="#77ffffff" android:layout_width="170.0dp" android:layout_height="wrap_content" android:text="@string/text_hardware_version" android:layout_marginStart="60.0dp" />
+            <TextView android:textSize="24.0sp" android:textColor="#ffffffff" android:id="@id/tvHardwareVersion" android:layout_width="600.0dp" android:layout_height="wrap_content" android:layout_marginStart="40.0dp" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="40.0dp">
+            <TextView android:textSize="24.0sp" android:textColor="#77ffffff" android:layout_width="170.0dp" android:layout_height="wrap_content" android:text="@string/text_iccid" />
+            <TextView android:textSize="24.0sp" android:textColor="#ffffffff" android:id="@id/tvICCID" android:layout_width="600.0dp" android:layout_height="wrap_content" android:layout_marginStart="40.0dp" />
+            <TextView android:textSize="24.0sp" android:textColor="#77ffffff" android:layout_width="170.0dp" android:layout_height="wrap_content" android:text="@string/text_imsi" android:layout_marginStart="60.0dp" />
+            <TextView android:textSize="24.0sp" android:textColor="#ffffffff" android:id="@id/tvIMSI" android:layout_width="600.0dp" android:layout_height="wrap_content" android:layout_marginStart="40.0dp" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="40.0dp">
+            <TextView android:textSize="24.0sp" android:textColor="#77ffffff" android:layout_width="170.0dp" android:layout_height="wrap_content" android:text="@string/text_msisdn" />
+            <TextView android:textSize="24.0sp" android:textColor="#ffffffff" android:id="@id/tvMSISDN" android:layout_width="600.0dp" android:layout_height="wrap_content" android:layout_marginStart="40.0dp" />
+            <TextView android:textSize="24.0sp" android:textColor="#77ffffff" android:layout_width="170.0dp" android:layout_height="wrap_content" android:text="@string/text_network_type" android:layout_marginStart="60.0dp" />
+            <TextView android:textSize="24.0sp" android:textColor="#ffffffff" android:id="@id/tvNetworkType" android:layout_width="600.0dp" android:layout_height="wrap_content" android:layout_marginStart="40.0dp" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="40.0dp">
+            <TextView android:textSize="24.0sp" android:textColor="#77ffffff" android:layout_width="170.0dp" android:layout_height="wrap_content" android:text="@string/text_imei_info" />
+            <TextView android:textSize="24.0sp" android:textColor="#ffffffff" android:id="@id/tvImeiInfo" android:layout_width="600.0dp" android:layout_height="wrap_content" android:layout_marginStart="40.0dp" />
+            <TextView android:textSize="24.0sp" android:textColor="#77ffffff" android:layout_width="170.0dp" android:layout_height="wrap_content" android:text="@string/tbox_signal_level" android:layout_marginStart="60.0dp" />
+            <TextView android:textSize="24.0sp" android:textColor="#ffffffff" android:id="@id/tvSignalLevel" android:layout_width="600.0dp" android:layout_height="wrap_content" android:layout_marginStart="40.0dp" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="40.0dp">
+            <TextView android:textSize="24.0sp" android:textColor="#77ffffff" android:layout_width="170.0dp" android:layout_height="wrap_content" android:text="@string/text_tbox_can_config" />
+            <TextView android:textSize="24.0sp" android:textColor="#ffffffff" android:id="@id/tvTBoxCanConfig" android:layout_width="600.0dp" android:layout_height="wrap_content" android:layout_marginStart="40.0dp" />
+            <TextView android:textSize="24.0sp" android:textColor="#77ffffff" android:layout_width="170.0dp" android:layout_height="wrap_content" android:text="@string/text_ble_module_info" android:layout_marginStart="60.0dp" />
+            <TextView android:textSize="24.0sp" android:textColor="#ffffffff" android:id="@id/tvBleModuleInfo" android:layout_width="0.0dp" android:layout_height="wrap_content" android:minHeight="96.0dp" android:layout_weight="1.0" android:layout_marginStart="40.0dp" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="40.0dp">
+            <TextView android:textSize="24.0sp" android:textColor="#77ffffff" android:layout_width="170.0dp" android:layout_height="wrap_content" android:text="@string/text_tbox_vin" />
+            <TextView android:textSize="24.0sp" android:textColor="#ffffffff" android:id="@id/tvTBoxVin" android:layout_width="600.0dp" android:layout_height="wrap_content" android:layout_marginStart="40.0dp" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

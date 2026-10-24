@@ -1,0 +1,66 @@
+.class public final synthetic Lf1/a;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+# interfaces
+.implements Ljava/lang/Runnable;
+
+
+# instance fields
+.field public final synthetic c:I
+
+.field public final synthetic r:Lcom/mega/engineeringmode/function/tbox/b;
+
+
+# direct methods
+.method public synthetic constructor <init>(Lcom/mega/engineeringmode/function/tbox/b;I)V
+    .locals 0
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    iput p2, p0, Lf1/a;->c:I
+
+    iput-object p1, p0, Lf1/a;->r:Lcom/mega/engineeringmode/function/tbox/b;
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final run()V
+    .locals 3
+
+    iget v0, p0, Lf1/a;->c:I
+
+    iget-object p0, p0, Lf1/a;->r:Lcom/mega/engineeringmode/function/tbox/b;
+
+    packed-switch v0, :pswitch_data_0
+
+    iget-object v0, p0, Lcom/mega/engineeringmode/function/tbox/b;->h:Ljava/util/LinkedList;
+
+    new-instance v1, Lo1/a;
+
+    const/4 v2, 0x1
+
+    invoke-direct {v1, v2, p0}, Lo1/a;-><init>(ILjava/lang/Object;)V
+
+    invoke-interface {v0, v1}, Ljava/lang/Iterable;->forEach(Ljava/util/function/Consumer;)V
+
+    return-void
+
+    :pswitch_0
+    sget v0, Lcom/mega/engineeringmode/export/OuterBroadcastReceiver;->a:I
+
+    const/4 v0, 0x0
+
+    const-string v1, "CleanLogRequest"
+
+    invoke-virtual {p0, v1, v0}, Lcom/mega/engineeringmode/function/tbox/b;->d(Ljava/lang/String;Ljava/lang/String;)V
+
+    return-void
+
+    :pswitch_data_0
+    .packed-switch 0x0
+        :pswitch_0
+    .end packed-switch
+.end method

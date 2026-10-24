@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="USB_offline">USB offline</string>
+    <string name="cancel_button">cancle</string>
+    <string name="check_upgrade_package">Check upgrade package</string>
+    <string name="file_download">File download</string>
+    <string name="hide_button">hide</string>
+    <string name="no_upgrade_package_found">No upgrade package found</string>
+    <string name="ok_button">ok</string>
+    <string name="other_upgrade_task_is_running">Other upgrade task is running</string>
+    <string name="please_wait">Please wait</string>
+    <string name="start_upgrade">Start upgrade</string>
+    <string name="upgrade_fail">Upgrade fail</string>
+    <string name="upgrade_success">Upgrade success</string>
+    <string name="upgrading">Upgrading</string>
+    <string name="upload_fail">Upload fail</string>
+</resources>

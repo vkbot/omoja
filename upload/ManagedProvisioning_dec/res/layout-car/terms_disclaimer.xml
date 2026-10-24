@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textAppearance="@style/TextAppearance.CarUi.Body1" android:id="@id/header_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/car_ui_padding_4" android:layout_marginBottom="@dimen/car_ui_padding_2" />
+    <TextView android:textAppearance="@style/TextAppearance.CarUi.Body2" android:id="@id/disclaimer_content" android:layout_width="match_parent" android:layout_height="wrap_content" />
+</LinearLayout>

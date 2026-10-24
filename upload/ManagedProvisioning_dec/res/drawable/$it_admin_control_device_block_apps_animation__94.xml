@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set android:ordering="together"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt">
+    <objectAnimator android:interpolator="@drawable/$$it_admin_control_device_block_apps_animation__94__0" android:duration="500" android:startOffset="0" android:valueFrom="1" android:valueTo="1" android:valueType="floatType" android:propertyName="scaleX" />
+    <objectAnimator android:interpolator="@drawable/$$it_admin_control_device_block_apps_animation__94__1" android:duration="500" android:startOffset="0" android:valueFrom="1" android:valueTo="1" android:valueType="floatType" android:propertyName="scaleY" />
+    <objectAnimator android:interpolator="@drawable/$$it_admin_control_device_block_apps_animation__94__2" android:duration="783" android:startOffset="500" android:valueFrom="1" android:valueTo="0.76" android:valueType="floatType" android:propertyName="scaleX" />
+    <objectAnimator android:interpolator="@drawable/$$it_admin_control_device_block_apps_animation__94__3" android:duration="783" android:startOffset="500" android:valueFrom="1" android:valueTo="0.76" android:valueType="floatType" android:propertyName="scaleY" />
+    <objectAnimator android:interpolator="@drawable/$$it_admin_control_device_block_apps_animation__94__4" android:duration="3117" android:startOffset="1283" android:valueFrom="0.76" android:valueTo="0.76" android:valueType="floatType" android:propertyName="scaleX" />
+    <objectAnimator android:interpolator="@drawable/$$it_admin_control_device_block_apps_animation__94__5" android:duration="3117" android:startOffset="1283" android:valueFrom="0.76" android:valueTo="0.76" android:valueType="floatType" android:propertyName="scaleY" />
+    <objectAnimator android:interpolator="@drawable/$$it_admin_control_device_block_apps_animation__94__6" android:duration="583" android:startOffset="4400" android:valueFrom="0.76" android:valueTo="1" android:valueType="floatType" android:propertyName="scaleX" />
+    <objectAnimator android:interpolator="@drawable/$$it_admin_control_device_block_apps_animation__94__7" android:duration="583" android:startOffset="4400" android:valueFrom="0.76" android:valueTo="1" android:valueType="floatType" android:propertyName="scaleY" />
+</set>

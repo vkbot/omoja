@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="internal_upgrade">
+        <item>Обновление MCU</item>
+        <item>Обновление встроенного AVM</item>
+        <item>Обновление DSP</item>
+        <item>Обновление звукового аварийного сигнала панели приборов</item>
+        <item>Обновление домена панели приборов</item>
+        <item>Обновление несущего домена</item>
+        <item>Общее обновление SOC</item>
+        <item>Обновление всего пакета DMC</item>
+    </string-array>
+    <string-array name="periphery_upgrade">
+        <item>Обновление программного обеспечения MCU дисплея центральной консоли</item>
+        <item>Обновление программного обеспечения сенсорного дисплея панели приборов</item>
+        <item>Обновление MCU дисплея панели приборов</item>
+        <item>Обновление программного обеспечения сенсорной панели дисплея панели приборов</item>
+        <item>Обновление TBOX</item>
+        <item>Обновление APA</item>
+    </string-array>
+    <string-array name="tsp_test_devs">
+        <item>Среда выпуска</item>
+        <item>Среда разработки</item>
+        <item>Внутренняя тестовая среда</item>
+        <item>Внешняя тестовая среда</item>
+    </string-array>
+    <string-array name="version_info">
+        <item>Информация о версии программного обеспечения в DMC</item>
+        <item>Информация о версии периферийных деталей</item>
+        <item>Производственно-логистические данные DMC</item>
+        <item>Информация о версии внутреннего оборудования DMC</item>
+    </string-array>
+</resources>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/black" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center_vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="43.0dp" android:layout_marginStart="120.0dp">
+        <TextView android:textSize="32.0sp" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/str_switch" />
+        <com.mega.engineeringmode.ui.MegaSwitch android:id="@id/switch_str" android:layout_marginStart="357.0dp" style="@style/switch_custom" />
+    </LinearLayout>
+    <TextView android:id="@id/str_time" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="30.0dp" android:text="@string/str_time" android:layout_marginStart="120.0dp" style="@style/title_text" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/str_set_ll" android:layout_width="match_parent" android:layout_height="100.0dp" android:layout_marginTop="20.0dp" android:layout_marginStart="120.0dp">
+        <EditText android:textSize="32.0sp" android:textColor="@color/white" android:textColorHint="@color/white_50" android:id="@id/input_str" android:background="@drawable/shape_bg_blue_edit" android:padding="15.0dp" android:layout_width="wrap_content" android:layout_height="70.0dp" android:maxWidth="800.0dp" android:hint="@string/str_tips" android:inputType="number" android:autofillHints="1-744" />
+        <Button android:id="@id/str_set" android:text="@string/str_time_set" android:layout_marginStart="20.0dp" style="@style/item_btn_small" />
+    </LinearLayout>
+    <LinearLayout android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="43.0dp" android:layout_marginStart="120.0dp">
+        <RadioGroup android:orientation="horizontal" android:id="@id/radiogroup_str" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <RadioButton android:textSize="28.0sp" android:textColor="@color/white_50" android:id="@id/radioBtn_one_day" android:layout_width="wrap_content" android:layout_height="wrap_content" android:button="@drawable/radio_btn_bg" android:text="@string/str_due_date_one" />
+            <RadioButton android:textSize="28.0sp" android:textColor="@color/white_50" android:id="@id/radioBtn_two_days" android:layout_width="wrap_content" android:layout_height="wrap_content" android:button="@drawable/radio_btn_bg" android:text="@string/str_due_date_two" android:layout_marginStart="@dimen/margin16" />
+            <RadioButton android:textSize="28.0sp" android:textColor="@color/white_50" android:id="@id/radioBtn_three_days" android:layout_width="wrap_content" android:layout_height="wrap_content" android:button="@drawable/radio_btn_bg" android:text="@string/str_due_date_three" android:layout_marginStart="@dimen/margin16" />
+            <RadioButton android:textSize="28.0sp" android:textColor="@color/white_50" android:id="@id/radioBtn_four_days" android:layout_width="wrap_content" android:layout_height="wrap_content" android:button="@drawable/radio_btn_bg" android:text="@string/str_due_date_four" android:layout_marginStart="@dimen/margin16" />
+            <RadioButton android:textSize="28.0sp" android:textColor="@color/white_50" android:id="@id/radioBtn_five_days" android:layout_width="wrap_content" android:layout_height="wrap_content" android:button="@drawable/radio_btn_bg" android:text="@string/str_due_date_five" android:layout_marginStart="@dimen/margin16" />
+            <RadioButton android:textSize="28.0sp" android:textColor="@color/white_50" android:id="@id/radioBtn_six_days" android:layout_width="wrap_content" android:layout_height="wrap_content" android:button="@drawable/radio_btn_bg" android:text="@string/str_due_date_six" android:layout_marginStart="@dimen/margin16" />
+            <RadioButton android:textSize="28.0sp" android:textColor="@color/white_50" android:id="@id/radioBtn_seven_days" android:layout_width="wrap_content" android:layout_height="wrap_content" android:button="@drawable/radio_btn_bg" android:text="@string/str_due_date_seven" android:layout_marginStart="@dimen/margin16" />
+        </RadioGroup>
+    </LinearLayout>
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="40.0dp" android:layout_marginStart="120.0dp">
+        <com.mega.chery.widget.EasyTextView android:textSize="32.0sp" android:textColor="@color/white" android:id="@id/tv_currentuser" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/str_current_user" app:keep_start="true" />
+    </LinearLayout>
+</LinearLayout>

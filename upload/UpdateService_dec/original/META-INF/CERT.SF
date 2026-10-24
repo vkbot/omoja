@@ -1,0 +1,53 @@
+Signature-Version: 1.0
+Created-By: 1.0 (Android SignApk)
+SHA-256-Digest-Manifest: arJmsMQ6644IZmLCioGe93gJ0EmCdnB7vQWspWPMlxY=
+X-Android-APK-Signed: 2, 3
+
+Name: AndroidManifest.xml
+SHA-256-Digest: zFwrePdHu03dWPI2eOaZ0PUeBymJ2sAWlI/x0wZ+5QM=
+
+Name: Log4j-charsets.properties
+SHA-256-Digest: hShW71+xl0reDJDQyJpoSl6f7d+Lzzp3M/KEaCGGzsE=
+
+Name: Log4j-config.xsd
+SHA-256-Digest: 6oHz1LEMQmvDYfkpE8F7GKIQunyW35XAvX5z6WPxVBE=
+
+Name: Log4j-events.dtd
+SHA-256-Digest: QliI7Uj+yi3ERLTm8RaPHn758wPBf4JsYMNFoqWcBbQ=
+
+Name: Log4j-events.xsd
+SHA-256-Digest: AYWXO52F6WfJ+3d0tzdOw6wdihsnpBfNwQPmYHVATLE=
+
+Name: Log4j-levels.xsd
+SHA-256-Digest: AxJrydILCWLJfp0QouyAyFi7zpEhPbTJwmMQRdsI9i4=
+
+Name: classes.dex
+SHA-256-Digest: sKOah3BVbXWi7GzF0yjnWsfoOu/Cbgn0vUOE6hMNAIU=
+
+Name: org/apache/ftpserver/config/spring/ftpserver-1.0.xsd
+SHA-256-Digest: 5PupwGcYkv9XSbcsx4r0aSnDarW9s7RgnWQgSLnT2LA=
+
+Name: org/apache/ftpserver/ftpserver.properties
+SHA-256-Digest: uDDTMoP+wT6MP/ZrT3+F0t6BwRpbvhBiRhgZuhuyNKo=
+
+Name: org/apache/ftpserver/message/FtpStatus.properties
+SHA-256-Digest: f3Ypmuzq75bVZQxeVqlok7oBB00rHOfhY9w78/IxvQg=
+
+Name: org/apache/ftpserver/message/FtpStatus_en.properties
+SHA-256-Digest: fq6f6VOT42pHDrkXDsdZLkxUXYHMfS9j9uw9iN0OAis=
+
+Name: org/apache/ftpserver/message/FtpStatus_zh-tw.properties
+SHA-256-Digest: rOVV9H9F76JNCcn8mQuRcYtpFYZP0G4wVU6YQqssu/g=
+
+Name: res/drawable/float_bg1.xml
+SHA-256-Digest: JHrDyAVS7kTBxKVlQ99984Ilqkpu4R3W4/ZZdaO4mAU=
+
+Name: res/drawable/float_view.xml
+SHA-256-Digest: Fd3DOWvsEEpoXqayScA0GV5ykcPAtFTmSb4F+UEhdes=
+
+Name: res/layout/usb_dialog_layout.xml
+SHA-256-Digest: t8FmJrwlbcSoj6K+QUjoDvIccCrpHKDbFPBEYUjU0Ys=
+
+Name: resources.arsc
+SHA-256-Digest: VJJhCQ8ou331TxVH9G3XRamEzcoRpb5dGDANzqh6NUo=
+

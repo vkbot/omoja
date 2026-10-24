@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:tag="layout/activity_function_safe_0" android:background="@color/black" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RadioGroup android:orientation="horizontal" android:id="@id/rg" android:background="@drawable/shape_bg_level" android:padding="10.0dp" android:layout_width="500.0dp" android:layout_height="wrap_content" android:layout_margin="20.0dp" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent">
+        <RadioButton android:tag="0" android:layout_width="0.0dp" android:layout_height="wrap_content" android:text="0x00" android:layout_weight="1.0" style="@style/content_text" />
+        <RadioButton android:tag="1" android:layout_width="0.0dp" android:layout_height="wrap_content" android:text="0x01" android:layout_weight="1.0" style="@style/content_text" />
+        <RadioButton android:tag="2" android:layout_width="0.0dp" android:layout_height="wrap_content" android:text="0x02" android:layout_weight="1.0" style="@style/content_text" />
+    </RadioGroup>
+    <TextView android:id="@id/tv_icm_safe_test_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dp" android:text="@string/icm_function_safe" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/rg" style="@style/text_normal" />
+    <LinearLayout android:orientation="vertical" android:padding="20.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_20dp" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/tv_icm_safe_test_title">
+        <TextView android:layout_gravity="start" android:id="@id/tv_icm_screen_log_export" android:text="@string/icm_log_export" style="@style/item_btn" />
+        <LinearLayout android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/mock_frozen_screen" style="@style/text_normal" />
+            <com.mega.engineeringmode.ui.MegaSwitch android:id="@id/switch_frozen_screen" android:layout_marginStart="10.0dp" style="@style/switch_custom" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/turn_off_video_stream" style="@style/text_normal" />
+            <com.mega.engineeringmode.ui.MegaSwitch android:id="@id/switch_video_stream" android:layout_marginStart="10.0dp" style="@style/switch_custom" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/tt_light_test" style="@style/text_normal" />
+            <com.mega.engineeringmode.ui.MegaSwitch android:id="@id/switch_icm_lamp" android:layout_marginStart="10.0dp" style="@style/switch_custom" />
+        </LinearLayout>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

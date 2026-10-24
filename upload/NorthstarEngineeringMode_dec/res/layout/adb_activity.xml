@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:background="@color/black" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <Button android:id="@id/usb_sel_btn" android:layout_marginTop="30.0dp" android:text="@string/switch_usb" style="@style/item_btn_big" />
+    <Button android:id="@id/adb_sel_btn" android:layout_marginTop="20.0dp" android:text="@string/switch_adb" style="@style/item_btn_big" />
+</LinearLayout>

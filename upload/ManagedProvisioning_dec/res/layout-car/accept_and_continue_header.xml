@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/close_button" android:background="?selectableItemBackground" android:layout_width="@dimen/car_primary_icon_size" android:layout_height="@dimen/car_primary_icon_size" android:layout_marginTop="@dimen/car_ui_padding_4" android:src="@drawable/car_terms_back_button" android:layout_alignParentLeft="true" android:layout_marginStart="@dimen/car_ui_padding_4" />
+    <Button android:id="@id/next_button" android:layout_width="wrap_content" android:layout_height="@dimen/car_button_height" android:layout_marginTop="@dimen/car_ui_padding_4" android:text="@string/accept_and_continue" android:layout_alignParentRight="true" android:layout_marginEnd="@dimen/car_ui_padding_4" style="@style/Widget.CarUi.Button" />
+</RelativeLayout>

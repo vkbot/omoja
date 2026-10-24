@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="internal_upgrade">
+        <item>MCU yangilanishi</item>
+        <item>Ichki AVM yangilanishi</item>
+        <item>DSP yangilanishi</item>
+        <item>IPC ogohlantirish tovushi yangilanishi</item>
+        <item>IPC domeni yangilanishi</item>
+        <item>Xost domeni yangilanishi</item>
+        <item>SOC umumiy yangilanishi</item>
+        <item>DMC butun paket yangilanishi</item>
+    </string-array>
+    <string-array name="periphery_upgrade">
+        <item>Markaziy konsol displeyi MCU dasturiy yangilanishi</item>
+        <item>Markaziy konsol displeyi sensori dasturiy yangilanishi</item>
+        <item>IPC displeyi MCU yangilanishi</item>
+        <item>IPC displey sensor paneli dasturiy yangilanishi</item>
+        <item>TBOX yangilanishi</item>
+        <item>APA yangilanishi</item>
+    </string-array>
+    <string-array name="tsp_test_devs">
+        <item>Muammo muhiti</item>
+        <item>Ishlab chiqish muhiti</item>
+        <item>Mahalliy sinov muhiti</item>
+        <item>Xorijiy sinov muhiti</item>
+    </string-array>
+    <string-array name="version_info">
+        <item>DMC dasturi versiya axboroti</item>
+        <item>Qoʻshimcha qismlar versiya axboroti</item>
+        <item>DMC mahsulot logistika axboroti</item>
+        <item>DMC ichki dastur versiyasi axboroti</item>
+    </string-array>
+</resources>

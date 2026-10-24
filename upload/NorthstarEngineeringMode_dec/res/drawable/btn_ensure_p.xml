@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list android:paddingMode="stack"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <bitmap android:src="@drawable/btn_ensure_n" />
+    </item>
+    <item>
+        <shape android:shape="rectangle">
+            <gradient android:startColor="#1a000000" android:endColor="#1a000000" android:useLevel="true" android:angle="140.0" android:type="linear" />
+            <corners android:radius="40.0dp" />
+        </shape>
+    </item>
+</layer-list>

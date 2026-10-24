@@ -1,0 +1,362 @@
+.class public final Lretrofit2/Retrofit$Builder;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lretrofit2/Retrofit;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x19
+    name = "Builder"
+.end annotation
+
+
+# instance fields
+.field private adapterFactories:Ljava/util/List;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ljava/util/List<",
+            "Lretrofit2/CallAdapter$Factory;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field private baseUrl:Lokhttp3/HttpUrl;
+
+.field private callFactory:Lokhttp3/Call$Factory;
+
+.field private callbackExecutor:Ljava/util/concurrent/Executor;
+
+.field private converterFactories:Ljava/util/List;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ljava/util/List<",
+            "Lretrofit2/Converter$Factory;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field private platform:Lretrofit2/Platform;
+
+.field private validateEagerly:Z
+
+
+# direct methods
+.method public constructor <init>()V
+    .locals 1
+
+    .line 6
+    invoke-static {}, Lretrofit2/Platform;->get()Lretrofit2/Platform;
+
+    move-result-object v0
+
+    invoke-direct {p0, v0}, Lretrofit2/Retrofit$Builder;-><init>(Lretrofit2/Platform;)V
+
+    return-void
+.end method
+
+.method public constructor <init>(Lretrofit2/Platform;)V
+    .locals 1
+
+    .line 1
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 2
+    new-instance v0, Ljava/util/ArrayList;
+
+    invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
+
+    iput-object v0, p0, Lretrofit2/Retrofit$Builder;->converterFactories:Ljava/util/List;
+
+    .line 3
+    new-instance v0, Ljava/util/ArrayList;
+
+    invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
+
+    iput-object v0, p0, Lretrofit2/Retrofit$Builder;->adapterFactories:Ljava/util/List;
+
+    .line 4
+    iput-object p1, p0, Lretrofit2/Retrofit$Builder;->platform:Lretrofit2/Platform;
+
+    .line 5
+    iget-object p0, p0, Lretrofit2/Retrofit$Builder;->converterFactories:Ljava/util/List;
+
+    new-instance p1, Lretrofit2/BuiltInConverters;
+
+    invoke-direct {p1}, Lretrofit2/BuiltInConverters;-><init>()V
+
+    invoke-interface {p0, p1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public addCallAdapterFactory(Lretrofit2/CallAdapter$Factory;)Lretrofit2/Retrofit$Builder;
+    .locals 2
+
+    iget-object v0, p0, Lretrofit2/Retrofit$Builder;->adapterFactories:Ljava/util/List;
+
+    const-string v1, "factory == null"
+
+    invoke-static {p1, v1}, Lretrofit2/Utils;->checkNotNull(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
+
+    move-result-object p1
+
+    invoke-interface {v0, p1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
+
+    return-object p0
+.end method
+
+.method public addConverterFactory(Lretrofit2/Converter$Factory;)Lretrofit2/Retrofit$Builder;
+    .locals 2
+
+    iget-object v0, p0, Lretrofit2/Retrofit$Builder;->converterFactories:Ljava/util/List;
+
+    const-string v1, "factory == null"
+
+    invoke-static {p1, v1}, Lretrofit2/Utils;->checkNotNull(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
+
+    move-result-object p1
+
+    invoke-interface {v0, p1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
+
+    return-object p0
+.end method
+
+.method public baseUrl(Ljava/lang/String;)Lretrofit2/Retrofit$Builder;
+    .locals 2
+
+    const-string v0, "baseUrl == null"
+
+    .line 1
+    invoke-static {p1, v0}, Lretrofit2/Utils;->checkNotNull(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
+
+    .line 2
+    invoke-static {p1}, Lokhttp3/HttpUrl;->parse(Ljava/lang/String;)Lokhttp3/HttpUrl;
+
+    move-result-object v0
+
+    if-eqz v0, :cond_0
+
+    .line 3
+    invoke-virtual {p0, v0}, Lretrofit2/Retrofit$Builder;->baseUrl(Lokhttp3/HttpUrl;)Lretrofit2/Retrofit$Builder;
+
+    move-result-object p0
+
+    return-object p0
+
+    .line 4
+    :cond_0
+    new-instance p0, Ljava/lang/IllegalArgumentException;
+
+    new-instance v0, Ljava/lang/StringBuilder;
+
+    const-string v1, "Illegal URL: "
+
+    invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+
+    invoke-virtual {v0, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object p1
+
+    invoke-direct {p0, p1}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
+
+    throw p0
+.end method
+
+.method public baseUrl(Lokhttp3/HttpUrl;)Lretrofit2/Retrofit$Builder;
+    .locals 2
+
+    const-string v0, "baseUrl == null"
+
+    .line 5
+    invoke-static {p1, v0}, Lretrofit2/Utils;->checkNotNull(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
+
+    .line 6
+    invoke-virtual {p1}, Lokhttp3/HttpUrl;->pathSegments()Ljava/util/List;
+
+    move-result-object v0
+
+    .line 7
+    invoke-interface {v0}, Ljava/util/List;->size()I
+
+    move-result v1
+
+    add-int/lit8 v1, v1, -0x1
+
+    invoke-interface {v0, v1}, Ljava/util/List;->get(I)Ljava/lang/Object;
+
+    move-result-object v0
+
+    const-string v1, ""
+
+    invoke-virtual {v1, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_0
+
+    .line 8
+    iput-object p1, p0, Lretrofit2/Retrofit$Builder;->baseUrl:Lokhttp3/HttpUrl;
+
+    return-object p0
+
+    .line 9
+    :cond_0
+    new-instance p0, Ljava/lang/IllegalArgumentException;
+
+    new-instance v0, Ljava/lang/StringBuilder;
+
+    const-string v1, "baseUrl must end in /: "
+
+    invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+
+    invoke-virtual {v0, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object p1
+
+    invoke-direct {p0, p1}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
+
+    throw p0
+.end method
+
+.method public build()Lretrofit2/Retrofit;
+    .locals 8
+
+    iget-object v0, p0, Lretrofit2/Retrofit$Builder;->baseUrl:Lokhttp3/HttpUrl;
+
+    if-eqz v0, :cond_2
+
+    iget-object v0, p0, Lretrofit2/Retrofit$Builder;->callFactory:Lokhttp3/Call$Factory;
+
+    if-nez v0, :cond_0
+
+    new-instance v0, Lokhttp3/OkHttpClient;
+
+    invoke-direct {v0}, Lokhttp3/OkHttpClient;-><init>()V
+
+    :cond_0
+    move-object v2, v0
+
+    iget-object v0, p0, Lretrofit2/Retrofit$Builder;->callbackExecutor:Ljava/util/concurrent/Executor;
+
+    if-nez v0, :cond_1
+
+    iget-object v0, p0, Lretrofit2/Retrofit$Builder;->platform:Lretrofit2/Platform;
+
+    invoke-virtual {v0}, Lretrofit2/Platform;->defaultCallbackExecutor()Ljava/util/concurrent/Executor;
+
+    move-result-object v0
+
+    :cond_1
+    move-object v6, v0
+
+    new-instance v5, Ljava/util/ArrayList;
+
+    iget-object v0, p0, Lretrofit2/Retrofit$Builder;->adapterFactories:Ljava/util/List;
+
+    invoke-direct {v5, v0}, Ljava/util/ArrayList;-><init>(Ljava/util/Collection;)V
+
+    iget-object v0, p0, Lretrofit2/Retrofit$Builder;->platform:Lretrofit2/Platform;
+
+    invoke-virtual {v0, v6}, Lretrofit2/Platform;->defaultCallAdapterFactory(Ljava/util/concurrent/Executor;)Lretrofit2/CallAdapter$Factory;
+
+    move-result-object v0
+
+    invoke-virtual {v5, v0}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+
+    new-instance v4, Ljava/util/ArrayList;
+
+    iget-object v0, p0, Lretrofit2/Retrofit$Builder;->converterFactories:Ljava/util/List;
+
+    invoke-direct {v4, v0}, Ljava/util/ArrayList;-><init>(Ljava/util/Collection;)V
+
+    new-instance v0, Lretrofit2/Retrofit;
+
+    iget-object v3, p0, Lretrofit2/Retrofit$Builder;->baseUrl:Lokhttp3/HttpUrl;
+
+    iget-boolean v7, p0, Lretrofit2/Retrofit$Builder;->validateEagerly:Z
+
+    move-object v1, v0
+
+    invoke-direct/range {v1 .. v7}, Lretrofit2/Retrofit;-><init>(Lokhttp3/Call$Factory;Lokhttp3/HttpUrl;Ljava/util/List;Ljava/util/List;Ljava/util/concurrent/Executor;Z)V
+
+    return-object v0
+
+    :cond_2
+    new-instance p0, Ljava/lang/IllegalStateException;
+
+    const-string v0, "Base URL required."
+
+    invoke-direct {p0, v0}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
+
+    throw p0
+.end method
+
+.method public callFactory(Lokhttp3/Call$Factory;)Lretrofit2/Retrofit$Builder;
+    .locals 1
+
+    const-string v0, "factory == null"
+
+    invoke-static {p1, v0}, Lretrofit2/Utils;->checkNotNull(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
+
+    move-result-object p1
+
+    check-cast p1, Lokhttp3/Call$Factory;
+
+    iput-object p1, p0, Lretrofit2/Retrofit$Builder;->callFactory:Lokhttp3/Call$Factory;
+
+    return-object p0
+.end method
+
+.method public callbackExecutor(Ljava/util/concurrent/Executor;)Lretrofit2/Retrofit$Builder;
+    .locals 1
+
+    const-string v0, "executor == null"
+
+    invoke-static {p1, v0}, Lretrofit2/Utils;->checkNotNull(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
+
+    move-result-object p1
+
+    check-cast p1, Ljava/util/concurrent/Executor;
+
+    iput-object p1, p0, Lretrofit2/Retrofit$Builder;->callbackExecutor:Ljava/util/concurrent/Executor;
+
+    return-object p0
+.end method
+
+.method public client(Lokhttp3/OkHttpClient;)Lretrofit2/Retrofit$Builder;
+    .locals 1
+
+    const-string v0, "client == null"
+
+    invoke-static {p1, v0}, Lretrofit2/Utils;->checkNotNull(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
+
+    move-result-object p1
+
+    check-cast p1, Lokhttp3/Call$Factory;
+
+    invoke-virtual {p0, p1}, Lretrofit2/Retrofit$Builder;->callFactory(Lokhttp3/Call$Factory;)Lretrofit2/Retrofit$Builder;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+.method public validateEagerly(Z)Lretrofit2/Retrofit$Builder;
+    .locals 0
+
+    iput-boolean p1, p0, Lretrofit2/Retrofit$Builder;->validateEagerly:Z
+
+    return-object p0
+.end method

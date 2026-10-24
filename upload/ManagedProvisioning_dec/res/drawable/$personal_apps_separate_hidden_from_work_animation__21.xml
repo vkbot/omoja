@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set android:ordering="together"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt">
+    <objectAnimator android:interpolator="@drawable/$$personal_apps_separate_hidden_from_work_animation__21__0" android:duration="1583" android:startOffset="0" android:valueFrom="0.19403" android:valueTo="0.19403" android:valueType="floatType" android:propertyName="scaleX" />
+    <objectAnimator android:interpolator="@drawable/$$personal_apps_separate_hidden_from_work_animation__21__1" android:duration="1583" android:startOffset="0" android:valueFrom="0.19403" android:valueTo="0.19403" android:valueType="floatType" android:propertyName="scaleY" />
+    <objectAnimator android:interpolator="@drawable/$$personal_apps_separate_hidden_from_work_animation__21__2" android:duration="367" android:startOffset="1583" android:valueFrom="0.19403" android:valueTo="0.97015" android:valueType="floatType" android:propertyName="scaleX" />
+    <objectAnimator android:interpolator="@drawable/$$personal_apps_separate_hidden_from_work_animation__21__3" android:duration="367" android:startOffset="1583" android:valueFrom="0.19403" android:valueTo="0.97015" android:valueType="floatType" android:propertyName="scaleY" />
+    <objectAnimator android:interpolator="@drawable/$$personal_apps_separate_hidden_from_work_animation__21__4" android:duration="733" android:startOffset="1950" android:valueFrom="0.97015" android:valueTo="0.48919" android:valueType="floatType" android:propertyName="scaleX" />
+    <objectAnimator android:interpolator="@drawable/$$personal_apps_separate_hidden_from_work_animation__21__5" android:duration="733" android:startOffset="1950" android:valueFrom="0.97015" android:valueTo="0.48919" android:valueType="floatType" android:propertyName="scaleY" />
+</set>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="30.0dp">
+        <TextView android:id="@id/id" android:layout_width="200.0dp" android:layout_height="wrap_content" android:text="@string/can_data_send_id" style="@style/title_text_small" />
+        <TextView android:id="@id/name" android:layout_width="200.0dp" android:layout_height="wrap_content" android:text="@string/can_data_send_name" android:layout_marginStart="75.0dp" style="@style/title_text_small" />
+        <TextView android:id="@id/value" android:layout_width="200.0dp" android:layout_height="wrap_content" android:text="@string/can_data_value" android:layout_marginStart="75.0dp" style="@style/title_text_small" />
+    </LinearLayout>
+    <View android:background="@color/white_90" android:layout_width="match_parent" android:layout_height="1.0dp" />
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/signal_list" android:layout_width="match_parent" android:layout_height="wrap_content" />
+</LinearLayout>

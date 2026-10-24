@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set android:ordering="together"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt">
+    <objectAnimator android:interpolator="@drawable/$$personal_apps_separate_hidden_from_work_animation__58__0" android:duration="2133" android:startOffset="0" android:propertyName="translateXY" android:pathData="M 74,118.5C 99.917,140.167 29.083,142.583 74,118.5" android:propertyXName="translateX" android:propertyYName="translateY" />
+    <objectAnimator android:interpolator="@drawable/$$personal_apps_separate_hidden_from_work_animation__58__1" android:duration="1133" android:startOffset="2133" android:propertyName="translateXY" android:pathData="M 74,118.5C 99.917,140.167 134.583,145.583 179.5,121.5" android:propertyXName="translateX" android:propertyYName="translateY" />
+    <objectAnimator android:interpolator="@drawable/$$personal_apps_separate_hidden_from_work_animation__58__2" android:duration="483" android:startOffset="3267" android:propertyName="translateXY" android:pathData="M 179.5,121.5C 179.566,121.465 179.5,121.5 179.5,121.5" android:propertyXName="translateX" android:propertyYName="translateY" />
+    <objectAnimator android:interpolator="@drawable/$$personal_apps_separate_hidden_from_work_animation__58__3" android:duration="500" android:startOffset="3750" android:propertyName="translateXY" android:pathData="M 179.5,121.5C 179.5,121.5 209.5,100 209.5,100" android:propertyXName="translateX" android:propertyYName="translateY" />
+</set>

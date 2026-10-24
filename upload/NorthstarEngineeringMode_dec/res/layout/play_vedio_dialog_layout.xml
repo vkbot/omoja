@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:minHeight="540.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <VideoView android:layout_gravity="center" android:id="@id/play_video" android:layout_width="wrap_content" android:layout_height="0.0dp" android:layout_weight="5.0" />
+    <TextView android:textSize="24.0sp" android:gravity="center" android:layout_gravity="center" android:id="@id/vedio_name" android:layout_width="wrap_content" android:layout_height="0.0dp" android:layout_weight="1.0" />
+    <LinearLayout android:gravity="center_horizontal" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="0.0dp" android:layout_weight="1.0">
+        <Button android:textSize="24.0sp" android:id="@id/vedio_pre" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/last_png" />
+        <Button android:textSize="24.0sp" android:id="@id/vedio_play_pause" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/display_play_pause" android:layout_marginStart="20.0dp" />
+        <Button android:textSize="24.0sp" android:id="@id/vedio_next" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/next_png" android:layout_marginStart="20.0dp" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,20 @@
+.class public interface abstract Li5/p;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+# interfaces
+.implements Li5/r;
+.implements Li5/n;
+
+
+# annotations
+.annotation system Ldalvik/annotation/MemberClasses;
+    value = {
+        Li5/p$a;
+    }
+.end annotation
+
+
+# virtual methods
+.method public abstract getName()Ljavax/xml/namespace/QName;
+.end method

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_pressed="true">
+        <shape>
+            <corners android:radius="36.0dp" />
+            <size android:height="72.0dp" android:width="267.0dp" />
+            <solid android:color="@color/bg_btn_cancel_press" />
+            <stroke android:width="1.0dp" android:color="#00000000" />
+        </shape>
+    </item>
+    <item>
+        <shape>
+            <corners android:radius="36.0dp" />
+            <size android:height="72.0dp" android:width="267.0dp" />
+            <solid android:color="@color/bg_btn_cancel" />
+            <stroke android:width="1.0dp" android:color="#00000000" />
+        </shape>
+    </item>
+</selector>

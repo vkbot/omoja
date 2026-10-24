@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set android:ordering="together"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt">
+    <objectAnimator android:interpolator="@drawable/$$it_admin_control_device_block_apps_animation__17__0" android:duration="533" android:startOffset="0" android:valueFrom="-136" android:valueTo="-136" android:valueType="floatType" android:propertyName="rotation" />
+    <objectAnimator android:interpolator="@drawable/$$it_admin_control_device_block_apps_animation__17__1" android:duration="1183" android:startOffset="533" android:valueFrom="-136" android:valueTo="22" android:valueType="floatType" android:propertyName="rotation" />
+    <objectAnimator android:interpolator="@drawable/$$it_admin_control_device_block_apps_animation__17__2" android:duration="2317" android:startOffset="1717" android:valueFrom="22" android:valueTo="22" android:valueType="floatType" android:propertyName="rotation" />
+</set>

@@ -1,0 +1,51 @@
+Manifest-Version: 1.0
+Created-By: 11.0.4 (Oracle Corporation)
+
+Name: AndroidManifest.xml
+SHA-256-Digest: rE4pfIFxAC4SCFb4x4fDSuCB/l4c0p2oj9prVkrmyLk=
+
+Name: Log4j-charsets.properties
+SHA-256-Digest: AYzpf7QRVQpiwnxRG1vvCFJ5eE8ILWd5XObHJ6bYZgM=
+
+Name: Log4j-config.xsd
+SHA-256-Digest: XnW3qZPtIsi+mZUIrL+9Jssx6GpJ1ZJt+aexfrZ4fz8=
+
+Name: Log4j-events.dtd
+SHA-256-Digest: P0couW9/6rHlup+s65Lcsy3mLUkEMW1Tf2palBgpgJc=
+
+Name: Log4j-events.xsd
+SHA-256-Digest: j6jG2brqXr2kRirQNGDaI9mY8hwv5L222OwecXB8jz0=
+
+Name: Log4j-levels.xsd
+SHA-256-Digest: rQxL8F6N3A+WLZsJXRMuuVPvwLUGHEbaO1p7apC8c8g=
+
+Name: classes.dex
+SHA-256-Digest: ewJhfAtwB+1HI18ElJW885PmEUbBgBVCVzcQxOtmym8=
+
+Name: org/apache/ftpserver/config/spring/ftpserver-1.0.xsd
+SHA-256-Digest: dCkv/T8MmuGo4pIOFCjlcgH1U4Ta+8zYe5sZ9p4Ss3c=
+
+Name: org/apache/ftpserver/ftpserver.properties
+SHA-256-Digest: sqdSLxIS5/MqJFxnMXqQLwKvjP53BJYhLJTXZYjVLxc=
+
+Name: org/apache/ftpserver/message/FtpStatus.properties
+SHA-256-Digest: 4qE+Y1nRIc1PcYHmGMabSq4zRXhCNWjewzqSTx3L7xk=
+
+Name: org/apache/ftpserver/message/FtpStatus_en.properties
+SHA-256-Digest: XQgy6rcoSCXqGVSMPgCfE7zzEb13Wos1i7JScbhb97c=
+
+Name: org/apache/ftpserver/message/FtpStatus_zh-tw.properties
+SHA-256-Digest: bVEe9rVyDWOIdREq1cwAp277ewuLwU1IuhcC3rCCD/Q=
+
+Name: res/drawable/float_bg1.xml
+SHA-256-Digest: 3HunKtYTUlJxcjyiH/z6GIbfnix5kV1nHCJxhLjJTJo=
+
+Name: res/drawable/float_view.xml
+SHA-256-Digest: XXlnnCnrHILxe8XTHLCNGvMHYGVwA7AXNGktHWfkDfI=
+
+Name: res/layout/usb_dialog_layout.xml
+SHA-256-Digest: aLKKtXC6DZh/AqDnCLnRr8eJAtpNTKT6/r0EPGKZfC0=
+
+Name: resources.arsc
+SHA-256-Digest: 0QYMbsNx5/kCG9yKuA+PGb0eZ297iIhqszg77Ec3uA0=
+

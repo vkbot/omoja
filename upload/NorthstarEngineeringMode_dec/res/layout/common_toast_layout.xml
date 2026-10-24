@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:paddingBottom="@dimen/toast_padding_bottom" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/toast_text_size" android:textColor="@color/color_toast_text" android:gravity="center" android:id="@id/toast_custom_tv" android:background="@drawable/toast_bg" android:layout_width="wrap_content" android:layout_height="@dimen/toast_height" android:minWidth="@dimen/toast_min_width" android:paddingHorizontal="@dimen/toast_padding_horizontal" />
+</LinearLayout>

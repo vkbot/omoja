@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <id name="dialog_view_layout" />
+    <id name="otg_bar" />
+    <id name="otg_cancel" />
+    <id name="otg_confirm" />
+    <id name="otg_title" />
+</resources>

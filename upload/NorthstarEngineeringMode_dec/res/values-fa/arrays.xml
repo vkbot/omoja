@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="internal_upgrade">
+        <item>ارتقاء MCU</item>
+        <item>ارتقاء AVM داخلی</item>
+        <item>ارتقاء DSP</item>
+        <item>ارتقاء صدای هشدار نمایشگر جلوداشبورد</item>
+        <item>ارتقاء دامنه نمایشگر جلوداشبورد</item>
+        <item>ارتقاء دامنه میزبان</item>
+        <item>ارتقاء کلی SOC</item>
+        <item>ارتقاء کل بسته DMC</item>
+    </string-array>
+    <string-array name="periphery_upgrade">
+        <item>ارتقاء نرم‌افزار MCU نمایشگر کنسول وسط</item>
+        <item>ارتقاء نرم‌افزار لمسی نمایشگر کنسول وسط</item>
+        <item>ارتقاء MCU نمایشگر جلوداشبورد</item>
+        <item>ارتقاء نرم‌افزار پانل لمسی نمایشگر جلوداشبورد</item>
+        <item>ارتقاء TBOX</item>
+        <item>ارتقاء APA</item>
+    </string-array>
+    <string-array name="tsp_test_devs">
+        <item>محیط انتشار</item>
+        <item>محیط توسعه</item>
+        <item>محیط آزمایش داخلی</item>
+        <item>محیط آزمایش خارج از کشور</item>
+    </string-array>
+    <string-array name="version_info">
+        <item>اطلاعات نسخه نرم‌افزار در DMC</item>
+        <item>اطلاعات نسخه قطعات جانبی</item>
+        <item>اطلاعات لجستیک تولید DMC</item>
+        <item>اطلاعات نسخه سخت‌افزار داخلی DMC</item>
+    </string-array>
+</resources>
