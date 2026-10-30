@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@android:color/transparent" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.widget.ConstraintLayout android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent">
+            <LinearLayout android:gravity="center" android:layout_gravity="right" android:orientation="horizontal" android:id="@id/digitalClock" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <ImageView android:id="@id/ivDigitalHH" android:layout_width="120.0dp" android:layout_height="200.0dp" app:srcCompat="@drawable/digital_eight" />
+                <ImageView android:id="@id/ivDigitalH" android:layout_width="120.0dp" android:layout_height="200.0dp" app:srcCompat="@drawable/digital_eight" />
+                <TextView android:textSize="120.0dp" android:textStyle="bold" android:textColor="@color/white" android:id="@id/tvDigitalDot" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text=":" />
+                <ImageView android:id="@id/ivDigitalMM" android:layout_width="120.0dp" android:layout_height="200.0dp" app:srcCompat="@drawable/digital_eight" />
+                <ImageView android:id="@id/ivDigitalM" android:layout_width="120.0dp" android:layout_height="200.0dp" app:srcCompat="@drawable/digital_eight" />
+                <ImageView android:id="@id/ivDigitalSS" android:visibility="gone" android:layout_width="80.0dp" android:layout_height="wrap_content" app:srcCompat="@drawable/digital_eight" />
+                <ImageView android:id="@id/ivDigitalS" android:visibility="gone" android:layout_width="80.0dp" android:layout_height="wrap_content" app:srcCompat="@drawable/digital_eight" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center_horizontal" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <ImageView android:id="@id/dDD" android:layout_width="40.0dp" android:layout_height="90.0dp" android:layout_weight="1.0" app:srcCompat="@drawable/digital_eight" />
+                <ImageView android:id="@id/dD" android:layout_width="40.0dp" android:layout_height="90.0dp" android:layout_weight="1.0" app:srcCompat="@drawable/digital_eight" />
+                <TextView android:textSize="60.0dp" android:textStyle="bold" android:textColor="@color/white" android:gravity="bottom" android:layout_gravity="bottom" android:id="@id/textView26" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="." android:layout_weight="1.0" />
+                <ImageView android:id="@id/dMM" android:layout_width="40.0dp" android:layout_height="90.0dp" android:layout_weight="1.0" app:srcCompat="@drawable/digital_eight" />
+                <ImageView android:id="@id/dM" android:layout_width="40.0dp" android:layout_height="90.0dp" android:layout_weight="1.0" app:srcCompat="@drawable/digital_eight" />
+                <TextView android:textSize="60.0dp" android:textStyle="bold" android:textColor="@color/white" android:layout_gravity="bottom" android:id="@id/textView27" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="." android:layout_weight="1.0" />
+                <ImageView android:id="@id/dGG" android:layout_width="40.0dp" android:layout_height="90.0dp" android:layout_weight="1.0" app:srcCompat="@drawable/digital_eight" />
+                <ImageView android:id="@id/dG" android:layout_width="40.0dp" android:layout_height="90.0dp" android:layout_weight="1.0" app:srcCompat="@drawable/digital_eight" />
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</RelativeLayout>

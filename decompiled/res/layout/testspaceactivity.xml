@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/modern_background" android:padding="16.0dp" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.google.android.flexbox.FlexboxLayout android:background="@drawable/modern_panel" android:padding="8.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" app:flexWrap="nowrap">
+        <Button android:id="@id/button31" android:layout_width="150.0dp" android:layout_height="wrap_content" android:layout_margin="4.0dp" android:text="@string/b_back" app:layout_flexGrow="1.0" style="@style/ModernFragmentButton" />
+        <Button android:id="@id/btn_start_tests" android:layout_width="150.0dp" android:layout_height="wrap_content" android:layout_margin="4.0dp" android:text="@string/b_start_test" app:layout_flexGrow="1.0" style="@style/ModernFragmentButton" />
+        <Button android:id="@id/btn_stop_tests" android:layout_width="150.0dp" android:layout_height="wrap_content" android:layout_margin="4.0dp" android:text="@string/b_stop_test" app:layout_flexGrow="1.0" style="@style/ModernFragmentButton" />
+        <Button android:id="@id/btn_LogAll" android:layout_width="150.0dp" android:layout_height="wrap_content" android:layout_margin="4.0dp" android:text="@string/diagnostic_log_all" app:layout_flexGrow="1.0" style="@style/ModernFragmentButton" />
+        <Button android:id="@id/button30" android:layout_width="150.0dp" android:layout_height="wrap_content" android:layout_margin="4.0dp" android:text="@string/diagnostic_log_more" app:layout_flexGrow="1.0" style="@style/ModernFragmentButton" />
+    </com.google.android.flexbox.FlexboxLayout>
+    <FrameLayout android:id="@id/fragment_container" android:layout_width="match_parent" android:layout_height="wrap_content" />
+    <EditText android:textColor="@color/modern_text" android:textColorHint="@color/modern_text_secondary" android:id="@id/filter_LogAll" android:background="@drawable/modern_field" android:padding="12.0dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dp" android:minHeight="48.0dp" android:hint="@string/diagnostic_log_filter" android:singleLine="true" android:inputType="text" />
+    <androidx.appcompat.widget.SwitchCompat android:textSize="15.0sp" android:textColor="@color/modern_text" android:id="@id/sw_auto_scroll" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="48.0dp" android:text="@string/sw_auto_scroll" android:paddingStart="12.0dp" android:paddingEnd="12.0dp" />
+    <ScrollView android:id="@id/log_scroll_view" android:background="@drawable/modern_panel" android:layout_width="match_parent" android:layout_height="0.0dp" android:fillViewport="true" android:layout_weight="1.0">
+        <TextView android:textSize="14.0sp" android:textColor="@color/modern_text" android:id="@id/log_text_view" android:padding="14.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:lineSpacingExtra="3.0dp" android:fontFamily="monospace" />
+    </ScrollView>
+</LinearLayout>

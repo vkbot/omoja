@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/black" android:padding="8.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="#ffffff" android:id="@id/widget_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Мой виджет" />
+    <ImageView android:layout_gravity="center" android:id="@id/widget_icon" android:layout_width="48.0dp" android:layout_height="48.0dp" android:src="@drawable/ic_launcher_foreground" />
+    <TextView android:textSize="14.0sp" android:textColor="#ffffff" android:id="@id/widget_description" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Описание виджета" />
+</LinearLayout>

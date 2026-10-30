@@ -1,0 +1,194 @@
+.class public final Landroidx/appcompat/widget/AppCompatSpinner$InspectionCompanion;
+.super Ljava/lang/Object;
+.source "r8-map-id-94e2637d1b30c6542972a7fc4ced35aa6da258c4e6702fc7c9cbf0ebc32bec75"
+
+# interfaces
+.implements Landroid/view/inspector/InspectionCompanion;
+
+
+# annotations
+.annotation build Landroidx/annotation/RequiresApi;
+    value = 0x1d
+.end annotation
+
+.annotation build Landroidx/annotation/RestrictTo;
+    value = {
+        .enum Landroidx/annotation/RestrictTo$Scope;->LIBRARY:Landroidx/annotation/RestrictTo$Scope;
+    }
+.end annotation
+
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Ljava/lang/Object;",
+        "Landroid/view/inspector/InspectionCompanion;"
+    }
+.end annotation
+
+
+# instance fields
+.field private mBackgroundTintId:I
+
+.field private mBackgroundTintModeId:I
+
+.field private mPropertiesMapped:Z
+
+
+# direct methods
+.method public constructor <init>()V
+    .locals 1
+
+    .line 1
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 2
+    .line 3
+    .line 4
+    const/4 v0, 0x0
+
+    .line 5
+    iput-boolean v0, p0, Landroidx/appcompat/widget/AppCompatSpinner$InspectionCompanion;->mPropertiesMapped:Z
+
+    .line 6
+    .line 7
+    return-void
+.end method
+
+
+# virtual methods
+.method public mapProperties(Landroid/view/inspector/PropertyMapper;)V
+    .locals 1
+    .param p1    # Landroid/view/inspector/PropertyMapper;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
+
+    .line 1
+    sget v0, Landroidx/appcompat/R$attr;->backgroundTint:I
+
+    .line 2
+    .line 3
+    invoke-static {p1, v0}, Landroidx/activity/k;->c(Landroid/view/inspector/PropertyMapper;I)I
+
+    .line 4
+    .line 5
+    .line 6
+    move-result v0
+
+    .line 7
+    iput v0, p0, Landroidx/appcompat/widget/AppCompatSpinner$InspectionCompanion;->mBackgroundTintId:I
+
+    .line 8
+    .line 9
+    sget v0, Landroidx/appcompat/R$attr;->backgroundTintMode:I
+
+    .line 10
+    .line 11
+    invoke-static {p1, v0}, Landroidx/activity/k;->o(Landroid/view/inspector/PropertyMapper;I)I
+
+    .line 12
+    .line 13
+    .line 14
+    move-result p1
+
+    .line 15
+    iput p1, p0, Landroidx/appcompat/widget/AppCompatSpinner$InspectionCompanion;->mBackgroundTintModeId:I
+
+    .line 16
+    .line 17
+    const/4 p1, 0x1
+
+    .line 18
+    iput-boolean p1, p0, Landroidx/appcompat/widget/AppCompatSpinner$InspectionCompanion;->mPropertiesMapped:Z
+
+    .line 19
+    .line 20
+    return-void
+.end method
+
+.method public readProperties(Landroidx/appcompat/widget/AppCompatSpinner;Landroid/view/inspector/PropertyReader;)V
+    .locals 2
+    .param p1    # Landroidx/appcompat/widget/AppCompatSpinner;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
+    .param p2    # Landroid/view/inspector/PropertyReader;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
+
+    .line 1
+    iget-boolean v0, p0, Landroidx/appcompat/widget/AppCompatSpinner$InspectionCompanion;->mPropertiesMapped:Z
+
+    .line 2
+    .line 3
+    if-eqz v0, :cond_0
+
+    .line 4
+    .line 5
+    iget v0, p0, Landroidx/appcompat/widget/AppCompatSpinner$InspectionCompanion;->mBackgroundTintId:I
+
+    .line 6
+    .line 7
+    invoke-virtual {p1}, Landroid/view/View;->getBackgroundTintList()Landroid/content/res/ColorStateList;
+
+    .line 8
+    .line 9
+    .line 10
+    move-result-object v1
+
+    .line 11
+    invoke-static {p2, v0, v1}, Landroidx/activity/k;->k(Landroid/view/inspector/PropertyReader;ILandroid/content/res/ColorStateList;)V
+
+    .line 12
+    .line 13
+    .line 14
+    iget v0, p0, Landroidx/appcompat/widget/AppCompatSpinner$InspectionCompanion;->mBackgroundTintModeId:I
+
+    .line 15
+    .line 16
+    invoke-virtual {p1}, Landroid/view/View;->getBackgroundTintMode()Landroid/graphics/PorterDuff$Mode;
+
+    .line 17
+    .line 18
+    .line 19
+    move-result-object p1
+
+    .line 20
+    invoke-static {p2, v0, p1}, Landroidx/activity/k;->l(Landroid/view/inspector/PropertyReader;ILandroid/graphics/PorterDuff$Mode;)V
+
+    .line 21
+    .line 22
+    .line 23
+    return-void
+
+    .line 24
+    :cond_0
+    invoke-static {}, Landroidx/activity/k;->f()Landroid/view/inspector/InspectionCompanion$UninitializedPropertyMapException;
+
+    .line 25
+    .line 26
+    .line 27
+    move-result-object p1
+
+    .line 28
+    throw p1
+.end method
+
+.method public bridge synthetic readProperties(Ljava/lang/Object;Landroid/view/inspector/PropertyReader;)V
+    .locals 0
+    .param p1    # Ljava/lang/Object;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
+    .param p2    # Landroid/view/inspector/PropertyReader;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
+
+    .line 29
+    check-cast p1, Landroidx/appcompat/widget/AppCompatSpinner;
+
+    invoke-virtual {p0, p1, p2}, Landroidx/appcompat/widget/AppCompatSpinner$InspectionCompanion;->readProperties(Landroidx/appcompat/widget/AppCompatSpinner;Landroid/view/inspector/PropertyReader;)V
+
+    return-void
+.end method

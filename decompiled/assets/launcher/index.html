@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <title>JCT Home</title>
+    <style>
+        :root {
+            color-scheme: dark;
+            --safe-left: 0px;
+            --safe-top: 0px;
+            --safe-right: 0px;
+            --safe-bottom: 0px;
+            --accent: #37a7d5;
+            --surface: rgba(23, 33, 44, .86);
+            --muted: #9baaba;
+        }
+
+        * { box-sizing: border-box; }
+
+        html, body {
+            width: 100%;
+            height: 100%;
+            margin: 0;
+            overflow: hidden;
+            background: #080c12;
+            color: #f4f7fa;
+            font-family: Roboto, Arial, sans-serif;
+        }
+
+        body {
+            background:
+                radial-gradient(circle at 14% 12%, rgba(55, 167, 213, .24), transparent 34%),
+                radial-gradient(circle at 86% 82%, rgba(52, 92, 132, .18), transparent 38%),
+                linear-gradient(145deg, #101923, #080c12 68%);
+        }
+
+        .safe-area {
+            width: 100%;
+            height: 100%;
+            padding: calc(var(--safe-top) + 22px) calc(var(--safe-right) + 28px)
+                     calc(var(--safe-bottom) + 20px) calc(var(--safe-left) + 28px);
+            display: grid;
+            grid-template-rows: auto minmax(0, 1fr) auto;
+            gap: 16px;
+        }
+
+        header { display: flex; align-items: baseline; justify-content: space-between; }
+        .brand { font-size: 17px; font-weight: 700; letter-spacing: .14em; color: var(--accent); }
+        .clock { font-size: clamp(34px, 5vw, 64px); font-weight: 300; }
+
+        main { min-height: 0; display: grid; place-items: center; overflow: auto; }
+
+        .welcome {
+            width: min(940px, 94%);
+            padding: clamp(22px, 3vw, 38px);
+            border: 1px solid rgba(255, 255, 255, .11);
+            border-radius: 26px;
+            background: var(--surface);
+            box-shadow: 0 22px 70px rgba(0, 0, 0, .28);
+            backdrop-filter: blur(16px);
+        }
+
+        .badge {
+            display: inline-flex;
+            padding: 7px 11px;
+            border: 1px solid rgba(55, 167, 213, .42);
+            border-radius: 999px;
+            background: rgba(55, 167, 213, .12);
+            color: #77d3f5;
+            font-size: 12px;
+            font-weight: 700;
+            letter-spacing: .08em;
+        }
+
+        h1 { margin: 15px 0 8px; font-size: clamp(27px, 3.5vw, 46px); line-height: 1.08; }
+        .lead { margin: 0; color: var(--muted); font-size: clamp(15px, 1.6vw, 18px); line-height: 1.45; }
+
+        .route {
+            margin-top: 22px;
+            display: grid;
+            grid-template-columns: repeat(4, minmax(130px, 1fr));
+            gap: 10px;
+        }
+
+        .step {
+            min-height: 88px;
+            padding: 13px;
+            border-radius: 16px;
+            background: rgba(255, 255, 255, .055);
+            border: 1px solid rgba(255, 255, 255, .075);
+        }
+
+        .step b {
+            display: grid;
+            place-items: center;
+            width: 25px;
+            height: 25px;
+            margin-bottom: 8px;
+            border-radius: 8px;
+            background: var(--accent);
+            color: #071018;
+            font-size: 13px;
+        }
+
+        .step span { font-size: 14px; line-height: 1.25; }
+
+        .install {
+            margin-top: 12px;
+            padding: 13px 15px;
+            border-radius: 14px;
+            background: rgba(55, 167, 213, .1);
+            color: #c9eefa;
+            font-size: 14px;
+            line-height: 1.4;
+        }
+
+        footer { color: #718195; font-size: 13px; text-align: center; }
+
+        @media (max-width: 760px) {
+            .route { grid-template-columns: repeat(2, minmax(130px, 1fr)); }
+            .step { min-height: 76px; }
+        }
+    </style>
+</head>
+<body>
+<div class="safe-area">
+    <header>
+        <div class="brand">JCT HOME</div>
+        <div class="clock" id="clock">--:--</div>
+    </header>
+    <main>
+        <section class="welcome">
+            <div class="badge">СТАНДАРТНАЯ ТЕМА</div>
+            <h1>Выберите свой рабочий стол</h1>
+            <p class="lead">Готовые темы находятся в каталоге JCT. Открыть его можно прямо из настроек панели лаунчера.</p>
+            <div class="route">
+                <div class="step"><b>1</b><span>Раскройте панель у края экрана</span></div>
+                <div class="step"><b>2</b><span>Нажмите значок настроек ⚙</span></div>
+                <div class="step"><b>3</b><span>Выберите «Веб-экран лаунчера»</span></div>
+                <div class="step"><b>4</b><span>Откройте каталог тем</span></div>
+            </div>
+            <div class="install"><strong>Как установить:</strong> в каталоге нажмите «Установить». После загрузки тема включится автоматически. Свой ZIP можно добавить на экране выбора тем.</div>
+        </section>
+    </main>
+    <footer>Положение и режим скрытия панели настраиваются отдельно</footer>
+</div>
+<script>
+    window.JctInsets = function (left, top, right, bottom) {
+        const root = document.documentElement.style;
+        root.setProperty('--safe-left', left + 'px');
+        root.setProperty('--safe-top', top + 'px');
+        root.setProperty('--safe-right', right + 'px');
+        root.setProperty('--safe-bottom', bottom + 'px');
+    };
+
+    function updateClock() {
+        document.getElementById('clock').textContent = new Intl.DateTimeFormat('ru-RU', {
+            hour: '2-digit', minute: '2-digit'
+        }).format(new Date());
+    }
+
+    updateClock();
+    setInterval(updateClock, 1000);
+</script>
+</body>
+</html>

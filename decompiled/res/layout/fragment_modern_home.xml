@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:padding="24.0dp" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="match_parent" android:fillViewport="true"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@id/imageView" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="16.0dp" android:scaleType="centerInside" android:adjustViewBounds="true" android:maxHeight="180.0dp" android:contentDescription="@null" />
+        <com.example.navistart.mainview.MainPayView android:id="@id/modern_donation_card" app:prefsCenterLabel="@string/modern_support_project" app:prefsStyle="1" style="@style/ModernMainCard" />
+        <com.example.navistart.mainview.MainCarPrefView android:id="@id/modern_car_profile_card" app:prefsCenterLabel="@string/item_car_set" app:prefsStyle="1" style="@style/ModernMainCard" />
+        <TextView android:text="@string/modern_quick_actions" style="@style/ModernGroupTitle" />
+        <LinearLayout android:orientation="vertical" android:background="@drawable/modern_panel" android:padding="10.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="24.0dp">
+            <TextView android:id="@id/modern_action_auth" android:text="@string/modern_authorization_language" style="@style/ModernActionRow" />
+            <TextView android:id="@id/modern_action_update" android:text="@string/menu_update" style="@style/ModernActionRow" />
+            <TextView android:id="@id/modern_action_wifi" android:text="@string/wifimanager" style="@style/ModernActionRow" />
+            <TextView android:id="@id/modern_action_vpn" android:text="@string/modern_vpn" style="@style/ModernActionRow" />
+            <TextView android:id="@id/modern_action_radar" android:text="@string/b_arad" style="@style/ModernActionRow" />
+            <TextView android:id="@id/modern_action_app_settings" android:text="@string/b_app_sett" style="@style/ModernActionRow" />
+            <TextView android:id="@id/modern_action_permissions" android:text="@string/str_b_start_act_app_perm" style="@style/ModernActionRow" />
+            <TextView android:id="@id/modern_action_about" android:layout_marginBottom="0.0dp" android:text="@string/menu_about" style="@style/ModernActionRow" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

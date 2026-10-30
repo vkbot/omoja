@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <Button android:id="@id/transportBack" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/b_back" android:layout_marginEnd="10.0dp" />
+        <TextView android:textSize="20.0sp" android:textStyle="bold" android:textColor="?android:textColorPrimary" android:layout_width="0.0dp" android:layout_height="wrap_content" android:text="@string/transport_settings_title" android:layout_weight="1.0" />
+    </LinearLayout>
+    <TextView android:textSize="14.0sp" android:textColor="?android:textColorSecondary" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dp" android:text="@string/transport_description" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="?android:colorBackground" android:padding="12.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="14.0dp">
+        <View android:id="@id/transportStatusIndicator" android:background="@drawable/mock_gps_status_offline" android:layout_width="14.0dp" android:layout_height="14.0dp" android:layout_marginEnd="10.0dp" />
+        <TextView android:textSize="15.0sp" android:textStyle="bold" android:textColor="?android:textColorPrimary" android:id="@id/transportStatusText" android:layout_width="0.0dp" android:layout_height="wrap_content" android:text="@string/transport_not_started" android:layout_weight="1.0" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="?android:colorBackground" android:padding="10.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dp">
+        <ImageView android:id="@id/transportPhoneAppQr" android:background="?android:colorBackground" android:padding="4.0dp" android:layout_width="96.0dp" android:layout_height="96.0dp" android:scaleType="fitCenter" android:contentDescription="@string/transport_phone_app_title" />
+        <LinearLayout android:orientation="vertical" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_weight="1.0" android:layout_marginStart="12.0dp">
+            <TextView android:textSize="15.0sp" android:textStyle="bold" android:textColor="?android:textColorPrimary" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/transport_phone_app_title" />
+            <TextView android:textSize="13.0sp" android:textColor="?android:textColorSecondary" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="4.0dp" android:text="@string/transport_phone_app_subtitle" />
+        </LinearLayout>
+    </LinearLayout>
+    <TextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="?android:textColorPrimary" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="18.0dp" android:text="@string/transport_wifi_title" />
+    <TextView android:textSize="13.0sp" android:textColor="?android:textColorSecondary" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="3.0dp" android:text="@string/transport_wifi_description" />
+    <com.google.android.material.materialswitch.MaterialSwitch android:textSize="16.0sp" android:textColor="?android:textColorPrimary" android:id="@id/transportAutomaticWifi" android:layout_width="match_parent" android:layout_height="56.0dp" android:text="@string/transport_wifi_automatic" />
+    <EditText android:textColor="?android:textColorPrimary" android:textColorHint="?android:textColorSecondary" android:id="@id/transportHost" android:layout_width="match_parent" android:layout_height="54.0dp" android:hint="@string/transport_wifi_ip_hint" android:maxLines="1" android:inputType="textUri" />
+    <TextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="?android:textColorPrimary" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="16.0dp" android:text="@string/transport_bluetooth_title" />
+    <TextView android:textSize="13.0sp" android:textColor="?android:textColorSecondary" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="3.0dp" android:text="@string/transport_bluetooth_description" />
+    <Spinner android:id="@id/transportBluetoothDevice" android:layout_width="match_parent" android:layout_height="56.0dp" android:layout_marginTop="6.0dp" android:spinnerMode="dialog" />
+    <TextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="?android:textColorPrimary" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="14.0dp" android:text="@string/transport_shared_token" />
+    <TextView android:textSize="13.0sp" android:textColor="?android:textColorSecondary" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="3.0dp" android:text="@string/transport_token_description" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="4.0dp">
+        <EditText android:textColor="?android:textColorPrimary" android:textColorHint="?android:textColorSecondary" android:id="@id/transportToken" android:layout_width="0.0dp" android:layout_height="54.0dp" android:hint="@string/transport_token_hint" android:maxLines="1" android:layout_weight="1.0" android:inputType="number" />
+        <Button android:id="@id/transportGenerateToken" android:layout_width="wrap_content" android:layout_height="54.0dp" android:text="@string/transport_generate_token" android:layout_marginStart="8.0dp" />
+    </LinearLayout>
+    <Button android:id="@id/transportSave" android:layout_width="match_parent" android:layout_height="56.0dp" android:layout_marginTop="16.0dp" android:text="@string/transport_save" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dp">
+        <Button android:id="@id/transportStart" android:layout_width="0.0dp" android:layout_height="54.0dp" android:text="@string/transport_manual_start" android:layout_weight="1.0" android:layout_marginEnd="5.0dp" />
+        <Button android:id="@id/transportStop" android:layout_width="0.0dp" android:layout_height="54.0dp" android:text="@string/transport_manual_stop" android:layout_weight="1.0" android:layout_marginStart="5.0dp" />
+    </LinearLayout>
+</LinearLayout>

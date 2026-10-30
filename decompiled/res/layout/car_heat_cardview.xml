@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.cardview.widget.CardView android:layout_width="260.0dp" android:layout_height="454.0dp" android:backgroundTint="@color/FlexboxLayout_MainView">
+        <GridLayout android:background="@color/header" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textColor="@color/headerText" android:gravity="center" android:id="@id/centerLabel" android:paddingBottom="2.0dp" android:layout_width="220.0dp" android:layout_height="36.0sp" android:layout_marginTop="0.0dp" android:layout_column="0" android:shadowColor="@color/headerTextShadowColor" android:shadowDx="0.0" android:shadowDy="0.0" android:shadowRadius="5.0" app:autoSizeTextType="uniform" />
+            <ImageView android:layout_gravity="center" android:id="@id/headerIcon" android:background="@drawable/baseline_help_24" android:layout_width="30.0dp" android:layout_height="30.0dp" android:layout_column="1" />
+        </GridLayout>
+        <GridLayout android:background="@drawable/border" android:paddingLeft="10.0dp" android:paddingTop="40.0dp" android:paddingRight="10.0dp" android:paddingBottom="25.0dp" android:layout_width="match_parent" android:layout_height="match_parent">
+            <GridLayout android:background="@drawable/border" android:layout_width="match_parent" android:layout_height="110.0dp" android:layout_margin="10.0dp" android:layout_column="0" android:layout_row="1" android:layout_columnSpan="2">
+                <LinearLayout android:layout_gravity="center" android:layout_width="80.0dp" android:layout_height="80.0dp" android:layout_column="0" android:rotation="270.0" android:layout_row="0">
+                    <ProgressBar android:layout_gravity="bottom" android:id="@id/seatIconProgress" android:layout_width="80.0dp" android:layout_height="10.0dp" android:layout_marginBottom="15.0dp" android:max="3" android:progress="1" android:progressDrawable="@drawable/heatseat_progress" android:layout_column="0" android:layout_row="0" android:min="0" style="?android:progressBarStyleHorizontal" />
+                </LinearLayout>
+                <ImageView android:layout_gravity="left|center" android:id="@id/seatIcon" android:layout_width="182.0dp" android:layout_height="90.0dp" android:layout_marginLeft="-50.0dp" android:layout_column="1" android:layout_row="0" app:srcCompat="@drawable/car_seat_heat_l" />
+            </GridLayout>
+            <GridLayout android:layout_gravity="center" android:background="@drawable/border" android:padding="8.0dp" android:layout_width="95.0dp" android:layout_height="245.0dp" android:layout_margin="10.0dp" android:layout_column="0" android:layout_row="2">
+                <TextView android:textSize="32.0dp" android:textColor="@color/headerTextShadowColor" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/timeSliderValue" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_column="0" android:text="time" android:ems="4" android:layout_weight="1.0" android:layout_row="0" />
+                <com.h6ah4i.android.widget.verticalseekbar.VerticalSeekBarWrapper android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="200.0dp" android:layout_column="0" android:layout_row="1">
+                    <com.h6ah4i.android.widget.verticalseekbar.VerticalSeekBar android:id="@id/timeSlider" android:layout_width="0.0dp" android:layout_height="0.0dp" android:max="20" android:progress="5" android:progressDrawable="@drawable/heat_seat_time_progress" android:thumb="@drawable/heat_seat_temp_progress_thumb" android:thumbOffset="0.0dp" android:splitTrack="false" android:min="0" app:seekBarRotation="CW270" />
+                </com.h6ah4i.android.widget.verticalseekbar.VerticalSeekBarWrapper>
+            </GridLayout>
+            <GridLayout android:layout_gravity="center" android:background="@drawable/border" android:padding="8.0dp" android:layout_width="95.0dp" android:layout_height="250.0dp" android:layout_margin="10.0dp" android:layout_marginTop="5.0dp" android:layout_column="1" android:layout_row="2">
+                <ImageView android:layout_gravity="center" android:id="@id/temperatureSign" android:layout_width="25.0dp" android:layout_height="25.0dp" android:layout_column="0" android:layout_row="0" />
+                <TextView android:textSize="32.0sp" android:textColor="@color/headerTextShadowColor" android:gravity="center_horizontal" android:layout_gravity="center" android:id="@id/temperatureValue" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="-30.0dp" android:layout_column="1" android:text="temp" android:ems="4" android:layout_row="0" />
+                <com.h6ah4i.android.widget.verticalseekbar.VerticalSeekBarWrapper android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="200.0dp" android:layout_column="0" android:layout_row="1" android:layout_columnSpan="2" android:layout_marginStart="-20.0dp">
+                    <com.h6ah4i.android.widget.verticalseekbar.VerticalSeekBar android:id="@id/tempSlider" android:layout_width="0.0dp" android:layout_height="0.0dp" android:max="10" android:progressDrawable="@drawable/heat_seat_time_progress" android:thumb="@drawable/heat_seat_temp_progress_thumb" android:thumbOffset="0.0dp" android:splitTrack="false" android:min="-40" app:seekBarRotation="CW270" />
+                </com.h6ah4i.android.widget.verticalseekbar.VerticalSeekBarWrapper>
+            </GridLayout>
+        </GridLayout>
+    </androidx.cardview.widget.CardView>
+</merge>

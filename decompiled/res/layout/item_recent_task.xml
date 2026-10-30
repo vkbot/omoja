@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:background="@drawable/bg_recent_task_card" android:padding="8.0dp" android:focusable="true" android:clickable="true" android:layout_width="136.0dp" android:layout_height="176.0dp" android:layout_margin="6.0dp" android:foreground="?android:selectableItemBackground"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:background="@drawable/bg_recent_task_preview" android:padding="14.0dp" android:layout_width="match_parent" android:layout_height="0.0dp" android:layout_weight="1.0">
+        <ImageView android:layout_gravity="center" android:id="@id/appIcon" android:layout_width="76.0dp" android:layout_height="76.0dp" android:scaleType="fitCenter" />
+    </FrameLayout>
+    <TextView android:textSize="14.0sp" android:textStyle="bold" android:textColor="#ffffffff" android:ellipsize="end" android:gravity="center" android:id="@id/appLabel" android:layout_width="match_parent" android:layout_height="38.0dp" android:layout_marginTop="8.0dp" android:maxLines="2" />
+</LinearLayout>

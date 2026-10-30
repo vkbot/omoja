@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:background="@drawable/border" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="8.0dp" android:backgroundTint="@color/FlexboxLayout_MainView">
+        <ImageView android:id="@id/imgResurceMove" android:layout_width="@dimen/layout_height_constant" android:layout_height="@dimen/layout_height_constant" android:layout_margin="8.0dp" android:src="@mipmap/myico" />
+        <TextView android:textSize="20.0sp" android:textColor="@color/headerTextShadowColor" android:id="@id/NameLayMov" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="8.0dp" android:text="" />
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:background="@drawable/border" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="8.0dp">
+            <ImageButton android:textSize="@dimen/layout_text_constant" android:id="@id/movU" android:background="@drawable/baseline_arrow_upward_24" android:visibility="gone" android:layout_width="@dimen/layout_height_constant" android:layout_height="@dimen/layout_height_constant" android:layout_margin="8.0dp" />
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <ImageButton android:textSize="@dimen/layout_text_constant" android:id="@id/movL" android:background="@drawable/baseline_arrow_back_24" android:visibility="gone" android:layout_width="@dimen/layout_height_constant" android:layout_height="@dimen/layout_height_constant" android:layout_margin="8.0dp" />
+                <com.google.android.material.textfield.TextInputEditText android:textSize="@dimen/layout_text_constant" android:textColor="@color/headerTextShadowColor" android:gravity="right" android:id="@id/YLayMovX" android:layout_width="60.0dp" android:layout_height="wrap_content" android:layout_marginTop="8.0dp" android:layout_marginBottom="8.0dp" android:text="10" android:layout_marginStart="8.0dp" />
+                <TextView android:textSize="@dimen/layout_text_constant" android:textColor="@color/headerTextShadowColor" android:id="@id/textView40" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="8.0dp" android:text="X" />
+                <com.google.android.material.textfield.TextInputEditText android:textSize="@dimen/layout_text_constant" android:textColor="@color/headerTextShadowColor" android:gravity="left" android:id="@id/YLayMovY" android:layout_width="60.0dp" android:layout_height="wrap_content" android:layout_marginTop="8.0dp" android:layout_marginBottom="8.0dp" android:text="10" android:layout_marginEnd="8.0dp" />
+                <ImageButton android:textSize="@dimen/layout_text_constant" android:id="@id/movR" android:background="@drawable/baseline_arrow_forward_24" android:visibility="gone" android:layout_width="@dimen/layout_height_constant" android:layout_height="@dimen/layout_height_constant" android:layout_margin="8.0dp" />
+            </LinearLayout>
+            <ImageButton android:textSize="@dimen/layout_text_constant" android:id="@id/movD" android:background="@drawable/baseline_arrow_downward_24" android:visibility="gone" android:layout_width="@dimen/layout_height_constant" android:layout_height="@dimen/layout_height_constant" android:layout_margin="8.0dp" />
+        </LinearLayout>
+    </LinearLayout>
+</merge>

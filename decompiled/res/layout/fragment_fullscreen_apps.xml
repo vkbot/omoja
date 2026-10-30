@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:padding="12.0dp" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <Button android:id="@id/fullscreenBack" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/b_back" android:layout_marginEnd="12.0dp" />
+        <TextView android:textSize="22.0sp" android:textStyle="bold" android:textColor="?android:textColorPrimary" android:layout_width="0.0dp" android:layout_height="wrap_content" android:text="@string/fullscreen_apps_title" android:layout_weight="1.0" />
+    </LinearLayout>
+    <TextView android:textSize="14.0sp" android:textColor="?android:textColorSecondary" android:id="@id/fullscreenDescription" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dp" android:layout_marginBottom="12.0dp" android:text="@string/fullscreen_apps_description" />
+    <ProgressBar android:id="@id/fullscreenProgress" android:layout_width="match_parent" android:layout_height="4.0dp" android:layout_marginTop="8.0dp" android:indeterminate="true" style="?android:progressBarStyleHorizontal" />
+    <TextView android:textSize="15.0sp" android:textColor="?android:textColorSecondary" android:id="@id/fullscreenStatus" android:paddingTop="12.0dp" android:paddingBottom="12.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/fullscreen_apps_loading" android:accessibilityLiveRegion="polite" />
+    <com.example.navistart.DialogUni.Fragmenti.MaxHeightRecyclerView android:id="@id/fullscreenApps" android:visibility="gone" android:scrollbars="vertical" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="wrap_content" />
+</LinearLayout>

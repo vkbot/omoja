@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:background="@color/modern_background" android:padding="16.0dp" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/storeHeader" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="12.0dp">
+        <Button android:id="@id/storeBackButton" android:layout_width="132.0dp" android:text="@string/b_back" android:layout_marginEnd="12.0dp" style="@style/ModernInlineButton" />
+        <Button android:id="@id/storeManageAppsButton" android:paddingTop="10.0dp" android:paddingBottom="10.0dp" android:layout_width="0.0dp" android:layout_height="wrap_content" android:minHeight="52.0dp" android:text="@string/install_app_b" android:layout_weight="1.0" style="@style/ModernInlineButton" />
+    </LinearLayout>
+    <EditText android:textSize="17.0sp" android:textColor="@color/modern_text" android:textColorHint="@color/modern_text_secondary" android:id="@id/storeSearchInput" android:background="@drawable/modern_field" android:layout_width="match_parent" android:layout_height="54.0dp" android:layout_marginBottom="12.0dp" android:hint="@string/app_store_search_hint" android:maxLines="1" android:inputType="text" android:imeOptions="actionDone" android:paddingStart="18.0dp" android:paddingEnd="18.0dp" />
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/recyclerView" android:paddingBottom="12.0dp" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="0.0dp" android:layout_weight="1.0" />
+    <TextView android:textSize="18.0sp" android:textColor="@color/modern_text_secondary" android:gravity="center" android:id="@id/storeCatalogStatus" android:padding="24.0dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="0.0dp" android:text="@string/app_store_catalog_unavailable" android:layout_weight="1.0" />
+</LinearLayout>

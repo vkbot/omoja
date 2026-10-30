@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:background="@color/modern_background" android:layout_width="match_parent" android:layout_height="match_parent" android:fillViewport="true"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:padding="20.0dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="24.0sp" android:textStyle="bold" android:textColor="@color/modern_text" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="16.0dp" android:text="@string/item_vjct" />
+        <LinearLayout android:orientation="vertical" android:background="@drawable/modern_panel" android:padding="16.0dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="16.0sp" android:textColor="@color/modern_text" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/vpn_shag1" />
+            <TextView android:textSize="15.0sp" android:textColor="@color/modern_text_secondary" android:id="@id/textView43" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dp" />
+            <ProgressBar android:id="@id/progressBar_v" android:layout_width="match_parent" android:layout_height="6.0dp" android:layout_marginTop="12.0dp" android:layout_marginBottom="12.0dp" android:max="100" android:progressTint="@color/modern_primary" android:progressBackgroundTint="@color/modern_divider" style="?android:progressBarStyleHorizontal" />
+            <Button android:id="@id/button26" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/download" style="@style/ModernFragmentButton" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:background="@drawable/modern_panel" android:padding="16.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12.0dp">
+            <TextView android:textSize="15.0sp" android:textColor="@color/modern_text_secondary" android:id="@id/vpn_turn2_status" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/vpn_start_about" />
+            <Switch android:textSize="16.0sp" android:textColor="@color/modern_text" android:id="@id/vpn_services_start" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dp" android:minHeight="56.0dp" android:text="@string/vpn_services_start" />
+            <LinearLayout android:orientation="vertical" android:id="@id/vpn_start_lay" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <Switch android:textSize="16.0sp" android:textColor="@color/modern_text" android:id="@id/vpn_boot_start" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="56.0dp" android:text="@string/vpn_boot_start" />
+                <TextView android:textSize="15.0sp" android:textColor="@color/modern_text_secondary" android:id="@id/vkluchit_text" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="12.0dp" />
+                <Button android:id="@id/vpn_vkluchit" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/vkluchit" style="@style/ModernFragmentButton" />
+            </LinearLayout>
+        </LinearLayout>
+        <Button android:id="@id/button25" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="16.0dp" android:text="@string/b_back" style="@style/ModernFragmentButton" />
+        <TextView android:textSize="20.0sp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="8.0dp" android:text="@string/vpn_shag2" />
+        <com.google.android.flexbox.FlexboxLayout android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="8.0dp" app:alignContent="flex_start" app:alignItems="flex_start" app:flexWrap="wrap" app:justifyContent="center">
+            <ImageView android:layout_width="200.0dp" android:layout_height="200.0dp" android:layout_margin="5.0dp" android:src="@drawable/wg_vpn1" />
+            <ImageView android:layout_width="200.0dp" android:layout_height="200.0dp" android:layout_margin="5.0dp" android:src="@drawable/wg_vpn2" />
+            <ImageView android:layout_width="200.0dp" android:layout_height="200.0dp" android:layout_margin="5.0dp" android:src="@drawable/wg_vpn3" />
+            <ImageView android:layout_width="200.0dp" android:layout_height="200.0dp" android:layout_margin="5.0dp" android:src="@drawable/wg_vpn4" />
+            <ImageView android:layout_width="200.0dp" android:layout_height="200.0dp" android:layout_margin="5.0dp" android:src="@drawable/wg_vpn5" />
+        </com.google.android.flexbox.FlexboxLayout>
+        <Button android:id="@id/button_openvpn_client" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/open_vpn_client" style="@style/ModernFragmentButton" />
+    </LinearLayout>
+</ScrollView>

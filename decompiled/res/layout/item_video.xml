@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/modern_action_row" android:padding="10.0dp" android:focusable="true" android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="6.0dp" android:foreground="?selectableItemBackground"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/videoPreview" android:layout_width="match_parent" android:layout_height="130.0dp" android:scaleType="centerCrop" android:contentDescription="@null" />
+    <TextView android:textSize="17.0sp" android:textStyle="bold" android:textColor="@color/modern_text" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/videoTitle" android:layout_width="match_parent" android:layout_height="52.0dp" android:maxLines="2" />
+    <TextView android:textSize="12.0sp" android:textColor="@color/modern_text_secondary" android:ellipsize="middle" android:id="@id/videoMeta" android:layout_width="match_parent" android:layout_height="36.0dp" android:maxLines="2" />
+</LinearLayout>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:padding="20.0dp" android:layout_width="420.0dp" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="14.0dp">
+        <Button android:id="@id/permissionGrantBackButton" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/b_back" android:layout_marginEnd="10.0dp" />
+        <TextView android:textSize="20.0sp" android:textStyle="bold" android:textColor="?android:textColorPrimary" android:id="@id/permissionGrantTitle" android:layout_width="0.0dp" android:layout_height="wrap_content" android:text="@string/app_permission_grant_title" android:layout_weight="1.0" />
+        <View android:id="@id/permissionGrantAccessIndicator" android:layout_width="12.0dp" android:layout_height="12.0dp" android:importantForAccessibility="no" android:layout_marginStart="10.0dp" />
+    </LinearLayout>
+    <TextView android:textSize="16.0sp" android:textColor="?android:textColorPrimary" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="6.0dp" android:text="@string/app_permission_grant_select_app" />
+    <Spinner android:id="@id/permissionGrantAppSpinner" android:background="@drawable/uni_field_background" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="14.0dp" android:minHeight="72.0dp" android:prompt="@string/app_permission_grant_select_app" android:spinnerMode="dialog" />
+    <Button android:textSize="16.0sp" android:id="@id/permissionGrantButton" android:layout_width="match_parent" android:layout_height="64.0dp" android:text="@string/app_permission_grant_all" />
+    <TextView android:textSize="14.0sp" android:textColor="?android:textColorPrimary" android:id="@id/permissionGrantStatus" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12.0dp" />
+</LinearLayout>

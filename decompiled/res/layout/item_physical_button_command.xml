@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:padding="8.0dp" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <Button android:textColor="?android:textColorPrimary" android:ellipsize="end" android:gravity="center" android:id="@id/buttonPhysicalButtonValue" android:background="@drawable/uni_field_background" android:layout_width="wrap_content" android:layout_height="48.0dp" android:maxWidth="176.0dp" android:minWidth="132.0dp" android:minHeight="48.0dp" android:text="Выбрать кнопку" android:maxLines="2" android:textAllCaps="false" android:paddingStart="12.0dp" android:paddingEnd="12.0dp" />
+    <LinearLayout android:orientation="vertical" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_weight="1.0" android:layout_marginStart="10.0dp">
+        <Spinner android:id="@id/spinnerPhysicalButtonAction" android:layout_width="match_parent" android:layout_height="wrap_content" android:spinnerMode="dialog" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <CheckBox android:id="@id/checkPhysicalButtonEnabled" android:layout_width="0.0dp" android:layout_height="wrap_content" android:text="Активно" android:layout_weight="1.0" />
+            <Button android:id="@id/btnDeletePhysicalButtonCommand" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Удалить" android:layout_marginStart="8.0dp" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

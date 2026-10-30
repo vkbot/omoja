@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="match_parent" android:layout_height="wrap_content" android:fillViewport="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:padding="20.0dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="20.0sp" android:textStyle="bold" android:textColor="?android:textColorPrimary" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="ADB-клиент" />
+        <EditText android:textColor="?android:textColorPrimary" android:textColorHint="?android:textColorSecondary" android:id="@id/adbEndpoint" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="16.0dp" android:text="127.0.0.1:5555" android:hint="Адрес и порт" android:singleLine="true" android:inputType="textUri" />
+        <EditText android:textColor="?android:textColorPrimary" android:textColorHint="?android:textColorSecondary" android:id="@id/adbCommand" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dp" android:text="id" android:hint="Команда shell" android:singleLine="true" android:inputType="text" />
+        <Button android:id="@id/adbExecute" android:layout_width="match_parent" android:layout_height="56.0dp" android:layout_marginTop="12.0dp" android:text="Выполнить" />
+        <TextView android:textSize="15.0sp" android:textColor="?android:textColorPrimary" android:id="@id/adbStatus" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12.0dp" android:text="Готово к подключению" />
+        <TextView android:textSize="14.0sp" android:textColor="?android:textColorPrimary" android:id="@id/adbOutput" android:background="?android:colorBackground" android:padding="12.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dp" android:minHeight="180.0dp" android:textIsSelectable="true" />
+    </LinearLayout>
+</ScrollView>

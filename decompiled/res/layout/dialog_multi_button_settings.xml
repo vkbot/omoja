@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="match_parent" android:layout_height="wrap_content" android:fillViewport="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:padding="20.0dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="22.0sp" android:textStyle="bold" android:textColor="@color/modern_text" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="16.0dp" android:text="@string/muti_but_sett" />
+        <androidx.appcompat.widget.SwitchCompat android:textSize="16.0sp" android:textColor="@color/modern_text" android:id="@id/multiSettingsEight" android:background="@drawable/modern_panel" android:padding="12.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="56.0dp" android:text="@string/multi_8_button" />
+        <GridLayout android:id="@id/multiSettingsGrid" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12.0dp" android:columnCount="1" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12.0dp">
+            <Button android:id="@id/multiSettingsCancel" android:layout_width="0.0dp" android:layout_height="wrap_content" android:text="@string/cancel" android:layout_weight="1.0" android:layout_marginEnd="6.0dp" style="@style/ModernFragmentButton" />
+            <Button android:id="@id/multiSettingsSave" android:layout_width="0.0dp" android:layout_height="wrap_content" android:text="@string/save" android:layout_weight="1.0" android:layout_marginStart="6.0dp" style="@style/ModernFragmentButton" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>
