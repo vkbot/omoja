@@ -1,0 +1,25 @@
+package androidx.core.view;
+
+import androidx.annotation.Nullable;
+
+/* JADX INFO: compiled from: r8-map-id-94e2637d1b30c6542972a7fc4ced35aa6da258c4e6702fc7c9cbf0ebc32bec75 */
+/* JADX INFO: loaded from: classes.dex */
+public interface NestedScrollingChild {
+    boolean dispatchNestedFling(float f8, float f10, boolean z9);
+
+    boolean dispatchNestedPreFling(float f8, float f10);
+
+    boolean dispatchNestedPreScroll(int i10, int i11, @Nullable int[] iArr, @Nullable int[] iArr2);
+
+    boolean dispatchNestedScroll(int i10, int i11, int i12, int i13, @Nullable int[] iArr);
+
+    boolean hasNestedScrollingParent();
+
+    boolean isNestedScrollingEnabled();
+
+    void setNestedScrollingEnabled(boolean z9);
+
+    boolean startNestedScroll(int i10);
+
+    void stopNestedScroll();
+}

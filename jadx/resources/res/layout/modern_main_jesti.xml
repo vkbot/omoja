@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:textColor="@color/headerText"
+            android:gravity="center"
+            android:id="@+id/MainLabel"
+            android:background="@color/header"
+            android:layout_width="match_parent"
+            android:layout_height="36sp"
+            app:autoSizeTextType="uniform"/>
+        <LinearLayout
+            android:orientation="vertical"
+            android:padding="14dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="52dp">
+            <LinearLayout
+                android:orientation="vertical"
+                android:id="@+id/len_jesti2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:text="@string/modern_two_finger_gestures"
+                    style="@style/ModernGroupTitle"/>
+                <LinearLayout style="@style/ModernGestureActionRow">
+                    <ImageView
+                        android:src="@drawable/baseline_arrow_upward_24"
+                        style="@style/ModernGestureDirectionIcon"/>
+                    <TextView
+                        android:text="@string/modern_gesture_up"
+                        style="@style/ModernGestureDirectionLabel"/>
+                    <FrameLayout style="@style/ModernGestureSpinnerFrame">
+                        <Spinner
+                            android:id="@+id/spinner21"
+                            style="@style/ModernGestureSpinner"/>
+                        <ImageView style="@style/ModernGestureDropIcon"/>
+                    </FrameLayout>
+                </LinearLayout>
+                <LinearLayout style="@style/ModernGestureActionRow">
+                    <ImageView
+                        android:src="@drawable/baseline_arrow_downward_24"
+                        style="@style/ModernGestureDirectionIcon"/>
+                    <TextView
+                        android:text="@string/modern_gesture_down"
+                        style="@style/ModernGestureDirectionLabel"/>
+                    <FrameLayout style="@style/ModernGestureSpinnerFrame">
+                        <Spinner
+                            android:id="@+id/spinner15"
+                            style="@style/ModernGestureSpinner"/>
+                        <ImageView style="@style/ModernGestureDropIcon"/>
+                    </FrameLayout>
+                </LinearLayout>
+                <LinearLayout style="@style/ModernGestureActionRow">
+                    <ImageView
+                        android:src="@drawable/baseline_arrow_back_24"
+                        style="@style/ModernGestureDirectionIcon"/>
+                    <TextView
+                        android:text="@string/modern_gesture_left"
+                        style="@style/ModernGestureDirectionLabel"/>
+                    <FrameLayout style="@style/ModernGestureSpinnerFrame">
+                        <Spinner
+                            android:id="@+id/spinner17"
+                            style="@style/ModernGestureSpinner"/>
+                        <ImageView style="@style/ModernGestureDropIcon"/>
+                    </FrameLayout>
+                </LinearLayout>
+                <LinearLayout style="@style/ModernGestureActionRow">
+                    <ImageView
+                        android:src="@drawable/baseline_arrow_forward_24"
+                        style="@style/ModernGestureDirectionIcon"/>
+                    <TextView
+                        android:text="@string/modern_gesture_right"
+                        style="@style/ModernGestureDirectionLabel"/>
+                    <FrameLayout style="@style/ModernGestureSpinnerFrame">
+                        <Spinner
+                            android:id="@+id/spinner19"
+                            style="@style/ModernGestureSpinner"/>
+                        <ImageView style="@style/ModernGestureDropIcon"/>
+                    </FrameLayout>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="vertical"
+                android:id="@+id/len_jesti3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp">
+                <TextView
+                    android:text="@string/modern_three_finger_gestures"
+                    style="@style/ModernGroupTitle"/>
+                <LinearLayout style="@style/ModernGestureActionRow">
+                    <ImageView
+                        android:src="@drawable/baseline_arrow_upward_24"
+                        style="@style/ModernGestureDirectionIcon"/>
+                    <TextView
+                        android:text="@string/modern_gesture_up"
+                        style="@style/ModernGestureDirectionLabel"/>
+                    <FrameLayout style="@style/ModernGestureSpinnerFrame">
+                        <Spinner
+                            android:id="@+id/spinner22"
+                            style="@style/ModernGestureSpinner"/>
+                        <ImageView style="@style/ModernGestureDropIcon"/>
+                    </FrameLayout>
+                </LinearLayout>
+                <LinearLayout style="@style/ModernGestureActionRow">
+                    <ImageView
+                        android:src="@drawable/baseline_arrow_downward_24"
+                        style="@style/ModernGestureDirectionIcon"/>
+                    <TextView
+                        android:text="@string/modern_gesture_down"
+                        style="@style/ModernGestureDirectionLabel"/>
+                    <FrameLayout style="@style/ModernGestureSpinnerFrame">
+                        <Spinner
+                            android:id="@+id/spinner16"
+                            style="@style/ModernGestureSpinner"/>
+                        <ImageView style="@style/ModernGestureDropIcon"/>
+                    </FrameLayout>
+                </LinearLayout>
+                <LinearLayout style="@style/ModernGestureActionRow">
+                    <ImageView
+                        android:src="@drawable/baseline_arrow_back_24"
+                        style="@style/ModernGestureDirectionIcon"/>
+                    <TextView
+                        android:text="@string/modern_gesture_left"
+                        style="@style/ModernGestureDirectionLabel"/>
+                    <FrameLayout style="@style/ModernGestureSpinnerFrame">
+                        <Spinner
+                            android:id="@+id/spinner18"
+                            style="@style/ModernGestureSpinner"/>
+                        <ImageView style="@style/ModernGestureDropIcon"/>
+                    </FrameLayout>
+                </LinearLayout>
+                <LinearLayout style="@style/ModernGestureActionRow">
+                    <ImageView
+                        android:src="@drawable/baseline_arrow_forward_24"
+                        style="@style/ModernGestureDirectionIcon"/>
+                    <TextView
+                        android:text="@string/modern_gesture_right"
+                        style="@style/ModernGestureDirectionLabel"/>
+                    <FrameLayout style="@style/ModernGestureSpinnerFrame">
+                        <Spinner
+                            android:id="@+id/spinner20"
+                            style="@style/ModernGestureSpinner"/>
+                        <ImageView style="@style/ModernGestureDropIcon"/>
+                    </FrameLayout>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:visibility="gone"
+                android:layout_width="1dp"
+                android:layout_height="1dp">
+                <Button
+                    android:id="@+id/swipe_setting_button"
+                    android:layout_width="1dp"
+                    android:layout_height="1dp"/>
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</merge>

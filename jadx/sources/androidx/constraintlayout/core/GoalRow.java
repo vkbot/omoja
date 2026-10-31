@@ -1,0 +1,15 @@
+package androidx.constraintlayout.core;
+
+/* JADX INFO: compiled from: r8-map-id-94e2637d1b30c6542972a7fc4ced35aa6da258c4e6702fc7c9cbf0ebc32bec75 */
+/* JADX INFO: loaded from: classes.dex */
+public class GoalRow extends ArrayRow {
+    public GoalRow(Cache cache) {
+        super(cache);
+    }
+
+    @Override // androidx.constraintlayout.core.ArrayRow, androidx.constraintlayout.core.LinearSystem.Row
+    public void addError(SolverVariable solverVariable) {
+        super.addError(solverVariable);
+        solverVariable.usageInRowCount--;
+    }
+}

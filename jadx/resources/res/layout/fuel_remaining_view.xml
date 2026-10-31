@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:background="@drawable/rounded_background"
+    android:padding="3dp"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <ImageView
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:src="@drawable/ic_fuel_tank"
+        android:tint="#d7d3d3"
+        android:contentDescription="@null"
+        android:layout_marginStart="5dp"/>
+    <TextView
+        android:textSize="35sp"
+        android:textColor="#d7d3d3"
+        android:id="@+id/fuel_remaining_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="3dp"
+        android:text="@string/fuel_widget_unavailable"
+        android:fontFamily="@font/dudkabold"/>
+</LinearLayout>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CheckedTextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:textSize="20sp"
+    android:ellipsize="marquee"
+    android:gravity="center"
+    android:id="@android:id/text1"
+    android:background="@drawable/spinner_dropdown_background"
+    android:paddingLeft="10dp"
+    android:paddingTop="5dp"
+    android:paddingRight="10dp"
+    android:paddingBottom="5dp"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/layout_height_constant"
+    android:singleLine="true"
+    style="@style/spinnerDropDownItemStyle"/>

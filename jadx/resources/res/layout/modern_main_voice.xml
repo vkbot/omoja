@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:textColor="@color/headerText"
+            android:gravity="center"
+            android:id="@+id/MainLabel"
+            android:background="@color/header"
+            android:layout_width="match_parent"
+            android:layout_height="36sp"
+            app:autoSizeTextType="uniform"/>
+        <LinearLayout
+            android:orientation="vertical"
+            android:padding="14dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="52dp">
+            <LinearLayout style="@style/ModernSettingsActionContainer">
+                <ImageView
+                    android:src="@drawable/goloshelp"
+                    android:contentDescription="@null"
+                    style="@style/ModernSettingsRowIcon"/>
+                <com.google.android.material.materialswitch.MaterialSwitch
+                    android:gravity="start|center_vertical"
+                    android:id="@+id/sw_speech_button"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:text="@string/sw_LounchBOnOffspeech"
+                    android:layout_weight="1"
+                    android:layoutDirection="rtl"
+                    android:layout_marginStart="10dp"/>
+                <Button
+                    android:id="@+id/button_setting_speech"
+                    android:text="@string/b_settings"
+                    android:layout_marginStart="12dp"
+                    style="@style/ModernInlineButton"/>
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</merge>

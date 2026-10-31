@@ -1,0 +1,56 @@
+package p225w0;
+
+import com.example.navistart.R;
+import kotlin.jvm.internal.ByteCompanionObject;
+import kotlin.p118io.encoding.Base64;
+import p047e0.AbstractC1387m;
+
+/* JADX INFO: renamed from: w0.k1 */
+/* JADX INFO: compiled from: r8-map-id-94e2637d1b30c6542972a7fc4ced35aa6da258c4e6702fc7c9cbf0ebc32bec75 */
+/* JADX INFO: loaded from: classes.dex */
+public enum EnumC3472k1 {
+    f10049e(AbstractC1387m.m2421h(new byte[]{-53, 25, 38, -99, -30, 69, 121, -33, -35, 9, 51, -113, -2, 72, 99}, new byte[]{-113, 92, 96, -36, -73, 9, 45, ByteCompanionObject.MIN_VALUE}), AbstractC1387m.m2421h(new byte[]{95, 1, -55, 50, 45, -5, 85, 69, 76, 2, -105, 42, 109, -9, 86, 77, 4, 28, -49, 119, 122, -1, 74}, new byte[]{41, 110, -70, 89, 0, -106, 58, 33}), true),
+    f10050f(AbstractC1387m.m2421h(new byte[]{-61, -114, -34, 125, -80, 98, 86}, new byte[]{ByteCompanionObject.MIN_VALUE, -58, -105, 51, -11, 49, 19, -24}), AbstractC1387m.m2421h(new byte[]{-43, 126, 90, -62, 107, -64, -35, -64, -58, 125, 4, -38, 43, -52, -34, -56, -114, 114, 71, -124, 118, -125, ByteCompanionObject.MIN_VALUE, -106, -115, 107, 64, -39}, new byte[]{-93, 17, 41, -87, 70, -83, -78, -92}), false),
+    f10051g(AbstractC1387m.m2421h(new byte[]{62, -17, 47, -108, -13, 48, 64, -89, 46, -14}, new byte[]{123, -95, 104, -40, -70, 99, 8, -8}), AbstractC1387m.m2421h(new byte[]{71, 53, -10, 56, 50, -1, 106, 100, 84, 54, -88, 32, 114, -13, 105, 108, 28, 63, -21, 126, 106, -31, 40, 48, 31, 107, -80, 125, 101, -5, 117}, new byte[]{49, 90, -123, 83, 31, -110, 5, 0}), false),
+    f10052h(AbstractC1387m.m2421h(new byte[]{-102, 50, 121, -107, -56, 103}, new byte[]{-35, 119, 43, -40, -119, 41, 72, 47}), AbstractC1387m.m2421h(new byte[]{104, -92, 21, 92, -14, 53, -107, 57, 123, -89, 75, 68, -78, 57, -106, 49, 51, -81, 3, 26, -17, 118, -53, 104, 48, -79, 15, 71}, new byte[]{30, -53, 102, 55, -33, 88, -6, 93}), false),
+    f10053i(AbstractC1387m.m2421h(new byte[]{65, 72, -115, 95, -84, 92}, new byte[]{7, 26, -56, 17, -17, 20, 25, -71}), AbstractC1387m.m2421h(new byte[]{63, -113, 28, Base64.padSymbol, -25, 89, -47, -54, 44, -116, 66, 37, -89, 85, -46, -62, 100, -122, 29, 123, -6, 26, -116, -100, 103, -102, 6, 38}, new byte[]{73, -32, 111, 86, -54, 52, -66, -82}), false),
+    f10054j(AbstractC1387m.m2421h(new byte[]{-73, 125, 29, -91, -47, -80, 86}, new byte[]{-28, 45, 92, -21, -104, -29, 30, 86}), AbstractC1387m.m2421h(new byte[]{-80, 47, 101, 71, 124, -65, -33, -120, -93, 44, 59, 95, 60, -77, -36, ByteCompanionObject.MIN_VALUE, -21, 37, 101, 1, 97, -4, -124, -34, -24, 58, ByteCompanionObject.MAX_VALUE, 92}, new byte[]{-58, 64, 22, 44, 81, -46, -80, -20}), false),
+    f10055k(AbstractC1387m.m2421h(new byte[]{54, 74, -114, 27, -92, -57, -43, -24, 53, 64}, new byte[]{102, 5, -36, 79, -15, ByteCompanionObject.MIN_VALUE, ByteCompanionObject.MIN_VALUE, -83}), AbstractC1387m.m2421h(new byte[]{49, 20, -30, 50, -84, -21, -122, 116, 34, 23, -68, 42, -20, -25, -123, 124, 106, 11, -27, 116, -79, -88, -38, 62, Base64.padSymbol, 18, -31}, new byte[]{71, 123, -111, 89, -127, -122, -23, 16}), false),
+    f10056l(AbstractC1387m.m2421h(new byte[]{-70, -98, -115, 101, -24, -11, 57}, new byte[]{-18, -53, -33, 46, -95, -90, 113, 116}), AbstractC1387m.m2421h(new byte[]{-67, -58, -15, 124, ByteCompanionObject.MIN_VALUE, -14, 117, 18, -82, -59, -81, 100, -64, -2, 118, 26, -26, -35, -16, 58, -99, -79, 41, 88, -79, -64, -14}, new byte[]{-53, -87, -126, 23, -83, -97, 26, 118}), false),
+    f10057m(AbstractC1387m.m2421h(new byte[]{-105, 62, 7, 116, 16, -89, 107, 113, -110, 50}, new byte[]{-63, 119, 66, 32, 94, -26, 38, 52}), AbstractC1387m.m2421h(new byte[]{-68, 103, -127, -67, -38, 109, -86, -39, -81, 100, -33, -91, -102, 97, -87, -47, -25, 126, -100, -5, -57, 46, -15, -109, -80, 97, -126}, new byte[]{-54, 8, -14, -42, -9, 0, -59, -67}), false),
+    f10058n(R.string.vosk_language_italian, AbstractC1387m.m2421h(new byte[]{-113, -26, -121, -30, -13, -12, 41, ByteCompanionObject.MIN_VALUE, -100, -27, -39, -6, -77, -8, 42, -120, -44, -32, ByteCompanionObject.MIN_VALUE, -92, -18, -73, 116, -42, -41, -13, -99, -7}, new byte[]{-7, -119, -12, -119, -34, -103, 70, -28})),
+    f10059o(R.string.vosk_language_dutch, AbstractC1387m.m2421h(new byte[]{-17, 36, -31, -29, -13, 54, 98, -16, -4, 39, -65, -5, -77, 58, 97, -8, -76, 37, -2, -91, -18, 117, 63, -90, -73, 49, -5, -8}, new byte[]{-103, 75, -110, -120, -34, 91, 13, -108})),
+    f10060p(R.string.vosk_language_catalan, AbstractC1387m.m2421h(new byte[]{-11, -75, 78, 67, 123, 97, 31, 50, -26, -74, 16, 91, 59, 109, 28, 58, -82, -71, 92, 5, 102, 34, 68, 120, -7, -77, 77}, new byte[]{-125, -38, Base64.padSymbol, 40, 86, 12, 112, 86})),
+    f10061q(R.string.vosk_language_farsi, AbstractC1387m.m2421h(new byte[]{-38, -122, -13, 47, -98, 18, -43, -116, -55, -123, -83, 55, -34, 30, -42, -124, -127, -113, -31, 105, -125, 81, -113, -58, -42, ByteCompanionObject.MIN_VALUE, -16}, new byte[]{-84, -23, ByteCompanionObject.MIN_VALUE, 68, -77, ByteCompanionObject.MAX_VALUE, -70, -24})),
+    f10062r(R.string.vosk_language_tagalog, AbstractC1387m.m2421h(new byte[]{114, -102, -55, -75, -24, 107, ByteCompanionObject.MIN_VALUE, -87, 97, -103, -105, -86, -87, 43, -97, -91, 41, -110, -33, -80, -96, 116, -122, -82, 41, -59, -108, -24, -21, 124, -122, -67}, new byte[]{4, -11, -70, -34, -59, 6, -17, -51})),
+    f10063s(R.string.vosk_language_arabic, AbstractC1387m.m2421h(new byte[]{43, 89, 113, 22, 78, 23, 21, 4, 56, 90, 47, 28, 17, 87, 23, 7, 63, 4, 47, 77, 77, 78, 84, 26, 52, 70}, new byte[]{93, 54, 2, 125, 99, 122, 122, 96})),
+    f10064t(R.string.vosk_language_polish, AbstractC1387m.m2421h(new byte[]{53, -16, -46, 5, 97, 106, 119, -31, 38, -13, -116, 29, 33, 102, 116, -23, 110, -17, -51, 67, 124, 41, 42, -73, 109, -27, -56, 30}, new byte[]{67, -97, -95, 110, 76, 7, 24, -123})),
+    f10065u(R.string.vosk_language_hindi, AbstractC1387m.m2421h(new byte[]{12, 15, 36, 58, -67, -54, 87, -87, 31, 12, 122, 34, -3, -58, 84, -95, 87, 8, 62, 124, -96, -119, 10, -1, 84, 26, 62, 33}, new byte[]{122, 96, 87, 81, -112, -89, 56, -51})),
+    f10066v(R.string.vosk_language_czech, AbstractC1387m.m2421h(new byte[]{-54, -67, -74, -116, -89, -55, 46, 119, -39, -66, -24, -108, -25, -59, 45, ByteCompanionObject.MAX_VALUE, -111, -79, -74, -54, -70, -118, 117, 62, -50, -70, -92, -108, -7, -44, 56, Base64.padSymbol, -58, -69, -75}, new byte[]{-68, -46, -59, -25, -118, -92, 65, 19})),
+    f10067w(R.string.vosk_language_esperanto, AbstractC1387m.m2421h(new byte[]{123, -57, 124, -40, 76, -44, 16, 91, 104, -60, 34, -64, 12, -40, 19, 83, 32, -51, 96, -98, 81, -105, 75, 13, 35, -46, 102, -61}, new byte[]{13, -88, 15, -77, 97, -71, ByteCompanionObject.MAX_VALUE, 63})),
+    f10068x(R.string.vosk_language_kazakh, AbstractC1387m.m2421h(new byte[]{79, 18, 65, 13, ByteCompanionObject.MAX_VALUE, 9, 32, 46, 92, 17, 31, 21, 63, 5, 35, 38, 20, 22, 72, 75, 98, 74, 123, 120, 23, 7, 91, 22}, new byte[]{57, 125, 50, 102, 82, 100, 79, 74})),
+    f10069y(R.string.vosk_language_japanese, AbstractC1387m.m2421h(new byte[]{64, 96, -90, 14, -64, -48, -11, -49, 83, 99, -8, 22, ByteCompanionObject.MIN_VALUE, -36, -10, -57, 27, 101, -76, 72, -35, -109, -88, -103, 24, 117, -68, 21}, new byte[]{54, 15, -43, 101, -19, -67, -102, -85})),
+    f10070z(R.string.vosk_language_korean, AbstractC1387m.m2421h(new byte[]{104, -40, -117, 84, -94, -26, -48, 111, 123, -37, -43, 76, -30, -22, -45, 103, 51, -36, -105, 18, -65, -91, -115, 57, 48, -51, -111, 79}, new byte[]{30, -73, -8, 63, -113, -117, -65, 11})),
+    f10046A(R.string.vosk_language_uzbek, AbstractC1387m.m2421h(new byte[]{70, 119, 72, 90, 53, 126, -2, -98, 85, 116, 22, 68, 98, 62, -95, -44, 2, 42, 21, 75, 113, 99}, new byte[]{48, 24, 59, 49, 24, 19, -111, -6})),
+    f10047B(R.string.vosk_language_gujarati, AbstractC1387m.m2421h(new byte[]{44, 76, -85, 7, -41, 3, -102, 71, 63, 79, -11, 11, -113, 67, -59, 13, 110, 17, -10, 22, -109, 30}, new byte[]{90, 35, -40, 108, -6, 110, -11, 35}));
+
+
+    /* JADX INFO: renamed from: b */
+    public final int f10071b;
+
+    /* JADX INFO: renamed from: c */
+    public final String f10072c;
+
+    /* JADX INFO: renamed from: d */
+    public final boolean f10073d;
+
+    EnumC3472k1(int i10, String str) {
+        this(str, str, false);
+    }
+
+    EnumC3472k1(String str, String str2, boolean z9) {
+        this.f10071b = i;
+        this.f10072c = str2;
+        this.f10073d = z9;
+    }
+}

@@ -1,0 +1,18 @@
+package p148n7;
+
+/* JADX INFO: renamed from: n7.a */
+/* JADX INFO: compiled from: r8-map-id-94e2637d1b30c6542972a7fc4ced35aa6da258c4e6702fc7c9cbf0ebc32bec75 */
+/* JADX INFO: loaded from: classes.dex */
+public final class C2491a {
+
+    /* JADX INFO: renamed from: a */
+    public final String f6876a;
+
+    public C2491a(String str) {
+        this.f6876a = str;
+    }
+
+    public final String toString() {
+        return this.f6876a;
+    }
+}

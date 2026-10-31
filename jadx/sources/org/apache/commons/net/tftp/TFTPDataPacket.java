@@ -1,0 +1,103 @@
+package org.apache.commons.net.tftp;
+
+import java.net.DatagramPacket;
+import java.net.InetAddress;
+import kotlin.UByte;
+
+/* JADX INFO: compiled from: r8-map-id-94e2637d1b30c6542972a7fc4ced35aa6da258c4e6702fc7c9cbf0ebc32bec75 */
+/* JADX INFO: loaded from: classes2.dex */
+public final class TFTPDataPacket extends TFTPPacket {
+    public static final int MAX_DATA_LENGTH = 512;
+    public static final int MIN_DATA_LENGTH = 0;
+    int blockNumber;
+    private byte[] data;
+    private int length;
+    private int offset;
+
+    public TFTPDataPacket(DatagramPacket datagramPacket) throws TFTPPacketException {
+        super(3, datagramPacket.getAddress(), datagramPacket.getPort());
+        this.data = datagramPacket.getData();
+        this.offset = 4;
+        int type = getType();
+        byte[] bArr = this.data;
+        if (type != bArr[1]) {
+            throw new TFTPPacketException("TFTP operator code does not match type.");
+        }
+        this.blockNumber = ((bArr[2] & UByte.MAX_VALUE) << 8) | (bArr[3] & UByte.MAX_VALUE);
+        this.length = datagramPacket.getLength() - 4;
+    }
+
+    public int getBlockNumber() {
+        return this.blockNumber;
+    }
+
+    public byte[] getData() {
+        return this.data;
+    }
+
+    public int getDataLength() {
+        return this.length;
+    }
+
+    public int getDataOffset() {
+        return this.offset;
+    }
+
+    @Override // org.apache.commons.net.tftp.TFTPPacket
+    public DatagramPacket newDatagram(DatagramPacket datagramPacket, byte[] bArr) {
+        bArr[0] = 0;
+        bArr[1] = (byte) this.type;
+        int i10 = this.blockNumber;
+        bArr[2] = (byte) ((65535 & i10) >> 8);
+        bArr[3] = (byte) (i10 & 255);
+        byte[] bArr2 = this.data;
+        if (bArr != bArr2) {
+            System.arraycopy(bArr2, this.offset, bArr, 4, this.length);
+        }
+        datagramPacket.setAddress(this.address);
+        datagramPacket.setPort(this.port);
+        datagramPacket.setData(bArr);
+        datagramPacket.setLength(this.length + 4);
+        return datagramPacket;
+    }
+
+    public void setBlockNumber(int i10) {
+        this.blockNumber = i10;
+    }
+
+    public void setData(byte[] bArr, int i10, int i11) {
+        this.data = bArr;
+        this.offset = i10;
+        this.length = i11;
+    }
+
+    @Override // org.apache.commons.net.tftp.TFTPPacket
+    public String toString() {
+        return super.toString() + " DATA " + this.blockNumber + " " + this.length;
+    }
+
+    @Override // org.apache.commons.net.tftp.TFTPPacket
+    public DatagramPacket newDatagram() {
+        int i10 = this.length;
+        byte[] bArr = new byte[i10 + 4];
+        bArr[0] = 0;
+        bArr[1] = (byte) this.type;
+        int i11 = this.blockNumber;
+        bArr[2] = (byte) ((65535 & i11) >> 8);
+        bArr[3] = (byte) (i11 & 255);
+        System.arraycopy(this.data, this.offset, bArr, 4, i10);
+        return new DatagramPacket(bArr, this.length + 4, this.address, this.port);
+    }
+
+    public TFTPDataPacket(InetAddress inetAddress, int i10, int i11, byte[] bArr) {
+        this(inetAddress, i10, i11, bArr, 0, bArr.length);
+    }
+
+    public TFTPDataPacket(InetAddress inetAddress, int i10, int i11, byte[] bArr, int i12, int i13) {
+        super(3, inetAddress, i10);
+        this.blockNumber = i11;
+        this.data = bArr;
+        this.offset = i12;
+        this.length = i13;
+    }
+}

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:id="@+id/overlay_root"
+    android:background="@android:color/transparent"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:orientation="vertical"
+        android:id="@+id/text_spich_lay"
+        android:background="@drawable/rounded_background"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:textSize="35sp"
+            android:textColor="#ffffff"
+            android:id="@+id/tvStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:maxWidth="500dp"
+            android:text=""/>
+    </LinearLayout>
+    <com.example.navistart.mainview.FireballView
+        android:id="@+id/fireball"
+        android:layout_width="40dp"
+        android:layout_height="40dp"/>
+</LinearLayout>

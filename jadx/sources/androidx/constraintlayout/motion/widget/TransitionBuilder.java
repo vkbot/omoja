@@ -1,0 +1,36 @@
+package androidx.constraintlayout.motion.widget;
+
+import ai.onnxruntime.C0075b;
+import androidx.constraintlayout.widget.ConstraintSet;
+
+/* JADX INFO: compiled from: r8-map-id-94e2637d1b30c6542972a7fc4ced35aa6da258c4e6702fc7c9cbf0ebc32bec75 */
+/* JADX INFO: loaded from: classes.dex */
+public class TransitionBuilder {
+    private static final String TAG = "TransitionBuilder";
+
+    public static MotionScene.Transition buildTransition(MotionScene motionScene, int i10, int i11, ConstraintSet constraintSet, int i12, ConstraintSet constraintSet2) {
+        MotionScene.Transition transition = new MotionScene.Transition(i10, motionScene, i11, i12);
+        updateConstraintSetInMotionScene(motionScene, transition, constraintSet, constraintSet2);
+        return transition;
+    }
+
+    private static void updateConstraintSetInMotionScene(MotionScene motionScene, MotionScene.Transition transition, ConstraintSet constraintSet, ConstraintSet constraintSet2) {
+        int startConstraintSetId = transition.getStartConstraintSetId();
+        int endConstraintSetId = transition.getEndConstraintSetId();
+        motionScene.setConstraintSet(startConstraintSetId, constraintSet);
+        motionScene.setConstraintSet(endConstraintSetId, constraintSet2);
+    }
+
+    public static void validate(MotionLayout motionLayout) {
+        MotionScene motionScene = motionLayout.mScene;
+        if (motionScene == null) {
+            C0075b.m183h("Invalid motion layout. Layout missing Motion Scene.");
+            return;
+        }
+        if (!motionScene.validateLayout(motionLayout)) {
+            C0075b.m183h("MotionLayout doesn't have the right motion scene.");
+        } else if (motionScene.mCurrentTransition == null || motionScene.getDefinedTransitions().isEmpty()) {
+            C0075b.m183h("Invalid motion layout. Motion Scene doesn't have any transition.");
+        }
+    }
+}

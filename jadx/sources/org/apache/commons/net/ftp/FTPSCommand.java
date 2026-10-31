@@ -1,0 +1,22 @@
+package org.apache.commons.net.ftp;
+
+/* JADX INFO: compiled from: r8-map-id-94e2637d1b30c6542972a7fc4ced35aa6da258c4e6702fc7c9cbf0ebc32bec75 */
+/* JADX INFO: loaded from: classes2.dex */
+@Deprecated
+public final class FTPSCommand {
+    public static final int ADAT = 1;
+    public static final int AUTH = 0;
+    public static final int AUTHENTICATION_SECURITY_DATA = 1;
+    public static final int AUTHENTICATION_SECURITY_MECHANISM = 0;
+    public static final int CCC = 4;
+    public static final int CLEAR_COMMAND_CHANNEL = 4;
+    public static final int DATA_CHANNEL_PROTECTION_LEVEL = 3;
+    public static final int PBSZ = 2;
+    public static final int PROT = 3;
+    public static final int PROTECTION_BUFFER_SIZE = 2;
+    private static final String[] commands = {"AUTH", "ADAT", "PBSZ", "PROT", "CCC"};
+
+    public static String getCommand(int i10) {
+        return commands[i10];
+    }
+}

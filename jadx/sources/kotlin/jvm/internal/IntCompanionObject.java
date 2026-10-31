@@ -1,0 +1,27 @@
+package kotlin.jvm.internal;
+
+import androidx.constraintlayout.widget.ConstraintLayout;
+import kotlin.Metadata;
+import kotlin.SinceKotlin;
+
+/* JADX INFO: compiled from: r8-map-id-94e2637d1b30c6542972a7fc4ced35aa6da258c4e6702fc7c9cbf0ebc32bec75 */
+/* JADX INFO: loaded from: classes.dex */
+@Metadata(m3158d1 = {"\u0000\u0014\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\b\u0003\n\u0002\u0010\b\n\u0002\b\u0006\bÀ\u0002\u0018\u00002\u00020\u0001B\t\b\u0002¢\u0006\u0004\b\u0002\u0010\u0003R\u000e\u0010\u0004\u001a\u00020\u0005X\u0086T¢\u0006\u0002\n\u0000R\u000e\u0010\u0006\u001a\u00020\u0005X\u0086T¢\u0006\u0002\n\u0000R\u0016\u0010\u0007\u001a\u00020\u00058\u0006X\u0087T¢\u0006\b\n\u0000\u0012\u0004\b\b\u0010\u0003R\u0016\u0010\t\u001a\u00020\u00058\u0006X\u0087T¢\u0006\b\n\u0000\u0012\u0004\b\n\u0010\u0003¨\u0006\u000b"}, m3159d2 = {"Lkotlin/jvm/internal/IntCompanionObject;", "", "<init>", "()V", "MIN_VALUE", "", "MAX_VALUE", "SIZE_BYTES", "getSIZE_BYTES$annotations", "SIZE_BITS", "getSIZE_BITS$annotations", "kotlin-stdlib"}, m3160k = 1, m3161mv = {2, 2, 0}, m3163xi = ConstraintLayout.LayoutParams.Table.LAYOUT_CONSTRAINT_VERTICAL_CHAINSTYLE)
+public final class IntCompanionObject {
+    public static final IntCompanionObject INSTANCE = new IntCompanionObject();
+    public static final int MAX_VALUE = Integer.MAX_VALUE;
+    public static final int MIN_VALUE = Integer.MIN_VALUE;
+    public static final int SIZE_BITS = 32;
+    public static final int SIZE_BYTES = 4;
+
+    private IntCompanionObject() {
+    }
+
+    @SinceKotlin(version = "1.3")
+    public static /* synthetic */ void getSIZE_BITS$annotations() {
+    }
+
+    @SinceKotlin(version = "1.3")
+    public static /* synthetic */ void getSIZE_BYTES$annotations() {
+    }
+}

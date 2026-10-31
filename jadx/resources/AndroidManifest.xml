@@ -1,0 +1,673 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    android:versionCode="97"
+    android:versionName="2.0.4"
+    android:compileSdkVersion="35"
+    android:compileSdkVersionCodename="15"
+    package="com.example.navistart"
+    platformBuildVersionCode="35"
+    platformBuildVersionName="15">
+    <uses-sdk
+        android:minSdkVersion="24"
+        android:targetSdkVersion="28"/>
+    <uses-permission android:name="com.huawei.ohos.carmediaui.CARMEDIAUI_PERMISSION"/>
+    <uses-permission android:name="com.huawei.ohos.carmediaui.CARMEDIAUI_PERMISSION_SYSTEM"/>
+    <uses-permission android:name="android.permission.ACTIVATE_VPN"/>
+    <uses-permission android:name="android.permission.ACCESS_VEHICLE_DATA"/>
+    <uses-permission android:name="com.android.launcher3.permission.READ_SETTINGS"/>
+    <uses-permission android:name="com.android.launcher3.permission.WRITE_SETTINGS"/>
+    <uses-permission android:name="android.car.permission.CAR_EXTERIOR_ENVIRONMENT"/>
+    <uses-permission android:name="android.car.permission.CONTROL_CAR_FEATURES"/>
+    <uses-permission android:name="android.permission.BIND_APPWIDGET"/>
+    <uses-permission android:name="android.permission.BLUETOOTH_SCAN"/>
+    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_MEDIA_PROJECTION"/>
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_MICROPHONE"/>
+    <uses-permission android:name="mega.permission.ACCESS_MEGA_AUTOFLY_STATE"/>
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_CONNECTED_DEVICE"/>
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE"/>
+    <uses-permission android:name="android.car.permission.CAR_POWER"/>
+    <uses-permission android:name="android.car.permission.CONTROL_CAR_CLIMATE"/>
+    <uses-permission android:name="android.car.permission.CAR_POWERTRAIN"/>
+    <uses-permission android:name="android.car.permission.CAR_VENDOR_EXTENSION"/>
+    <uses-permission android:name="android.car.permission.READ_CAR_STEERING"/>
+    <uses-permission android:name="android.car.permission.CAR_SPEED"/>
+    <uses-permission android:name="android.car.permission.PERMISSION_READ_DISPLAY_UNITS"/>
+    <uses-permission android:name="android.car.permission.CAR_INFO"/>
+    <uses-permission android:name="android.car.permission.CAR_ENERGY"/>
+    <uses-permission android:name="android.car.permission.CAR_MILEAGE"/>
+    <uses-permission android:name="android.car.permission.CAR_TIRES"/>
+    <uses-permission android:name="android.car.permission.CAR_ENGINE_DETAILED"/>
+    <uses-permission android:name="android.car.permission.CAR_EXTERIOR_LIGHTS"/>
+    <uses-permission android:name="android.car.permission.READ_CAR_INTERIOR_LIGHTS"/>
+    <uses-permission android:name="android.car.permission.CAR_DIAGNOSTICS"/>
+    <uses-permission android:name="android.car.permission.CAR_DRIVING_STATE"/>
+    <uses-permission android:name="android.car.permission.READ_CAR_DISPLAY_UNITS"/>
+    <uses-permission android:name="android.car.permission.CAR_INSTRUMENT_CLUSTER_CONTROL"/>
+    <uses-permission android:name="android.car.permission.BIND_INSTRUMENT_CLUSTER_RENDERER_SERVICE"/>
+    <uses-permission android:name="android.car.permission.BIND_CAR_INPUT_SERVICE"/>
+    <uses-permission android:name="android.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS"/>
+    <uses-permission android:name="mega.car.permfssfon.CLIMATE"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_MOCK_LOCATION"/>
+    <uses-permission android:name="android.permission.BLUETOOTH_CONNECT"/>
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN"/>
+    <uses-permission android:name="android.permission.BLUETOOTH"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_UPDATES"/>
+    <uses-permission android:name="android.permission.KILL_BACKGROUND_PROCESSES"/>
+    <uses-permission android:name="android.permission.PACKAGE_USAGE_STATS"/>
+    <uses-permission android:name="android.permission.QUERY_ALL_PACKAGES"/>
+    <uses-permission android:name="android.permission.READ_PRIVILEGED_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.BIND_APPWIDGET"/>
+    <uses-permission android:name="android.permission.REORDER_TASKS"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.REQUEST_DELETE_PACKAGES"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+    <uses-permission android:name="android.permission.MANAGE_OVERLAY_PERMISSION"/>
+    <uses-permission android:name="android.permission.WRITE_SECURE_SETTINGS"/>
+    <uses-permission android:name="android.permission.WRITE_SETTINGS"/>
+    <uses-permission android:name="android.permission.BIND_NOTIFICATION_LISTENER_SERVICE"/>
+    <uses-permission android:name="android.permission.ACCESS_NOTIFICATION_POLICY"/>
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS"/>
+    <uses-permission android:name="android.permission.MANAGE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_MEDIA_STORAGE"/>
+    <uses-permission android:name="android.permission.MANAGE_DOCUMENTS"/>
+    <uses-feature
+        android:name="android.hardware.usb.host"
+        android:required="false"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE"/>
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_SPECIAL_USE"/>
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_LOCATION"/>
+    <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES"/>
+    <uses-permission android:name="android.permission.INSTALL_PACKAGES"/>
+    <uses-permission android:name="android.permission.READ_LOGS"/>
+    <uses-permission android:name="android.permission.INJECT_EVENTS"/>
+    <uses-permission android:name="android.permission.MANAGE_DEVICE_ADMINS"/>
+    <uses-permission android:name="android.permission.BIND_DEVICE_ADMIN"/>
+    <uses-permission android:name="com.mega.appstore.permission.INSTALL_APK"/>
+    <uses-permission android:name="mega.car.permission.CLIMATE"/>
+    <uses-permission android:name="android.car.permission.CONTROL_CAR_WINDOWS"/>
+    <uses-permission android:name="android.car.permission.SET_CAR_VENDOR_CATEGORY_WINDOW"/>
+    <uses-permission android:name="android.car.permission.GET_CAR_VENDOR_CATEGORY_WINDOW"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false"/>
+    <uses-feature
+        android:name="android.hardware.camera.front"
+        android:required="false"/>
+    <uses-feature
+        android:name="android.hardware.camera.autofocus"
+        android:required="false"/>
+    <uses-feature
+        android:name="android.hardware.camera.flash"
+        android:required="false"/>
+    <uses-feature
+        android:name="android.hardware.screen.landscape"
+        android:required="false"/>
+    <uses-feature
+        android:name="android.hardware.wifi"
+        android:required="false"/>
+    <permission
+        android:name="com.example.navistart.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+        android:protectionLevel="signature"/>
+    <uses-permission android:name="com.example.navistart.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"/>
+    <application
+        android:theme="@style/Theme.NaviStart"
+        android:label="@string/app_name"
+        android:icon="@mipmap/jct_launcher"
+        android:name="com.example.navistart.MyApplication"
+        android:protectionLevel="system|signature"
+        android:allowBackup="true"
+        android:supportsRtl="true"
+        android:extractNativeLibs="true"
+        android:usesCleartextTraffic="true"
+        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+        android:requestLegacyExternalStorage="true"
+        android:dataExtractionRules="@xml/data_extraction_rules">
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:exported="false"
+            android:authorities="com.example.navistart.provider"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths"/>
+        </provider>
+        <receiver
+            android:name="com.example.navistart.HideManager.LauncherShortcutRestoreReceiver"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:label="WidgetProvider"
+            android:name="android.appwidget.AppWidgetProvider">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE"/>
+            </intent-filter>
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/appwidget_info"/>
+        </receiver>
+        <activity
+            android:name="com.example.navistart.MainActivity"
+            android:exported="true"
+            android:launchMode="singleTask"
+            android:configChanges="fontScale|layoutDirection|screenSize|uiMode|orientation|keyboardHidden|keyboard|locale"/>
+        <activity
+            android:theme="@style/Theme.JCarTools.Modern"
+            android:name="com.example.navistart.ModernMainActivity"
+            android:exported="true"
+            android:launchMode="singleTask"
+            android:configChanges="fontScale|layoutDirection|screenSize|uiMode|orientation|keyboardHidden|keyboard|locale"/>
+        <activity-alias
+            android:label="@string/app_name"
+            android:icon="@mipmap/jct_launcher"
+            android:name="com.example.navistart.LauncherMainActivity"
+            android:enabled="true"
+            android:exported="true"
+            android:targetActivity="com.example.navistart.ModernMainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity-alias>
+        <activity
+            android:theme="@style/Theme.NaviStart"
+            android:name="com.example.navistart.home.WebLauncherActivity"
+            android:exported="true"
+            android:clearTaskOnLaunch="true"
+            android:stateNotNeeded="true"
+            android:excludeFromRecents="true"
+            android:launchMode="singleTask"
+            android:resizeableActivity="true"/>
+        <activity-alias
+            android:label="JCT Home"
+            android:icon="@mipmap/jct_launcher"
+            android:name="com.example.navistart.home.WebLauncherHome"
+            android:enabled="false"
+            android:exported="true"
+            android:targetActivity="com.example.navistart.home.WebLauncherActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.HOME"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity-alias>
+        <activity
+            android:theme="@style/Theme.JCarTools.Uni.Transparent"
+            android:name="com.example.navistart.ActivityC1081W"
+            android:exported="false"/>
+        <activity
+            android:theme="@style/TransparentActivityTheme"
+            android:name="com.example.navistart.ShortcutRouterActivity"
+            android:exported="false"/>
+        <activity-alias
+            android:label="@string/video_library"
+            android:icon="@drawable/ic_jct_video"
+            android:name="com.example.navistart.LauncherVideoActivity"
+            android:enabled="false"
+            android:exported="true"
+            android:targetActivity="com.example.navistart.ShortcutRouterActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity-alias>
+        <activity-alias
+            android:label="JCTStore"
+            android:icon="@mipmap/jct_store_icon"
+            android:name="com.example.navistart.LauncherStoreActivity"
+            android:enabled="false"
+            android:exported="true"
+            android:targetActivity="com.example.navistart.ShortcutRouterActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity-alias>
+        <activity-alias
+            android:label="JCTFile"
+            android:icon="@mipmap/jct_file_icon"
+            android:name="com.example.navistart.LauncherFileActivity"
+            android:enabled="false"
+            android:exported="true"
+            android:targetActivity="com.example.navistart.ShortcutRouterActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity-alias>
+        <activity
+            android:theme="@android:style/Theme.Translucent"
+            android:label="MEM"
+            android:name="com.example.navistart.MEM"
+            android:launchMode="singleInstance"/>
+        <activity
+            android:theme="@style/Theme.AppCompat.Dialog"
+            android:name="com.example.navistart.APInAct"
+            android:exported="true"/>
+        <activity
+            android:theme="@style/Theme.JCarTools.Uni"
+            android:label="VJCT"
+            android:name="com.example.navistart.VJCT"
+            android:launchMode="singleInstance"/>
+        <activity
+            android:theme="@style/Theme.NaviStart.AppCompat"
+            android:label="BlackActivity"
+            android:name="com.example.navistart.BlackActivity"
+            android:launchMode="singleInstance"
+            android:resizeableActivity="true"/>
+        <activity
+            android:theme="@style/Theme.JCarTools.Modern"
+            android:label="punto"
+            android:name="com.example.navistart.punto"
+            android:launchMode="singleInstance"/>
+        <activity
+            android:theme="@style/Theme.JCarTools.Uni"
+            android:name="com.example.navistart.PermActivity"
+            android:launchMode="singleInstance"/>
+        <activity
+            android:theme="@style/Theme.JCarTools.Uni"
+            android:name="com.example.navistart.TestSpaceActivity"
+            android:exported="false"
+            android:launchMode="singleInstance"/>
+        <activity
+            android:theme="@style/Theme.JCarTools.Modern"
+            android:name="com.woha.appmanag.ManageAppsActivity"
+            android:exported="false"
+            android:launchMode="singleInstance"/>
+        <activity
+            android:name="com.example.navistart.ProgressActivity"
+            android:exported="false"
+            android:launchMode="singleInstance"/>
+        <activity
+            android:theme="@style/TransparentActivityTheme"
+            android:name="com.example.navistart.ZaglushkaActivity"
+            android:exported="false"/>
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:exported="false"
+            android:authorities="com.example.navistart.provider"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/filepaths"/>
+        </provider>
+        <activity
+            android:theme="@style/Theme.JCarTools.Uni"
+            android:name="com.woha.appmanag.FilePickerActivity"
+            android:exported="true"
+            android:launchMode="standard">
+            <intent-filter>
+                <action android:name="android.intent.action.OPEN_DOCUMENT"/>
+                <action android:name="android.intent.action.GET_CONTENT"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.OPENABLE"/>
+                <data android:mimeType="*/*"/>
+                <data android:mimeType="image/*"/>
+                <data android:mimeType="video/*"/>
+                <data android:mimeType="application/*"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:theme="@style/Theme.NaviStart"
+            android:label="JCT AntiRadar"
+            android:icon="@mipmap/aradar_ico"
+            android:name="com.woha.atir.RadarActivity"
+            android:launchMode="singleInstance"/>
+        <activity-alias
+            android:label="JCT AntiRadar"
+            android:icon="@mipmap/jct_radar_icon"
+            android:name="com.example.navistart.LauncherRadarActivity"
+            android:enabled="false"
+            android:exported="true"
+            android:targetActivity="com.woha.atir.RadarActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity-alias>
+        <activity
+            android:theme="@style/Theme.JCarTools.Modern"
+            android:label="JCT WiFi"
+            android:icon="@mipmap/icowifi"
+            android:name="com.woha.wifim.MainWifiManadger"
+            android:launchMode="singleInstance"/>
+        <activity-alias
+            android:label="JCT WiFi"
+            android:icon="@mipmap/icowifi"
+            android:name="com.example.navistart.LauncherWifiActivity"
+            android:enabled="false"
+            android:exported="true"
+            android:targetActivity="com.woha.wifim.MainWifiManadger">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity-alias>
+        <activity
+            android:theme="@style/Theme.JCarTools.Modern"
+            android:label="JCT Update"
+            android:icon="@mipmap/jct_ico_settings"
+            android:name="com.example.navistart.UpdateActivity"
+            android:launchMode="singleInstance"/>
+        <activity-alias
+            android:theme="@style/Theme.JCarTools.Modern"
+            android:label="JCT Update"
+            android:icon="@mipmap/jct_ico_settings"
+            android:name="com.example.navistart.LauncherUpdateActivity"
+            android:enabled="true"
+            android:exported="true"
+            android:targetActivity="com.example.navistart.UpdateActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity-alias>
+        <activity
+            android:theme="@style/Theme.NaviStart"
+            android:label="ActivityCarMon"
+            android:name="com.example.navistart.ActivityCarMon"
+            android:launchMode="singleInstance"/>
+        <activity
+            android:theme="@style/TransparentActivityTheme"
+            android:label="CarControlActivity"
+            android:name="com.example.navistart.CarControlActivity"
+            android:launchMode="singleInstance"/>
+        <activity
+            android:theme="@style/TransparentActivityTheme"
+            android:label="VibVodActivity"
+            android:name="com.example.navistart.VibVodActivity"
+            android:launchMode="singleInstance"/>
+        <activity
+            android:theme="@style/TransparentActivityTheme"
+            android:label="AutoVibVodActivity"
+            android:name="com.example.navistart.AutoVibVodActivity"
+            android:launchMode="singleInstance"/>
+        <activity
+            android:theme="@style/TransparentActivityTheme"
+            android:label="HUDActivity"
+            android:name="com.example.navistart.HUD.HUDActivity"
+            android:launchMode="singleInstance"/>
+        <activity
+            android:theme="@style/TransparentActivityTheme"
+            android:label="SpeedBoardActi"
+            android:name="com.example.navistart.SpeedBoardActi"
+            android:launchMode="singleInstance"
+            android:supportsRtl="false"/>
+        <service
+            android:name="com.example.navistart.boot"
+            android:exported="true"/>
+        <provider
+            android:name="com.example.navistart.LaunchD"
+            android:exported="false"
+            android:authorities="com.example.navistart.launchdetector"/>
+        <service
+            android:name="com.example.navistart.home.LauncherWindowService"
+            android:exported="false"/>
+        <service
+            android:name="com.example.navistart.AllWidgetServices"
+            android:exported="true"/>
+        <service
+            android:name="com.example.navistart.Notik"
+            android:exported="true"/>
+        <service
+            android:name="com.example.navistart.ServiceC1080Si"
+            android:exported="false"/>
+        <service
+            android:name="com.example.navistart.VibVodPopUp"
+            android:exported="true"/>
+        <service
+            android:name="com.example.navistart.OverlayService"
+            android:foregroundServiceType="mediaProjection"/>
+        <service
+            android:name="com.example.navistart.SpeedBoardService"
+            android:exported="true"/>
+        <service
+            android:name="com.example.navistart.Tik"
+            android:exported="true"/>
+        <service
+            android:name="com.example.navistart.TService"
+            android:permission="android.permission.BIND_VPN_SERVICE">
+            <intent-filter>
+                <action android:name="android.net.vpn.VPN_SERVICE"/>
+            </intent-filter>
+        </service>
+        <service
+            android:name="com.example.navistart.NLService"
+            android:permission="android.permission.BIND_NOTIFICATION_LISTENER_SERVICE"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.service.notification.NotificationListenerService"/>
+            </intent-filter>
+        </service>
+        <service
+            android:name="com.example.navistart.MyA11yService"
+            android:permission="android.permission.BIND_ACCESSIBILITY_SERVICE"
+            android:exported="true"
+            android:accessibilityFlags="flagRetrieveInteractiveWindows"
+            android:canRetrieveWindowContent="true">
+            <intent-filter>
+                <action android:name="android.accessibilityservice.AccessibilityService"/>
+            </intent-filter>
+            <meta-data
+                android:name="android.accessibilityservice"
+                android:resource="@xml/accessibility_service_config"/>
+        </service>
+        <service
+            android:name="com.example.navistart.LounchB"
+            android:exported="true"/>
+        <service
+            android:name="com.woha.pogoda.WeatherService"
+            android:exported="false"/>
+        <receiver
+            android:name="com.example.navistart.HideManager.UserAppsHideCommandReceiver"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.example.navistart.action.USER_APPS_HIDE_OPEN"/>
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="com.example.navistart.InstallResultReceiver"
+            android:exported="true"/>
+        <receiver
+            android:name="com.woha.appmanag.MountedStorageReceiver"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MEDIA_CHECKING"/>
+                <action android:name="android.intent.action.MEDIA_MOUNTED"/>
+                <action android:name="android.intent.action.MEDIA_UNMOUNTED"/>
+                <action android:name="android.intent.action.MEDIA_EJECT"/>
+                <action android:name="android.intent.action.MEDIA_REMOVED"/>
+                <action android:name="android.intent.action.MEDIA_BAD_REMOVAL"/>
+                <data android:scheme="file"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.hardware.usb.action.USB_DEVICE_ATTACHED"/>
+                <action android:name="android.hardware.usb.action.USB_DEVICE_DETACHED"/>
+                <action android:name="android.hardware.usb.action.USB_ACCESSORY_ATTACHED"/>
+                <action android:name="android.hardware.usb.action.USB_ACCESSORY_DETACHED"/>
+            </intent-filter>
+            <meta-data
+                android:name="android.hardware.usb.action.USB_DEVICE_ATTACHED"
+                android:resource="@xml/device_filter"/>
+        </receiver>
+        <service
+            android:name="com.example.navistart.LocServ"
+            android:foregroundServiceType="location"/>
+        <service
+            android:name="com.example.navistart.MockGPS.MockGpsService"
+            android:exported="false"
+            android:foregroundServiceType="location"/>
+        <service
+            android:name="com.example.navistart.Transport.TransportService"
+            android:exported="false"
+            android:foregroundServiceType="connectedDevice"/>
+        <receiver
+            android:name="com.example.navistart.DPups"
+            android:permission="android.permission.BIND_DEVICE_ADMIN"
+            android:exported="true">
+            <meta-data
+                android:name="android.app.device_admin"
+                android:resource="@xml/da"/>
+            <intent-filter>
+                <action android:name="android.app.action.DEVICE_ADMIN_ENABLED"/>
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="com.example.navistart.SystemMessageReceiver"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+                <action android:name="com.iflytek.autofly.ACTION_AUTOFLY_STATE"/>
+                <action android:name="com.iflytek.autofly.handMessage"/>
+                <category android:name="android.intent.category.HOME"/>
+                <action android:name="desay.broadcast.map.meter.interaction"/>
+                <action android:name="desay.meter.interaction.map"/>
+            </intent-filter>
+        </receiver>
+        <activity
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:name="com.example.navistart.HeatingActivity"
+            android:taskAffinity=""
+            android:finishOnTaskLaunch="true"
+            android:excludeFromRecents="true"/>
+        <service
+            android:name="com.example.navistart.SplitOverlayService"
+            android:exported="false"
+            android:foregroundServiceType="mediaProjection"/>
+        <receiver android:name="com.example.navistart.AccessibilityRestartReceiver">
+            <intent-filter>
+                <action android:name="RESTART_ACCESSIBILITY_SERVICE"/>
+            </intent-filter>
+        </receiver>
+        <provider
+            android:name="ai.onnxruntime.TelemetryInitializer"
+            android:exported="false"
+            android:authorities="com.example.navistart.onnxruntime_telemetry_initializer"
+            android:initOrder="100"/>
+        <service
+            android:name="com.wireguard.android.backend.GoBackend.VpnService"
+            android:permission="android.permission.BIND_VPN_SERVICE"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="android.net.VpnService"/>
+            </intent-filter>
+        </service>
+        <activity
+            android:theme="@style/zxing_CaptureTheme"
+            android:name="com.journeyapps.barcodescanner.CaptureActivity"
+            android:clearTaskOnLaunch="true"
+            android:stateNotNeeded="true"
+            android:screenOrientation="sensorLandscape"
+            android:windowSoftInputMode="stateAlwaysHidden"/>
+        <service
+            android:name="com.google.firebase.components.ComponentDiscoveryService"
+            android:exported="false"
+            android:directBootAware="true">
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.inappmessaging.FirebaseInAppMessagingKtxRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.inappmessaging.FirebaseInAppMessagingRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.abt.component.AbtRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsKtxRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.ktx.FirebaseCommonLegacyRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.FirebaseCommonKtxRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.datatransport.TransportRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar"/>
+        </service>
+        <provider
+            android:name="com.google.firebase.provider.FirebaseInitProvider"
+            android:exported="false"
+            android:authorities="com.example.navistart.firebaseinitprovider"
+            android:initOrder="100"
+            android:directBootAware="true"/>
+        <provider
+            android:name="androidx.startup.InitializationProvider"
+            android:exported="false"
+            android:authorities="com.example.navistart.androidx-startup">
+            <meta-data
+                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+                android:value="androidx.startup"/>
+            <meta-data
+                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+                android:value="androidx.startup"/>
+            <meta-data
+                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
+                android:value="androidx.startup"/>
+        </provider>
+        <uses-library
+            android:name="androidx.window.extensions"
+            android:required="false"/>
+        <uses-library
+            android:name="androidx.window.sidecar"
+            android:required="false"/>
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version"/>
+        <receiver
+            android:name="androidx.profileinstaller.ProfileInstallReceiver"
+            android:permission="android.permission.DUMP"
+            android:enabled="true"
+            android:exported="true"
+            android:directBootAware="false">
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.SKIP_FILE"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION"/>
+            </intent-filter>
+        </receiver>
+        <service
+            android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery"
+            android:exported="false">
+            <meta-data
+                android:name="backend:com.google.android.datatransport.cct.CctBackendFactory"
+                android:value="cct"/>
+        </service>
+        <service
+            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService"
+            android:permission="android.permission.BIND_JOB_SERVICE"
+            android:exported="false"/>
+        <receiver
+            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver"
+            android:exported="false"/>
+    </application>
+</manifest>

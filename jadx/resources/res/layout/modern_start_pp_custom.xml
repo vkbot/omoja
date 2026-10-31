@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:textColor="@color/headerText"
+            android:gravity="center"
+            android:id="@+id/MainLabel"
+            android:background="@color/header"
+            android:layout_width="match_parent"
+            android:layout_height="36sp"
+            app:autoSizeTextType="uniform"/>
+        <LinearLayout
+            android:orientation="vertical"
+            android:id="@+id/Dashboard"
+            android:padding="14dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="52dp">
+            <com.google.android.material.materialswitch.MaterialSwitch
+                android:id="@+id/sw_CustomPPStart"
+                android:text="@string/sw_CustomPPStart"
+                style="@style/ModernMapSwitchRow"/>
+            <com.google.android.material.materialswitch.MaterialSwitch
+                android:id="@+id/sw_CustomPPFullscreen"
+                android:text="@string/sw_custom_pp_fullscreen"
+                style="@style/ModernMapSwitchRow"/>
+            <Button
+                android:id="@+id/b_settings_kastomnaya_pri"
+                android:text="@string/nastroit_kastom_priborcu"
+                android:drawablePadding="16dp"
+                android:drawableStart="@drawable/go_cpp_to_pp"
+                style="@style/ModernWideButton"/>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</merge>

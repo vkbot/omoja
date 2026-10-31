@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_gravity="center"
+    android:background="@drawable/speech_bubble"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp">
+            <ImageView
+                android:layout_gravity="center"
+                android:id="@+id/appIco"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                app:srcCompat="@drawable/icon_voice_message_6376305"/>
+            <TextView
+                android:textSize="35sp"
+                android:textColor="#000"
+                android:layout_gravity="center"
+                android:id="@+id/titleText"
+                android:padding="16dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""/>
+        </LinearLayout>
+        <TextView
+            android:textSize="35sp"
+            android:textColor="#000"
+            android:id="@+id/messageText"
+            android:padding="16dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Очень длинный текст, который нужно переносить на новую строку, если он не помещается в ширину облака"/>
+        <ImageButton
+            android:id="@+id/button_send_messadge"
+            android:background="@android:color/transparent"
+            android:visibility="gone"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_margin="8dp"
+            android:src="@drawable/send_ico"
+            android:scaleType="fitXY"/>
+    </LinearLayout>
+</FrameLayout>
