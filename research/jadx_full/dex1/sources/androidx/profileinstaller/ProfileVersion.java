@@ -1,0 +1,28 @@
+package androidx.profileinstaller;
+
+import androidx.annotation.RestrictTo;
+import androidx.annotation.RestrictTo$Scope;
+import java.util.Arrays;
+
+/* JADX INFO: compiled from: r8-map-id-94e2637d1b30c6542972a7fc4ced35aa6da258c4e6702fc7c9cbf0ebc32bec75 */
+/* JADX INFO: loaded from: F:\omo\research\apk_contents\classes.dex */
+@RestrictTo({RestrictTo$Scope.LIBRARY})
+public class ProfileVersion {
+    public static final int MIN_SUPPORTED_SDK = 24;
+    static final byte[] V015_S = {48, 49, 53, 0};
+    static final byte[] V010_P = {48, 49, 48, 0};
+    static final byte[] V009_O_MR1 = {48, 48, 57, 0};
+    static final byte[] V005_O = {48, 48, 53, 0};
+    static final byte[] V001_N = {48, 48, 49, 0};
+    static final byte[] METADATA_V001_N = {48, 48, 49, 0};
+    static final byte[] METADATA_V002 = {48, 48, 50, 0};
+
+    /* JADX DEBUG: Don't trust debug lines info. Lines numbers was adjusted: min line is 1 */
+    private ProfileVersion() {
+    }
+
+    /* JADX DEBUG: Don't trust debug lines info. Lines numbers was adjusted: min line is 1 */
+    public static String dexKeySeparator(byte[] bArr) {
+        return (Arrays.equals(bArr, V001_N) || Arrays.equals(bArr, V005_O)) ? ":" : "!";
+    }
+}

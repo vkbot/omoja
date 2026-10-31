@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_gravity="center" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <Button android:layout_gravity="center" android:id="@id/onoff_button" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_margin="6.0dp">
+        <ImageView android:gravity="center" android:id="@id/lampOnOff" android:layout_width="25.0dp" android:layout_height="25.0dp" android:layout_margin="5.0dp" android:src="@drawable/lamp_off" />
+        <TextView android:textSize="16.0sp" android:textColor="@android:color/white" android:gravity="center" android:id="@id/textButton" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="5.0dp" android:text="" />
+    </LinearLayout>
+</FrameLayout>

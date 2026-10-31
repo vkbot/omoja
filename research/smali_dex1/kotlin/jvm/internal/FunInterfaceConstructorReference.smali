@@ -1,0 +1,173 @@
+.class public Lkotlin/jvm/internal/FunInterfaceConstructorReference;
+.super Lkotlin/jvm/internal/FunctionReference;
+.source "r8-map-id-94e2637d1b30c6542972a7fc4ced35aa6da258c4e6702fc7c9cbf0ebc32bec75"
+
+# interfaces
+.implements Ljava/io/Serializable;
+
+
+# annotations
+.annotation build Lkotlin/SinceKotlin;
+    version = "1.7"
+.end annotation
+
+
+# instance fields
+.field private final funInterface:Ljava/lang/Class;
+
+
+# direct methods
+.method public constructor <init>(Ljava/lang/Class;)V
+    .registers 3
+
+    .line 1
+    const/4 v0, 0x1
+
+    .line 2
+    invoke-direct {p0, v0}, Lkotlin/jvm/internal/FunctionReference;-><init>(I)V
+
+    .line 3
+    .line 4
+    .line 5
+    iput-object p1, p0, Lkotlin/jvm/internal/FunInterfaceConstructorReference;->funInterface:Ljava/lang/Class;
+
+    .line 6
+    .line 7
+    return-void
+.end method
+
+
+# virtual methods
+.method public equals(Ljava/lang/Object;)Z
+    .registers 3
+
+    .line 1
+    if-ne p0, p1, :cond_4
+
+    .line 2
+    .line 3
+    const/4 p1, 0x1
+
+    .line 4
+    return p1
+
+    .line 5
+    :cond_4
+    instance-of v0, p1, Lkotlin/jvm/internal/FunInterfaceConstructorReference;
+
+    .line 6
+    .line 7
+    if-nez v0, :cond_a
+
+    .line 8
+    .line 9
+    const/4 p1, 0x0
+
+    .line 10
+    return p1
+
+    .line 11
+    :cond_a
+    check-cast p1, Lkotlin/jvm/internal/FunInterfaceConstructorReference;
+
+    .line 12
+    .line 13
+    iget-object v0, p0, Lkotlin/jvm/internal/FunInterfaceConstructorReference;->funInterface:Ljava/lang/Class;
+
+    .line 14
+    .line 15
+    iget-object p1, p1, Lkotlin/jvm/internal/FunInterfaceConstructorReference;->funInterface:Ljava/lang/Class;
+
+    .line 16
+    .line 17
+    invoke-virtual {v0, p1}, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
+
+    .line 18
+    .line 19
+    .line 20
+    move-result p1
+
+    .line 21
+    return p1
+.end method
+
+.method public bridge synthetic getReflected()Lkotlin/reflect/KCallable;
+    .registers 2
+
+    .line 9
+    invoke-virtual {p0}, Lkotlin/jvm/internal/FunInterfaceConstructorReference;->getReflected()Lkotlin/reflect/KFunction;
+
+    move-result-object v0
+
+    return-object v0
+.end method
+
+.method public getReflected()Lkotlin/reflect/KFunction;
+    .registers 3
+
+    .line 1
+    new-instance v0, Ljava/lang/UnsupportedOperationException;
+
+    .line 2
+    .line 3
+    const-string v1, "Functional interface constructor does not support reflection"
+
+    .line 4
+    .line 5
+    invoke-direct {v0, v1}, Ljava/lang/UnsupportedOperationException;-><init>(Ljava/lang/String;)V
+
+    .line 6
+    .line 7
+    .line 8
+    throw v0
+.end method
+
+.method public hashCode()I
+    .registers 2
+
+    .line 1
+    iget-object v0, p0, Lkotlin/jvm/internal/FunInterfaceConstructorReference;->funInterface:Ljava/lang/Class;
+
+    .line 2
+    .line 3
+    invoke-virtual {v0}, Ljava/lang/Object;->hashCode()I
+
+    .line 4
+    .line 5
+    .line 6
+    move-result v0
+
+    .line 7
+    return v0
+.end method
+
+.method public toString()Ljava/lang/String;
+    .registers 3
+
+    .line 1
+    iget-object v0, p0, Lkotlin/jvm/internal/FunInterfaceConstructorReference;->funInterface:Ljava/lang/Class;
+
+    .line 2
+    .line 3
+    invoke-virtual {v0}, Ljava/lang/Class;->getName()Ljava/lang/String;
+
+    .line 4
+    .line 5
+    .line 6
+    move-result-object v0
+
+    .line 7
+    const-string v1, "fun interface "
+
+    .line 8
+    .line 9
+    invoke-virtual {v1, v0}, Ljava/lang/String;->concat(Ljava/lang/String;)Ljava/lang/String;
+
+    .line 10
+    .line 11
+    .line 12
+    move-result-object v0
+
+    .line 13
+    return-object v0
+.end method

@@ -1,0 +1,85 @@
+.class public Landroidx/core/view/autofill/AutofillIdCompat;
+.super Ljava/lang/Object;
+.source "r8-map-id-94e2637d1b30c6542972a7fc4ced35aa6da258c4e6702fc7c9cbf0ebc32bec75"
+
+
+# instance fields
+.field private final mWrappedObj:Ljava/lang/Object;
+
+
+# direct methods
+.method private constructor <init>(Landroid/view/autofill/AutofillId;)V
+    .registers 2
+    .param p1    # Landroid/view/autofill/AutofillId;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
+    .annotation build Landroidx/annotation/RequiresApi;
+        value = 0x1a
+    .end annotation
+
+    .line 1
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 2
+    .line 3
+    .line 4
+    iput-object p1, p0, Landroidx/core/view/autofill/AutofillIdCompat;->mWrappedObj:Ljava/lang/Object;
+
+    .line 5
+    .line 6
+    return-void
+.end method
+
+.method public static toAutofillIdCompat(Landroid/view/autofill/AutofillId;)Landroidx/core/view/autofill/AutofillIdCompat;
+    .registers 2
+    .param p0    # Landroid/view/autofill/AutofillId;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
+    .annotation build Landroidx/annotation/NonNull;
+    .end annotation
+
+    .annotation build Landroidx/annotation/RequiresApi;
+        value = 0x1a
+    .end annotation
+
+    .line 1
+    new-instance v0, Landroidx/core/view/autofill/AutofillIdCompat;
+
+    .line 2
+    .line 3
+    invoke-direct {v0, p0}, Landroidx/core/view/autofill/AutofillIdCompat;-><init>(Landroid/view/autofill/AutofillId;)V
+
+    .line 4
+    .line 5
+    .line 6
+    return-object v0
+.end method
+
+
+# virtual methods
+.method public toAutofillId()Landroid/view/autofill/AutofillId;
+    .registers 2
+    .annotation build Landroidx/annotation/NonNull;
+    .end annotation
+
+    .annotation build Landroidx/annotation/RequiresApi;
+        value = 0x1a
+    .end annotation
+
+    .line 1
+    iget-object v0, p0, Landroidx/core/view/autofill/AutofillIdCompat;->mWrappedObj:Ljava/lang/Object;
+
+    .line 2
+    .line 3
+    invoke-static {v0}, Lc5/h;->g(Ljava/lang/Object;)Landroid/view/autofill/AutofillId;
+
+    .line 4
+    .line 5
+    .line 6
+    move-result-object v0
+
+    .line 7
+    return-object v0
+.end method

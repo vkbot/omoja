@@ -1,0 +1,54 @@
+package kotlin.io.path;
+
+import androidx.constraintlayout.widget.ConstraintLayout$LayoutParams$Table;
+import java.nio.file.FileVisitResult;
+import java.nio.file.Path;
+import java.nio.file.attribute.BasicFileAttributes;
+import java.util.ArrayList;
+import kotlin.Metadata;
+import kotlin.jvm.functions.Function2;
+import kotlin.jvm.functions.Function3;
+import kotlin.jvm.internal.FunctionReferenceImpl;
+import kotlin.jvm.internal.Intrinsics$Kotlin;
+
+/* JADX INFO: compiled from: r8-map-id-94e2637d1b30c6542972a7fc4ced35aa6da258c4e6702fc7c9cbf0ebc32bec75 */
+/* JADX INFO: loaded from: F:\omo\research\apk_contents\classes.dex */
+@Metadata(k = 3, mv = {2, 2, 0}, xi = ConstraintLayout$LayoutParams$Table.LAYOUT_CONSTRAINT_VERTICAL_CHAINSTYLE)
+public final /* synthetic */ class PathsKt__PathRecursiveFunctionsKt$copyToRecursively$5$2 extends FunctionReferenceImpl implements Function2<Path, BasicFileAttributes, FileVisitResult> {
+    final /* synthetic */ Function3<CopyActionContext, Path, Path, CopyActionResult> $copyAction;
+    final /* synthetic */ Path $normalizedTarget;
+    final /* synthetic */ Function3<Path, Path, Exception, OnErrorResult> $onError;
+    final /* synthetic */ ArrayList<Path> $stack;
+    final /* synthetic */ Path $target;
+    final /* synthetic */ Path $this_copyToRecursively;
+
+    /* JADX DEBUG: Don't trust debug lines info. Lines numbers was adjusted: min line is 1 */
+    /* JADX DEBUG: Multi-variable search result rejected for r2v0, resolved type: kotlin.jvm.functions.Function3<? super kotlin.io.path.CopyActionContext, ? super java.nio.file.Path, ? super java.nio.file.Path, ? extends kotlin.io.path.CopyActionResult> */
+    /* JADX DEBUG: Multi-variable search result rejected for r6v0, resolved type: kotlin.jvm.functions.Function3<? super java.nio.file.Path, ? super java.nio.file.Path, ? super java.lang.Exception, ? extends kotlin.io.path.OnErrorResult> */
+    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+    /* JADX WARN: Multi-variable type inference failed */
+    public PathsKt__PathRecursiveFunctionsKt$copyToRecursively$5$2(ArrayList<Path> arrayList, Function3<? super CopyActionContext, ? super Path, ? super Path, ? extends CopyActionResult> function3, Path path, Path path2, Path path3, Function3<? super Path, ? super Path, ? super Exception, ? extends OnErrorResult> function4) {
+        super(2, Intrinsics$Kotlin.class, "copy", "copyToRecursively$copy$PathsKt__PathRecursiveFunctionsKt(Ljava/util/ArrayList;Lkotlin/jvm/functions/Function3;Ljava/nio/file/Path;Ljava/nio/file/Path;Ljava/nio/file/Path;Lkotlin/jvm/functions/Function3;Ljava/nio/file/Path;Ljava/nio/file/attribute/BasicFileAttributes;)Ljava/nio/file/FileVisitResult;", 0);
+        this.$stack = arrayList;
+        this.$copyAction = function3;
+        this.$this_copyToRecursively = path;
+        this.$target = path2;
+        this.$normalizedTarget = path3;
+        this.$onError = function4;
+    }
+
+    /* JADX DEBUG: Don't trust debug lines info. Lines numbers was adjusted: min line is 1 */
+    /* JADX INFO: renamed from: invoke, reason: avoid collision after fix types in other method */
+    public final FileVisitResult invoke2(Path path, BasicFileAttributes basicFileAttributes) {
+        path.getClass();
+        basicFileAttributes.getClass();
+        return PathsKt__PathRecursiveFunctionsKt.access$copyToRecursively$copy(this.$stack, this.$copyAction, this.$this_copyToRecursively, this.$target, this.$normalizedTarget, this.$onError, path, basicFileAttributes);
+    }
+
+    /* JADX DEBUG: Method arguments types fixed to match base method, original types: [java.lang.Object, java.lang.Object] */
+    /* JADX DEBUG: Return type fixed from 'java.lang.Object' to match base method */
+    @Override // kotlin.jvm.functions.Function2
+    public /* bridge */ /* synthetic */ FileVisitResult invoke(Path path, BasicFileAttributes basicFileAttributes) {
+        return invoke2(kotlin.internal.jdk8.a.m(path), a.p(basicFileAttributes));
+    }
+}

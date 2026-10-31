@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:padding="8.0dp" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/imageZone" android:layout_width="@dimen/layout_height_constant" android:layout_height="@dimen/layout_height_constant" android:layout_margin="5.0dp" />
+    <Spinner android:id="@id/zoneSpinner" android:layout_width="0.0dp" android:layout_height="wrap_content" android:minWidth="200.0dp" android:minHeight="@dimen/layout_height_constant" android:layout_weight="1.0" android:spinnerMode="dialog" />
+    <CheckBox android:id="@id/zoneCheckBox" android:layout_width="wrap_content" android:layout_height="@dimen/layout_height_constant" android:layout_margin="5.0dp" android:text="Вкл." />
+</LinearLayout>

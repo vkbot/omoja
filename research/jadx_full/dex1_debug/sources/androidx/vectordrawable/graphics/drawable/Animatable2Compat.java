@@ -1,0 +1,14 @@
+package androidx.vectordrawable.graphics.drawable;
+
+import android.graphics.drawable.Animatable;
+import androidx.annotation.NonNull;
+
+/* JADX INFO: compiled from: r8-map-id-94e2637d1b30c6542972a7fc4ced35aa6da258c4e6702fc7c9cbf0ebc32bec75 */
+/* JADX INFO: loaded from: F:\omo\research\apk_contents\classes.dex */
+public interface Animatable2Compat extends Animatable {
+    void clearAnimationCallbacks();
+
+    void registerAnimationCallback(@NonNull Animatable2Compat$AnimationCallback animatable2Compat$AnimationCallback);
+
+    boolean unregisterAnimationCallback(@NonNull Animatable2Compat$AnimationCallback animatable2Compat$AnimationCallback);
+}

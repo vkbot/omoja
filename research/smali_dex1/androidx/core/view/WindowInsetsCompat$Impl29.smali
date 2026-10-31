@@ -1,0 +1,271 @@
+.class Landroidx/core/view/WindowInsetsCompat$Impl29;
+.super Landroidx/core/view/WindowInsetsCompat$Impl28;
+.source "r8-map-id-94e2637d1b30c6542972a7fc4ced35aa6da258c4e6702fc7c9cbf0ebc32bec75"
+
+
+# annotations
+.annotation build Landroidx/annotation/RequiresApi;
+    value = 0x1d
+.end annotation
+
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Landroidx/core/view/WindowInsetsCompat;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x9
+    name = "Impl29"
+.end annotation
+
+
+# instance fields
+.field private mMandatorySystemGestureInsets:Landroidx/core/graphics/Insets;
+
+.field private mSystemGestureInsets:Landroidx/core/graphics/Insets;
+
+.field private mTappableElementInsets:Landroidx/core/graphics/Insets;
+
+
+# direct methods
+.method public constructor <init>(Landroidx/core/view/WindowInsetsCompat;Landroid/view/WindowInsets;)V
+    .registers 3
+    .param p1    # Landroidx/core/view/WindowInsetsCompat;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
+    .param p2    # Landroid/view/WindowInsets;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
+
+    .line 1
+    invoke-direct {p0, p1, p2}, Landroidx/core/view/WindowInsetsCompat$Impl28;-><init>(Landroidx/core/view/WindowInsetsCompat;Landroid/view/WindowInsets;)V
+
+    .line 2
+    .line 3
+    .line 4
+    const/4 p1, 0x0
+
+    .line 5
+    iput-object p1, p0, Landroidx/core/view/WindowInsetsCompat$Impl29;->mSystemGestureInsets:Landroidx/core/graphics/Insets;
+
+    .line 6
+    .line 7
+    iput-object p1, p0, Landroidx/core/view/WindowInsetsCompat$Impl29;->mMandatorySystemGestureInsets:Landroidx/core/graphics/Insets;
+
+    .line 8
+    .line 9
+    iput-object p1, p0, Landroidx/core/view/WindowInsetsCompat$Impl29;->mTappableElementInsets:Landroidx/core/graphics/Insets;
+
+    .line 10
+    .line 11
+    return-void
+.end method
+
+.method public constructor <init>(Landroidx/core/view/WindowInsetsCompat;Landroidx/core/view/WindowInsetsCompat$Impl29;)V
+    .registers 3
+    .param p1    # Landroidx/core/view/WindowInsetsCompat;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
+    .param p2    # Landroidx/core/view/WindowInsetsCompat$Impl29;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
+
+    .line 12
+    invoke-direct {p0, p1, p2}, Landroidx/core/view/WindowInsetsCompat$Impl28;-><init>(Landroidx/core/view/WindowInsetsCompat;Landroidx/core/view/WindowInsetsCompat$Impl28;)V
+
+    const/4 p1, 0x0
+
+    .line 13
+    iput-object p1, p0, Landroidx/core/view/WindowInsetsCompat$Impl29;->mSystemGestureInsets:Landroidx/core/graphics/Insets;
+
+    .line 14
+    iput-object p1, p0, Landroidx/core/view/WindowInsetsCompat$Impl29;->mMandatorySystemGestureInsets:Landroidx/core/graphics/Insets;
+
+    .line 15
+    iput-object p1, p0, Landroidx/core/view/WindowInsetsCompat$Impl29;->mTappableElementInsets:Landroidx/core/graphics/Insets;
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public getMandatorySystemGestureInsets()Landroidx/core/graphics/Insets;
+    .registers 2
+    .annotation build Landroidx/annotation/NonNull;
+    .end annotation
+
+    .line 1
+    iget-object v0, p0, Landroidx/core/view/WindowInsetsCompat$Impl29;->mMandatorySystemGestureInsets:Landroidx/core/graphics/Insets;
+
+    .line 2
+    .line 3
+    if-nez v0, :cond_10
+
+    .line 4
+    .line 5
+    iget-object v0, p0, Landroidx/core/view/WindowInsetsCompat$Impl20;->mPlatformInsets:Landroid/view/WindowInsets;
+
+    .line 6
+    .line 7
+    invoke-static {v0}, Landroidx/core/view/n;->w(Landroid/view/WindowInsets;)Landroid/graphics/Insets;
+
+    .line 8
+    .line 9
+    .line 10
+    move-result-object v0
+
+    .line 11
+    invoke-static {v0}, Landroidx/core/graphics/Insets;->toCompatInsets(Landroid/graphics/Insets;)Landroidx/core/graphics/Insets;
+
+    .line 12
+    .line 13
+    .line 14
+    move-result-object v0
+
+    .line 15
+    iput-object v0, p0, Landroidx/core/view/WindowInsetsCompat$Impl29;->mMandatorySystemGestureInsets:Landroidx/core/graphics/Insets;
+
+    .line 16
+    .line 17
+    :cond_10
+    iget-object v0, p0, Landroidx/core/view/WindowInsetsCompat$Impl29;->mMandatorySystemGestureInsets:Landroidx/core/graphics/Insets;
+
+    .line 18
+    .line 19
+    return-object v0
+.end method
+
+.method public getSystemGestureInsets()Landroidx/core/graphics/Insets;
+    .registers 2
+    .annotation build Landroidx/annotation/NonNull;
+    .end annotation
+
+    .line 1
+    iget-object v0, p0, Landroidx/core/view/WindowInsetsCompat$Impl29;->mSystemGestureInsets:Landroidx/core/graphics/Insets;
+
+    .line 2
+    .line 3
+    if-nez v0, :cond_10
+
+    .line 4
+    .line 5
+    iget-object v0, p0, Landroidx/core/view/WindowInsetsCompat$Impl20;->mPlatformInsets:Landroid/view/WindowInsets;
+
+    .line 6
+    .line 7
+    invoke-static {v0}, Landroidx/core/view/n;->A(Landroid/view/WindowInsets;)Landroid/graphics/Insets;
+
+    .line 8
+    .line 9
+    .line 10
+    move-result-object v0
+
+    .line 11
+    invoke-static {v0}, Landroidx/core/graphics/Insets;->toCompatInsets(Landroid/graphics/Insets;)Landroidx/core/graphics/Insets;
+
+    .line 12
+    .line 13
+    .line 14
+    move-result-object v0
+
+    .line 15
+    iput-object v0, p0, Landroidx/core/view/WindowInsetsCompat$Impl29;->mSystemGestureInsets:Landroidx/core/graphics/Insets;
+
+    .line 16
+    .line 17
+    :cond_10
+    iget-object v0, p0, Landroidx/core/view/WindowInsetsCompat$Impl29;->mSystemGestureInsets:Landroidx/core/graphics/Insets;
+
+    .line 18
+    .line 19
+    return-object v0
+.end method
+
+.method public getTappableElementInsets()Landroidx/core/graphics/Insets;
+    .registers 2
+    .annotation build Landroidx/annotation/NonNull;
+    .end annotation
+
+    .line 1
+    iget-object v0, p0, Landroidx/core/view/WindowInsetsCompat$Impl29;->mTappableElementInsets:Landroidx/core/graphics/Insets;
+
+    .line 2
+    .line 3
+    if-nez v0, :cond_10
+
+    .line 4
+    .line 5
+    iget-object v0, p0, Landroidx/core/view/WindowInsetsCompat$Impl20;->mPlatformInsets:Landroid/view/WindowInsets;
+
+    .line 6
+    .line 7
+    invoke-static {v0}, Landroidx/core/view/n;->c(Landroid/view/WindowInsets;)Landroid/graphics/Insets;
+
+    .line 8
+    .line 9
+    .line 10
+    move-result-object v0
+
+    .line 11
+    invoke-static {v0}, Landroidx/core/graphics/Insets;->toCompatInsets(Landroid/graphics/Insets;)Landroidx/core/graphics/Insets;
+
+    .line 12
+    .line 13
+    .line 14
+    move-result-object v0
+
+    .line 15
+    iput-object v0, p0, Landroidx/core/view/WindowInsetsCompat$Impl29;->mTappableElementInsets:Landroidx/core/graphics/Insets;
+
+    .line 16
+    .line 17
+    :cond_10
+    iget-object v0, p0, Landroidx/core/view/WindowInsetsCompat$Impl29;->mTappableElementInsets:Landroidx/core/graphics/Insets;
+
+    .line 18
+    .line 19
+    return-object v0
+.end method
+
+.method public inset(IIII)Landroidx/core/view/WindowInsetsCompat;
+    .registers 6
+    .annotation build Landroidx/annotation/NonNull;
+    .end annotation
+
+    .line 1
+    iget-object v0, p0, Landroidx/core/view/WindowInsetsCompat$Impl20;->mPlatformInsets:Landroid/view/WindowInsets;
+
+    .line 2
+    .line 3
+    invoke-static {v0, p1, p2, p3, p4}, Landroidx/core/view/n;->h(Landroid/view/WindowInsets;IIII)Landroid/view/WindowInsets;
+
+    .line 4
+    .line 5
+    .line 6
+    move-result-object p1
+
+    .line 7
+    invoke-static {p1}, Landroidx/core/view/WindowInsetsCompat;->toWindowInsetsCompat(Landroid/view/WindowInsets;)Landroidx/core/view/WindowInsetsCompat;
+
+    .line 8
+    .line 9
+    .line 10
+    move-result-object p1
+
+    .line 11
+    return-object p1
+.end method
+
+.method public setStableInsets(Landroidx/core/graphics/Insets;)V
+    .registers 2
+    .param p1    # Landroidx/core/graphics/Insets;
+        .annotation build Landroidx/annotation/Nullable;
+        .end annotation
+    .end param
+
+    .line 1
+    return-void
+.end method

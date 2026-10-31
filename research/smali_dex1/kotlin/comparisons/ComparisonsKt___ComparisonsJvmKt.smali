@@ -1,0 +1,1144 @@
+.class Lkotlin/comparisons/ComparisonsKt___ComparisonsJvmKt;
+.super Lkotlin/comparisons/ComparisonsKt__ComparisonsKt;
+.source "r8-map-id-94e2637d1b30c6542972a7fc4ced35aa6da258c4e6702fc7c9cbf0ebc32bec75"
+
+
+# annotations
+.annotation runtime Lkotlin/Metadata;
+    d1 = {
+        "\u0000J\n\u0002\u0008\u0002\n\u0002\u0010\u000f\n\u0002\u0008\u0003\n\u0002\u0010\u0005\n\u0002\u0010\n\n\u0002\u0010\u0008\n\u0002\u0010\t\n\u0002\u0010\u0007\n\u0002\u0010\u0006\n\u0002\u0008\u0003\n\u0002\u0010\u0011\n\u0000\n\u0002\u0010\u0012\n\u0002\u0010\u0017\n\u0002\u0010\u0015\n\u0002\u0010\u0016\n\u0002\u0010\u0014\n\u0002\u0010\u0013\n\u0002\u0008\u0002\u001a-\u0010\u0000\u001a\u0002H\u0001\"\u000e\u0008\u0000\u0010\u0001*\u0008\u0012\u0004\u0012\u0002H\u00010\u00022\u0006\u0010\u0003\u001a\u0002H\u00012\u0006\u0010\u0004\u001a\u0002H\u0001H\u0007\u00a2\u0006\u0002\u0010\u0005\u001a\u0019\u0010\u0000\u001a\u00020\u00062\u0006\u0010\u0003\u001a\u00020\u00062\u0006\u0010\u0004\u001a\u00020\u0006H\u0087\u0008\u001a\u0019\u0010\u0000\u001a\u00020\u00072\u0006\u0010\u0003\u001a\u00020\u00072\u0006\u0010\u0004\u001a\u00020\u0007H\u0087\u0008\u001a\u0019\u0010\u0000\u001a\u00020\u00082\u0006\u0010\u0003\u001a\u00020\u00082\u0006\u0010\u0004\u001a\u00020\u0008H\u0087\u0008\u001a\u0019\u0010\u0000\u001a\u00020\t2\u0006\u0010\u0003\u001a\u00020\t2\u0006\u0010\u0004\u001a\u00020\tH\u0087\u0008\u001a\u0019\u0010\u0000\u001a\u00020\n2\u0006\u0010\u0003\u001a\u00020\n2\u0006\u0010\u0004\u001a\u00020\nH\u0087\u0008\u001a\u0019\u0010\u0000\u001a\u00020\u000b2\u0006\u0010\u0003\u001a\u00020\u000b2\u0006\u0010\u0004\u001a\u00020\u000bH\u0087\u0008\u001a5\u0010\u0000\u001a\u0002H\u0001\"\u000e\u0008\u0000\u0010\u0001*\u0008\u0012\u0004\u0012\u0002H\u00010\u00022\u0006\u0010\u0003\u001a\u0002H\u00012\u0006\u0010\u0004\u001a\u0002H\u00012\u0006\u0010\u000c\u001a\u0002H\u0001H\u0007\u00a2\u0006\u0002\u0010\r\u001a!\u0010\u0000\u001a\u00020\u00062\u0006\u0010\u0003\u001a\u00020\u00062\u0006\u0010\u0004\u001a\u00020\u00062\u0006\u0010\u000c\u001a\u00020\u0006H\u0087\u0008\u001a!\u0010\u0000\u001a\u00020\u00072\u0006\u0010\u0003\u001a\u00020\u00072\u0006\u0010\u0004\u001a\u00020\u00072\u0006\u0010\u000c\u001a\u00020\u0007H\u0087\u0008\u001a!\u0010\u0000\u001a\u00020\u00082\u0006\u0010\u0003\u001a\u00020\u00082\u0006\u0010\u0004\u001a\u00020\u00082\u0006\u0010\u000c\u001a\u00020\u0008H\u0087\u0008\u001a!\u0010\u0000\u001a\u00020\t2\u0006\u0010\u0003\u001a\u00020\t2\u0006\u0010\u0004\u001a\u00020\t2\u0006\u0010\u000c\u001a\u00020\tH\u0087\u0008\u001a!\u0010\u0000\u001a\u00020\n2\u0006\u0010\u0003\u001a\u00020\n2\u0006\u0010\u0004\u001a\u00020\n2\u0006\u0010\u000c\u001a\u00020\nH\u0087\u0008\u001a!\u0010\u0000\u001a\u00020\u000b2\u0006\u0010\u0003\u001a\u00020\u000b2\u0006\u0010\u0004\u001a\u00020\u000b2\u0006\u0010\u000c\u001a\u00020\u000bH\u0087\u0008\u001a9\u0010\u0000\u001a\u0002H\u0001\"\u000e\u0008\u0000\u0010\u0001*\u0008\u0012\u0004\u0012\u0002H\u00010\u00022\u0006\u0010\u0003\u001a\u0002H\u00012\u0012\u0010\u000e\u001a\n\u0012\u0006\u0008\u0001\u0012\u0002H\u00010\u000f\"\u0002H\u0001H\u0007\u00a2\u0006\u0002\u0010\u0010\u001a\u001c\u0010\u0000\u001a\u00020\u00062\u0006\u0010\u0003\u001a\u00020\u00062\n\u0010\u000e\u001a\u00020\u0011\"\u00020\u0006H\u0007\u001a\u001c\u0010\u0000\u001a\u00020\u00072\u0006\u0010\u0003\u001a\u00020\u00072\n\u0010\u000e\u001a\u00020\u0012\"\u00020\u0007H\u0007\u001a\u001c\u0010\u0000\u001a\u00020\u00082\u0006\u0010\u0003\u001a\u00020\u00082\n\u0010\u000e\u001a\u00020\u0013\"\u00020\u0008H\u0007\u001a\u001c\u0010\u0000\u001a\u00020\t2\u0006\u0010\u0003\u001a\u00020\t2\n\u0010\u000e\u001a\u00020\u0014\"\u00020\tH\u0007\u001a\u001c\u0010\u0000\u001a\u00020\n2\u0006\u0010\u0003\u001a\u00020\n2\n\u0010\u000e\u001a\u00020\u0015\"\u00020\nH\u0007\u001a\u001c\u0010\u0000\u001a\u00020\u000b2\u0006\u0010\u0003\u001a\u00020\u000b2\n\u0010\u000e\u001a\u00020\u0016\"\u00020\u000bH\u0007\u001a-\u0010\u0017\u001a\u0002H\u0001\"\u000e\u0008\u0000\u0010\u0001*\u0008\u0012\u0004\u0012\u0002H\u00010\u00022\u0006\u0010\u0003\u001a\u0002H\u00012\u0006\u0010\u0004\u001a\u0002H\u0001H\u0007\u00a2\u0006\u0002\u0010\u0005\u001a\u0019\u0010\u0017\u001a\u00020\u00062\u0006\u0010\u0003\u001a\u00020\u00062\u0006\u0010\u0004\u001a\u00020\u0006H\u0087\u0008\u001a\u0019\u0010\u0017\u001a\u00020\u00072\u0006\u0010\u0003\u001a\u00020\u00072\u0006\u0010\u0004\u001a\u00020\u0007H\u0087\u0008\u001a\u0019\u0010\u0017\u001a\u00020\u00082\u0006\u0010\u0003\u001a\u00020\u00082\u0006\u0010\u0004\u001a\u00020\u0008H\u0087\u0008\u001a\u0019\u0010\u0017\u001a\u00020\t2\u0006\u0010\u0003\u001a\u00020\t2\u0006\u0010\u0004\u001a\u00020\tH\u0087\u0008\u001a\u0019\u0010\u0017\u001a\u00020\n2\u0006\u0010\u0003\u001a\u00020\n2\u0006\u0010\u0004\u001a\u00020\nH\u0087\u0008\u001a\u0019\u0010\u0017\u001a\u00020\u000b2\u0006\u0010\u0003\u001a\u00020\u000b2\u0006\u0010\u0004\u001a\u00020\u000bH\u0087\u0008\u001a5\u0010\u0017\u001a\u0002H\u0001\"\u000e\u0008\u0000\u0010\u0001*\u0008\u0012\u0004\u0012\u0002H\u00010\u00022\u0006\u0010\u0003\u001a\u0002H\u00012\u0006\u0010\u0004\u001a\u0002H\u00012\u0006\u0010\u000c\u001a\u0002H\u0001H\u0007\u00a2\u0006\u0002\u0010\r\u001a!\u0010\u0017\u001a\u00020\u00062\u0006\u0010\u0003\u001a\u00020\u00062\u0006\u0010\u0004\u001a\u00020\u00062\u0006\u0010\u000c\u001a\u00020\u0006H\u0087\u0008\u001a!\u0010\u0017\u001a\u00020\u00072\u0006\u0010\u0003\u001a\u00020\u00072\u0006\u0010\u0004\u001a\u00020\u00072\u0006\u0010\u000c\u001a\u00020\u0007H\u0087\u0008\u001a!\u0010\u0017\u001a\u00020\u00082\u0006\u0010\u0003\u001a\u00020\u00082\u0006\u0010\u0004\u001a\u00020\u00082\u0006\u0010\u000c\u001a\u00020\u0008H\u0087\u0008\u001a!\u0010\u0017\u001a\u00020\t2\u0006\u0010\u0003\u001a\u00020\t2\u0006\u0010\u0004\u001a\u00020\t2\u0006\u0010\u000c\u001a\u00020\tH\u0087\u0008\u001a!\u0010\u0017\u001a\u00020\n2\u0006\u0010\u0003\u001a\u00020\n2\u0006\u0010\u0004\u001a\u00020\n2\u0006\u0010\u000c\u001a\u00020\nH\u0087\u0008\u001a!\u0010\u0017\u001a\u00020\u000b2\u0006\u0010\u0003\u001a\u00020\u000b2\u0006\u0010\u0004\u001a\u00020\u000b2\u0006\u0010\u000c\u001a\u00020\u000bH\u0087\u0008\u001a9\u0010\u0017\u001a\u0002H\u0001\"\u000e\u0008\u0000\u0010\u0001*\u0008\u0012\u0004\u0012\u0002H\u00010\u00022\u0006\u0010\u0003\u001a\u0002H\u00012\u0012\u0010\u000e\u001a\n\u0012\u0006\u0008\u0001\u0012\u0002H\u00010\u000f\"\u0002H\u0001H\u0007\u00a2\u0006\u0002\u0010\u0010\u001a\u001c\u0010\u0017\u001a\u00020\u00062\u0006\u0010\u0003\u001a\u00020\u00062\n\u0010\u000e\u001a\u00020\u0011\"\u00020\u0006H\u0007\u001a\u001c\u0010\u0017\u001a\u00020\u00072\u0006\u0010\u0003\u001a\u00020\u00072\n\u0010\u000e\u001a\u00020\u0012\"\u00020\u0007H\u0007\u001a\u001c\u0010\u0017\u001a\u00020\u00082\u0006\u0010\u0003\u001a\u00020\u00082\n\u0010\u000e\u001a\u00020\u0013\"\u00020\u0008H\u0007\u001a\u001c\u0010\u0017\u001a\u00020\t2\u0006\u0010\u0003\u001a\u00020\t2\n\u0010\u000e\u001a\u00020\u0014\"\u00020\tH\u0007\u001a\u001c\u0010\u0017\u001a\u00020\n2\u0006\u0010\u0003\u001a\u00020\n2\n\u0010\u000e\u001a\u00020\u0015\"\u00020\nH\u0007\u001a\u001c\u0010\u0017\u001a\u00020\u000b2\u0006\u0010\u0003\u001a\u00020\u000b2\n\u0010\u000e\u001a\u00020\u0016\"\u00020\u000bH\u0007\u00a8\u0006\u0018"
+    }
+    d2 = {
+        "maxOf",
+        "T",
+        "",
+        "a",
+        "b",
+        "(Ljava/lang/Comparable;Ljava/lang/Comparable;)Ljava/lang/Comparable;",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "c",
+        "(Ljava/lang/Comparable;Ljava/lang/Comparable;Ljava/lang/Comparable;)Ljava/lang/Comparable;",
+        "other",
+        "",
+        "(Ljava/lang/Comparable;[Ljava/lang/Comparable;)Ljava/lang/Comparable;",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "minOf",
+        "kotlin-stdlib"
+    }
+    k = 0x5
+    mv = {
+        0x2,
+        0x2,
+        0x0
+    }
+    xi = 0x31
+    xs = "kotlin/comparisons/ComparisonsKt"
+.end annotation
+
+
+# direct methods
+.method public constructor <init>()V
+    .registers 1
+
+    .line 1
+    invoke-direct {p0}, Lkotlin/comparisons/ComparisonsKt__ComparisonsKt;-><init>()V
+
+    .line 2
+    .line 3
+    .line 4
+    return-void
+.end method
+
+.method private static final maxOf(BB)B
+    .registers 2
+    .annotation build Lkotlin/SinceKotlin;
+        version = "1.1"
+    .end annotation
+
+    .annotation build Lkotlin/internal/InlineOnly;
+    .end annotation
+
+    .line 21
+    invoke-static {p0, p1}, Ljava/lang/Math;->max(II)I
+
+    move-result p0
+
+    int-to-byte p0, p0
+
+    return p0
+.end method
+
+.method private static final maxOf(BBB)B
+    .registers 3
+    .annotation build Lkotlin/SinceKotlin;
+        version = "1.1"
+    .end annotation
+
+    .annotation build Lkotlin/internal/InlineOnly;
+    .end annotation
+
+    .line 28
+    invoke-static {p1, p2}, Ljava/lang/Math;->max(II)I
+
+    move-result p1
+
+    invoke-static {p0, p1}, Ljava/lang/Math;->max(II)I
+
+    move-result p0
+
+    int-to-byte p0, p0
+
+    return p0
+.end method
+
+.method public static final varargs maxOf(B[B)B
+    .registers 5
+    .annotation build Lkotlin/SinceKotlin;
+        version = "1.4"
+    .end annotation
+
+    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 35
+    array-length v0, p1
+
+    const/4 v1, 0x0
+
+    :goto_5
+    if-ge v1, v0, :cond_11
+
+    aget-byte v2, p1, v1
+
+    invoke-static {p0, v2}, Ljava/lang/Math;->max(II)I
+
+    move-result p0
+
+    int-to-byte p0, p0
+
+    add-int/lit8 v1, v1, 0x1
+
+    goto :goto_5
+
+    :cond_11
+    return p0
+.end method
+
+.method private static final maxOf(DD)D
+    .registers 4
+    .annotation build Lkotlin/SinceKotlin;
+        version = "1.1"
+    .end annotation
+
+    .annotation build Lkotlin/internal/InlineOnly;
+    .end annotation
+
+    .line 26
+    invoke-static {p0, p1, p2, p3}, Ljava/lang/Math;->max(DD)D
+
+    move-result-wide p0
+
+    return-wide p0
+.end method
+
+.method private static final maxOf(DDD)D
+    .registers 6
+    .annotation build Lkotlin/SinceKotlin;
+        version = "1.1"
+    .end annotation
+
+    .annotation build Lkotlin/internal/InlineOnly;
+    .end annotation
+
+    .line 33
+    invoke-static {p2, p3, p4, p5}, Ljava/lang/Math;->max(DD)D
+
+    move-result-wide p2
+
+    invoke-static {p0, p1, p2, p3}, Ljava/lang/Math;->max(DD)D
+
+    move-result-wide p0
+
+    return-wide p0
+.end method
+
+.method public static final varargs maxOf(D[D)D
+    .registers 7
+    .annotation build Lkotlin/SinceKotlin;
+        version = "1.4"
+    .end annotation
+
+    invoke-virtual {p2}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 40
+    array-length v0, p2
+
+    const/4 v1, 0x0
+
+    :goto_5
+    if-ge v1, v0, :cond_10
+
+    aget-wide v2, p2, v1
+
+    invoke-static {p0, p1, v2, v3}, Ljava/lang/Math;->max(DD)D
+
+    move-result-wide p0
+
+    add-int/lit8 v1, v1, 0x1
+
+    goto :goto_5
+
+    :cond_10
+    return-wide p0
+.end method
+
+.method private static final maxOf(FF)F
+    .registers 2
+    .annotation build Lkotlin/SinceKotlin;
+        version = "1.1"
+    .end annotation
+
+    .annotation build Lkotlin/internal/InlineOnly;
+    .end annotation
+
+    .line 25
+    invoke-static {p0, p1}, Ljava/lang/Math;->max(FF)F
+
+    move-result p0
+
+    return p0
+.end method
+
+.method private static final maxOf(FFF)F
+    .registers 3
+    .annotation build Lkotlin/SinceKotlin;
+        version = "1.1"
+    .end annotation
+
+    .annotation build Lkotlin/internal/InlineOnly;
+    .end annotation
+
+    .line 32
+    invoke-static {p1, p2}, Ljava/lang/Math;->max(FF)F
+
+    move-result p1
+
+    invoke-static {p0, p1}, Ljava/lang/Math;->max(FF)F
+
+    move-result p0
+
+    return p0
+.end method
+
+.method public static final varargs maxOf(F[F)F
+    .registers 5
+    .annotation build Lkotlin/SinceKotlin;
+        version = "1.4"
+    .end annotation
+
+    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 39
+    array-length v0, p1
+
+    const/4 v1, 0x0
+
+    :goto_5
+    if-ge v1, v0, :cond_10
+
+    aget v2, p1, v1
+
+    invoke-static {p0, v2}, Ljava/lang/Math;->max(FF)F
+
+    move-result p0
+
+    add-int/lit8 v1, v1, 0x1
+
+    goto :goto_5
+
+    :cond_10
+    return p0
+.end method
+
+.method private static final maxOf(II)I
+    .registers 2
+    .annotation build Lkotlin/SinceKotlin;
+        version = "1.1"
+    .end annotation
+
+    .annotation build Lkotlin/internal/InlineOnly;
+    .end annotation
+
+    .line 23
+    invoke-static {p0, p1}, Ljava/lang/Math;->max(II)I
+
+    move-result p0
+
+    return p0
+.end method
+
+.method private static final maxOf(III)I
+    .registers 3
+    .annotation build Lkotlin/SinceKotlin;
+        version = "1.1"
+    .end annotation
+
+    .annotation build Lkotlin/internal/InlineOnly;
+    .end annotation
+
+    .line 30
+    invoke-static {p1, p2}, Ljava/lang/Math;->max(II)I
+
+    move-result p1
+
+    invoke-static {p0, p1}, Ljava/lang/Math;->max(II)I
+
+    move-result p0
+
+    return p0
+.end method
+
+.method public static final varargs maxOf(I[I)I
+    .registers 5
+    .annotation build Lkotlin/SinceKotlin;
+        version = "1.4"
+    .end annotation
+
+    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 37
+    array-length v0, p1
+
+    const/4 v1, 0x0
+
+    :goto_5
+    if-ge v1, v0, :cond_10
+
+    aget v2, p1, v1
+
+    invoke-static {p0, v2}, Ljava/lang/Math;->max(II)I
+
+    move-result p0
+
+    add-int/lit8 v1, v1, 0x1
+
+    goto :goto_5
+
+    :cond_10
+    return p0
+.end method
+
+.method private static final maxOf(JJ)J
+    .registers 4
+    .annotation build Lkotlin/SinceKotlin;
+        version = "1.1"
+    .end annotation
+
+    .annotation build Lkotlin/internal/InlineOnly;
+    .end annotation
+
+    .line 24
+    invoke-static {p0, p1, p2, p3}, Ljava/lang/Math;->max(JJ)J
+
+    move-result-wide p0
+
+    return-wide p0
+.end method
+
+.method private static final maxOf(JJJ)J
+    .registers 6
+    .annotation build Lkotlin/SinceKotlin;
+        version = "1.1"
+    .end annotation
+
+    .annotation build Lkotlin/internal/InlineOnly;
+    .end annotation
+
+    .line 31
+    invoke-static {p2, p3, p4, p5}, Ljava/lang/Math;->max(JJ)J
+
+    move-result-wide p2
+
+    invoke-static {p0, p1, p2, p3}, Ljava/lang/Math;->max(JJ)J
+
+    move-result-wide p0
+
+    return-wide p0
+.end method
+
+.method public static final varargs maxOf(J[J)J
+    .registers 7
+    .annotation build Lkotlin/SinceKotlin;
+        version = "1.4"
+    .end annotation
+
+    invoke-virtual {p2}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 38
+    array-length v0, p2
+
+    const/4 v1, 0x0
+
+    :goto_5
+    if-ge v1, v0, :cond_10
+
+    aget-wide v2, p2, v1
+
+    invoke-static {p0, p1, v2, v3}, Ljava/lang/Math;->max(JJ)J
+
+    move-result-wide p0
+
+    add-int/lit8 v1, v1, 0x1
+
+    goto :goto_5
+
+    :cond_10
+    return-wide p0
+.end method
+
+.method public static maxOf(Ljava/lang/Comparable;Ljava/lang/Comparable;)Ljava/lang/Comparable;
+    .registers 3
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "<T::",
+            "Ljava/lang/Comparable<",
+            "-TT;>;>(TT;TT;)TT;"
+        }
+    .end annotation
+
+    .annotation build Lkotlin/SinceKotlin;
+        version = "1.1"
+    .end annotation
+
+    invoke-virtual {p0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 34
+    invoke-interface {p0, p1}, Ljava/lang/Comparable;->compareTo(Ljava/lang/Object;)I
+
+    move-result v0
+
+    if-ltz v0, :cond_d
+
+    return-object p0
+
+    :cond_d
+    return-object p1
+.end method
+
+.method public static final maxOf(Ljava/lang/Comparable;Ljava/lang/Comparable;Ljava/lang/Comparable;)Ljava/lang/Comparable;
+    .registers 3
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "<T::",
+            "Ljava/lang/Comparable<",
+            "-TT;>;>(TT;TT;TT;)TT;"
+        }
+    .end annotation
+
+    .annotation build Lkotlin/SinceKotlin;
+        version = "1.1"
+    .end annotation
+
+    invoke-virtual {p0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    invoke-virtual {p2}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 27
+    invoke-static {p1, p2}, Lkotlin/comparisons/ComparisonsKt___ComparisonsJvmKt;->maxOf(Ljava/lang/Comparable;Ljava/lang/Comparable;)Ljava/lang/Comparable;
+
+    move-result-object p1
+
+    invoke-static {p0, p1}, Lkotlin/comparisons/ComparisonsKt___ComparisonsJvmKt;->maxOf(Ljava/lang/Comparable;Ljava/lang/Comparable;)Ljava/lang/Comparable;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+.method public static final varargs maxOf(Ljava/lang/Comparable;[Ljava/lang/Comparable;)Ljava/lang/Comparable;
+    .registers 5
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "<T::",
+            "Ljava/lang/Comparable<",
+            "-TT;>;>(TT;[TT;)TT;"
+        }
+    .end annotation
+
+    .annotation build Lkotlin/SinceKotlin;
+        version = "1.4"
+    .end annotation
+
+    .line 1
+    invoke-virtual {p0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 2
+    .line 3
+    .line 4
+    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 5
+    .line 6
+    .line 7
+    array-length v0, p1
+
+    .line 8
+    const/4 v1, 0x0
+
+    .line 9
+    :goto_8
+    if-ge v1, v0, :cond_13
+
+    .line 10
+    .line 11
+    aget-object v2, p1, v1
+
+    .line 12
+    .line 13
+    invoke-static {p0, v2}, Lkotlin/comparisons/ComparisonsKt___ComparisonsJvmKt;->maxOf(Ljava/lang/Comparable;Ljava/lang/Comparable;)Ljava/lang/Comparable;
+
+    .line 14
+    .line 15
+    .line 16
+    move-result-object p0
+
+    .line 17
+    add-int/lit8 v1, v1, 0x1
+
+    .line 18
+    .line 19
+    goto :goto_8
+
+    .line 20
+    :cond_13
+    return-object p0
+.end method
+
+.method private static final maxOf(SS)S
+    .registers 2
+    .annotation build Lkotlin/SinceKotlin;
+        version = "1.1"
+    .end annotation
+
+    .annotation build Lkotlin/internal/InlineOnly;
+    .end annotation
+
+    .line 22
+    invoke-static {p0, p1}, Ljava/lang/Math;->max(II)I
+
+    move-result p0
+
+    int-to-short p0, p0
+
+    return p0
+.end method
+
+.method private static final maxOf(SSS)S
+    .registers 3
+    .annotation build Lkotlin/SinceKotlin;
+        version = "1.1"
+    .end annotation
+
+    .annotation build Lkotlin/internal/InlineOnly;
+    .end annotation
+
+    .line 29
+    invoke-static {p1, p2}, Ljava/lang/Math;->max(II)I
+
+    move-result p1
+
+    invoke-static {p0, p1}, Ljava/lang/Math;->max(II)I
+
+    move-result p0
+
+    int-to-short p0, p0
+
+    return p0
+.end method
+
+.method public static final varargs maxOf(S[S)S
+    .registers 5
+    .annotation build Lkotlin/SinceKotlin;
+        version = "1.4"
+    .end annotation
+
+    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 36
+    array-length v0, p1
+
+    const/4 v1, 0x0
+
+    :goto_5
+    if-ge v1, v0, :cond_11
+
+    aget-short v2, p1, v1
+
+    invoke-static {p0, v2}, Ljava/lang/Math;->max(II)I
+
+    move-result p0
+
+    int-to-short p0, p0
+
+    add-int/lit8 v1, v1, 0x1
+
+    goto :goto_5
+
+    :cond_11
+    return p0
+.end method
+
+.method private static final minOf(BB)B
+    .registers 2
+    .annotation build Lkotlin/SinceKotlin;
+        version = "1.1"
+    .end annotation
+
+    .annotation build Lkotlin/internal/InlineOnly;
+    .end annotation
+
+    .line 21
+    invoke-static {p0, p1}, Ljava/lang/Math;->min(II)I
+
+    move-result p0
+
+    int-to-byte p0, p0
+
+    return p0
+.end method
+
+.method private static final minOf(BBB)B
+    .registers 3
+    .annotation build Lkotlin/SinceKotlin;
+        version = "1.1"
+    .end annotation
+
+    .annotation build Lkotlin/internal/InlineOnly;
+    .end annotation
+
+    .line 28
+    invoke-static {p1, p2}, Ljava/lang/Math;->min(II)I
+
+    move-result p1
+
+    invoke-static {p0, p1}, Ljava/lang/Math;->min(II)I
+
+    move-result p0
+
+    int-to-byte p0, p0
+
+    return p0
+.end method
+
+.method public static final varargs minOf(B[B)B
+    .registers 5
+    .annotation build Lkotlin/SinceKotlin;
+        version = "1.4"
+    .end annotation
+
+    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 35
+    array-length v0, p1
+
+    const/4 v1, 0x0
+
+    :goto_5
+    if-ge v1, v0, :cond_11
+
+    aget-byte v2, p1, v1
+
+    invoke-static {p0, v2}, Ljava/lang/Math;->min(II)I
+
+    move-result p0
+
+    int-to-byte p0, p0
+
+    add-int/lit8 v1, v1, 0x1
+
+    goto :goto_5
+
+    :cond_11
+    return p0
+.end method
+
+.method private static final minOf(DD)D
+    .registers 4
+    .annotation build Lkotlin/SinceKotlin;
+        version = "1.1"
+    .end annotation
+
+    .annotation build Lkotlin/internal/InlineOnly;
+    .end annotation
+
+    .line 26
+    invoke-static {p0, p1, p2, p3}, Ljava/lang/Math;->min(DD)D
+
+    move-result-wide p0
+
+    return-wide p0
+.end method
+
+.method private static final minOf(DDD)D
+    .registers 6
+    .annotation build Lkotlin/SinceKotlin;
+        version = "1.1"
+    .end annotation
+
+    .annotation build Lkotlin/internal/InlineOnly;
+    .end annotation
+
+    .line 33
+    invoke-static {p2, p3, p4, p5}, Ljava/lang/Math;->min(DD)D
+
+    move-result-wide p2
+
+    invoke-static {p0, p1, p2, p3}, Ljava/lang/Math;->min(DD)D
+
+    move-result-wide p0
+
+    return-wide p0
+.end method
+
+.method public static final varargs minOf(D[D)D
+    .registers 7
+    .annotation build Lkotlin/SinceKotlin;
+        version = "1.4"
+    .end annotation
+
+    invoke-virtual {p2}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 40
+    array-length v0, p2
+
+    const/4 v1, 0x0
+
+    :goto_5
+    if-ge v1, v0, :cond_10
+
+    aget-wide v2, p2, v1
+
+    invoke-static {p0, p1, v2, v3}, Ljava/lang/Math;->min(DD)D
+
+    move-result-wide p0
+
+    add-int/lit8 v1, v1, 0x1
+
+    goto :goto_5
+
+    :cond_10
+    return-wide p0
+.end method
+
+.method private static final minOf(FF)F
+    .registers 2
+    .annotation build Lkotlin/SinceKotlin;
+        version = "1.1"
+    .end annotation
+
+    .annotation build Lkotlin/internal/InlineOnly;
+    .end annotation
+
+    .line 25
+    invoke-static {p0, p1}, Ljava/lang/Math;->min(FF)F
+
+    move-result p0
+
+    return p0
+.end method
+
+.method private static final minOf(FFF)F
+    .registers 3
+    .annotation build Lkotlin/SinceKotlin;
+        version = "1.1"
+    .end annotation
+
+    .annotation build Lkotlin/internal/InlineOnly;
+    .end annotation
+
+    .line 32
+    invoke-static {p1, p2}, Ljava/lang/Math;->min(FF)F
+
+    move-result p1
+
+    invoke-static {p0, p1}, Ljava/lang/Math;->min(FF)F
+
+    move-result p0
+
+    return p0
+.end method
+
+.method public static final varargs minOf(F[F)F
+    .registers 5
+    .annotation build Lkotlin/SinceKotlin;
+        version = "1.4"
+    .end annotation
+
+    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 39
+    array-length v0, p1
+
+    const/4 v1, 0x0
+
+    :goto_5
+    if-ge v1, v0, :cond_10
+
+    aget v2, p1, v1
+
+    invoke-static {p0, v2}, Ljava/lang/Math;->min(FF)F
+
+    move-result p0
+
+    add-int/lit8 v1, v1, 0x1
+
+    goto :goto_5
+
+    :cond_10
+    return p0
+.end method
+
+.method private static final minOf(II)I
+    .registers 2
+    .annotation build Lkotlin/SinceKotlin;
+        version = "1.1"
+    .end annotation
+
+    .annotation build Lkotlin/internal/InlineOnly;
+    .end annotation
+
+    .line 23
+    invoke-static {p0, p1}, Ljava/lang/Math;->min(II)I
+
+    move-result p0
+
+    return p0
+.end method
+
+.method private static final minOf(III)I
+    .registers 3
+    .annotation build Lkotlin/SinceKotlin;
+        version = "1.1"
+    .end annotation
+
+    .annotation build Lkotlin/internal/InlineOnly;
+    .end annotation
+
+    .line 30
+    invoke-static {p1, p2}, Ljava/lang/Math;->min(II)I
+
+    move-result p1
+
+    invoke-static {p0, p1}, Ljava/lang/Math;->min(II)I
+
+    move-result p0
+
+    return p0
+.end method
+
+.method public static final varargs minOf(I[I)I
+    .registers 5
+    .annotation build Lkotlin/SinceKotlin;
+        version = "1.4"
+    .end annotation
+
+    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 37
+    array-length v0, p1
+
+    const/4 v1, 0x0
+
+    :goto_5
+    if-ge v1, v0, :cond_10
+
+    aget v2, p1, v1
+
+    invoke-static {p0, v2}, Ljava/lang/Math;->min(II)I
+
+    move-result p0
+
+    add-int/lit8 v1, v1, 0x1
+
+    goto :goto_5
+
+    :cond_10
+    return p0
+.end method
+
+.method private static final minOf(JJ)J
+    .registers 4
+    .annotation build Lkotlin/SinceKotlin;
+        version = "1.1"
+    .end annotation
+
+    .annotation build Lkotlin/internal/InlineOnly;
+    .end annotation
+
+    .line 24
+    invoke-static {p0, p1, p2, p3}, Ljava/lang/Math;->min(JJ)J
+
+    move-result-wide p0
+
+    return-wide p0
+.end method
+
+.method private static final minOf(JJJ)J
+    .registers 6
+    .annotation build Lkotlin/SinceKotlin;
+        version = "1.1"
+    .end annotation
+
+    .annotation build Lkotlin/internal/InlineOnly;
+    .end annotation
+
+    .line 31
+    invoke-static {p2, p3, p4, p5}, Ljava/lang/Math;->min(JJ)J
+
+    move-result-wide p2
+
+    invoke-static {p0, p1, p2, p3}, Ljava/lang/Math;->min(JJ)J
+
+    move-result-wide p0
+
+    return-wide p0
+.end method
+
+.method public static final varargs minOf(J[J)J
+    .registers 7
+    .annotation build Lkotlin/SinceKotlin;
+        version = "1.4"
+    .end annotation
+
+    invoke-virtual {p2}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 38
+    array-length v0, p2
+
+    const/4 v1, 0x0
+
+    :goto_5
+    if-ge v1, v0, :cond_10
+
+    aget-wide v2, p2, v1
+
+    invoke-static {p0, p1, v2, v3}, Ljava/lang/Math;->min(JJ)J
+
+    move-result-wide p0
+
+    add-int/lit8 v1, v1, 0x1
+
+    goto :goto_5
+
+    :cond_10
+    return-wide p0
+.end method
+
+.method public static final minOf(Ljava/lang/Comparable;Ljava/lang/Comparable;)Ljava/lang/Comparable;
+    .registers 3
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "<T::",
+            "Ljava/lang/Comparable<",
+            "-TT;>;>(TT;TT;)TT;"
+        }
+    .end annotation
+
+    .annotation build Lkotlin/SinceKotlin;
+        version = "1.1"
+    .end annotation
+
+    invoke-virtual {p0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 34
+    invoke-interface {p0, p1}, Ljava/lang/Comparable;->compareTo(Ljava/lang/Object;)I
+
+    move-result v0
+
+    if-gtz v0, :cond_d
+
+    return-object p0
+
+    :cond_d
+    return-object p1
+.end method
+
+.method public static final minOf(Ljava/lang/Comparable;Ljava/lang/Comparable;Ljava/lang/Comparable;)Ljava/lang/Comparable;
+    .registers 3
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "<T::",
+            "Ljava/lang/Comparable<",
+            "-TT;>;>(TT;TT;TT;)TT;"
+        }
+    .end annotation
+
+    .annotation build Lkotlin/SinceKotlin;
+        version = "1.1"
+    .end annotation
+
+    invoke-virtual {p0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    invoke-virtual {p2}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 27
+    invoke-static {p1, p2}, Lkotlin/comparisons/ComparisonsKt___ComparisonsJvmKt;->minOf(Ljava/lang/Comparable;Ljava/lang/Comparable;)Ljava/lang/Comparable;
+
+    move-result-object p1
+
+    invoke-static {p0, p1}, Lkotlin/comparisons/ComparisonsKt___ComparisonsJvmKt;->minOf(Ljava/lang/Comparable;Ljava/lang/Comparable;)Ljava/lang/Comparable;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+.method public static final varargs minOf(Ljava/lang/Comparable;[Ljava/lang/Comparable;)Ljava/lang/Comparable;
+    .registers 5
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "<T::",
+            "Ljava/lang/Comparable<",
+            "-TT;>;>(TT;[TT;)TT;"
+        }
+    .end annotation
+
+    .annotation build Lkotlin/SinceKotlin;
+        version = "1.4"
+    .end annotation
+
+    .line 1
+    invoke-virtual {p0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 2
+    .line 3
+    .line 4
+    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 5
+    .line 6
+    .line 7
+    array-length v0, p1
+
+    .line 8
+    const/4 v1, 0x0
+
+    .line 9
+    :goto_8
+    if-ge v1, v0, :cond_13
+
+    .line 10
+    .line 11
+    aget-object v2, p1, v1
+
+    .line 12
+    .line 13
+    invoke-static {p0, v2}, Lkotlin/comparisons/ComparisonsKt___ComparisonsJvmKt;->minOf(Ljava/lang/Comparable;Ljava/lang/Comparable;)Ljava/lang/Comparable;
+
+    .line 14
+    .line 15
+    .line 16
+    move-result-object p0
+
+    .line 17
+    add-int/lit8 v1, v1, 0x1
+
+    .line 18
+    .line 19
+    goto :goto_8
+
+    .line 20
+    :cond_13
+    return-object p0
+.end method
+
+.method private static final minOf(SS)S
+    .registers 2
+    .annotation build Lkotlin/SinceKotlin;
+        version = "1.1"
+    .end annotation
+
+    .annotation build Lkotlin/internal/InlineOnly;
+    .end annotation
+
+    .line 22
+    invoke-static {p0, p1}, Ljava/lang/Math;->min(II)I
+
+    move-result p0
+
+    int-to-short p0, p0
+
+    return p0
+.end method
+
+.method private static final minOf(SSS)S
+    .registers 3
+    .annotation build Lkotlin/SinceKotlin;
+        version = "1.1"
+    .end annotation
+
+    .annotation build Lkotlin/internal/InlineOnly;
+    .end annotation
+
+    .line 29
+    invoke-static {p1, p2}, Ljava/lang/Math;->min(II)I
+
+    move-result p1
+
+    invoke-static {p0, p1}, Ljava/lang/Math;->min(II)I
+
+    move-result p0
+
+    int-to-short p0, p0
+
+    return p0
+.end method
+
+.method public static final varargs minOf(S[S)S
+    .registers 5
+    .annotation build Lkotlin/SinceKotlin;
+        version = "1.4"
+    .end annotation
+
+    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 36
+    array-length v0, p1
+
+    const/4 v1, 0x0
+
+    :goto_5
+    if-ge v1, v0, :cond_11
+
+    aget-short v2, p1, v1
+
+    invoke-static {p0, v2}, Ljava/lang/Math;->min(II)I
+
+    move-result p0
+
+    int-to-short p0, p0
+
+    add-int/lit8 v1, v1, 0x1
+
+    goto :goto_5
+
+    :cond_11
+    return p0
+.end method

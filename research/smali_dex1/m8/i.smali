@@ -1,0 +1,128 @@
+.class public final Lm8/i;
+.super Lx7/k;
+.source "r8-map-id-94e2637d1b30c6542972a7fc4ced35aa6da258c4e6702fc7c9cbf0ebc32bec75"
+
+
+# static fields
+.field public static final b:Lm8/k;
+
+
+# instance fields
+.field public final a:Ljava/util/concurrent/ThreadFactory;
+
+
+# direct methods
+.method static constructor <clinit>()V
+    .registers 4
+
+    .line 1
+    const-string v0, "rx2.newthread-priority"
+
+    .line 2
+    .line 3
+    const/4 v1, 0x5
+
+    .line 4
+    invoke-static {v0, v1}, Ljava/lang/Integer;->getInteger(Ljava/lang/String;I)Ljava/lang/Integer;
+
+    .line 5
+    .line 6
+    .line 7
+    move-result-object v0
+
+    .line 8
+    invoke-virtual {v0}, Ljava/lang/Integer;->intValue()I
+
+    .line 9
+    .line 10
+    .line 11
+    move-result v0
+
+    .line 12
+    const/16 v1, 0xa
+
+    .line 13
+    .line 14
+    invoke-static {v1, v0}, Ljava/lang/Math;->min(II)I
+
+    .line 15
+    .line 16
+    .line 17
+    move-result v0
+
+    .line 18
+    const/4 v1, 0x1
+
+    .line 19
+    invoke-static {v1, v0}, Ljava/lang/Math;->max(II)I
+
+    .line 20
+    .line 21
+    .line 22
+    move-result v0
+
+    .line 23
+    new-instance v1, Lm8/k;
+
+    .line 24
+    .line 25
+    const-string v2, "RxNewThreadScheduler"
+
+    .line 26
+    .line 27
+    const/4 v3, 0x0
+
+    .line 28
+    invoke-direct {v1, v2, v0, v3}, Lm8/k;-><init>(Ljava/lang/String;IZ)V
+
+    .line 29
+    .line 30
+    .line 31
+    sput-object v1, Lm8/i;->b:Lm8/k;
+
+    .line 32
+    .line 33
+    return-void
+.end method
+
+.method public constructor <init>()V
+    .registers 2
+
+    .line 1
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 2
+    .line 3
+    .line 4
+    sget-object v0, Lm8/i;->b:Lm8/k;
+
+    .line 5
+    .line 6
+    iput-object v0, p0, Lm8/i;->a:Ljava/util/concurrent/ThreadFactory;
+
+    .line 7
+    .line 8
+    return-void
+.end method
+
+
+# virtual methods
+.method public final a()Lx7/j;
+    .registers 3
+
+    .line 1
+    new-instance v0, Lm8/j;
+
+    .line 2
+    .line 3
+    iget-object v1, p0, Lm8/i;->a:Ljava/util/concurrent/ThreadFactory;
+
+    .line 4
+    .line 5
+    invoke-direct {v0, v1}, Lm8/j;-><init>(Ljava/util/concurrent/ThreadFactory;)V
+
+    .line 6
+    .line 7
+    .line 8
+    return-object v0
+.end method

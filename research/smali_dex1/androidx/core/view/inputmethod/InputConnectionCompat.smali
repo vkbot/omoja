@@ -1,0 +1,1049 @@
+.class public final Landroidx/core/view/inputmethod/InputConnectionCompat;
+.super Ljava/lang/Object;
+.source "r8-map-id-94e2637d1b30c6542972a7fc4ced35aa6da258c4e6702fc7c9cbf0ebc32bec75"
+
+
+# annotations
+.annotation system Ldalvik/annotation/MemberClasses;
+    value = {
+        Landroidx/core/view/inputmethod/InputConnectionCompat$OnCommitContentListener;,
+        Landroidx/core/view/inputmethod/InputConnectionCompat$Api25Impl;
+    }
+.end annotation
+
+
+# static fields
+.field private static final COMMIT_CONTENT_ACTION:Ljava/lang/String; = "androidx.core.view.inputmethod.InputConnectionCompat.COMMIT_CONTENT"
+
+.field private static final COMMIT_CONTENT_CONTENT_URI_INTEROP_KEY:Ljava/lang/String; = "android.support.v13.view.inputmethod.InputConnectionCompat.CONTENT_URI"
+
+.field private static final COMMIT_CONTENT_CONTENT_URI_KEY:Ljava/lang/String; = "androidx.core.view.inputmethod.InputConnectionCompat.CONTENT_URI"
+
+.field private static final COMMIT_CONTENT_DESCRIPTION_INTEROP_KEY:Ljava/lang/String; = "android.support.v13.view.inputmethod.InputConnectionCompat.CONTENT_DESCRIPTION"
+
+.field private static final COMMIT_CONTENT_DESCRIPTION_KEY:Ljava/lang/String; = "androidx.core.view.inputmethod.InputConnectionCompat.CONTENT_DESCRIPTION"
+
+.field private static final COMMIT_CONTENT_FLAGS_INTEROP_KEY:Ljava/lang/String; = "android.support.v13.view.inputmethod.InputConnectionCompat.CONTENT_FLAGS"
+
+.field private static final COMMIT_CONTENT_FLAGS_KEY:Ljava/lang/String; = "androidx.core.view.inputmethod.InputConnectionCompat.CONTENT_FLAGS"
+
+.field private static final COMMIT_CONTENT_INTEROP_ACTION:Ljava/lang/String; = "android.support.v13.view.inputmethod.InputConnectionCompat.COMMIT_CONTENT"
+
+.field private static final COMMIT_CONTENT_LINK_URI_INTEROP_KEY:Ljava/lang/String; = "android.support.v13.view.inputmethod.InputConnectionCompat.CONTENT_LINK_URI"
+
+.field private static final COMMIT_CONTENT_LINK_URI_KEY:Ljava/lang/String; = "androidx.core.view.inputmethod.InputConnectionCompat.CONTENT_LINK_URI"
+
+.field private static final COMMIT_CONTENT_OPTS_INTEROP_KEY:Ljava/lang/String; = "android.support.v13.view.inputmethod.InputConnectionCompat.CONTENT_OPTS"
+
+.field private static final COMMIT_CONTENT_OPTS_KEY:Ljava/lang/String; = "androidx.core.view.inputmethod.InputConnectionCompat.CONTENT_OPTS"
+
+.field private static final COMMIT_CONTENT_RESULT_INTEROP_RECEIVER_KEY:Ljava/lang/String; = "android.support.v13.view.inputmethod.InputConnectionCompat.CONTENT_RESULT_RECEIVER"
+
+.field private static final COMMIT_CONTENT_RESULT_RECEIVER_KEY:Ljava/lang/String; = "androidx.core.view.inputmethod.InputConnectionCompat.CONTENT_RESULT_RECEIVER"
+
+.field private static final EXTRA_INPUT_CONTENT_INFO:Ljava/lang/String; = "androidx.core.view.extra.INPUT_CONTENT_INFO"
+
+.field public static final INPUT_CONTENT_GRANT_READ_URI_PERMISSION:I = 0x1
+
+.field private static final LOG_TAG:Ljava/lang/String; = "InputConnectionCompat"
+
+
+# direct methods
+.method public constructor <init>()V
+    .registers 1
+    .annotation runtime Ljava/lang/Deprecated;
+    .end annotation
+
+    .line 1
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 2
+    .line 3
+    .line 4
+    return-void
+.end method
+
+.method public static synthetic a(Landroid/view/View;Landroidx/core/view/inputmethod/InputContentInfoCompat;ILandroid/os/Bundle;)Z
+    .registers 4
+
+    .line 1
+    invoke-static {p0, p1, p2, p3}, Landroidx/core/view/inputmethod/InputConnectionCompat;->lambda$createOnCommitContentListenerUsingPerformReceiveContent$0(Landroid/view/View;Landroidx/core/view/inputmethod/InputContentInfoCompat;ILandroid/os/Bundle;)Z
+
+    .line 2
+    .line 3
+    .line 4
+    move-result p0
+
+    .line 5
+    return p0
+.end method
+
+.method public static commitContent(Landroid/view/inputmethod/InputConnection;Landroid/view/inputmethod/EditorInfo;Landroidx/core/view/inputmethod/InputContentInfoCompat;ILandroid/os/Bundle;)Z
+    .registers 8
+    .param p0    # Landroid/view/inputmethod/InputConnection;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
+    .param p1    # Landroid/view/inputmethod/EditorInfo;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
+    .param p2    # Landroidx/core/view/inputmethod/InputContentInfoCompat;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
+    .param p4    # Landroid/os/Bundle;
+        .annotation build Landroidx/annotation/Nullable;
+        .end annotation
+    .end param
+
+    .line 1
+    sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
+
+    .line 2
+    .line 3
+    const/16 v1, 0x19
+
+    .line 4
+    .line 5
+    if-lt v0, v1, :cond_13
+
+    .line 6
+    .line 7
+    invoke-virtual {p2}, Landroidx/core/view/inputmethod/InputContentInfoCompat;->unwrap()Ljava/lang/Object;
+
+    .line 8
+    .line 9
+    .line 10
+    move-result-object p1
+
+    .line 11
+    invoke-static {p1}, Landroidx/core/content/pm/c;->c(Ljava/lang/Object;)Landroid/view/inputmethod/InputContentInfo;
+
+    .line 12
+    .line 13
+    .line 14
+    move-result-object p1
+
+    .line 15
+    invoke-static {p0, p1, p3, p4}, Landroidx/core/view/inputmethod/InputConnectionCompat$Api25Impl;->commitContent(Landroid/view/inputmethod/InputConnection;Landroid/view/inputmethod/InputContentInfo;ILandroid/os/Bundle;)Z
+
+    .line 16
+    .line 17
+    .line 18
+    move-result p0
+
+    .line 19
+    return p0
+
+    .line 20
+    :cond_13
+    invoke-static {p1}, Landroidx/core/view/inputmethod/EditorInfoCompat;->getProtocol(Landroid/view/inputmethod/EditorInfo;)I
+
+    .line 21
+    .line 22
+    .line 23
+    move-result p1
+
+    .line 24
+    const/4 v0, 0x2
+
+    .line 25
+    if-eq p1, v0, :cond_22
+
+    .line 26
+    .line 27
+    const/4 v0, 0x3
+
+    .line 28
+    const/4 v1, 0x0
+
+    .line 29
+    if-eq p1, v0, :cond_23
+
+    .line 30
+    .line 31
+    const/4 v0, 0x4
+
+    .line 32
+    if-eq p1, v0, :cond_23
+
+    .line 33
+    .line 34
+    return v1
+
+    .line 35
+    :cond_22
+    const/4 v1, 0x1
+
+    .line 36
+    :cond_23
+    new-instance p1, Landroid/os/Bundle;
+
+    .line 37
+    .line 38
+    invoke-direct {p1}, Landroid/os/Bundle;-><init>()V
+
+    .line 39
+    .line 40
+    .line 41
+    if-eqz v1, :cond_2d
+
+    .line 42
+    .line 43
+    const-string v0, "android.support.v13.view.inputmethod.InputConnectionCompat.CONTENT_URI"
+
+    .line 44
+    .line 45
+    goto :goto_2f
+
+    .line 46
+    :cond_2d
+    const-string v0, "androidx.core.view.inputmethod.InputConnectionCompat.CONTENT_URI"
+
+    .line 47
+    .line 48
+    :goto_2f
+    invoke-virtual {p2}, Landroidx/core/view/inputmethod/InputContentInfoCompat;->getContentUri()Landroid/net/Uri;
+
+    .line 49
+    .line 50
+    .line 51
+    move-result-object v2
+
+    .line 52
+    invoke-virtual {p1, v0, v2}, Landroid/os/Bundle;->putParcelable(Ljava/lang/String;Landroid/os/Parcelable;)V
+
+    .line 53
+    .line 54
+    .line 55
+    if-eqz v1, :cond_3b
+
+    .line 56
+    .line 57
+    const-string v0, "android.support.v13.view.inputmethod.InputConnectionCompat.CONTENT_DESCRIPTION"
+
+    .line 58
+    .line 59
+    goto :goto_3d
+
+    .line 60
+    :cond_3b
+    const-string v0, "androidx.core.view.inputmethod.InputConnectionCompat.CONTENT_DESCRIPTION"
+
+    .line 61
+    .line 62
+    :goto_3d
+    invoke-virtual {p2}, Landroidx/core/view/inputmethod/InputContentInfoCompat;->getDescription()Landroid/content/ClipDescription;
+
+    .line 63
+    .line 64
+    .line 65
+    move-result-object v2
+
+    .line 66
+    invoke-virtual {p1, v0, v2}, Landroid/os/Bundle;->putParcelable(Ljava/lang/String;Landroid/os/Parcelable;)V
+
+    .line 67
+    .line 68
+    .line 69
+    if-eqz v1, :cond_49
+
+    .line 70
+    .line 71
+    const-string v0, "android.support.v13.view.inputmethod.InputConnectionCompat.CONTENT_LINK_URI"
+
+    .line 72
+    .line 73
+    goto :goto_4b
+
+    .line 74
+    :cond_49
+    const-string v0, "androidx.core.view.inputmethod.InputConnectionCompat.CONTENT_LINK_URI"
+
+    .line 75
+    .line 76
+    :goto_4b
+    invoke-virtual {p2}, Landroidx/core/view/inputmethod/InputContentInfoCompat;->getLinkUri()Landroid/net/Uri;
+
+    .line 77
+    .line 78
+    .line 79
+    move-result-object p2
+
+    .line 80
+    invoke-virtual {p1, v0, p2}, Landroid/os/Bundle;->putParcelable(Ljava/lang/String;Landroid/os/Parcelable;)V
+
+    .line 81
+    .line 82
+    .line 83
+    if-eqz v1, :cond_57
+
+    .line 84
+    .line 85
+    const-string p2, "android.support.v13.view.inputmethod.InputConnectionCompat.CONTENT_FLAGS"
+
+    .line 86
+    .line 87
+    goto :goto_59
+
+    .line 88
+    :cond_57
+    const-string p2, "androidx.core.view.inputmethod.InputConnectionCompat.CONTENT_FLAGS"
+
+    .line 89
+    .line 90
+    :goto_59
+    invoke-virtual {p1, p2, p3}, Landroid/os/BaseBundle;->putInt(Ljava/lang/String;I)V
+
+    .line 91
+    .line 92
+    .line 93
+    if-eqz v1, :cond_61
+
+    .line 94
+    .line 95
+    const-string p2, "android.support.v13.view.inputmethod.InputConnectionCompat.CONTENT_OPTS"
+
+    .line 96
+    .line 97
+    goto :goto_63
+
+    .line 98
+    :cond_61
+    const-string p2, "androidx.core.view.inputmethod.InputConnectionCompat.CONTENT_OPTS"
+
+    .line 99
+    .line 100
+    :goto_63
+    invoke-virtual {p1, p2, p4}, Landroid/os/Bundle;->putParcelable(Ljava/lang/String;Landroid/os/Parcelable;)V
+
+    .line 101
+    .line 102
+    .line 103
+    if-eqz v1, :cond_6b
+
+    .line 104
+    .line 105
+    const-string p2, "android.support.v13.view.inputmethod.InputConnectionCompat.COMMIT_CONTENT"
+
+    .line 106
+    .line 107
+    goto :goto_6d
+
+    .line 108
+    :cond_6b
+    const-string p2, "androidx.core.view.inputmethod.InputConnectionCompat.COMMIT_CONTENT"
+
+    .line 109
+    .line 110
+    :goto_6d
+    invoke-interface {p0, p2, p1}, Landroid/view/inputmethod/InputConnection;->performPrivateCommand(Ljava/lang/String;Landroid/os/Bundle;)Z
+
+    .line 111
+    .line 112
+    .line 113
+    move-result p0
+
+    .line 114
+    return p0
+.end method
+
+.method private static createOnCommitContentListenerUsingPerformReceiveContent(Landroid/view/View;)Landroidx/core/view/inputmethod/InputConnectionCompat$OnCommitContentListener;
+    .registers 2
+    .param p0    # Landroid/view/View;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
+    .annotation build Landroidx/annotation/NonNull;
+    .end annotation
+
+    .line 1
+    invoke-static {p0}, Landroidx/core/util/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 2
+    .line 3
+    .line 4
+    new-instance v0, Landroidx/core/view/inputmethod/a;
+
+    .line 5
+    .line 6
+    invoke-direct {v0, p0}, Landroidx/core/view/inputmethod/a;-><init>(Landroid/view/View;)V
+
+    .line 7
+    .line 8
+    .line 9
+    return-object v0
+.end method
+
+.method public static createWrapper(Landroid/view/View;Landroid/view/inputmethod/InputConnection;Landroid/view/inputmethod/EditorInfo;)Landroid/view/inputmethod/InputConnection;
+    .registers 3
+    .param p0    # Landroid/view/View;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
+    .param p1    # Landroid/view/inputmethod/InputConnection;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
+    .param p2    # Landroid/view/inputmethod/EditorInfo;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
+    .annotation build Landroidx/annotation/NonNull;
+    .end annotation
+
+    .line 43
+    invoke-static {p0}, Landroidx/core/view/inputmethod/InputConnectionCompat;->createOnCommitContentListenerUsingPerformReceiveContent(Landroid/view/View;)Landroidx/core/view/inputmethod/InputConnectionCompat$OnCommitContentListener;
+
+    move-result-object p0
+
+    .line 44
+    invoke-static {p1, p2, p0}, Landroidx/core/view/inputmethod/InputConnectionCompat;->createWrapper(Landroid/view/inputmethod/InputConnection;Landroid/view/inputmethod/EditorInfo;Landroidx/core/view/inputmethod/InputConnectionCompat$OnCommitContentListener;)Landroid/view/inputmethod/InputConnection;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+.method public static createWrapper(Landroid/view/inputmethod/InputConnection;Landroid/view/inputmethod/EditorInfo;Landroidx/core/view/inputmethod/InputConnectionCompat$OnCommitContentListener;)Landroid/view/inputmethod/InputConnection;
+    .registers 6
+    .param p0    # Landroid/view/inputmethod/InputConnection;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
+    .param p1    # Landroid/view/inputmethod/EditorInfo;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
+    .param p2    # Landroidx/core/view/inputmethod/InputConnectionCompat$OnCommitContentListener;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
+    .annotation build Landroidx/annotation/NonNull;
+    .end annotation
+
+    .annotation runtime Ljava/lang/Deprecated;
+    .end annotation
+
+    .line 1
+    const-string v0, "inputConnection must be non-null"
+
+    .line 2
+    .line 3
+    invoke-static {p0, v0}, Landroidx/core/util/ObjectsCompat;->requireNonNull(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
+
+    .line 4
+    .line 5
+    .line 6
+    const-string v0, "editorInfo must be non-null"
+
+    .line 7
+    .line 8
+    invoke-static {p1, v0}, Landroidx/core/util/ObjectsCompat;->requireNonNull(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
+
+    .line 9
+    .line 10
+    .line 11
+    const-string v0, "onCommitContentListener must be non-null"
+
+    .line 12
+    .line 13
+    invoke-static {p2, v0}, Landroidx/core/util/ObjectsCompat;->requireNonNull(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
+
+    .line 14
+    .line 15
+    .line 16
+    sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
+
+    .line 17
+    .line 18
+    const/16 v1, 0x19
+
+    .line 19
+    .line 20
+    const/4 v2, 0x0
+
+    .line 21
+    if-lt v0, v1, :cond_1c
+
+    .line 22
+    .line 23
+    new-instance p1, Landroidx/core/view/inputmethod/InputConnectionCompat$1;
+
+    .line 24
+    .line 25
+    invoke-direct {p1, p0, v2, p2}, Landroidx/core/view/inputmethod/InputConnectionCompat$1;-><init>(Landroid/view/inputmethod/InputConnection;ZLandroidx/core/view/inputmethod/InputConnectionCompat$OnCommitContentListener;)V
+
+    .line 26
+    .line 27
+    .line 28
+    return-object p1
+
+    .line 29
+    :cond_1c
+    invoke-static {p1}, Landroidx/core/view/inputmethod/EditorInfoCompat;->getContentMimeTypes(Landroid/view/inputmethod/EditorInfo;)[Ljava/lang/String;
+
+    .line 30
+    .line 31
+    .line 32
+    move-result-object p1
+
+    .line 33
+    array-length p1, p1
+
+    .line 34
+    if-nez p1, :cond_24
+
+    .line 35
+    .line 36
+    return-object p0
+
+    .line 37
+    :cond_24
+    new-instance p1, Landroidx/core/view/inputmethod/InputConnectionCompat$2;
+
+    .line 38
+    .line 39
+    invoke-direct {p1, p0, v2, p2}, Landroidx/core/view/inputmethod/InputConnectionCompat$2;-><init>(Landroid/view/inputmethod/InputConnection;ZLandroidx/core/view/inputmethod/InputConnectionCompat$OnCommitContentListener;)V
+
+    .line 40
+    .line 41
+    .line 42
+    return-object p1
+.end method
+
+.method public static handlePerformPrivateCommand(Ljava/lang/String;Landroid/os/Bundle;Landroidx/core/view/inputmethod/InputConnectionCompat$OnCommitContentListener;)Z
+    .registers 10
+    .param p0    # Ljava/lang/String;
+        .annotation build Landroidx/annotation/Nullable;
+        .end annotation
+    .end param
+    .param p1    # Landroid/os/Bundle;
+        .annotation build Landroidx/annotation/Nullable;
+        .end annotation
+    .end param
+    .param p2    # Landroidx/core/view/inputmethod/InputConnectionCompat$OnCommitContentListener;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
+
+    .line 1
+    const/4 v0, 0x0
+
+    .line 2
+    if-nez p1, :cond_5
+
+    .line 3
+    .line 4
+    goto/16 :goto_83
+
+    .line 5
+    .line 6
+    :cond_5
+    const-string v1, "androidx.core.view.inputmethod.InputConnectionCompat.COMMIT_CONTENT"
+
+    .line 7
+    .line 8
+    invoke-static {v1, p0}, Landroid/text/TextUtils;->equals(Ljava/lang/CharSequence;Ljava/lang/CharSequence;)Z
+
+    .line 9
+    .line 10
+    .line 11
+    move-result v1
+
+    .line 12
+    if-eqz v1, :cond_f
+
+    .line 13
+    .line 14
+    move p0, v0
+
+    .line 15
+    goto :goto_18
+
+    .line 16
+    :cond_f
+    const-string v1, "android.support.v13.view.inputmethod.InputConnectionCompat.COMMIT_CONTENT"
+
+    .line 17
+    .line 18
+    invoke-static {v1, p0}, Landroid/text/TextUtils;->equals(Ljava/lang/CharSequence;Ljava/lang/CharSequence;)Z
+
+    .line 19
+    .line 20
+    .line 21
+    move-result p0
+
+    .line 22
+    if-eqz p0, :cond_83
+
+    .line 23
+    .line 24
+    const/4 p0, 0x1
+
+    .line 25
+    :goto_18
+    const/4 v1, 0x0
+
+    .line 26
+    if-eqz p0, :cond_21
+
+    .line 27
+    .line 28
+    :try_start_1b
+    const-string v2, "android.support.v13.view.inputmethod.InputConnectionCompat.CONTENT_RESULT_RECEIVER"
+
+    .line 29
+    .line 30
+    goto :goto_23
+
+    .line 31
+    :catchall_1e
+    move-exception p0
+
+    .line 32
+    move-object v2, v1
+
+    .line 33
+    goto :goto_7d
+
+    .line 34
+    :cond_21
+    const-string v2, "androidx.core.view.inputmethod.InputConnectionCompat.CONTENT_RESULT_RECEIVER"
+
+    .line 35
+    .line 36
+    :goto_23
+    invoke-virtual {p1, v2}, Landroid/os/Bundle;->getParcelable(Ljava/lang/String;)Landroid/os/Parcelable;
+
+    .line 37
+    .line 38
+    .line 39
+    move-result-object v2
+
+    .line 40
+    check-cast v2, Landroid/os/ResultReceiver;
+    :try_end_29
+    .catchall {:try_start_1b .. :try_end_29} :catchall_1e
+
+    .line 41
+    .line 42
+    if-eqz p0, :cond_30
+
+    .line 43
+    .line 44
+    :try_start_2b
+    const-string v3, "android.support.v13.view.inputmethod.InputConnectionCompat.CONTENT_URI"
+
+    .line 45
+    .line 46
+    goto :goto_32
+
+    .line 47
+    :catchall_2e
+    move-exception p0
+
+    .line 48
+    goto :goto_7d
+
+    .line 49
+    :cond_30
+    const-string v3, "androidx.core.view.inputmethod.InputConnectionCompat.CONTENT_URI"
+
+    .line 50
+    .line 51
+    :goto_32
+    invoke-virtual {p1, v3}, Landroid/os/Bundle;->getParcelable(Ljava/lang/String;)Landroid/os/Parcelable;
+
+    .line 52
+    .line 53
+    .line 54
+    move-result-object v3
+
+    .line 55
+    check-cast v3, Landroid/net/Uri;
+
+    .line 56
+    .line 57
+    if-eqz p0, :cond_3d
+
+    .line 58
+    .line 59
+    const-string v4, "android.support.v13.view.inputmethod.InputConnectionCompat.CONTENT_DESCRIPTION"
+
+    .line 60
+    .line 61
+    goto :goto_3f
+
+    .line 62
+    :cond_3d
+    const-string v4, "androidx.core.view.inputmethod.InputConnectionCompat.CONTENT_DESCRIPTION"
+
+    .line 63
+    .line 64
+    :goto_3f
+    invoke-virtual {p1, v4}, Landroid/os/Bundle;->getParcelable(Ljava/lang/String;)Landroid/os/Parcelable;
+
+    .line 65
+    .line 66
+    .line 67
+    move-result-object v4
+
+    .line 68
+    check-cast v4, Landroid/content/ClipDescription;
+
+    .line 69
+    .line 70
+    if-eqz p0, :cond_4a
+
+    .line 71
+    .line 72
+    const-string v5, "android.support.v13.view.inputmethod.InputConnectionCompat.CONTENT_LINK_URI"
+
+    .line 73
+    .line 74
+    goto :goto_4c
+
+    .line 75
+    :cond_4a
+    const-string v5, "androidx.core.view.inputmethod.InputConnectionCompat.CONTENT_LINK_URI"
+
+    .line 76
+    .line 77
+    :goto_4c
+    invoke-virtual {p1, v5}, Landroid/os/Bundle;->getParcelable(Ljava/lang/String;)Landroid/os/Parcelable;
+
+    .line 78
+    .line 79
+    .line 80
+    move-result-object v5
+
+    .line 81
+    check-cast v5, Landroid/net/Uri;
+
+    .line 82
+    .line 83
+    if-eqz p0, :cond_57
+
+    .line 84
+    .line 85
+    const-string v6, "android.support.v13.view.inputmethod.InputConnectionCompat.CONTENT_FLAGS"
+
+    .line 86
+    .line 87
+    goto :goto_59
+
+    .line 88
+    :cond_57
+    const-string v6, "androidx.core.view.inputmethod.InputConnectionCompat.CONTENT_FLAGS"
+
+    .line 89
+    .line 90
+    :goto_59
+    invoke-virtual {p1, v6}, Landroid/os/BaseBundle;->getInt(Ljava/lang/String;)I
+
+    .line 91
+    .line 92
+    .line 93
+    move-result v6
+
+    .line 94
+    if-eqz p0, :cond_62
+
+    .line 95
+    .line 96
+    const-string p0, "android.support.v13.view.inputmethod.InputConnectionCompat.CONTENT_OPTS"
+
+    .line 97
+    .line 98
+    goto :goto_64
+
+    .line 99
+    :cond_62
+    const-string p0, "androidx.core.view.inputmethod.InputConnectionCompat.CONTENT_OPTS"
+
+    .line 100
+    .line 101
+    :goto_64
+    invoke-virtual {p1, p0}, Landroid/os/Bundle;->getParcelable(Ljava/lang/String;)Landroid/os/Parcelable;
+
+    .line 102
+    .line 103
+    .line 104
+    move-result-object p0
+
+    .line 105
+    check-cast p0, Landroid/os/Bundle;
+
+    .line 106
+    .line 107
+    if-eqz v3, :cond_77
+
+    .line 108
+    .line 109
+    if-eqz v4, :cond_77
+
+    .line 110
+    .line 111
+    new-instance p1, Landroidx/core/view/inputmethod/InputContentInfoCompat;
+
+    .line 112
+    .line 113
+    invoke-direct {p1, v3, v4, v5}, Landroidx/core/view/inputmethod/InputContentInfoCompat;-><init>(Landroid/net/Uri;Landroid/content/ClipDescription;Landroid/net/Uri;)V
+
+    .line 114
+    .line 115
+    .line 116
+    invoke-interface {p2, p1, v6, p0}, Landroidx/core/view/inputmethod/InputConnectionCompat$OnCommitContentListener;->onCommitContent(Landroidx/core/view/inputmethod/InputContentInfoCompat;ILandroid/os/Bundle;)Z
+
+    .line 117
+    .line 118
+    .line 119
+    move-result v0
+    :try_end_77
+    .catchall {:try_start_2b .. :try_end_77} :catchall_2e
+
+    .line 120
+    :cond_77
+    if-eqz v2, :cond_7c
+
+    .line 121
+    .line 122
+    invoke-virtual {v2, v0, v1}, Landroid/os/ResultReceiver;->send(ILandroid/os/Bundle;)V
+
+    .line 123
+    .line 124
+    .line 125
+    :cond_7c
+    return v0
+
+    .line 126
+    :goto_7d
+    if-eqz v2, :cond_82
+
+    .line 127
+    .line 128
+    invoke-virtual {v2, v0, v1}, Landroid/os/ResultReceiver;->send(ILandroid/os/Bundle;)V
+
+    .line 129
+    .line 130
+    .line 131
+    :cond_82
+    throw p0
+
+    .line 132
+    :cond_83
+    :goto_83
+    return v0
+.end method
+
+.method private static synthetic lambda$createOnCommitContentListenerUsingPerformReceiveContent$0(Landroid/view/View;Landroidx/core/view/inputmethod/InputContentInfoCompat;ILandroid/os/Bundle;)Z
+    .registers 9
+
+    .line 1
+    sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
+
+    .line 2
+    .line 3
+    const/16 v1, 0x19
+
+    .line 4
+    .line 5
+    const/4 v2, 0x0
+
+    .line 6
+    const/4 v3, 0x1
+
+    .line 7
+    if-lt v0, v1, :cond_31
+
+    .line 8
+    .line 9
+    and-int/2addr p2, v3
+
+    .line 10
+    if-eqz p2, :cond_31
+
+    .line 11
+    .line 12
+    :try_start_b
+    invoke-virtual {p1}, Landroidx/core/view/inputmethod/InputContentInfoCompat;->requestPermission()V
+    :try_end_e
+    .catch Ljava/lang/Exception; {:try_start_b .. :try_end_e} :catch_28
+
+    .line 13
+    .line 14
+    .line 15
+    invoke-virtual {p1}, Landroidx/core/view/inputmethod/InputContentInfoCompat;->unwrap()Ljava/lang/Object;
+
+    .line 16
+    .line 17
+    .line 18
+    move-result-object p2
+
+    .line 19
+    check-cast p2, Landroid/os/Parcelable;
+
+    .line 20
+    .line 21
+    if-nez p3, :cond_1c
+
+    .line 22
+    .line 23
+    new-instance p3, Landroid/os/Bundle;
+
+    .line 24
+    .line 25
+    invoke-direct {p3}, Landroid/os/Bundle;-><init>()V
+
+    .line 26
+    .line 27
+    .line 28
+    goto :goto_22
+
+    .line 29
+    :cond_1c
+    new-instance v0, Landroid/os/Bundle;
+
+    .line 30
+    .line 31
+    invoke-direct {v0, p3}, Landroid/os/Bundle;-><init>(Landroid/os/Bundle;)V
+
+    .line 32
+    .line 33
+    .line 34
+    move-object p3, v0
+
+    .line 35
+    :goto_22
+    const-string v0, "androidx.core.view.extra.INPUT_CONTENT_INFO"
+
+    .line 36
+    .line 37
+    invoke-virtual {p3, v0, p2}, Landroid/os/Bundle;->putParcelable(Ljava/lang/String;Landroid/os/Parcelable;)V
+
+    .line 38
+    .line 39
+    .line 40
+    goto :goto_31
+
+    .line 41
+    :catch_28
+    move-exception p0
+
+    .line 42
+    const-string p1, "InputConnectionCompat"
+
+    .line 43
+    .line 44
+    const-string p2, "Can\'t insert content from IME; requestPermission() failed"
+
+    .line 45
+    .line 46
+    invoke-static {p1, p2, p0}, Landroid/util/Log;->w(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)I
+
+    .line 47
+    .line 48
+    .line 49
+    return v2
+
+    .line 50
+    :cond_31
+    :goto_31
+    new-instance p2, Landroid/content/ClipData;
+
+    .line 51
+    .line 52
+    invoke-virtual {p1}, Landroidx/core/view/inputmethod/InputContentInfoCompat;->getDescription()Landroid/content/ClipDescription;
+
+    .line 53
+    .line 54
+    .line 55
+    move-result-object v0
+
+    .line 56
+    new-instance v1, Landroid/content/ClipData$Item;
+
+    .line 57
+    .line 58
+    invoke-virtual {p1}, Landroidx/core/view/inputmethod/InputContentInfoCompat;->getContentUri()Landroid/net/Uri;
+
+    .line 59
+    .line 60
+    .line 61
+    move-result-object v4
+
+    .line 62
+    invoke-direct {v1, v4}, Landroid/content/ClipData$Item;-><init>(Landroid/net/Uri;)V
+
+    .line 63
+    .line 64
+    .line 65
+    invoke-direct {p2, v0, v1}, Landroid/content/ClipData;-><init>(Landroid/content/ClipDescription;Landroid/content/ClipData$Item;)V
+
+    .line 66
+    .line 67
+    .line 68
+    new-instance v0, Landroidx/core/view/ContentInfoCompat$Builder;
+
+    .line 69
+    .line 70
+    const/4 v1, 0x2
+
+    .line 71
+    invoke-direct {v0, p2, v1}, Landroidx/core/view/ContentInfoCompat$Builder;-><init>(Landroid/content/ClipData;I)V
+
+    .line 72
+    .line 73
+    .line 74
+    invoke-virtual {p1}, Landroidx/core/view/inputmethod/InputContentInfoCompat;->getLinkUri()Landroid/net/Uri;
+
+    .line 75
+    .line 76
+    .line 77
+    move-result-object p1
+
+    .line 78
+    invoke-virtual {v0, p1}, Landroidx/core/view/ContentInfoCompat$Builder;->setLinkUri(Landroid/net/Uri;)Landroidx/core/view/ContentInfoCompat$Builder;
+
+    .line 79
+    .line 80
+    .line 81
+    move-result-object p1
+
+    .line 82
+    invoke-virtual {p1, p3}, Landroidx/core/view/ContentInfoCompat$Builder;->setExtras(Landroid/os/Bundle;)Landroidx/core/view/ContentInfoCompat$Builder;
+
+    .line 83
+    .line 84
+    .line 85
+    move-result-object p1
+
+    .line 86
+    invoke-virtual {p1}, Landroidx/core/view/ContentInfoCompat$Builder;->build()Landroidx/core/view/ContentInfoCompat;
+
+    .line 87
+    .line 88
+    .line 89
+    move-result-object p1
+
+    .line 90
+    invoke-static {p0, p1}, Landroidx/core/view/ViewCompat;->performReceiveContent(Landroid/view/View;Landroidx/core/view/ContentInfoCompat;)Landroidx/core/view/ContentInfoCompat;
+
+    .line 91
+    .line 92
+    .line 93
+    move-result-object p0
+
+    .line 94
+    if-nez p0, :cond_60
+
+    .line 95
+    .line 96
+    return v3
+
+    .line 97
+    :cond_60
+    return v2
+.end method

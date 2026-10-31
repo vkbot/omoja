@@ -1,0 +1,156 @@
+.class public abstract Ln7/l;
+.super Ljava/lang/Object;
+.source "r8-map-id-94e2637d1b30c6542972a7fc4ced35aa6da258c4e6702fc7c9cbf0ebc32bec75"
+
+
+# static fields
+.field public static final a:Ln7/m;
+
+
+# direct methods
+.method static constructor <clinit>()V
+    .registers 4
+
+    .line 1
+    new-instance v0, Ljava/util/concurrent/atomic/AtomicReference;
+
+    .line 2
+    .line 3
+    invoke-direct {v0}, Ljava/util/concurrent/atomic/AtomicReference;-><init>()V
+
+    .line 4
+    .line 5
+    .line 6
+    :try_start_5
+    const-string v1, "io.grpc.override.ContextStorageOverride"
+
+    .line 7
+    .line 8
+    invoke-static {v1}, Ljava/lang/Class;->forName(Ljava/lang/String;)Ljava/lang/Class;
+
+    .line 9
+    .line 10
+    .line 11
+    move-result-object v1
+
+    .line 12
+    const-class v2, Ln7/m;
+
+    .line 13
+    .line 14
+    invoke-virtual {v1, v2}, Ljava/lang/Class;->asSubclass(Ljava/lang/Class;)Ljava/lang/Class;
+
+    .line 15
+    .line 16
+    .line 17
+    move-result-object v1
+
+    .line 18
+    const/4 v2, 0x0
+
+    .line 19
+    invoke-virtual {v1, v2}, Ljava/lang/Class;->getConstructor([Ljava/lang/Class;)Ljava/lang/reflect/Constructor;
+
+    .line 20
+    .line 21
+    .line 22
+    move-result-object v1
+
+    .line 23
+    invoke-virtual {v1, v2}, Ljava/lang/reflect/Constructor;->newInstance([Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 24
+    .line 25
+    .line 26
+    move-result-object v1
+
+    .line 27
+    check-cast v1, Ln7/m;
+    :try_end_1c
+    .catch Ljava/lang/ClassNotFoundException; {:try_start_5 .. :try_end_1c} :catch_1d
+    .catch Ljava/lang/Exception; {:try_start_5 .. :try_end_1c} :catch_1f
+
+    .line 28
+    .line 29
+    goto :goto_2e
+
+    .line 30
+    :catch_1d
+    move-exception v1
+
+    .line 31
+    goto :goto_26
+
+    .line 32
+    :catch_1f
+    move-exception v0
+
+    .line 33
+    const-string v1, "Storage override failed to initialize"
+
+    .line 34
+    .line 35
+    invoke-static {v1, v0}, Lai/onnxruntime/b;->o(Ljava/lang/String;Ljava/lang/Throwable;)V
+
+    .line 36
+    .line 37
+    .line 38
+    return-void
+
+    .line 39
+    :goto_26
+    invoke-virtual {v0, v1}, Ljava/util/concurrent/atomic/AtomicReference;->set(Ljava/lang/Object;)V
+
+    .line 40
+    .line 41
+    .line 42
+    new-instance v1, Ln7/l1;
+
+    .line 43
+    .line 44
+    invoke-direct {v1}, Ljava/lang/Object;-><init>()V
+
+    .line 45
+    .line 46
+    .line 47
+    :goto_2e
+    sput-object v1, Ln7/l;->a:Ln7/m;
+
+    .line 48
+    .line 49
+    invoke-virtual {v0}, Ljava/util/concurrent/atomic/AtomicReference;->get()Ljava/lang/Object;
+
+    .line 50
+    .line 51
+    .line 52
+    move-result-object v0
+
+    .line 53
+    check-cast v0, Ljava/lang/Throwable;
+
+    .line 54
+    .line 55
+    if-eqz v0, :cond_41
+
+    .line 56
+    .line 57
+    sget-object v1, Ln7/n;->a:Ljava/util/logging/Logger;
+
+    .line 58
+    .line 59
+    sget-object v2, Ljava/util/logging/Level;->FINE:Ljava/util/logging/Level;
+
+    .line 60
+    .line 61
+    const-string v3, "Storage override doesn\'t exist. Using default"
+
+    .line 62
+    .line 63
+    invoke-virtual {v1, v2, v3, v0}, Ljava/util/logging/Logger;->log(Ljava/util/logging/Level;Ljava/lang/String;Ljava/lang/Throwable;)V
+
+    .line 64
+    .line 65
+    .line 66
+    :cond_41
+    return-void
+.end method

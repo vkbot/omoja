@@ -1,0 +1,540 @@
+.class public final Landroidx/core/app/NotificationCompat$BubbleMetadata$Builder;
+.super Ljava/lang/Object;
+.source "r8-map-id-94e2637d1b30c6542972a7fc4ced35aa6da258c4e6702fc7c9cbf0ebc32bec75"
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Landroidx/core/app/NotificationCompat$BubbleMetadata;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x19
+    name = "Builder"
+.end annotation
+
+
+# instance fields
+.field private mDeleteIntent:Landroid/app/PendingIntent;
+
+.field private mDesiredHeight:I
+
+.field private mDesiredHeightResId:I
+    .annotation build Landroidx/annotation/DimenRes;
+    .end annotation
+.end field
+
+.field private mFlags:I
+
+.field private mIcon:Landroidx/core/graphics/drawable/IconCompat;
+
+.field private mPendingIntent:Landroid/app/PendingIntent;
+
+.field private mShortcutId:Ljava/lang/String;
+
+
+# direct methods
+.method public constructor <init>()V
+    .registers 1
+    .annotation runtime Ljava/lang/Deprecated;
+    .end annotation
+
+    .line 31
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+.method public constructor <init>(Landroid/app/PendingIntent;Landroidx/core/graphics/drawable/IconCompat;)V
+    .registers 3
+    .param p1    # Landroid/app/PendingIntent;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
+    .param p2    # Landroidx/core/graphics/drawable/IconCompat;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
+
+    .line 1
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 2
+    .line 3
+    .line 4
+    if-eqz p1, :cond_13
+
+    .line 5
+    .line 6
+    if-eqz p2, :cond_c
+
+    .line 7
+    .line 8
+    iput-object p1, p0, Landroidx/core/app/NotificationCompat$BubbleMetadata$Builder;->mPendingIntent:Landroid/app/PendingIntent;
+
+    .line 9
+    .line 10
+    iput-object p2, p0, Landroidx/core/app/NotificationCompat$BubbleMetadata$Builder;->mIcon:Landroidx/core/graphics/drawable/IconCompat;
+
+    .line 11
+    .line 12
+    return-void
+
+    .line 13
+    :cond_c
+    const-string p1, "Bubbles require non-null icon"
+
+    .line 14
+    .line 15
+    invoke-static {p1}, Ln0/b;->n(Ljava/lang/String;)V
+
+    .line 16
+    .line 17
+    .line 18
+    const/4 p1, 0x0
+
+    .line 19
+    throw p1
+
+    .line 20
+    :cond_13
+    const-string p1, "Bubble requires non-null pending intent"
+
+    .line 21
+    .line 22
+    invoke-static {p1}, Ln0/b;->n(Ljava/lang/String;)V
+
+    .line 23
+    .line 24
+    .line 25
+    const/4 p1, 0x0
+
+    .line 26
+    throw p1
+.end method
+
+.method public constructor <init>(Ljava/lang/String;)V
+    .registers 3
+    .param p1    # Ljava/lang/String;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
+    .annotation build Landroidx/annotation/RequiresApi;
+        value = 0x1e
+    .end annotation
+
+    .line 27
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 28
+    invoke-static {p1}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
+
+    move-result v0
+
+    if-nez v0, :cond_c
+
+    .line 29
+    iput-object p1, p0, Landroidx/core/app/NotificationCompat$BubbleMetadata$Builder;->mShortcutId:Ljava/lang/String;
+
+    return-void
+
+    .line 30
+    :cond_c
+    const-string p1, "Bubble requires a non-null shortcut id"
+
+    invoke-static {p1}, Ln0/b;->n(Ljava/lang/String;)V
+
+    const/4 p1, 0x0
+
+    throw p1
+.end method
+
+.method private setFlag(IZ)Landroidx/core/app/NotificationCompat$BubbleMetadata$Builder;
+    .registers 4
+    .annotation build Landroidx/annotation/NonNull;
+    .end annotation
+
+    .line 1
+    iget v0, p0, Landroidx/core/app/NotificationCompat$BubbleMetadata$Builder;->mFlags:I
+
+    .line 2
+    .line 3
+    if-eqz p2, :cond_8
+
+    .line 4
+    .line 5
+    or-int/2addr p1, v0
+
+    .line 6
+    iput p1, p0, Landroidx/core/app/NotificationCompat$BubbleMetadata$Builder;->mFlags:I
+
+    .line 7
+    .line 8
+    return-object p0
+
+    .line 9
+    :cond_8
+    not-int p1, p1
+
+    .line 10
+    and-int/2addr p1, v0
+
+    .line 11
+    iput p1, p0, Landroidx/core/app/NotificationCompat$BubbleMetadata$Builder;->mFlags:I
+
+    .line 12
+    .line 13
+    return-object p0
+.end method
+
+
+# virtual methods
+.method public build()Landroidx/core/app/NotificationCompat$BubbleMetadata;
+    .registers 10
+    .annotation build Landroidx/annotation/NonNull;
+    .end annotation
+
+    .line 1
+    iget-object v7, p0, Landroidx/core/app/NotificationCompat$BubbleMetadata$Builder;->mShortcutId:Ljava/lang/String;
+
+    .line 2
+    .line 3
+    if-nez v7, :cond_10
+
+    .line 4
+    .line 5
+    iget-object v0, p0, Landroidx/core/app/NotificationCompat$BubbleMetadata$Builder;->mPendingIntent:Landroid/app/PendingIntent;
+
+    .line 6
+    .line 7
+    if-eqz v0, :cond_9
+
+    .line 8
+    .line 9
+    goto :goto_10
+
+    .line 10
+    :cond_9
+    const-string v0, "Must supply pending intent or shortcut to bubble"
+
+    .line 11
+    .line 12
+    invoke-static {v0}, Ln0/b;->n(Ljava/lang/String;)V
+
+    .line 13
+    .line 14
+    .line 15
+    const/4 v0, 0x0
+
+    .line 16
+    return-object v0
+
+    .line 17
+    :cond_10
+    :goto_10
+    if-nez v7, :cond_1e
+
+    .line 18
+    .line 19
+    iget-object v0, p0, Landroidx/core/app/NotificationCompat$BubbleMetadata$Builder;->mIcon:Landroidx/core/graphics/drawable/IconCompat;
+
+    .line 20
+    .line 21
+    if-eqz v0, :cond_17
+
+    .line 22
+    .line 23
+    goto :goto_1e
+
+    .line 24
+    :cond_17
+    const-string v0, "Must supply an icon or shortcut for the bubble"
+
+    .line 25
+    .line 26
+    invoke-static {v0}, Ln0/b;->n(Ljava/lang/String;)V
+
+    .line 27
+    .line 28
+    .line 29
+    const/4 v0, 0x0
+
+    .line 30
+    return-object v0
+
+    .line 31
+    :cond_1e
+    :goto_1e
+    new-instance v0, Landroidx/core/app/NotificationCompat$BubbleMetadata;
+
+    .line 32
+    .line 33
+    iget-object v1, p0, Landroidx/core/app/NotificationCompat$BubbleMetadata$Builder;->mPendingIntent:Landroid/app/PendingIntent;
+
+    .line 34
+    .line 35
+    iget-object v2, p0, Landroidx/core/app/NotificationCompat$BubbleMetadata$Builder;->mDeleteIntent:Landroid/app/PendingIntent;
+
+    .line 36
+    .line 37
+    iget-object v3, p0, Landroidx/core/app/NotificationCompat$BubbleMetadata$Builder;->mIcon:Landroidx/core/graphics/drawable/IconCompat;
+
+    .line 38
+    .line 39
+    iget v4, p0, Landroidx/core/app/NotificationCompat$BubbleMetadata$Builder;->mDesiredHeight:I
+
+    .line 40
+    .line 41
+    iget v5, p0, Landroidx/core/app/NotificationCompat$BubbleMetadata$Builder;->mDesiredHeightResId:I
+
+    .line 42
+    .line 43
+    iget v6, p0, Landroidx/core/app/NotificationCompat$BubbleMetadata$Builder;->mFlags:I
+
+    .line 44
+    .line 45
+    const/4 v8, 0x0
+
+    .line 46
+    invoke-direct/range {v0 .. v8}, Landroidx/core/app/NotificationCompat$BubbleMetadata;-><init>(Landroid/app/PendingIntent;Landroid/app/PendingIntent;Landroidx/core/graphics/drawable/IconCompat;IIILjava/lang/String;Landroidx/core/app/NotificationCompat$1;)V
+
+    .line 47
+    .line 48
+    .line 49
+    iget v1, p0, Landroidx/core/app/NotificationCompat$BubbleMetadata$Builder;->mFlags:I
+
+    .line 50
+    .line 51
+    invoke-virtual {v0, v1}, Landroidx/core/app/NotificationCompat$BubbleMetadata;->setFlags(I)V
+
+    .line 52
+    .line 53
+    .line 54
+    return-object v0
+.end method
+
+.method public setAutoExpandBubble(Z)Landroidx/core/app/NotificationCompat$BubbleMetadata$Builder;
+    .registers 3
+    .annotation build Landroidx/annotation/NonNull;
+    .end annotation
+
+    .line 1
+    const/4 v0, 0x1
+
+    .line 2
+    invoke-direct {p0, v0, p1}, Landroidx/core/app/NotificationCompat$BubbleMetadata$Builder;->setFlag(IZ)Landroidx/core/app/NotificationCompat$BubbleMetadata$Builder;
+
+    .line 3
+    .line 4
+    .line 5
+    return-object p0
+.end method
+
+.method public setDeleteIntent(Landroid/app/PendingIntent;)Landroidx/core/app/NotificationCompat$BubbleMetadata$Builder;
+    .registers 2
+    .param p1    # Landroid/app/PendingIntent;
+        .annotation build Landroidx/annotation/Nullable;
+        .end annotation
+    .end param
+    .annotation build Landroidx/annotation/NonNull;
+    .end annotation
+
+    .line 1
+    iput-object p1, p0, Landroidx/core/app/NotificationCompat$BubbleMetadata$Builder;->mDeleteIntent:Landroid/app/PendingIntent;
+
+    .line 2
+    .line 3
+    return-object p0
+.end method
+
+.method public setDesiredHeight(I)Landroidx/core/app/NotificationCompat$BubbleMetadata$Builder;
+    .registers 3
+    .param p1    # I
+        .annotation build Landroidx/annotation/Dimension;
+            unit = 0x0
+        .end annotation
+    .end param
+    .annotation build Landroidx/annotation/NonNull;
+    .end annotation
+
+    .line 1
+    const/4 v0, 0x0
+
+    .line 2
+    invoke-static {p1, v0}, Ljava/lang/Math;->max(II)I
+
+    .line 3
+    .line 4
+    .line 5
+    move-result p1
+
+    .line 6
+    iput p1, p0, Landroidx/core/app/NotificationCompat$BubbleMetadata$Builder;->mDesiredHeight:I
+
+    .line 7
+    .line 8
+    iput v0, p0, Landroidx/core/app/NotificationCompat$BubbleMetadata$Builder;->mDesiredHeightResId:I
+
+    .line 9
+    .line 10
+    return-object p0
+.end method
+
+.method public setDesiredHeightResId(I)Landroidx/core/app/NotificationCompat$BubbleMetadata$Builder;
+    .registers 2
+    .param p1    # I
+        .annotation build Landroidx/annotation/DimenRes;
+        .end annotation
+    .end param
+    .annotation build Landroidx/annotation/NonNull;
+    .end annotation
+
+    .line 1
+    iput p1, p0, Landroidx/core/app/NotificationCompat$BubbleMetadata$Builder;->mDesiredHeightResId:I
+
+    .line 2
+    .line 3
+    const/4 p1, 0x0
+
+    .line 4
+    iput p1, p0, Landroidx/core/app/NotificationCompat$BubbleMetadata$Builder;->mDesiredHeight:I
+
+    .line 5
+    .line 6
+    return-object p0
+.end method
+
+.method public setIcon(Landroidx/core/graphics/drawable/IconCompat;)Landroidx/core/app/NotificationCompat$BubbleMetadata$Builder;
+    .registers 3
+    .param p1    # Landroidx/core/graphics/drawable/IconCompat;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
+    .annotation build Landroidx/annotation/NonNull;
+    .end annotation
+
+    .line 1
+    iget-object v0, p0, Landroidx/core/app/NotificationCompat$BubbleMetadata$Builder;->mShortcutId:Ljava/lang/String;
+
+    .line 2
+    .line 3
+    if-nez v0, :cond_10
+
+    .line 4
+    .line 5
+    if-eqz p1, :cond_9
+
+    .line 6
+    .line 7
+    iput-object p1, p0, Landroidx/core/app/NotificationCompat$BubbleMetadata$Builder;->mIcon:Landroidx/core/graphics/drawable/IconCompat;
+
+    .line 8
+    .line 9
+    return-object p0
+
+    .line 10
+    :cond_9
+    const-string p1, "Bubbles require non-null icon"
+
+    .line 11
+    .line 12
+    invoke-static {p1}, Ln0/b;->n(Ljava/lang/String;)V
+
+    .line 13
+    .line 14
+    .line 15
+    :goto_e
+    const/4 p1, 0x0
+
+    .line 16
+    return-object p1
+
+    .line 17
+    :cond_10
+    const-string p1, "Created as a shortcut bubble, cannot set an Icon. Consider using BubbleMetadata.Builder(PendingIntent,Icon) instead."
+
+    .line 18
+    .line 19
+    invoke-static {p1}, Lj1/i;->l(Ljava/lang/String;)V
+
+    .line 20
+    .line 21
+    .line 22
+    goto :goto_e
+.end method
+
+.method public setIntent(Landroid/app/PendingIntent;)Landroidx/core/app/NotificationCompat$BubbleMetadata$Builder;
+    .registers 3
+    .param p1    # Landroid/app/PendingIntent;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
+    .annotation build Landroidx/annotation/NonNull;
+    .end annotation
+
+    .line 1
+    iget-object v0, p0, Landroidx/core/app/NotificationCompat$BubbleMetadata$Builder;->mShortcutId:Ljava/lang/String;
+
+    .line 2
+    .line 3
+    if-nez v0, :cond_10
+
+    .line 4
+    .line 5
+    if-eqz p1, :cond_9
+
+    .line 6
+    .line 7
+    iput-object p1, p0, Landroidx/core/app/NotificationCompat$BubbleMetadata$Builder;->mPendingIntent:Landroid/app/PendingIntent;
+
+    .line 8
+    .line 9
+    return-object p0
+
+    .line 10
+    :cond_9
+    const-string p1, "Bubble requires non-null pending intent"
+
+    .line 11
+    .line 12
+    invoke-static {p1}, Ln0/b;->n(Ljava/lang/String;)V
+
+    .line 13
+    .line 14
+    .line 15
+    :goto_e
+    const/4 p1, 0x0
+
+    .line 16
+    return-object p1
+
+    .line 17
+    :cond_10
+    const-string p1, "Created as a shortcut bubble, cannot set a PendingIntent. Consider using BubbleMetadata.Builder(PendingIntent,Icon) instead."
+
+    .line 18
+    .line 19
+    invoke-static {p1}, Lj1/i;->l(Ljava/lang/String;)V
+
+    .line 20
+    .line 21
+    .line 22
+    goto :goto_e
+.end method
+
+.method public setSuppressNotification(Z)Landroidx/core/app/NotificationCompat$BubbleMetadata$Builder;
+    .registers 3
+    .annotation build Landroidx/annotation/NonNull;
+    .end annotation
+
+    .line 1
+    const/4 v0, 0x2
+
+    .line 2
+    invoke-direct {p0, v0, p1}, Landroidx/core/app/NotificationCompat$BubbleMetadata$Builder;->setFlag(IZ)Landroidx/core/app/NotificationCompat$BubbleMetadata$Builder;
+
+    .line 3
+    .line 4
+    .line 5
+    return-object p0
+.end method

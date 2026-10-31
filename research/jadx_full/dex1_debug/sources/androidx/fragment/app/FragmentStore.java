@@ -1,0 +1,403 @@
+package androidx.fragment.app;
+
+import android.os.Bundle;
+import android.util.Log;
+import android.view.View;
+import android.view.ViewGroup;
+import androidx.annotation.IdRes;
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
+import java.io.FileDescriptor;
+import java.io.PrintWriter;
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.HashMap;
+import java.util.List;
+
+/* JADX INFO: compiled from: r8-map-id-94e2637d1b30c6542972a7fc4ced35aa6da258c4e6702fc7c9cbf0ebc32bec75 */
+/* JADX INFO: loaded from: F:\omo\research\apk_contents\classes.dex */
+class FragmentStore {
+    private static final String TAG = "FragmentManager";
+    private FragmentManagerViewModel mNonConfig;
+    private final ArrayList<Fragment> mAdded = new ArrayList<>();
+    private final HashMap<String, FragmentStateManager> mActive = new HashMap<>();
+    private final HashMap<String, Bundle> mSavedState = new HashMap<>();
+
+    /* JADX DEBUG: Don't trust debug lines info. Lines numbers was adjusted: min line is 1 */
+    public void addFragment(@NonNull Fragment fragment) {
+        if (this.mAdded.contains(fragment)) {
+            ai.onnxruntime.b.q(fragment, "Fragment already added: ");
+            return;
+        }
+        synchronized (this.mAdded) {
+            this.mAdded.add(fragment);
+        }
+        fragment.mAdded = true;
+    }
+
+    /* JADX DEBUG: Don't trust debug lines info. Lines numbers was adjusted: min line is 1 */
+    public void burpActive() {
+        this.mActive.values().removeAll(Collections.singleton(null));
+    }
+
+    /* JADX DEBUG: Don't trust debug lines info. Lines numbers was adjusted: min line is 1 */
+    public boolean containsActiveFragment(@NonNull String str) {
+        return this.mActive.get(str) != null;
+    }
+
+    /* JADX DEBUG: Don't trust debug lines info. Lines numbers was adjusted: min line is 1 */
+    public void dispatchStateChange(int i9) {
+        for (FragmentStateManager fragmentStateManager : this.mActive.values()) {
+            if (fragmentStateManager != null) {
+                fragmentStateManager.setFragmentManagerState(i9);
+            }
+        }
+    }
+
+    /* JADX DEBUG: Don't trust debug lines info. Lines numbers was adjusted: min line is 1 */
+    public void dump(@NonNull String str, @Nullable FileDescriptor fileDescriptor, @NonNull PrintWriter printWriter, @Nullable String[] strArr) {
+        String strC = ai.onnxruntime.a.C(str, "    ");
+        if (!this.mActive.isEmpty()) {
+            printWriter.print(str);
+            printWriter.println("Active Fragments:");
+            for (FragmentStateManager fragmentStateManager : this.mActive.values()) {
+                printWriter.print(str);
+                if (fragmentStateManager != null) {
+                    Fragment fragment = fragmentStateManager.getFragment();
+                    printWriter.println(fragment);
+                    fragment.dump(strC, fileDescriptor, printWriter, strArr);
+                } else {
+                    printWriter.println("null");
+                }
+            }
+        }
+        int size = this.mAdded.size();
+        if (size > 0) {
+            printWriter.print(str);
+            printWriter.println("Added Fragments:");
+            for (int i9 = 0; i9 < size; i9++) {
+                Fragment fragment2 = this.mAdded.get(i9);
+                printWriter.print(str);
+                printWriter.print("  #");
+                printWriter.print(i9);
+                printWriter.print(": ");
+                printWriter.println(fragment2.toString());
+            }
+        }
+    }
+
+    /* JADX DEBUG: Don't trust debug lines info. Lines numbers was adjusted: min line is 1 */
+    @Nullable
+    public Fragment findActiveFragment(@NonNull String str) {
+        FragmentStateManager fragmentStateManager = this.mActive.get(str);
+        if (fragmentStateManager != null) {
+            return fragmentStateManager.getFragment();
+        }
+        return null;
+    }
+
+    /* JADX DEBUG: Don't trust debug lines info. Lines numbers was adjusted: min line is 1 */
+    @Nullable
+    public Fragment findFragmentById(@IdRes int i9) {
+        for (int size = this.mAdded.size() - 1; size >= 0; size--) {
+            Fragment fragment = this.mAdded.get(size);
+            if (fragment != null && fragment.mFragmentId == i9) {
+                return fragment;
+            }
+        }
+        for (FragmentStateManager fragmentStateManager : this.mActive.values()) {
+            if (fragmentStateManager != null) {
+                Fragment fragment2 = fragmentStateManager.getFragment();
+                if (fragment2.mFragmentId == i9) {
+                    return fragment2;
+                }
+            }
+        }
+        return null;
+    }
+
+    /* JADX DEBUG: Don't trust debug lines info. Lines numbers was adjusted: min line is 1 */
+    @Nullable
+    public Fragment findFragmentByTag(@Nullable String str) {
+        if (str != null) {
+            for (int size = this.mAdded.size() - 1; size >= 0; size--) {
+                Fragment fragment = this.mAdded.get(size);
+                if (fragment != null && str.equals(fragment.mTag)) {
+                    return fragment;
+                }
+            }
+        }
+        if (str == null) {
+            return null;
+        }
+        for (FragmentStateManager fragmentStateManager : this.mActive.values()) {
+            if (fragmentStateManager != null) {
+                Fragment fragment2 = fragmentStateManager.getFragment();
+                if (str.equals(fragment2.mTag)) {
+                    return fragment2;
+                }
+            }
+        }
+        return null;
+    }
+
+    /* JADX DEBUG: Don't trust debug lines info. Lines numbers was adjusted: min line is 1 */
+    @Nullable
+    public Fragment findFragmentByWho(@NonNull String str) {
+        Fragment fragmentFindFragmentByWho;
+        for (FragmentStateManager fragmentStateManager : this.mActive.values()) {
+            if (fragmentStateManager != null && (fragmentFindFragmentByWho = fragmentStateManager.getFragment().findFragmentByWho(str)) != null) {
+                return fragmentFindFragmentByWho;
+            }
+        }
+        return null;
+    }
+
+    /* JADX DEBUG: Don't trust debug lines info. Lines numbers was adjusted: min line is 1 */
+    public int findFragmentIndexInContainer(@NonNull Fragment fragment) {
+        View view;
+        View view2;
+        ViewGroup viewGroup = fragment.mContainer;
+        if (viewGroup == null) {
+            return -1;
+        }
+        int iIndexOf = this.mAdded.indexOf(fragment);
+        for (int i9 = iIndexOf - 1; i9 >= 0; i9--) {
+            Fragment fragment2 = this.mAdded.get(i9);
+            if (fragment2.mContainer == viewGroup && (view2 = fragment2.mView) != null) {
+                return viewGroup.indexOfChild(view2) + 1;
+            }
+        }
+        while (true) {
+            iIndexOf++;
+            if (iIndexOf >= this.mAdded.size()) {
+                return -1;
+            }
+            Fragment fragment3 = this.mAdded.get(iIndexOf);
+            if (fragment3.mContainer == viewGroup && (view = fragment3.mView) != null) {
+                return viewGroup.indexOfChild(view);
+            }
+        }
+    }
+
+    /* JADX DEBUG: Don't trust debug lines info. Lines numbers was adjusted: min line is 1 */
+    public int getActiveFragmentCount() {
+        return this.mActive.size();
+    }
+
+    /* JADX DEBUG: Don't trust debug lines info. Lines numbers was adjusted: min line is 1 */
+    @NonNull
+    public List<FragmentStateManager> getActiveFragmentStateManagers() {
+        ArrayList arrayList = new ArrayList();
+        for (FragmentStateManager fragmentStateManager : this.mActive.values()) {
+            if (fragmentStateManager != null) {
+                arrayList.add(fragmentStateManager);
+            }
+        }
+        return arrayList;
+    }
+
+    /* JADX DEBUG: Don't trust debug lines info. Lines numbers was adjusted: min line is 1 */
+    @NonNull
+    public List<Fragment> getActiveFragments() {
+        ArrayList arrayList = new ArrayList();
+        for (FragmentStateManager fragmentStateManager : this.mActive.values()) {
+            if (fragmentStateManager != null) {
+                arrayList.add(fragmentStateManager.getFragment());
+            } else {
+                arrayList.add(null);
+            }
+        }
+        return arrayList;
+    }
+
+    /* JADX DEBUG: Don't trust debug lines info. Lines numbers was adjusted: min line is 1 */
+    @NonNull
+    public HashMap<String, Bundle> getAllSavedState() {
+        return this.mSavedState;
+    }
+
+    /* JADX DEBUG: Don't trust debug lines info. Lines numbers was adjusted: min line is 1 */
+    @Nullable
+    public FragmentStateManager getFragmentStateManager(@NonNull String str) {
+        return this.mActive.get(str);
+    }
+
+    /* JADX DEBUG: Don't trust debug lines info. Lines numbers was adjusted: min line is 1 */
+    @NonNull
+    public List<Fragment> getFragments() {
+        ArrayList arrayList;
+        if (this.mAdded.isEmpty()) {
+            return Collections.EMPTY_LIST;
+        }
+        synchronized (this.mAdded) {
+            arrayList = new ArrayList(this.mAdded);
+        }
+        return arrayList;
+    }
+
+    /* JADX DEBUG: Don't trust debug lines info. Lines numbers was adjusted: min line is 1 */
+    public FragmentManagerViewModel getNonConfig() {
+        return this.mNonConfig;
+    }
+
+    /* JADX DEBUG: Don't trust debug lines info. Lines numbers was adjusted: min line is 1 */
+    @Nullable
+    public Bundle getSavedState(@NonNull String str) {
+        return this.mSavedState.get(str);
+    }
+
+    /* JADX DEBUG: Don't trust debug lines info. Lines numbers was adjusted: min line is 1 */
+    public void makeActive(@NonNull FragmentStateManager fragmentStateManager) {
+        Fragment fragment = fragmentStateManager.getFragment();
+        if (containsActiveFragment(fragment.mWho)) {
+            return;
+        }
+        this.mActive.put(fragment.mWho, fragmentStateManager);
+        if (fragment.mRetainInstanceChangedWhileDetached) {
+            boolean z8 = fragment.mRetainInstance;
+            FragmentManagerViewModel fragmentManagerViewModel = this.mNonConfig;
+            if (z8) {
+                fragmentManagerViewModel.addRetainedFragment(fragment);
+            } else {
+                fragmentManagerViewModel.removeRetainedFragment(fragment);
+            }
+            fragment.mRetainInstanceChangedWhileDetached = false;
+        }
+        if (FragmentManager.isLoggingEnabled(2)) {
+            Log.v("FragmentManager", "Added fragment to active set " + fragment);
+        }
+    }
+
+    /* JADX DEBUG: Don't trust debug lines info. Lines numbers was adjusted: min line is 1 */
+    public void makeInactive(@NonNull FragmentStateManager fragmentStateManager) {
+        Fragment fragment = fragmentStateManager.getFragment();
+        if (fragment.mRetainInstance) {
+            this.mNonConfig.removeRetainedFragment(fragment);
+        }
+        if (this.mActive.get(fragment.mWho) == fragmentStateManager && this.mActive.put(fragment.mWho, null) != null && FragmentManager.isLoggingEnabled(2)) {
+            Log.v("FragmentManager", "Removed fragment from active set " + fragment);
+        }
+    }
+
+    /* JADX DEBUG: Don't trust debug lines info. Lines numbers was adjusted: min line is 1 */
+    public void moveToExpectedState() {
+        ArrayList<Fragment> arrayList = this.mAdded;
+        int size = arrayList.size();
+        int i9 = 0;
+        while (i9 < size) {
+            Fragment fragment = arrayList.get(i9);
+            i9++;
+            FragmentStateManager fragmentStateManager = this.mActive.get(fragment.mWho);
+            if (fragmentStateManager != null) {
+                fragmentStateManager.moveToExpectedState();
+            }
+        }
+        for (FragmentStateManager fragmentStateManager2 : this.mActive.values()) {
+            if (fragmentStateManager2 != null) {
+                fragmentStateManager2.moveToExpectedState();
+                Fragment fragment2 = fragmentStateManager2.getFragment();
+                if (fragment2.mRemoving && !fragment2.isInBackStack()) {
+                    if (fragment2.mBeingSaved && !this.mSavedState.containsKey(fragment2.mWho)) {
+                        setSavedState(fragment2.mWho, fragmentStateManager2.saveState());
+                    }
+                    makeInactive(fragmentStateManager2);
+                }
+            }
+        }
+    }
+
+    /* JADX DEBUG: Don't trust debug lines info. Lines numbers was adjusted: min line is 1 */
+    public void removeFragment(@NonNull Fragment fragment) {
+        synchronized (this.mAdded) {
+            this.mAdded.remove(fragment);
+        }
+        fragment.mAdded = false;
+    }
+
+    /* JADX DEBUG: Don't trust debug lines info. Lines numbers was adjusted: min line is 1 */
+    public void resetActiveFragments() {
+        this.mActive.clear();
+    }
+
+    /* JADX DEBUG: Don't trust debug lines info. Lines numbers was adjusted: min line is 1 */
+    public void restoreAddedFragments(@Nullable List<String> list) {
+        this.mAdded.clear();
+        if (list != null) {
+            for (String str : list) {
+                Fragment fragmentFindActiveFragment = findActiveFragment(str);
+                if (fragmentFindActiveFragment == null) {
+                    j1.i.l(ai.onnxruntime.a.m("No instantiated fragment for (", str, ")"));
+                    return;
+                }
+                if (FragmentManager.isLoggingEnabled(2)) {
+                    Log.v("FragmentManager", "restoreSaveState: added (" + str + "): " + fragmentFindActiveFragment);
+                }
+                addFragment(fragmentFindActiveFragment);
+            }
+        }
+    }
+
+    /* JADX DEBUG: Don't trust debug lines info. Lines numbers was adjusted: min line is 1 */
+    public void restoreSaveState(@NonNull HashMap<String, Bundle> map) {
+        this.mSavedState.clear();
+        this.mSavedState.putAll(map);
+    }
+
+    /* JADX DEBUG: Don't trust debug lines info. Lines numbers was adjusted: min line is 1 */
+    @NonNull
+    public ArrayList<String> saveActiveFragments() {
+        ArrayList<String> arrayList = new ArrayList<>(this.mActive.size());
+        for (FragmentStateManager fragmentStateManager : this.mActive.values()) {
+            if (fragmentStateManager != null) {
+                Fragment fragment = fragmentStateManager.getFragment();
+                setSavedState(fragment.mWho, fragmentStateManager.saveState());
+                arrayList.add(fragment.mWho);
+                if (FragmentManager.isLoggingEnabled(2)) {
+                    Log.v("FragmentManager", "Saved state of " + fragment + ": " + fragment.mSavedFragmentState);
+                }
+            }
+        }
+        return arrayList;
+    }
+
+    /* JADX DEBUG: Don't trust debug lines info. Lines numbers was adjusted: min line is 1 */
+    @Nullable
+    public ArrayList<String> saveAddedFragments() {
+        synchronized (this.mAdded) {
+            try {
+                if (this.mAdded.isEmpty()) {
+                    return null;
+                }
+                ArrayList<String> arrayList = new ArrayList<>(this.mAdded.size());
+                ArrayList<Fragment> arrayList2 = this.mAdded;
+                int size = arrayList2.size();
+                int i9 = 0;
+                while (i9 < size) {
+                    Fragment fragment = arrayList2.get(i9);
+                    i9++;
+                    Fragment fragment2 = fragment;
+                    arrayList.add(fragment2.mWho);
+                    if (FragmentManager.isLoggingEnabled(2)) {
+                        Log.v("FragmentManager", "saveAllState: adding fragment (" + fragment2.mWho + "): " + fragment2);
+                    }
+                }
+                return arrayList;
+            } catch (Throwable th) {
+                throw th;
+            }
+        }
+    }
+
+    /* JADX DEBUG: Don't trust debug lines info. Lines numbers was adjusted: min line is 1 */
+    public void setNonConfig(@NonNull FragmentManagerViewModel fragmentManagerViewModel) {
+        this.mNonConfig = fragmentManagerViewModel;
+    }
+
+    /* JADX DEBUG: Don't trust debug lines info. Lines numbers was adjusted: min line is 1 */
+    @Nullable
+    public Bundle setSavedState(@NonNull String str, @Nullable Bundle bundle) {
+        HashMap<String, Bundle> map = this.mSavedState;
+        return bundle != null ? map.put(str, bundle) : map.remove(str);
+    }
+}

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@android:color/transparent" android:clipChildren="false" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/recyclerRecentTasks" android:background="@android:color/transparent" android:paddingTop="96.0dp" android:paddingBottom="14.0dp" android:clipChildren="false" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="wrap_content" android:overScrollMode="never" android:paddingStart="10.0dp" android:paddingEnd="10.0dp" />
+    <TextView android:textSize="14.0sp" android:textColor="#ffffffff" android:gravity="center" android:id="@id/recentStopRightsHint" android:background="@drawable/bg_recent_task_card" android:padding="10.0dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="10.0dp" android:text="@string/recent_task_manager_stop_rights_hint" android:layout_marginStart="16.0dp" android:layout_marginEnd="16.0dp" />
+    <TextView android:textSize="18.0sp" android:gravity="center" android:id="@id/emptyRecentTasks" android:padding="24.0dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/recent_task_manager_empty" />
+</LinearLayout>

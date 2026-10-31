@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/zoneContainer" android:padding="16.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <Button android:id="@id/button27" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="@dimen/layout_height_constant" android:layout_margin="8.0dp" android:text="@string/b_back" />
+            <TextView android:textSize="20.0sp" android:id="@id/textView42" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="8.0dp" android:text="@string/swipe_setting_b" android:layout_weight="1.0" />
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="8.0dp" android:text="@string/swipe_setting_b_pre" android:layout_weight="1.0" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

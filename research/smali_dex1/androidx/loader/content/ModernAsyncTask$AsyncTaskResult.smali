@@ -1,0 +1,64 @@
+.class Landroidx/loader/content/ModernAsyncTask$AsyncTaskResult;
+.super Ljava/lang/Object;
+.source "r8-map-id-94e2637d1b30c6542972a7fc4ced35aa6da258c4e6702fc7c9cbf0ebc32bec75"
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Landroidx/loader/content/ModernAsyncTask;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x9
+    name = "AsyncTaskResult"
+.end annotation
+
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "<Data:",
+        "Ljava/lang/Object;",
+        ">",
+        "Ljava/lang/Object;"
+    }
+.end annotation
+
+
+# instance fields
+.field final mData:[Ljava/lang/Object;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "[TData;"
+        }
+    .end annotation
+.end field
+
+.field final mTask:Landroidx/loader/content/ModernAsyncTask;
+
+
+# direct methods
+.method public varargs constructor <init>(Landroidx/loader/content/ModernAsyncTask;[Ljava/lang/Object;)V
+    .registers 3
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Landroidx/loader/content/ModernAsyncTask;",
+            "[TData;)V"
+        }
+    .end annotation
+
+    .line 1
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 2
+    .line 3
+    .line 4
+    iput-object p1, p0, Landroidx/loader/content/ModernAsyncTask$AsyncTaskResult;->mTask:Landroidx/loader/content/ModernAsyncTask;
+
+    .line 5
+    .line 6
+    iput-object p2, p0, Landroidx/loader/content/ModernAsyncTask$AsyncTaskResult;->mData:[Ljava/lang/Object;
+
+    .line 7
+    .line 8
+    return-void
+.end method

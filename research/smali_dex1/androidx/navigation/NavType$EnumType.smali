@@ -1,0 +1,340 @@
+.class public final Landroidx/navigation/NavType$EnumType;
+.super Landroidx/navigation/NavType$SerializableType;
+.source "r8-map-id-94e2637d1b30c6542972a7fc4ced35aa6da258c4e6702fc7c9cbf0ebc32bec75"
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Landroidx/navigation/NavType;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x19
+    name = "EnumType"
+.end annotation
+
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "<D:",
+        "Ljava/lang/Enum<",
+        "*>;>",
+        "Landroidx/navigation/NavType$SerializableType<",
+        "TD;>;"
+    }
+.end annotation
+
+.annotation runtime Lkotlin/Metadata;
+    d1 = {
+        "\u0000 \n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0010\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0010\u000e\n\u0002\u0008\u0006\u0018\u0000*\u000c\u0008\u0001\u0010\u0001*\u0006\u0012\u0002\u0008\u00030\u00022\u0008\u0012\u0004\u0012\u0002H\u00010\u0003B\u0013\u0012\u000c\u0010\u0004\u001a\u0008\u0012\u0004\u0012\u00028\u00010\u0005\u00a2\u0006\u0002\u0010\u0006J\u0015\u0010\u000b\u001a\u00028\u00012\u0006\u0010\u000c\u001a\u00020\u0008H\u0016\u00a2\u0006\u0002\u0010\rR\u0014\u0010\u0007\u001a\u00020\u00088VX\u0096\u0004\u00a2\u0006\u0006\u001a\u0004\u0008\t\u0010\nR\u0014\u0010\u0004\u001a\u0008\u0012\u0004\u0012\u00028\u00010\u0005X\u0082\u0004\u00a2\u0006\u0002\n\u0000\u00a8\u0006\u000e"
+    }
+    d2 = {
+        "Landroidx/navigation/NavType$EnumType;",
+        "D",
+        "",
+        "Landroidx/navigation/NavType$SerializableType;",
+        "type",
+        "Ljava/lang/Class;",
+        "(Ljava/lang/Class;)V",
+        "name",
+        "",
+        "getName",
+        "()Ljava/lang/String;",
+        "parseValue",
+        "value",
+        "(Ljava/lang/String;)Ljava/lang/Enum;",
+        "navigation-common_release"
+    }
+    k = 0x1
+    mv = {
+        0x1,
+        0x8,
+        0x0
+    }
+    xi = 0x30
+.end annotation
+
+.annotation build Lkotlin/jvm/internal/SourceDebugExtension;
+    value = {
+        "SMAP\nNavType.kt\nKotlin\n*S Kotlin\n*F\n+ 1 NavType.kt\nandroidx/navigation/NavType$EnumType\n+ 2 fake.kt\nkotlin/jvm/internal/FakeKt\n+ 3 _Arrays.kt\nkotlin/collections/ArraysKt___ArraysKt\n*L\n1#1,1212:1\n1#2:1213\n1282#3,2:1214\n*S KotlinDebug\n*F\n+ 1 NavType.kt\nandroidx/navigation/NavType$EnumType\n*L\n1135#1:1214,2\n*E\n"
+    }
+.end annotation
+
+
+# instance fields
+.field private final type:Ljava/lang/Class;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ljava/lang/Class<",
+            "TD;>;"
+        }
+    .end annotation
+.end field
+
+
+# direct methods
+.method public constructor <init>(Ljava/lang/Class;)V
+    .registers 3
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Ljava/lang/Class<",
+            "TD;>;)V"
+        }
+    .end annotation
+
+    .line 1
+    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 2
+    .line 3
+    .line 4
+    const/4 v0, 0x0
+
+    .line 5
+    invoke-direct {p0, v0, p1}, Landroidx/navigation/NavType$SerializableType;-><init>(ZLjava/lang/Class;)V
+
+    .line 6
+    .line 7
+    .line 8
+    invoke-virtual {p1}, Ljava/lang/Class;->isEnum()Z
+
+    .line 9
+    .line 10
+    .line 11
+    move-result v0
+
+    .line 12
+    if-eqz v0, :cond_10
+
+    .line 13
+    .line 14
+    iput-object p1, p0, Landroidx/navigation/NavType$EnumType;->type:Ljava/lang/Class;
+
+    .line 15
+    .line 16
+    return-void
+
+    .line 17
+    :cond_10
+    const-string v0, " is not an Enum type."
+
+    .line 18
+    .line 19
+    invoke-static {p1, v0}, Lai/onnxruntime/b;->e(Ljava/lang/Object;Ljava/lang/Object;)V
+
+    .line 20
+    .line 21
+    .line 22
+    const/4 p1, 0x0
+
+    .line 23
+    throw p1
+.end method
+
+
+# virtual methods
+.method public getName()Ljava/lang/String;
+    .registers 2
+
+    .line 1
+    iget-object v0, p0, Landroidx/navigation/NavType$EnumType;->type:Ljava/lang/Class;
+
+    .line 2
+    .line 3
+    invoke-virtual {v0}, Ljava/lang/Class;->getName()Ljava/lang/String;
+
+    .line 4
+    .line 5
+    .line 6
+    move-result-object v0
+
+    .line 7
+    return-object v0
+.end method
+
+.method public bridge synthetic parseValue(Ljava/lang/String;)Ljava/io/Serializable;
+    .registers 2
+
+    .line 75
+    invoke-virtual {p0, p1}, Landroidx/navigation/NavType$EnumType;->parseValue(Ljava/lang/String;)Ljava/lang/Enum;
+
+    move-result-object p1
+
+    return-object p1
+.end method
+
+.method public parseValue(Ljava/lang/String;)Ljava/lang/Enum;
+    .registers 7
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Ljava/lang/String;",
+            ")TD;"
+        }
+    .end annotation
+
+    .line 1
+    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 2
+    .line 3
+    .line 4
+    iget-object v0, p0, Landroidx/navigation/NavType$EnumType;->type:Ljava/lang/Class;
+
+    .line 5
+    .line 6
+    invoke-virtual {v0}, Ljava/lang/Class;->getEnumConstants()[Ljava/lang/Object;
+
+    .line 7
+    .line 8
+    .line 9
+    move-result-object v0
+
+    .line 10
+    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 11
+    .line 12
+    .line 13
+    array-length v1, v0
+
+    .line 14
+    const/4 v2, 0x0
+
+    .line 15
+    :goto_e
+    if-ge v2, v1, :cond_23
+
+    .line 16
+    .line 17
+    aget-object v3, v0, v2
+
+    .line 18
+    .line 19
+    move-object v4, v3
+
+    .line 20
+    check-cast v4, Ljava/lang/Enum;
+
+    .line 21
+    .line 22
+    invoke-virtual {v4}, Ljava/lang/Enum;->name()Ljava/lang/String;
+
+    .line 23
+    .line 24
+    .line 25
+    move-result-object v4
+
+    .line 26
+    invoke-static {v4, p1}, Lkotlin/text/StringsKt;->s(Ljava/lang/String;Ljava/lang/String;)Z
+
+    .line 27
+    .line 28
+    .line 29
+    move-result v4
+
+    .line 30
+    if-eqz v4, :cond_20
+
+    .line 31
+    .line 32
+    goto :goto_24
+
+    .line 33
+    :cond_20
+    add-int/lit8 v2, v2, 0x1
+
+    .line 34
+    .line 35
+    goto :goto_e
+
+    .line 36
+    :cond_23
+    const/4 v3, 0x0
+
+    .line 37
+    :goto_24
+    check-cast v3, Ljava/lang/Enum;
+
+    .line 38
+    .line 39
+    if-eqz v3, :cond_29
+
+    .line 40
+    .line 41
+    return-object v3
+
+    .line 42
+    :cond_29
+    new-instance v0, Ljava/lang/IllegalArgumentException;
+
+    .line 43
+    .line 44
+    const-string v1, "Enum value "
+
+    .line 45
+    .line 46
+    const-string v2, " not found for type "
+
+    .line 47
+    .line 48
+    invoke-static {v1, p1, v2}, Lai/onnxruntime/a;->x(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 49
+    .line 50
+    .line 51
+    move-result-object p1
+
+    .line 52
+    iget-object v1, p0, Landroidx/navigation/NavType$EnumType;->type:Ljava/lang/Class;
+
+    .line 53
+    .line 54
+    invoke-virtual {v1}, Ljava/lang/Class;->getName()Ljava/lang/String;
+
+    .line 55
+    .line 56
+    .line 57
+    move-result-object v1
+
+    .line 58
+    invoke-virtual {p1, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 59
+    .line 60
+    .line 61
+    const/16 v1, 0x2e
+
+    .line 62
+    .line 63
+    invoke-virtual {p1, v1}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
+
+    .line 64
+    .line 65
+    .line 66
+    invoke-virtual {p1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    .line 67
+    .line 68
+    .line 69
+    move-result-object p1
+
+    .line 70
+    invoke-direct {v0, p1}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
+
+    .line 71
+    .line 72
+    .line 73
+    throw v0
+.end method
+
+.method public bridge synthetic parseValue(Ljava/lang/String;)Ljava/lang/Object;
+    .registers 2
+
+    .line 74
+    invoke-virtual {p0, p1}, Landroidx/navigation/NavType$EnumType;->parseValue(Ljava/lang/String;)Ljava/lang/Enum;
+
+    move-result-object p1
+
+    return-object p1
+.end method

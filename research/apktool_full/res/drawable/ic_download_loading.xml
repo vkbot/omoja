@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector android:height="128.0dp" android:width="128.0dp" android:viewportWidth="128.0" android:viewportHeight="128.0"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <path android:fillColor="@android:color/transparent" />
+    <path android:fillColor="@android:color/transparent" android:pathData="M64,34                           a30,30 0 1,1 -0.1,0" android:strokeColor="#22ffffff" android:strokeWidth="8.0" />
+    <path android:name="loadingArc" android:fillColor="@android:color/transparent" android:pathData="M64,34                           A30,30 0 0,1 92,54" android:strokeColor="#4da3ff" android:strokeWidth="8.0" android:strokeLineCap="round" />
+    <path android:fillColor="@android:color/transparent" android:pathData="M64,44 V74" android:strokeColor="#ffffff" android:strokeWidth="8.0" android:strokeLineCap="round" />
+    <path android:fillColor="@android:color/transparent" android:pathData="M50,62 L64,76 L78,62" android:strokeColor="#ffffff" android:strokeWidth="8.0" android:strokeLineCap="round" android:strokeLineJoin="round" />
+    <path android:fillColor="@android:color/transparent" android:pathData="M46,88 H82" android:strokeColor="#ffffff" android:strokeWidth="8.0" android:strokeLineCap="round" />
+</vector>

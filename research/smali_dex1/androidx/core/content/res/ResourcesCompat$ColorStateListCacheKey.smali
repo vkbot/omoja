@@ -1,0 +1,177 @@
+.class final Landroidx/core/content/res/ResourcesCompat$ColorStateListCacheKey;
+.super Ljava/lang/Object;
+.source "r8-map-id-94e2637d1b30c6542972a7fc4ced35aa6da258c4e6702fc7c9cbf0ebc32bec75"
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Landroidx/core/content/res/ResourcesCompat;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x19
+    name = "ColorStateListCacheKey"
+.end annotation
+
+
+# instance fields
+.field final mResources:Landroid/content/res/Resources;
+
+.field final mTheme:Landroid/content/res/Resources$Theme;
+
+
+# direct methods
+.method public constructor <init>(Landroid/content/res/Resources;Landroid/content/res/Resources$Theme;)V
+    .registers 3
+    .param p1    # Landroid/content/res/Resources;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
+    .param p2    # Landroid/content/res/Resources$Theme;
+        .annotation build Landroidx/annotation/Nullable;
+        .end annotation
+    .end param
+
+    .line 1
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 2
+    .line 3
+    .line 4
+    iput-object p1, p0, Landroidx/core/content/res/ResourcesCompat$ColorStateListCacheKey;->mResources:Landroid/content/res/Resources;
+
+    .line 5
+    .line 6
+    iput-object p2, p0, Landroidx/core/content/res/ResourcesCompat$ColorStateListCacheKey;->mTheme:Landroid/content/res/Resources$Theme;
+
+    .line 7
+    .line 8
+    return-void
+.end method
+
+
+# virtual methods
+.method public equals(Ljava/lang/Object;)Z
+    .registers 6
+
+    .line 1
+    const/4 v0, 0x1
+
+    .line 2
+    if-ne p0, p1, :cond_4
+
+    .line 3
+    .line 4
+    return v0
+
+    .line 5
+    :cond_4
+    const/4 v1, 0x0
+
+    .line 6
+    if-eqz p1, :cond_27
+
+    .line 7
+    .line 8
+    const-class v2, Landroidx/core/content/res/ResourcesCompat$ColorStateListCacheKey;
+
+    .line 9
+    .line 10
+    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 11
+    .line 12
+    .line 13
+    move-result-object v3
+
+    .line 14
+    if-eq v2, v3, :cond_10
+
+    .line 15
+    .line 16
+    goto :goto_27
+
+    .line 17
+    :cond_10
+    check-cast p1, Landroidx/core/content/res/ResourcesCompat$ColorStateListCacheKey;
+
+    .line 18
+    .line 19
+    iget-object v2, p0, Landroidx/core/content/res/ResourcesCompat$ColorStateListCacheKey;->mResources:Landroid/content/res/Resources;
+
+    .line 20
+    .line 21
+    iget-object v3, p1, Landroidx/core/content/res/ResourcesCompat$ColorStateListCacheKey;->mResources:Landroid/content/res/Resources;
+
+    .line 22
+    .line 23
+    invoke-virtual {v2, v3}, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
+
+    .line 24
+    .line 25
+    .line 26
+    move-result v2
+
+    .line 27
+    if-eqz v2, :cond_27
+
+    .line 28
+    .line 29
+    iget-object v2, p0, Landroidx/core/content/res/ResourcesCompat$ColorStateListCacheKey;->mTheme:Landroid/content/res/Resources$Theme;
+
+    .line 30
+    .line 31
+    iget-object p1, p1, Landroidx/core/content/res/ResourcesCompat$ColorStateListCacheKey;->mTheme:Landroid/content/res/Resources$Theme;
+
+    .line 32
+    .line 33
+    invoke-static {v2, p1}, Landroidx/core/util/ObjectsCompat;->equals(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    .line 34
+    .line 35
+    .line 36
+    move-result p1
+
+    .line 37
+    if-eqz p1, :cond_27
+
+    .line 38
+    .line 39
+    return v0
+
+    .line 40
+    :cond_27
+    :goto_27
+    return v1
+.end method
+
+.method public hashCode()I
+    .registers 3
+
+    .line 1
+    iget-object v0, p0, Landroidx/core/content/res/ResourcesCompat$ColorStateListCacheKey;->mResources:Landroid/content/res/Resources;
+
+    .line 2
+    .line 3
+    iget-object v1, p0, Landroidx/core/content/res/ResourcesCompat$ColorStateListCacheKey;->mTheme:Landroid/content/res/Resources$Theme;
+
+    .line 4
+    .line 5
+    filled-new-array {v0, v1}, [Ljava/lang/Object;
+
+    .line 6
+    .line 7
+    .line 8
+    move-result-object v0
+
+    .line 9
+    invoke-static {v0}, Landroidx/core/util/ObjectsCompat;->hash([Ljava/lang/Object;)I
+
+    .line 10
+    .line 11
+    .line 12
+    move-result v0
+
+    .line 13
+    return v0
+.end method

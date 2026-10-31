@@ -1,0 +1,41 @@
+package org.apache.commons.net.imap;
+
+/* JADX INFO: compiled from: r8-map-id-94e2637d1b30c6542972a7fc4ced35aa6da258c4e6702fc7c9cbf0ebc32bec75 */
+/* JADX INFO: loaded from: F:\omo\research\apk_contents\classes2.dex */
+public enum IMAPClient$SEARCH_CRITERIA {
+    ALL,
+    ANSWERED,
+    BCC,
+    BEFORE,
+    BODY,
+    CC,
+    DELETED,
+    DRAFT,
+    FLAGGED,
+    FROM,
+    HEADER,
+    KEYWORD,
+    LARGER,
+    NEW,
+    NOT,
+    OLD,
+    ON,
+    OR,
+    RECENT,
+    SEEN,
+    SENTBEFORE,
+    SENTON,
+    SENTSINCE,
+    SINCE,
+    SMALLER,
+    SUBJECT,
+    TEXT,
+    TO,
+    UID,
+    UNANSWERED,
+    UNDELETED,
+    UNDRAFT,
+    UNFLAGGED,
+    UNKEYWORD,
+    UNSEEN
+}

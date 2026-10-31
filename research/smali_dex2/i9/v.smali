@@ -1,0 +1,91 @@
+.class public final Li9/v;
+.super Li9/g1;
+.source "r8-map-id-94e2637d1b30c6542972a7fc4ced35aa6da258c4e6702fc7c9cbf0ebc32bec75"
+
+
+# instance fields
+.field public a:[D
+
+.field public b:I
+
+
+# virtual methods
+.method public final a()Ljava/lang/Object;
+    .registers 3
+
+    .line 1
+    iget-object v0, p0, Li9/v;->a:[D
+
+    .line 2
+    .line 3
+    iget v1, p0, Li9/v;->b:I
+
+    .line 4
+    .line 5
+    invoke-static {v0, v1}, Ljava/util/Arrays;->copyOf([DI)[D
+
+    .line 6
+    .line 7
+    .line 8
+    move-result-object v0
+
+    .line 9
+    return-object v0
+.end method
+
+.method public final b(I)V
+    .registers 4
+
+    .line 1
+    iget-object v0, p0, Li9/v;->a:[D
+
+    .line 2
+    .line 3
+    array-length v1, v0
+
+    .line 4
+    if-ge v1, p1, :cond_12
+
+    .line 5
+    .line 6
+    array-length v1, v0
+
+    .line 7
+    mul-int/lit8 v1, v1, 0x2
+
+    .line 8
+    .line 9
+    invoke-static {p1, v1}, Lkotlin/ranges/RangesKt;->coerceAtLeast(II)I
+
+    .line 10
+    .line 11
+    .line 12
+    move-result p1
+
+    .line 13
+    invoke-static {v0, p1}, Ljava/util/Arrays;->copyOf([DI)[D
+
+    .line 14
+    .line 15
+    .line 16
+    move-result-object p1
+
+    .line 17
+    iput-object p1, p0, Li9/v;->a:[D
+
+    .line 18
+    .line 19
+    :cond_12
+    return-void
+.end method
+
+.method public final d()I
+    .registers 2
+
+    .line 1
+    iget v0, p0, Li9/v;->b:I
+
+    .line 2
+    .line 3
+    return v0
+.end method

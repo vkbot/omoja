@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/rounded_background" android:padding="3.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <ProgressBar android:id="@id/progressBar2" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1.0" style="?android:progressBarStyle" />
+        <TextView android:textSize="23.0dp" android:textColor="#d7d3d3" android:layout_gravity="center" android:id="@id/textView38" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="8.0dp" android:text="--" android:layout_weight="1.0" android:fontFamily="@font/dudkabold" />
+        <LinearLayout android:layout_gravity="center" android:orientation="horizontal" android:id="@id/viewWeatherBlock" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <TextView android:textSize="29.0dp" android:textColor="#d7d3d3" android:layout_gravity="center" android:id="@id/textView39" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="3.0dp" android:text="-- C" android:layout_weight="1.0" android:fontFamily="@font/dudkabold" />
+            <ImageView android:layout_gravity="center" android:id="@id/imageViewWeather" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0" app:srcCompat="@drawable/unknown" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

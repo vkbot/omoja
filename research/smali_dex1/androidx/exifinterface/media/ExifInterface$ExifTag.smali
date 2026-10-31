@@ -1,0 +1,206 @@
+.class Landroidx/exifinterface/media/ExifInterface$ExifTag;
+.super Ljava/lang/Object;
+.source "r8-map-id-94e2637d1b30c6542972a7fc4ced35aa6da258c4e6702fc7c9cbf0ebc32bec75"
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Landroidx/exifinterface/media/ExifInterface;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x9
+    name = "ExifTag"
+.end annotation
+
+
+# instance fields
+.field public final name:Ljava/lang/String;
+
+.field public final number:I
+
+.field public final primaryFormat:I
+
+.field public final secondaryFormat:I
+
+
+# direct methods
+.method public constructor <init>(Ljava/lang/String;II)V
+    .registers 4
+
+    .line 1
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 2
+    .line 3
+    .line 4
+    iput-object p1, p0, Landroidx/exifinterface/media/ExifInterface$ExifTag;->name:Ljava/lang/String;
+
+    .line 5
+    .line 6
+    iput p2, p0, Landroidx/exifinterface/media/ExifInterface$ExifTag;->number:I
+
+    .line 7
+    .line 8
+    iput p3, p0, Landroidx/exifinterface/media/ExifInterface$ExifTag;->primaryFormat:I
+
+    .line 9
+    .line 10
+    const/4 p1, -0x1
+
+    .line 11
+    iput p1, p0, Landroidx/exifinterface/media/ExifInterface$ExifTag;->secondaryFormat:I
+
+    .line 12
+    .line 13
+    return-void
+.end method
+
+.method public constructor <init>(Ljava/lang/String;III)V
+    .registers 5
+
+    .line 14
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 15
+    iput-object p1, p0, Landroidx/exifinterface/media/ExifInterface$ExifTag;->name:Ljava/lang/String;
+
+    .line 16
+    iput p2, p0, Landroidx/exifinterface/media/ExifInterface$ExifTag;->number:I
+
+    .line 17
+    iput p3, p0, Landroidx/exifinterface/media/ExifInterface$ExifTag;->primaryFormat:I
+
+    .line 18
+    iput p4, p0, Landroidx/exifinterface/media/ExifInterface$ExifTag;->secondaryFormat:I
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public isFormatCompatible(I)Z
+    .registers 6
+
+    .line 1
+    iget v0, p0, Landroidx/exifinterface/media/ExifInterface$ExifTag;->primaryFormat:I
+
+    .line 2
+    .line 3
+    const/4 v1, 0x1
+
+    .line 4
+    const/4 v2, 0x7
+
+    .line 5
+    if-eq v0, v2, :cond_31
+
+    .line 6
+    .line 7
+    if-ne p1, v2, :cond_9
+
+    .line 8
+    .line 9
+    goto :goto_31
+
+    .line 10
+    :cond_9
+    if-eq v0, p1, :cond_31
+
+    .line 11
+    .line 12
+    iget v2, p0, Landroidx/exifinterface/media/ExifInterface$ExifTag;->secondaryFormat:I
+
+    .line 13
+    .line 14
+    if-ne v2, p1, :cond_10
+
+    .line 15
+    .line 16
+    goto :goto_31
+
+    .line 17
+    :cond_10
+    const/4 v3, 0x4
+
+    .line 18
+    if-eq v0, v3, :cond_15
+
+    .line 19
+    .line 20
+    if-ne v2, v3, :cond_19
+
+    .line 21
+    .line 22
+    :cond_15
+    const/4 v3, 0x3
+
+    .line 23
+    if-ne p1, v3, :cond_19
+
+    .line 24
+    .line 25
+    return v1
+
+    .line 26
+    :cond_19
+    const/16 v3, 0x9
+
+    .line 27
+    .line 28
+    if-eq v0, v3, :cond_1f
+
+    .line 29
+    .line 30
+    if-ne v2, v3, :cond_24
+
+    .line 31
+    .line 32
+    :cond_1f
+    const/16 v3, 0x8
+
+    .line 33
+    .line 34
+    if-ne p1, v3, :cond_24
+
+    .line 35
+    .line 36
+    return v1
+
+    .line 37
+    :cond_24
+    const/16 v3, 0xc
+
+    .line 38
+    .line 39
+    if-eq v0, v3, :cond_2a
+
+    .line 40
+    .line 41
+    if-ne v2, v3, :cond_2f
+
+    .line 42
+    .line 43
+    :cond_2a
+    const/16 v0, 0xb
+
+    .line 44
+    .line 45
+    if-ne p1, v0, :cond_2f
+
+    .line 46
+    .line 47
+    return v1
+
+    .line 48
+    :cond_2f
+    const/4 p1, 0x0
+
+    .line 49
+    return p1
+
+    .line 50
+    :cond_31
+    :goto_31
+    return v1
+.end method

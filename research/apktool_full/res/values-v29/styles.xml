@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.NaviStart" parent="@style/Base.Theme.NaviStart">
+        <item name="android:popupBackground">@color/white</item>
+        <item name="android:forceDarkAllowed">false</item>
+        <item name="popupMenuStyle">@style/PopupMenuStyle</item>
+    </style>
+</resources>

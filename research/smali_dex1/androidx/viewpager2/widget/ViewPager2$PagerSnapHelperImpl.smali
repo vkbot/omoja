@@ -1,0 +1,78 @@
+.class Landroidx/viewpager2/widget/ViewPager2$PagerSnapHelperImpl;
+.super Landroidx/recyclerview/widget/PagerSnapHelper;
+.source "r8-map-id-94e2637d1b30c6542972a7fc4ced35aa6da258c4e6702fc7c9cbf0ebc32bec75"
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Landroidx/viewpager2/widget/ViewPager2;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x1
+    name = "PagerSnapHelperImpl"
+.end annotation
+
+
+# instance fields
+.field final synthetic this$0:Landroidx/viewpager2/widget/ViewPager2;
+
+
+# direct methods
+.method public constructor <init>(Landroidx/viewpager2/widget/ViewPager2;)V
+    .registers 2
+
+    .line 1
+    iput-object p1, p0, Landroidx/viewpager2/widget/ViewPager2$PagerSnapHelperImpl;->this$0:Landroidx/viewpager2/widget/ViewPager2;
+
+    .line 2
+    .line 3
+    invoke-direct {p0}, Landroidx/recyclerview/widget/PagerSnapHelper;-><init>()V
+
+    .line 4
+    .line 5
+    .line 6
+    return-void
+.end method
+
+
+# virtual methods
+.method public findSnapView(Landroidx/recyclerview/widget/RecyclerView$LayoutManager;)Landroid/view/View;
+    .registers 3
+    .annotation build Landroidx/annotation/Nullable;
+    .end annotation
+
+    .line 1
+    iget-object v0, p0, Landroidx/viewpager2/widget/ViewPager2$PagerSnapHelperImpl;->this$0:Landroidx/viewpager2/widget/ViewPager2;
+
+    .line 2
+    .line 3
+    invoke-virtual {v0}, Landroidx/viewpager2/widget/ViewPager2;->isFakeDragging()Z
+
+    .line 4
+    .line 5
+    .line 6
+    move-result v0
+
+    .line 7
+    if-eqz v0, :cond_a
+
+    .line 8
+    .line 9
+    const/4 p1, 0x0
+
+    .line 10
+    return-object p1
+
+    .line 11
+    :cond_a
+    invoke-super {p0, p1}, Landroidx/recyclerview/widget/PagerSnapHelper;->findSnapView(Landroidx/recyclerview/widget/RecyclerView$LayoutManager;)Landroid/view/View;
+
+    .line 12
+    .line 13
+    .line 14
+    move-result-object p1
+
+    .line 15
+    return-object p1
+.end method

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.cardview.widget.CardView android:layout_width="match_parent" android:layout_height="match_parent">
+        <TextView android:textColor="@color/headerText" android:gravity="center" android:id="@id/MainLabel" android:background="@color/header" android:paddingBottom="2.0dp" android:layout_width="match_parent" android:layout_height="36.0sp" android:layout_marginTop="0.0dp" android:shadowColor="@color/headerTextShadowColor" android:shadowDx="0.0" android:shadowDy="0.0" android:shadowRadius="5.0" app:autoSizeTextType="uniform" />
+        <LinearLayout android:background="@drawable/border" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout android:gravity="center" android:padding="10.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="40.0dp">
+                <com.google.android.material.materialswitch.MaterialSwitch android:textSize="20.0sp" android:textColor="@color/black" android:gravity="start|center" android:layout_gravity="fill_vertical" android:id="@id/sw_start_app_hud" android:layout_width="wrap_content" android:layout_height="@dimen/layout_height_constant" android:maxWidth="500.0dp" android:text="@string/sw_HUD_Custom_On" android:layout_weight="1.0" android:layoutDirection="rtl" android:layout_marginStart="8.0dp" android:layout_marginEnd="8.0dp" />
+                <Button android:id="@id/button_HUD_Custom_Settins" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/b_settings" android:layout_weight="1.0" />
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</merge>

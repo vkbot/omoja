@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <ImageView android:id="@id/imageView4" android:visibility="visible" android:layout_width="100.0dp" android:layout_height="100.0dp" android:src="@drawable/icon_voice_message_6376305" />
+    </FrameLayout>
+</RelativeLayout>

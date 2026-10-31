@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:paddingBottom="12.0dp" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="12.0dp">
+        <Button android:id="@id/userFileManagerBackButton" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/b_back" android:layout_marginEnd="10.0dp" style="@style/ModernStoreActionRow" />
+        <TextView android:textSize="26.0sp" android:textStyle="bold" android:textColor="@color/modern_text" android:layout_width="0.0dp" android:layout_height="wrap_content" android:text="@string/user_file_manager_title" android:layout_weight="1.0" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:background="@drawable/modern_action_row" android:paddingTop="10.0dp" android:paddingBottom="10.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="12.0dp" android:paddingEnd="12.0dp">
+        <TextView android:textSize="16.0sp" android:textColor="@color/modern_text" android:id="@id/userFileManagerStorageInfo" android:layout_width="match_parent" android:layout_height="wrap_content" />
+        <ProgressBar android:id="@id/userFileManagerStorageProgress" android:layout_width="match_parent" android:layout_height="10.0dp" android:layout_marginTop="8.0dp" android:max="1000" android:progressTint="@color/modern_primary" android:progressBackgroundTint="@color/modern_divider" style="?android:progressBarStyleHorizontal" />
+    </LinearLayout>
+    <TextView android:textSize="16.0sp" android:textColor="@color/modern_text" android:id="@id/userFileManagerCurrentPath" android:background="@drawable/modern_action_row" android:paddingTop="10.0dp" android:paddingBottom="10.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dp" android:textIsSelectable="true" android:paddingStart="12.0dp" android:paddingEnd="12.0dp" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dp">
+        <Button android:id="@id/userFileManagerUsbButton" android:layout_width="0.0dp" android:layout_height="52.0dp" android:text="@string/user_file_manager_usb" android:layout_weight="1.0" android:layout_marginEnd="6.0dp" style="@style/ModernStoreActionRow" />
+        <Button android:id="@id/userFileManagerUpButton" android:layout_width="0.0dp" android:layout_height="52.0dp" android:text="@string/up" android:layout_weight="1.0" android:layout_marginStart="6.0dp" android:layout_marginEnd="6.0dp" style="@style/ModernStoreActionRow" />
+        <Button android:id="@id/userFileManagerHomeButton" android:layout_width="0.0dp" android:layout_height="52.0dp" android:text="@string/user_file_manager_home" android:layout_weight="1.0" android:layout_marginStart="6.0dp" android:layout_marginEnd="6.0dp" style="@style/ModernStoreActionRow" />
+        <Button android:id="@id/userFileManagerRefreshButton" android:layout_width="0.0dp" android:layout_height="52.0dp" android:text="@string/user_file_manager_refresh" android:layout_weight="1.0" android:layout_marginStart="6.0dp" style="@style/ModernStoreActionRow" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/userFileManagerClipboardPanel" android:background="@drawable/modern_action_row" android:padding="10.0dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dp">
+        <TextView android:textSize="16.0sp" android:textColor="@color/modern_text" android:id="@id/userFileManagerClipboard" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_weight="1.0" android:textIsSelectable="true" android:layout_marginEnd="10.0dp" />
+        <Button android:id="@id/userFileManagerPasteButton" android:layout_width="wrap_content" android:layout_height="52.0dp" android:text="@string/user_file_manager_paste" style="@style/ModernStoreActionRow" />
+        <Button android:id="@id/userFileManagerCancelCopyButton" android:layout_width="wrap_content" android:layout_height="52.0dp" android:text="@string/cancel" android:layout_marginStart="8.0dp" style="@style/ModernStoreActionRow" />
+    </LinearLayout>
+</LinearLayout>

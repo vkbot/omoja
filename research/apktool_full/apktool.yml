@@ -1,0 +1,23 @@
+version: 3.0.3
+apkFileName: NS.apk
+usesFramework:
+  ids:
+  - 1
+sdkInfo:
+  minSdkVersion: 24
+  targetSdkVersion: 28
+versionInfo:
+  versionCode: 97
+  versionName: 2.0.4
+resourcesInfo:
+  packageId: 127
+doNotCompress:
+- arsc
+- jpg
+- mp3
+- ogg
+- png
+- wav
+- webp
+- assets/dexopt/baseline.prof
+- assets/dexopt/baseline.profm

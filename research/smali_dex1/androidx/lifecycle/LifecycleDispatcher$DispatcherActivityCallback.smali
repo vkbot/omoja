@@ -1,0 +1,79 @@
+.class public final Landroidx/lifecycle/LifecycleDispatcher$DispatcherActivityCallback;
+.super Landroidx/lifecycle/EmptyActivityLifecycleCallbacks;
+.source "r8-map-id-94e2637d1b30c6542972a7fc4ced35aa6da258c4e6702fc7c9cbf0ebc32bec75"
+
+
+# annotations
+.annotation build Landroidx/annotation/VisibleForTesting;
+.end annotation
+
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Landroidx/lifecycle/LifecycleDispatcher;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x19
+    name = "DispatcherActivityCallback"
+.end annotation
+
+.annotation runtime Lkotlin/Metadata;
+    d1 = {
+        "\u0000\u001e\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\u0008\u0001\u0018\u00002\u00020\u0001B\u0005\u00a2\u0006\u0002\u0010\u0002J\u001a\u0010\u0003\u001a\u00020\u00042\u0006\u0010\u0005\u001a\u00020\u00062\u0008\u0010\u0007\u001a\u0004\u0018\u00010\u0008H\u0016\u00a8\u0006\t"
+    }
+    d2 = {
+        "Landroidx/lifecycle/LifecycleDispatcher$DispatcherActivityCallback;",
+        "Landroidx/lifecycle/EmptyActivityLifecycleCallbacks;",
+        "()V",
+        "onActivityCreated",
+        "",
+        "activity",
+        "Landroid/app/Activity;",
+        "savedInstanceState",
+        "Landroid/os/Bundle;",
+        "lifecycle-process_release"
+    }
+    k = 0x1
+    mv = {
+        0x1,
+        0x8,
+        0x0
+    }
+    xi = 0x30
+.end annotation
+
+
+# direct methods
+.method public constructor <init>()V
+    .registers 1
+
+    .line 1
+    invoke-direct {p0}, Landroidx/lifecycle/EmptyActivityLifecycleCallbacks;-><init>()V
+
+    .line 2
+    .line 3
+    .line 4
+    return-void
+.end method
+
+
+# virtual methods
+.method public onActivityCreated(Landroid/app/Activity;Landroid/os/Bundle;)V
+    .registers 3
+
+    .line 1
+    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 2
+    .line 3
+    .line 4
+    sget-object p2, Landroidx/lifecycle/ReportFragment;->Companion:Landroidx/lifecycle/ReportFragment$Companion;
+
+    .line 5
+    .line 6
+    invoke-virtual {p2, p1}, Landroidx/lifecycle/ReportFragment$Companion;->injectIfNeededIn(Landroid/app/Activity;)V
+
+    .line 7
+    .line 8
+    .line 9
+    return-void
+.end method

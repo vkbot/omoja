@@ -1,0 +1,963 @@
+.class public final Lq7/c;
+.super Ljava/lang/Object;
+.source "r8-map-id-94e2637d1b30c6542972a7fc4ced35aa6da258c4e6702fc7c9cbf0ebc32bec75"
+
+
+# static fields
+.field public static final e:Lq7/c;
+
+
+# instance fields
+.field public final a:Z
+
+.field public final b:[Ljava/lang/String;
+
+.field public final c:[Ljava/lang/String;
+
+.field public final d:Z
+
+
+# direct methods
+.method static constructor <clinit>()V
+    .registers 17
+
+    .line 1
+    sget-object v15, Lq7/a;->e:Lq7/a;
+
+    .line 2
+    .line 3
+    sget-object v16, Lq7/a;->c:Lq7/a;
+
+    .line 4
+    .line 5
+    sget-object v1, Lq7/a;->p:Lq7/a;
+
+    .line 6
+    .line 7
+    sget-object v2, Lq7/a;->q:Lq7/a;
+
+    .line 8
+    .line 9
+    sget-object v3, Lq7/a;->r:Lq7/a;
+
+    .line 10
+    .line 11
+    sget-object v4, Lq7/a;->j:Lq7/a;
+
+    .line 12
+    .line 13
+    sget-object v5, Lq7/a;->l:Lq7/a;
+
+    .line 14
+    .line 15
+    sget-object v6, Lq7/a;->k:Lq7/a;
+
+    .line 16
+    .line 17
+    sget-object v7, Lq7/a;->m:Lq7/a;
+
+    .line 18
+    .line 19
+    sget-object v8, Lq7/a;->o:Lq7/a;
+
+    .line 20
+    .line 21
+    sget-object v9, Lq7/a;->n:Lq7/a;
+
+    .line 22
+    .line 23
+    sget-object v10, Lq7/a;->h:Lq7/a;
+
+    .line 24
+    .line 25
+    sget-object v11, Lq7/a;->i:Lq7/a;
+
+    .line 26
+    .line 27
+    sget-object v12, Lq7/a;->f:Lq7/a;
+
+    .line 28
+    .line 29
+    sget-object v13, Lq7/a;->g:Lq7/a;
+
+    .line 30
+    .line 31
+    sget-object v14, Lq7/a;->d:Lq7/a;
+
+    .line 32
+    .line 33
+    filled-new-array/range {v1 .. v16}, [Lq7/a;
+
+    .line 34
+    .line 35
+    .line 36
+    move-result-object v0
+
+    .line 37
+    new-instance v1, Lq7/b;
+
+    .line 38
+    .line 39
+    const/4 v2, 0x1
+
+    .line 40
+    invoke-direct {v1, v2}, Lq7/b;-><init>(Z)V
+
+    .line 41
+    .line 42
+    .line 43
+    invoke-virtual {v1, v0}, Lq7/b;->a([Lq7/a;)V
+
+    .line 44
+    .line 45
+    .line 46
+    sget-object v0, Lq7/m;->c:Lq7/m;
+
+    .line 47
+    .line 48
+    sget-object v3, Lq7/m;->d:Lq7/m;
+
+    .line 49
+    .line 50
+    filled-new-array {v0, v3}, [Lq7/m;
+
+    .line 51
+    .line 52
+    .line 53
+    move-result-object v4
+
+    .line 54
+    invoke-virtual {v1, v4}, Lq7/b;->b([Lq7/m;)V
+
+    .line 55
+    .line 56
+    .line 57
+    iput-boolean v2, v1, Lq7/b;->d:Z
+
+    .line 58
+    .line 59
+    new-instance v2, Lq7/c;
+
+    .line 60
+    .line 61
+    invoke-direct {v2, v1}, Lq7/c;-><init>(Lq7/b;)V
+
+    .line 62
+    .line 63
+    .line 64
+    sput-object v2, Lq7/c;->e:Lq7/c;
+
+    .line 65
+    .line 66
+    sget-object v1, Lq7/m;->e:Lq7/m;
+
+    .line 67
+    .line 68
+    sget-object v4, Lq7/m;->f:Lq7/m;
+
+    .line 69
+    .line 70
+    filled-new-array {v0, v3, v1, v4}, [Lq7/m;
+
+    .line 71
+    .line 72
+    .line 73
+    move-result-object v0
+
+    .line 74
+    iget-boolean v1, v2, Lq7/c;->a:Z
+
+    .line 75
+    .line 76
+    if-eqz v1, :cond_6f
+
+    .line 77
+    .line 78
+    array-length v2, v0
+
+    .line 79
+    if-eqz v2, :cond_69
+
+    .line 80
+    .line 81
+    array-length v2, v0
+
+    .line 82
+    new-array v2, v2, [Ljava/lang/String;
+
+    .line 83
+    .line 84
+    const/4 v3, 0x0
+
+    .line 85
+    :goto_54
+    array-length v4, v0
+
+    .line 86
+    if-ge v3, v4, :cond_60
+
+    .line 87
+    .line 88
+    aget-object v4, v0, v3
+
+    .line 89
+    .line 90
+    iget-object v4, v4, Lq7/m;->b:Ljava/lang/String;
+
+    .line 91
+    .line 92
+    aput-object v4, v2, v3
+
+    .line 93
+    .line 94
+    add-int/lit8 v3, v3, 0x1
+
+    .line 95
+    .line 96
+    goto :goto_54
+
+    .line 97
+    :cond_60
+    if-eqz v1, :cond_63
+
+    .line 98
+    .line 99
+    return-void
+
+    .line 100
+    :cond_63
+    const-string v0, "no TLS extensions for cleartext connections"
+
+    .line 101
+    .line 102
+    invoke-static {v0}, Lj1/i;->l(Ljava/lang/String;)V
+
+    .line 103
+    .line 104
+    .line 105
+    return-void
+
+    .line 106
+    :cond_69
+    const-string v0, "At least one TlsVersion is required"
+
+    .line 107
+    .line 108
+    invoke-static {v0}, Lj1/i;->k(Ljava/lang/String;)V
+
+    .line 109
+    .line 110
+    .line 111
+    return-void
+
+    .line 112
+    :cond_6f
+    const-string v0, "no TLS versions for cleartext connections"
+
+    .line 113
+    .line 114
+    invoke-static {v0}, Lj1/i;->l(Ljava/lang/String;)V
+
+    .line 115
+    .line 116
+    .line 117
+    return-void
+.end method
+
+.method public constructor <init>(Lq7/b;)V
+    .registers 3
+
+    .line 1
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 2
+    .line 3
+    .line 4
+    iget-boolean v0, p1, Lq7/b;->a:Z
+
+    .line 5
+    .line 6
+    iput-boolean v0, p0, Lq7/c;->a:Z
+
+    .line 7
+    .line 8
+    iget-object v0, p1, Lq7/b;->b:[Ljava/lang/String;
+
+    .line 9
+    .line 10
+    iput-object v0, p0, Lq7/c;->b:[Ljava/lang/String;
+
+    .line 11
+    .line 12
+    iget-object v0, p1, Lq7/b;->c:[Ljava/lang/String;
+
+    .line 13
+    .line 14
+    iput-object v0, p0, Lq7/c;->c:[Ljava/lang/String;
+
+    .line 15
+    .line 16
+    iget-boolean p1, p1, Lq7/b;->d:Z
+
+    .line 17
+    .line 18
+    iput-boolean p1, p0, Lq7/c;->d:Z
+
+    .line 19
+    .line 20
+    return-void
+.end method
+
+
+# virtual methods
+.method public final equals(Ljava/lang/Object;)Z
+    .registers 4
+
+    .line 1
+    instance-of v0, p1, Lq7/c;
+
+    .line 2
+    .line 3
+    if-nez v0, :cond_5
+
+    .line 4
+    .line 5
+    goto :goto_2f
+
+    .line 6
+    :cond_5
+    if-ne p1, p0, :cond_8
+
+    .line 7
+    .line 8
+    goto :goto_31
+
+    .line 9
+    :cond_8
+    check-cast p1, Lq7/c;
+
+    .line 10
+    .line 11
+    iget-boolean v0, p1, Lq7/c;->a:Z
+
+    .line 12
+    .line 13
+    iget-boolean v1, p0, Lq7/c;->a:Z
+
+    .line 14
+    .line 15
+    if-eq v1, v0, :cond_11
+
+    .line 16
+    .line 17
+    goto :goto_2f
+
+    .line 18
+    :cond_11
+    if-eqz v1, :cond_31
+
+    .line 19
+    .line 20
+    iget-object v0, p0, Lq7/c;->b:[Ljava/lang/String;
+
+    .line 21
+    .line 22
+    iget-object v1, p1, Lq7/c;->b:[Ljava/lang/String;
+
+    .line 23
+    .line 24
+    invoke-static {v0, v1}, Ljava/util/Arrays;->equals([Ljava/lang/Object;[Ljava/lang/Object;)Z
+
+    .line 25
+    .line 26
+    .line 27
+    move-result v0
+
+    .line 28
+    if-nez v0, :cond_1e
+
+    .line 29
+    .line 30
+    goto :goto_2f
+
+    .line 31
+    :cond_1e
+    iget-object v0, p0, Lq7/c;->c:[Ljava/lang/String;
+
+    .line 32
+    .line 33
+    iget-object v1, p1, Lq7/c;->c:[Ljava/lang/String;
+
+    .line 34
+    .line 35
+    invoke-static {v0, v1}, Ljava/util/Arrays;->equals([Ljava/lang/Object;[Ljava/lang/Object;)Z
+
+    .line 36
+    .line 37
+    .line 38
+    move-result v0
+
+    .line 39
+    if-nez v0, :cond_29
+
+    .line 40
+    .line 41
+    goto :goto_2f
+
+    .line 42
+    :cond_29
+    iget-boolean v0, p0, Lq7/c;->d:Z
+
+    .line 43
+    .line 44
+    iget-boolean p1, p1, Lq7/c;->d:Z
+
+    .line 45
+    .line 46
+    if-eq v0, p1, :cond_31
+
+    .line 47
+    .line 48
+    :goto_2f
+    const/4 p1, 0x0
+
+    .line 49
+    return p1
+
+    .line 50
+    :cond_31
+    :goto_31
+    const/4 p1, 0x1
+
+    .line 51
+    return p1
+.end method
+
+.method public final hashCode()I
+    .registers 3
+
+    .line 1
+    iget-boolean v0, p0, Lq7/c;->a:Z
+
+    .line 2
+    .line 3
+    if-eqz v0, :cond_1e
+
+    .line 4
+    .line 5
+    iget-object v0, p0, Lq7/c;->b:[Ljava/lang/String;
+
+    .line 6
+    .line 7
+    invoke-static {v0}, Ljava/util/Arrays;->hashCode([Ljava/lang/Object;)I
+
+    .line 8
+    .line 9
+    .line 10
+    move-result v0
+
+    .line 11
+    const/16 v1, 0x20f
+
+    .line 12
+    .line 13
+    add-int/2addr v1, v0
+
+    .line 14
+    mul-int/lit8 v1, v1, 0x1f
+
+    .line 15
+    .line 16
+    iget-object v0, p0, Lq7/c;->c:[Ljava/lang/String;
+
+    .line 17
+    .line 18
+    invoke-static {v0}, Ljava/util/Arrays;->hashCode([Ljava/lang/Object;)I
+
+    .line 19
+    .line 20
+    .line 21
+    move-result v0
+
+    .line 22
+    add-int/2addr v1, v0
+
+    .line 23
+    mul-int/lit8 v1, v1, 0x1f
+
+    .line 24
+    .line 25
+    iget-boolean v0, p0, Lq7/c;->d:Z
+
+    .line 26
+    .line 27
+    xor-int/lit8 v0, v0, 0x1
+
+    .line 28
+    .line 29
+    add-int/2addr v1, v0
+
+    .line 30
+    return v1
+
+    .line 31
+    :cond_1e
+    const/16 v0, 0x11
+
+    .line 32
+    .line 33
+    return v0
+.end method
+
+.method public final toString()Ljava/lang/String;
+    .registers 8
+
+    .line 1
+    iget-boolean v0, p0, Lq7/c;->a:Z
+
+    .line 2
+    .line 3
+    if-eqz v0, :cond_cd
+
+    .line 4
+    .line 5
+    const/4 v0, 0x0
+
+    .line 6
+    const/4 v1, 0x0
+
+    .line 7
+    iget-object v2, p0, Lq7/c;->b:[Ljava/lang/String;
+
+    .line 8
+    .line 9
+    if-nez v2, :cond_c
+
+    .line 10
+    .line 11
+    move-object v2, v0
+
+    .line 12
+    goto :goto_46
+
+    .line 13
+    :cond_c
+    array-length v3, v2
+
+    .line 14
+    new-array v3, v3, [Lq7/a;
+
+    .line 15
+    .line 16
+    move v4, v1
+
+    .line 17
+    :goto_10
+    array-length v5, v2
+
+    .line 18
+    if-ge v4, v5, :cond_36
+
+    .line 19
+    .line 20
+    aget-object v5, v2, v4
+
+    .line 21
+    .line 22
+    const-string v6, "SSL_"
+
+    .line 23
+    .line 24
+    invoke-virtual {v5, v6}, Ljava/lang/String;->startsWith(Ljava/lang/String;)Z
+
+    .line 25
+    .line 26
+    .line 27
+    move-result v6
+
+    .line 28
+    if-eqz v6, :cond_2d
+
+    .line 29
+    .line 30
+    const/4 v6, 0x4
+
+    .line 31
+    invoke-virtual {v5, v6}, Ljava/lang/String;->substring(I)Ljava/lang/String;
+
+    .line 32
+    .line 33
+    .line 34
+    move-result-object v5
+
+    .line 35
+    const-string v6, "TLS_"
+
+    .line 36
+    .line 37
+    invoke-virtual {v6, v5}, Ljava/lang/String;->concat(Ljava/lang/String;)Ljava/lang/String;
+
+    .line 38
+    .line 39
+    .line 40
+    move-result-object v5
+
+    .line 41
+    invoke-static {v5}, Lq7/a;->valueOf(Ljava/lang/String;)Lq7/a;
+
+    .line 42
+    .line 43
+    .line 44
+    move-result-object v5
+
+    .line 45
+    goto :goto_31
+
+    .line 46
+    :cond_2d
+    invoke-static {v5}, Lq7/a;->valueOf(Ljava/lang/String;)Lq7/a;
+
+    .line 47
+    .line 48
+    .line 49
+    move-result-object v5
+
+    .line 50
+    :goto_31
+    aput-object v5, v3, v4
+
+    .line 51
+    .line 52
+    add-int/lit8 v4, v4, 0x1
+
+    .line 53
+    .line 54
+    goto :goto_10
+
+    .line 55
+    :cond_36
+    sget-object v2, Lq7/n;->a:[Ljava/lang/String;
+
+    .line 56
+    .line 57
+    invoke-virtual {v3}, [Ljava/lang/Object;->clone()Ljava/lang/Object;
+
+    .line 58
+    .line 59
+    .line 60
+    move-result-object v2
+
+    .line 61
+    check-cast v2, [Ljava/lang/Object;
+
+    .line 62
+    .line 63
+    invoke-static {v2}, Ljava/util/Arrays;->asList([Ljava/lang/Object;)Ljava/util/List;
+
+    .line 64
+    .line 65
+    .line 66
+    move-result-object v2
+
+    .line 67
+    invoke-static {v2}, Ljava/util/Collections;->unmodifiableList(Ljava/util/List;)Ljava/util/List;
+
+    .line 68
+    .line 69
+    .line 70
+    move-result-object v2
+
+    .line 71
+    :goto_46
+    if-nez v2, :cond_4b
+
+    .line 72
+    .line 73
+    const-string v2, "[use default]"
+
+    .line 74
+    .line 75
+    goto :goto_4f
+
+    .line 76
+    :cond_4b
+    invoke-virtual {v2}, Ljava/lang/Object;->toString()Ljava/lang/String;
+
+    .line 77
+    .line 78
+    .line 79
+    move-result-object v2
+
+    .line 80
+    :goto_4f
+    const-string v3, "ConnectionSpec(cipherSuites="
+
+    .line 81
+    .line 82
+    const-string v4, ", tlsVersions="
+
+    .line 83
+    .line 84
+    invoke-static {v3, v2, v4}, Lai/onnxruntime/a;->x(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 85
+    .line 86
+    .line 87
+    move-result-object v2
+
+    .line 88
+    iget-object v3, p0, Lq7/c;->c:[Ljava/lang/String;
+
+    .line 89
+    .line 90
+    array-length v4, v3
+
+    .line 91
+    new-array v4, v4, [Lq7/m;
+
+    .line 92
+    .line 93
+    :goto_5c
+    array-length v5, v3
+
+    .line 94
+    if-ge v1, v5, :cond_a6
+
+    .line 95
+    .line 96
+    aget-object v5, v3, v1
+
+    .line 97
+    .line 98
+    const-string v6, "TLSv1.3"
+
+    .line 99
+    .line 100
+    invoke-virtual {v6, v5}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    .line 101
+    .line 102
+    .line 103
+    move-result v6
+
+    .line 104
+    if-eqz v6, :cond_6c
+
+    .line 105
+    .line 106
+    sget-object v5, Lq7/m;->c:Lq7/m;
+
+    .line 107
+    .line 108
+    goto :goto_97
+
+    .line 109
+    :cond_6c
+    const-string v6, "TLSv1.2"
+
+    .line 110
+    .line 111
+    invoke-virtual {v6, v5}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    .line 112
+    .line 113
+    .line 114
+    move-result v6
+
+    .line 115
+    if-eqz v6, :cond_77
+
+    .line 116
+    .line 117
+    sget-object v5, Lq7/m;->d:Lq7/m;
+
+    .line 118
+    .line 119
+    goto :goto_97
+
+    .line 120
+    :cond_77
+    const-string v6, "TLSv1.1"
+
+    .line 121
+    .line 122
+    invoke-virtual {v6, v5}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    .line 123
+    .line 124
+    .line 125
+    move-result v6
+
+    .line 126
+    if-eqz v6, :cond_82
+
+    .line 127
+    .line 128
+    sget-object v5, Lq7/m;->e:Lq7/m;
+
+    .line 129
+    .line 130
+    goto :goto_97
+
+    .line 131
+    :cond_82
+    const-string v6, "TLSv1"
+
+    .line 132
+    .line 133
+    invoke-virtual {v6, v5}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    .line 134
+    .line 135
+    .line 136
+    move-result v6
+
+    .line 137
+    if-eqz v6, :cond_8d
+
+    .line 138
+    .line 139
+    sget-object v5, Lq7/m;->f:Lq7/m;
+
+    .line 140
+    .line 141
+    goto :goto_97
+
+    .line 142
+    :cond_8d
+    const-string v6, "SSLv3"
+
+    .line 143
+    .line 144
+    invoke-virtual {v6, v5}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    .line 145
+    .line 146
+    .line 147
+    move-result v6
+
+    .line 148
+    if-eqz v6, :cond_9c
+
+    .line 149
+    .line 150
+    sget-object v5, Lq7/m;->g:Lq7/m;
+
+    .line 151
+    .line 152
+    :goto_97
+    aput-object v5, v4, v1
+
+    .line 153
+    .line 154
+    add-int/lit8 v1, v1, 0x1
+
+    .line 155
+    .line 156
+    goto :goto_5c
+
+    .line 157
+    :cond_9c
+    const-string v1, "Unexpected TLS version: "
+
+    .line 158
+    .line 159
+    invoke-static {v1, v5}, Lai/onnxruntime/a;->l(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+
+    .line 160
+    .line 161
+    .line 162
+    move-result-object v1
+
+    .line 163
+    invoke-static {v1}, Lj1/i;->k(Ljava/lang/String;)V
+
+    .line 164
+    .line 165
+    .line 166
+    return-object v0
+
+    .line 167
+    :cond_a6
+    sget-object v0, Lq7/n;->a:[Ljava/lang/String;
+
+    .line 168
+    .line 169
+    invoke-virtual {v4}, [Ljava/lang/Object;->clone()Ljava/lang/Object;
+
+    .line 170
+    .line 171
+    .line 172
+    move-result-object v0
+
+    .line 173
+    check-cast v0, [Ljava/lang/Object;
+
+    .line 174
+    .line 175
+    invoke-static {v0}, Ljava/util/Arrays;->asList([Ljava/lang/Object;)Ljava/util/List;
+
+    .line 176
+    .line 177
+    .line 178
+    move-result-object v0
+
+    .line 179
+    invoke-static {v0}, Ljava/util/Collections;->unmodifiableList(Ljava/util/List;)Ljava/util/List;
+
+    .line 180
+    .line 181
+    .line 182
+    move-result-object v0
+
+    .line 183
+    invoke-virtual {v2, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    .line 184
+    .line 185
+    .line 186
+    const-string v0, ", supportsTlsExtensions="
+
+    .line 187
+    .line 188
+    invoke-virtual {v2, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 189
+    .line 190
+    .line 191
+    iget-boolean v0, p0, Lq7/c;->d:Z
+
+    .line 192
+    .line 193
+    invoke-virtual {v2, v0}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
+
+    .line 194
+    .line 195
+    .line 196
+    const-string v0, ")"
+
+    .line 197
+    .line 198
+    invoke-virtual {v2, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 199
+    .line 200
+    .line 201
+    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    .line 202
+    .line 203
+    .line 204
+    move-result-object v0
+
+    .line 205
+    return-object v0
+
+    .line 206
+    :cond_cd
+    const-string v0, "ConnectionSpec()"
+
+    .line 207
+    .line 208
+    return-object v0
+.end method

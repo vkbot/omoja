@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@android:color/transparent" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <com.woha.atir.SignView android:layout_gravity="center" android:id="@id/signView" android:background="#ffffff" android:layout_width="60.0dp" android:layout_height="60.0dp" />
+    </FrameLayout>
+</RelativeLayout>

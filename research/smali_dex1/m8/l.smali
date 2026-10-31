@@ -1,0 +1,315 @@
+.class public final Lm8/l;
+.super Ljava/util/concurrent/atomic/AtomicReference;
+.source "r8-map-id-94e2637d1b30c6542972a7fc4ced35aa6da258c4e6702fc7c9cbf0ebc32bec75"
+
+# interfaces
+.implements Ljava/util/concurrent/Callable;
+.implements Lz7/a;
+
+
+# static fields
+.field public static final d:Ljava/util/concurrent/FutureTask;
+
+.field public static final e:Ljava/util/concurrent/FutureTask;
+
+
+# instance fields
+.field public final b:Li8/p;
+
+.field public c:Ljava/lang/Thread;
+
+
+# direct methods
+.method static constructor <clinit>()V
+    .registers 3
+
+    .line 1
+    new-instance v0, Ljava/util/concurrent/FutureTask;
+
+    .line 2
+    .line 3
+    sget-object v1, Ld8/b;->b:Lb4/e;
+
+    .line 4
+    .line 5
+    const/4 v2, 0x0
+
+    .line 6
+    invoke-direct {v0, v1, v2}, Ljava/util/concurrent/FutureTask;-><init>(Ljava/lang/Runnable;Ljava/lang/Object;)V
+
+    .line 7
+    .line 8
+    .line 9
+    sput-object v0, Lm8/l;->d:Ljava/util/concurrent/FutureTask;
+
+    .line 10
+    .line 11
+    new-instance v0, Ljava/util/concurrent/FutureTask;
+
+    .line 12
+    .line 13
+    invoke-direct {v0, v1, v2}, Ljava/util/concurrent/FutureTask;-><init>(Ljava/lang/Runnable;Ljava/lang/Object;)V
+
+    .line 14
+    .line 15
+    .line 16
+    sput-object v0, Lm8/l;->e:Ljava/util/concurrent/FutureTask;
+
+    .line 17
+    .line 18
+    return-void
+.end method
+
+.method public constructor <init>(Li8/p;)V
+    .registers 2
+
+    .line 1
+    invoke-direct {p0}, Ljava/util/concurrent/atomic/AtomicReference;-><init>()V
+
+    .line 2
+    .line 3
+    .line 4
+    iput-object p1, p0, Lm8/l;->b:Li8/p;
+
+    .line 5
+    .line 6
+    return-void
+.end method
+
+
+# virtual methods
+.method public final a(Ljava/util/concurrent/Future;)V
+    .registers 4
+
+    .line 1
+    :cond_0
+    invoke-virtual {p0}, Ljava/util/concurrent/atomic/AtomicReference;->get()Ljava/lang/Object;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object v0
+
+    .line 5
+    check-cast v0, Ljava/util/concurrent/Future;
+
+    .line 6
+    .line 7
+    sget-object v1, Lm8/l;->d:Ljava/util/concurrent/FutureTask;
+
+    .line 8
+    .line 9
+    if-ne v0, v1, :cond_b
+
+    .line 10
+    .line 11
+    goto :goto_24
+
+    .line 12
+    :cond_b
+    sget-object v1, Lm8/l;->e:Ljava/util/concurrent/FutureTask;
+
+    .line 13
+    .line 14
+    if-ne v0, v1, :cond_1e
+
+    .line 15
+    .line 16
+    iget-object v0, p0, Lm8/l;->c:Ljava/lang/Thread;
+
+    .line 17
+    .line 18
+    invoke-static {}, Ljava/lang/Thread;->currentThread()Ljava/lang/Thread;
+
+    .line 19
+    .line 20
+    .line 21
+    move-result-object v1
+
+    .line 22
+    if-eq v0, v1, :cond_19
+
+    .line 23
+    .line 24
+    const/4 v0, 0x1
+
+    .line 25
+    goto :goto_1a
+
+    .line 26
+    :cond_19
+    const/4 v0, 0x0
+
+    .line 27
+    :goto_1a
+    invoke-interface {p1, v0}, Ljava/util/concurrent/Future;->cancel(Z)Z
+
+    .line 28
+    .line 29
+    .line 30
+    return-void
+
+    .line 31
+    :cond_1e
+    invoke-virtual {p0, v0, p1}, Ljava/util/concurrent/atomic/AtomicReference;->compareAndSet(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    .line 32
+    .line 33
+    .line 34
+    move-result v0
+
+    .line 35
+    if-eqz v0, :cond_0
+
+    .line 36
+    .line 37
+    :goto_24
+    return-void
+.end method
+
+.method public final call()Ljava/lang/Object;
+    .registers 4
+
+    .line 1
+    sget-object v0, Lm8/l;->d:Ljava/util/concurrent/FutureTask;
+
+    .line 2
+    .line 3
+    invoke-static {}, Ljava/lang/Thread;->currentThread()Ljava/lang/Thread;
+
+    .line 4
+    .line 5
+    .line 6
+    move-result-object v1
+
+    .line 7
+    iput-object v1, p0, Lm8/l;->c:Ljava/lang/Thread;
+
+    .line 8
+    .line 9
+    const/4 v1, 0x0
+
+    .line 10
+    :try_start_9
+    iget-object v2, p0, Lm8/l;->b:Li8/p;
+
+    .line 11
+    .line 12
+    invoke-virtual {v2}, Li8/p;->run()V
+    :try_end_e
+    .catchall {:try_start_9 .. :try_end_e} :catchall_14
+
+    .line 13
+    .line 14
+    .line 15
+    invoke-virtual {p0, v0}, Ljava/util/concurrent/atomic/AtomicReference;->lazySet(Ljava/lang/Object;)V
+
+    .line 16
+    .line 17
+    .line 18
+    iput-object v1, p0, Lm8/l;->c:Ljava/lang/Thread;
+
+    .line 19
+    .line 20
+    return-object v1
+
+    .line 21
+    :catchall_14
+    move-exception v2
+
+    .line 22
+    invoke-virtual {p0, v0}, Ljava/util/concurrent/atomic/AtomicReference;->lazySet(Ljava/lang/Object;)V
+
+    .line 23
+    .line 24
+    .line 25
+    iput-object v1, p0, Lm8/l;->c:Ljava/lang/Thread;
+
+    .line 26
+    .line 27
+    throw v2
+.end method
+
+.method public final dispose()V
+    .registers 4
+
+    .line 1
+    invoke-virtual {p0}, Ljava/util/concurrent/atomic/AtomicReference;->get()Ljava/lang/Object;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object v0
+
+    .line 5
+    check-cast v0, Ljava/util/concurrent/Future;
+
+    .line 6
+    .line 7
+    sget-object v1, Lm8/l;->d:Ljava/util/concurrent/FutureTask;
+
+    .line 8
+    .line 9
+    if-eq v0, v1, :cond_24
+
+    .line 10
+    .line 11
+    sget-object v1, Lm8/l;->e:Ljava/util/concurrent/FutureTask;
+
+    .line 12
+    .line 13
+    if-eq v0, v1, :cond_24
+
+    .line 14
+    .line 15
+    invoke-virtual {p0, v0, v1}, Ljava/util/concurrent/atomic/AtomicReference;->compareAndSet(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    .line 16
+    .line 17
+    .line 18
+    move-result v1
+
+    .line 19
+    if-eqz v1, :cond_24
+
+    .line 20
+    .line 21
+    if-eqz v0, :cond_24
+
+    .line 22
+    .line 23
+    iget-object v1, p0, Lm8/l;->c:Ljava/lang/Thread;
+
+    .line 24
+    .line 25
+    invoke-static {}, Ljava/lang/Thread;->currentThread()Ljava/lang/Thread;
+
+    .line 26
+    .line 27
+    .line 28
+    move-result-object v2
+
+    .line 29
+    if-eq v1, v2, :cond_20
+
+    .line 30
+    .line 31
+    const/4 v1, 0x1
+
+    .line 32
+    goto :goto_21
+
+    .line 33
+    :cond_20
+    const/4 v1, 0x0
+
+    .line 34
+    :goto_21
+    invoke-interface {v0, v1}, Ljava/util/concurrent/Future;->cancel(Z)Z
+
+    .line 35
+    .line 36
+    .line 37
+    :cond_24
+    return-void
+.end method

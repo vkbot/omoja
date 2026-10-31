@@ -1,0 +1,40 @@
+package androidx.core.location;
+
+import android.location.GnssMeasurementsEvent;
+import android.location.GnssStatus;
+import java.util.concurrent.Executor;
+
+/* JADX INFO: compiled from: r8-map-id-94e2637d1b30c6542972a7fc4ced35aa6da258c4e6702fc7c9cbf0ebc32bec75 */
+/* JADX INFO: loaded from: F:\omo\research\apk_contents\classes.dex */
+public final /* synthetic */ class e implements Runnable {
+
+    /* JADX INFO: renamed from: b, reason: collision with root package name */
+    public final /* synthetic */ int f143b;
+    public final /* synthetic */ Executor c;
+    public final /* synthetic */ Object d;
+    public final /* synthetic */ Object e;
+
+    /* JADX DEBUG: Don't trust debug lines info. Lines numbers was adjusted: min line is 1 */
+    public /* synthetic */ e(Object obj, Executor executor, Object obj2, int i9) {
+        this.f143b = i9;
+        this.d = obj;
+        this.c = executor;
+        this.e = obj2;
+    }
+
+    /* JADX DEBUG: Don't trust debug lines info. Lines numbers was adjusted: min line is 1 */
+    @Override // java.lang.Runnable
+    public final void run() {
+        switch (this.f143b) {
+            case 0:
+                LocationManagerCompat$GnssMeasurementsTransport.a((LocationManagerCompat$GnssMeasurementsTransport) this.d, this.c, (GnssMeasurementsEvent) this.e);
+                break;
+            case 1:
+                LocationManagerCompat$GpsStatusTransport.d((LocationManagerCompat$GpsStatusTransport) this.d, this.c, (GnssStatusCompat) this.e);
+                break;
+            default:
+                LocationManagerCompat$PreRGnssStatusTransport.d((LocationManagerCompat$PreRGnssStatusTransport) this.d, this.c, (GnssStatus) this.e);
+                break;
+        }
+    }
+}

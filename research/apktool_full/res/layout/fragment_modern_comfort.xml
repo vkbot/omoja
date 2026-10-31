@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:padding="24.0dp" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="match_parent" android:fillViewport="true"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.example.navistart.mainview.MainView android:id="@id/main_auto_vod" app:prefsCenterLabelView="@string/item_vod" app:prefsStyle="1" app:widgetLayout="@layout/main_auto_vod" style="@style/ModernMainCard" />
+        <com.example.navistart.mainview.MainView android:id="@id/main_auto_heat" app:prefsCenterLabelView="@string/item_car" app:prefsStyle="1" app:widgetLayout="@layout/main_auto_heat" style="@style/ModernMainCard" />
+    </LinearLayout>
+</ScrollView>

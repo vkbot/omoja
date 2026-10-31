@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.cardview.widget.CardView android:layout_width="match_parent" android:layout_height="match_parent">
+        <TextView android:textColor="@color/headerText" android:gravity="center" android:id="@id/MainLabel" android:background="@color/header" android:paddingBottom="2.0dp" android:layout_width="match_parent" android:layout_height="36.0sp" android:layout_marginTop="0.0dp" android:shadowColor="@color/headerTextShadowColor" android:shadowDx="0.0" android:shadowDy="0.0" android:shadowRadius="5.0" app:autoSizeTextType="uniform" />
+        <LinearLayout android:background="@drawable/border" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:background="@color/FlexboxLayout_MainView" android:padding="10.0dp" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="40.0dp">
+                <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <androidx.cardview.widget.CardView android:layout_width="@dimen/layout_height_constant" android:layout_height="@dimen/layout_height_constant" android:layout_marginEnd="8.0dp" app:cardCornerRadius="20.0dp" app:cardElevation="4.0dp">
+                        <ImageView android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/app_to_gu" />
+                    </androidx.cardview.widget.CardView>
+                    <FrameLayout android:background="@drawable/border_spinner" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                        <Spinner android:textSize="20.0sp" android:gravity="center" android:id="@id/spinner_auto_start_gu" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="5.0dp" android:minHeight="@dimen/layout_height_constant" android:popupBackground="@color/dropDownsBackground" />
+                        <ImageView android:layout_gravity="end|center" android:layout_width="40.0dp" android:layout_height="@dimen/layout_height_constant" android:src="@mipmap/drop" android:layout_marginEnd="8.0dp" />
+                    </FrameLayout>
+                </LinearLayout>
+                <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <androidx.cardview.widget.CardView android:layout_width="@dimen/layout_height_constant" android:layout_height="@dimen/layout_height_constant" android:layout_marginEnd="8.0dp" app:cardCornerRadius="20.0dp" app:cardElevation="4.0dp">
+                        <ImageView android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/go_tu_gu" />
+                    </androidx.cardview.widget.CardView>
+                    <com.google.android.material.materialswitch.MaterialSwitch android:textSize="20.0sp" android:textColor="@color/black" android:id="@id/sw_auto_start_app_gu" android:layout_width="wrap_content" android:layout_height="@dimen/layout_height_constant" android:maxWidth="500.0dp" android:text="@string/sw_boot_gu" android:layoutDirection="rtl" android:layout_marginStart="8.0dp" android:layout_marginEnd="8.0dp" />
+                </LinearLayout>
+                <com.google.android.material.card.MaterialCardView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dp" android:layout_marginBottom="12.0dp" app:cardBackgroundColor="#f2f7fb" app:cardCornerRadius="18.0dp" app:cardElevation="2.0dp" app:strokeColor="@color/header" app:strokeWidth="1.0dp">
+                    <LinearLayout android:orientation="vertical" android:padding="12.0dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <TextView android:textSize="18.0sp" android:textStyle="bold" android:textColor="@color/header1" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="6.0dp" android:text="@string/launcher_settings_group_title" />
+                        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                            <androidx.cardview.widget.CardView android:layout_width="@dimen/layout_height_constant" android:layout_height="@dimen/layout_height_constant" android:layout_marginEnd="8.0dp" app:cardCornerRadius="20.0dp" app:cardElevation="4.0dp">
+                                <ImageView android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/ic_web_launcher" android:scaleType="fitCenter" android:contentDescription="@string/launcher_enable" />
+                            </androidx.cardview.widget.CardView>
+                            <com.google.android.material.materialswitch.MaterialSwitch android:textSize="20.0sp" android:textColor="@color/black" android:gravity="start|center" android:id="@id/sw_enable_web_launcher" android:layout_width="0.0dp" android:layout_height="@dimen/layout_height_constant" android:text="@string/launcher_enable" android:layout_weight="1.0" android:layoutDirection="rtl" android:layout_marginStart="8.0dp" android:layout_marginEnd="8.0dp" />
+                            <com.google.android.material.button.MaterialButton android:id="@id/button_start_web_launcher" android:layout_width="wrap_content" android:layout_height="@dimen/layout_height_constant" android:minWidth="0.0dp" android:text="@string/launcher_start" android:textAllCaps="false" app:cornerRadius="16.0dp" app:icon="@drawable/ic_web_launcher_symbol" app:iconGravity="textStart" app:iconPadding="6.0dp" style="@style/Widget.MaterialComponents.Button.Icon" />
+                        </LinearLayout>
+                        <com.google.android.material.button.MaterialButton android:id="@id/button_make_default_web_launcher" android:layout_width="match_parent" android:layout_height="@dimen/layout_height_constant" android:layout_marginTop="6.0dp" android:text="@string/launcher_make_default" android:textAllCaps="false" android:layout_marginStart="64.0dp" app:cornerRadius="16.0dp" app:icon="@drawable/ic_web_launcher_symbol" app:iconGravity="textStart" app:iconPadding="8.0dp" style="@style/Widget.MaterialComponents.Button.OutlinedButton.Icon" />
+                        <com.google.android.material.materialswitch.MaterialSwitch android:textSize="20.0sp" android:textColor="@color/black" android:gravity="start|center" android:id="@id/sw_auto_start_web_launcher" android:layout_width="match_parent" android:layout_height="@dimen/layout_height_constant" android:layout_marginTop="6.0dp" android:text="@string/launcher_auto_start" android:layoutDirection="rtl" android:layout_marginStart="64.0dp" android:layout_marginEnd="8.0dp" />
+                    </LinearLayout>
+                </com.google.android.material.card.MaterialCardView>
+                <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <androidx.cardview.widget.CardView android:layout_width="@dimen/layout_height_constant" android:layout_height="@dimen/layout_height_constant" android:layout_marginEnd="8.0dp" app:cardCornerRadius="20.0dp" app:cardElevation="4.0dp">
+                        <ImageView android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/run_black" />
+                    </androidx.cardview.widget.CardView>
+                    <com.google.android.material.materialswitch.MaterialSwitch android:textSize="20.0sp" android:textColor="@color/black" android:gravity="start|center" android:layout_gravity="fill_vertical" android:id="@id/sw_auto_start_black" android:layout_width="wrap_content" android:layout_height="@dimen/layout_height_constant" android:maxWidth="500.0dp" android:text="@string/sw_boot_gu_black" android:layout_weight="1.0" android:layoutDirection="rtl" android:layout_marginStart="8.0dp" android:layout_marginEnd="8.0dp" />
+                    <Button android:id="@id/button_start_black_Settins" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/b_settings" android:layout_weight="1.0" />
+                </LinearLayout>
+                <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <androidx.cardview.widget.CardView android:layout_width="@dimen/layout_height_constant" android:layout_height="@dimen/layout_height_constant" android:layout_marginEnd="8.0dp" app:cardCornerRadius="20.0dp" app:cardElevation="4.0dp">
+                        <ImageView android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/clipboard" />
+                    </androidx.cardview.widget.CardView>
+                    <com.google.android.material.materialswitch.MaterialSwitch android:textSize="20.0sp" android:textColor="@color/black" android:gravity="start|center" android:layout_gravity="fill_vertical" android:id="@id/sw_run_app_more" android:layout_width="wrap_content" android:layout_height="@dimen/layout_height_constant" android:maxWidth="500.0dp" android:text="@string/sw_run_app_more" android:layout_weight="1.0" android:layoutDirection="rtl" android:layout_marginStart="8.0dp" android:layout_marginEnd="8.0dp" />
+                    <Button android:id="@id/button_run_app_more_Settins" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/b_settings" android:layout_weight="1.0" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</merge>

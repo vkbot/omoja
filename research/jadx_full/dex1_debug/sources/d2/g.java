@@ -1,0 +1,37 @@
+package d2;
+
+import java.util.Collections;
+import java.util.HashMap;
+
+/* JADX INFO: compiled from: r8-map-id-94e2637d1b30c6542972a7fc4ced35aa6da258c4e6702fc7c9cbf0ebc32bec75 */
+/* JADX INFO: loaded from: F:\omo\research\apk_contents\classes.dex */
+public final class g implements x4.d {
+
+    /* JADX INFO: renamed from: a, reason: collision with root package name */
+    public static final g f1675a = new g();
+
+    /* JADX INFO: renamed from: b, reason: collision with root package name */
+    public static final x4.c f1676b;
+    public static final x4.c c;
+
+    /* JADX DEBUG: Don't trust debug lines info. Lines numbers was adjusted: min line is 1 */
+    static {
+        a5.a aVar = new a5.a(1);
+        HashMap map = new HashMap();
+        map.put(a5.d.class, aVar);
+        f1676b = new x4.c("startMs", Collections.unmodifiableMap(new HashMap(map)));
+        a5.a aVar2 = new a5.a(2);
+        HashMap map2 = new HashMap();
+        map2.put(a5.d.class, aVar2);
+        c = new x4.c("endMs", Collections.unmodifiableMap(new HashMap(map2)));
+    }
+
+    /* JADX DEBUG: Don't trust debug lines info. Lines numbers was adjusted: min line is 1 */
+    @Override // x4.a
+    public final void a(Object obj, Object obj2) {
+        g2.g gVar = (g2.g) obj;
+        x4.e eVar = (x4.e) obj2;
+        eVar.a(f1676b, gVar.f2355a);
+        eVar.a(c, gVar.f2356b);
+    }
+}

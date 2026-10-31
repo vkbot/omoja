@@ -1,0 +1,209 @@
+.class public final Li9/y0;
+.super Ljava/lang/Object;
+.source "r8-map-id-94e2637d1b30c6542972a7fc4ced35aa6da258c4e6702fc7c9cbf0ebc32bec75"
+
+# interfaces
+.implements Lg9/e;
+
+
+# static fields
+.field public static final a:Li9/y0;
+
+
+# direct methods
+.method static constructor <clinit>()V
+    .registers 1
+
+    .line 1
+    new-instance v0, Li9/y0;
+
+    .line 2
+    .line 3
+    invoke-direct {v0}, Ljava/lang/Object;-><init>()V
+
+    .line 4
+    .line 5
+    .line 6
+    sput-object v0, Li9/y0;->a:Li9/y0;
+
+    .line 7
+    .line 8
+    return-void
+.end method
+
+
+# virtual methods
+.method public final a()Ljava/lang/String;
+    .registers 2
+
+    .line 1
+    const-string v0, "kotlin.Nothing"
+
+    .line 2
+    .line 3
+    return-object v0
+.end method
+
+.method public final c()Z
+    .registers 2
+
+    .line 1
+    const/4 v0, 0x0
+
+    .line 2
+    return v0
+.end method
+
+.method public final d()I
+    .registers 2
+
+    .line 1
+    const/4 v0, 0x0
+
+    .line 2
+    return v0
+.end method
+
+.method public final e(I)Ljava/lang/String;
+    .registers 3
+
+    .line 1
+    new-instance p1, Ljava/lang/IllegalStateException;
+
+    .line 2
+    .line 3
+    const-string v0, "Descriptor for type `kotlin.Nothing` does not have elements"
+
+    .line 4
+    .line 5
+    invoke-direct {p1, v0}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
+
+    .line 6
+    .line 7
+    .line 8
+    throw p1
+.end method
+
+.method public final equals(Ljava/lang/Object;)Z
+    .registers 2
+
+    .line 1
+    if-ne p0, p1, :cond_4
+
+    .line 2
+    .line 3
+    const/4 p1, 0x1
+
+    .line 4
+    return p1
+
+    .line 5
+    :cond_4
+    const/4 p1, 0x0
+
+    .line 6
+    return p1
+.end method
+
+.method public final f(I)Lg9/e;
+    .registers 3
+
+    .line 1
+    new-instance p1, Ljava/lang/IllegalStateException;
+
+    .line 2
+    .line 3
+    const-string v0, "Descriptor for type `kotlin.Nothing` does not have elements"
+
+    .line 4
+    .line 5
+    invoke-direct {p1, v0}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
+
+    .line 6
+    .line 7
+    .line 8
+    throw p1
+.end method
+
+.method public final g(I)Z
+    .registers 3
+
+    .line 1
+    new-instance p1, Ljava/lang/IllegalStateException;
+
+    .line 2
+    .line 3
+    const-string v0, "Descriptor for type `kotlin.Nothing` does not have elements"
+
+    .line 4
+    .line 5
+    invoke-direct {p1, v0}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
+
+    .line 6
+    .line 7
+    .line 8
+    throw p1
+.end method
+
+.method public final getKind()Lcom/bumptech/glide/d;
+    .registers 2
+
+    .line 1
+    sget-object v0, Lg9/j;->g:Lg9/j;
+
+    .line 2
+    .line 3
+    return-object v0
+.end method
+
+.method public final hashCode()I
+    .registers 3
+
+    .line 1
+    sget-object v0, Lg9/j;->g:Lg9/j;
+
+    .line 2
+    .line 3
+    invoke-virtual {v0}, Lcom/bumptech/glide/d;->hashCode()I
+
+    .line 4
+    .line 5
+    .line 6
+    move-result v0
+
+    .line 7
+    mul-int/lit8 v0, v0, 0x1f
+
+    .line 8
+    .line 9
+    const v1, -0x6c61e840
+
+    .line 10
+    .line 11
+    .line 12
+    add-int/2addr v0, v1
+
+    .line 13
+    return v0
+.end method
+
+.method public final isInline()Z
+    .registers 2
+
+    .line 1
+    const/4 v0, 0x0
+
+    .line 2
+    return v0
+.end method
+
+.method public final toString()Ljava/lang/String;
+    .registers 2
+
+    .line 1
+    const-string v0, "NothingSerialDescriptor"
+
+    .line 2
+    .line 3
+    return-object v0
+.end method

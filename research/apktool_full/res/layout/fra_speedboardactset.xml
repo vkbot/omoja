@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:padding="24.0dp" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <Switch android:textSize="20.0sp" android:id="@id/switch23" android:layout_width="match_parent" android:layout_height="@dimen/layout_height_constant" android:text="@string/poluchat_dan_gps" />
+    <LinearLayout android:orientation="vertical" android:padding="16.0dp" android:layout_width="match_parent" android:layout_height="match_parent">
+        <TextView android:textSize="18.0sp" android:textStyle="bold" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/b_vibrat_pp" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12.0dp">
+            <Spinner android:id="@id/spinnerWidgets" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_weight="1.0" android:spinnerMode="dialog" />
+            <ImageButton android:id="@id/btnDeleteWidget" android:background="@drawable/modern_button_primary" android:padding="12.0dp" android:layout_width="48.0dp" android:layout_height="48.0dp" android:src="@drawable/ic_delete" android:scaleType="centerInside" android:contentDescription="@string/delete_custom_widget" android:layout_marginStart="12.0dp" />
+        </LinearLayout>
+        <LinearLayout android:layout_gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="16.0dp">
+            <Button android:layout_gravity="center" android:id="@id/btnUploadZip" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/b_zagruzit_pp" android:layout_weight="1.0" />
+            <com.example.navistart.mainview.DownloadButton android:layout_gravity="center" android:id="@id/btnUploadStore" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1.0" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

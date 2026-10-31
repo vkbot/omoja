@@ -1,0 +1,450 @@
+.class public final Lo7/p1;
+.super Ljava/lang/Object;
+.source "r8-map-id-94e2637d1b30c6542972a7fc4ced35aa6da258c4e6702fc7c9cbf0ebc32bec75"
+
+
+# instance fields
+.field public final a:Ljava/util/concurrent/ScheduledExecutorService;
+
+.field public final b:Li4/f;
+
+.field public final c:Ln/p;
+
+.field public d:I
+
+.field public e:Ljava/util/concurrent/ScheduledFuture;
+
+.field public f:Ljava/util/concurrent/ScheduledFuture;
+
+.field public final g:Lo7/q1;
+
+.field public final h:Lo7/q1;
+
+.field public final i:J
+
+.field public final j:J
+
+
+# direct methods
+.method public constructor <init>(Ln/p;Ljava/util/concurrent/ScheduledExecutorService;JJ)V
+    .registers 11
+
+    .line 1
+    new-instance v0, Li4/f;
+
+    .line 2
+    .line 3
+    invoke-direct {v0}, Ljava/lang/Object;-><init>()V
+
+    .line 4
+    .line 5
+    .line 6
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 7
+    .line 8
+    .line 9
+    const/4 v1, 0x1
+
+    .line 10
+    iput v1, p0, Lo7/p1;->d:I
+
+    .line 11
+    .line 12
+    new-instance v1, Lo7/q1;
+
+    .line 13
+    .line 14
+    new-instance v2, Lo7/n1;
+
+    .line 15
+    .line 16
+    const/4 v3, 0x0
+
+    .line 17
+    invoke-direct {v2, p0, v3}, Lo7/n1;-><init>(Lo7/p1;I)V
+
+    .line 18
+    .line 19
+    .line 20
+    invoke-direct {v1, v2}, Lo7/q1;-><init>(Ljava/lang/Runnable;)V
+
+    .line 21
+    .line 22
+    .line 23
+    iput-object v1, p0, Lo7/p1;->g:Lo7/q1;
+
+    .line 24
+    .line 25
+    new-instance v1, Lo7/q1;
+
+    .line 26
+    .line 27
+    new-instance v2, Lo7/n1;
+
+    .line 28
+    .line 29
+    const/4 v3, 0x1
+
+    .line 30
+    invoke-direct {v2, p0, v3}, Lo7/n1;-><init>(Lo7/p1;I)V
+
+    .line 31
+    .line 32
+    .line 33
+    invoke-direct {v1, v2}, Lo7/q1;-><init>(Ljava/lang/Runnable;)V
+
+    .line 34
+    .line 35
+    .line 36
+    iput-object v1, p0, Lo7/p1;->h:Lo7/q1;
+
+    .line 37
+    .line 38
+    iput-object p1, p0, Lo7/p1;->c:Ln/p;
+
+    .line 39
+    .line 40
+    const-string p1, "scheduler"
+
+    .line 41
+    .line 42
+    invoke-static {p2, p1}, Lo4/b;->i(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 43
+    .line 44
+    .line 45
+    iput-object p2, p0, Lo7/p1;->a:Ljava/util/concurrent/ScheduledExecutorService;
+
+    .line 46
+    .line 47
+    iput-object v0, p0, Lo7/p1;->b:Li4/f;
+
+    .line 48
+    .line 49
+    iput-wide p3, p0, Lo7/p1;->i:J
+
+    .line 50
+    .line 51
+    iput-wide p5, p0, Lo7/p1;->j:J
+
+    .line 52
+    .line 53
+    const/4 p1, 0x0
+
+    .line 54
+    iput-boolean p1, v0, Li4/f;->a:Z
+
+    .line 55
+    .line 56
+    invoke-virtual {v0}, Li4/f;->b()V
+
+    .line 57
+    .line 58
+    .line 59
+    return-void
+.end method
+
+
+# virtual methods
+.method public final declared-synchronized a()V
+    .registers 6
+
+    .line 1
+    monitor-enter p0
+
+    .line 2
+    :try_start_1
+    iget-object v0, p0, Lo7/p1;->b:Li4/f;
+
+    .line 3
+    .line 4
+    const/4 v1, 0x0
+
+    .line 5
+    iput-boolean v1, v0, Li4/f;->a:Z
+
+    .line 6
+    .line 7
+    invoke-virtual {v0}, Li4/f;->b()V
+
+    .line 8
+    .line 9
+    .line 10
+    iget v0, p0, Lo7/p1;->d:I
+
+    .line 11
+    .line 12
+    const/4 v2, 0x2
+
+    .line 13
+    if-ne v0, v2, :cond_14
+
+    .line 14
+    .line 15
+    const/4 v0, 0x3
+
+    .line 16
+    iput v0, p0, Lo7/p1;->d:I
+
+    .line 17
+    .line 18
+    goto :goto_44
+
+    .line 19
+    :catchall_12
+    move-exception v0
+
+    .line 20
+    goto :goto_46
+
+    .line 21
+    :cond_14
+    const/4 v3, 0x4
+
+    .line 22
+    const/4 v4, 0x5
+
+    .line 23
+    if-eq v0, v3, :cond_1a
+
+    .line 24
+    .line 25
+    if-ne v0, v4, :cond_44
+
+    .line 26
+    .line 27
+    :cond_1a
+    iget-object v0, p0, Lo7/p1;->e:Ljava/util/concurrent/ScheduledFuture;
+
+    .line 28
+    .line 29
+    if-eqz v0, :cond_21
+
+    .line 30
+    .line 31
+    invoke-interface {v0, v1}, Ljava/util/concurrent/Future;->cancel(Z)Z
+
+    .line 32
+    .line 33
+    .line 34
+    :cond_21
+    iget v0, p0, Lo7/p1;->d:I
+
+    .line 35
+    .line 36
+    const/4 v3, 0x1
+
+    .line 37
+    if-ne v0, v4, :cond_2a
+
+    .line 38
+    .line 39
+    iput v3, p0, Lo7/p1;->d:I
+    :try_end_28
+    .catchall {:try_start_1 .. :try_end_28} :catchall_12
+
+    .line 40
+    .line 41
+    monitor-exit p0
+
+    .line 42
+    return-void
+
+    .line 43
+    :cond_2a
+    :try_start_2a
+    iput v2, p0, Lo7/p1;->d:I
+
+    .line 44
+    .line 45
+    iget-object v0, p0, Lo7/p1;->f:Ljava/util/concurrent/ScheduledFuture;
+
+    .line 46
+    .line 47
+    if-nez v0, :cond_31
+
+    .line 48
+    .line 49
+    move v1, v3
+
+    .line 50
+    :cond_31
+    const-string v0, "There should be no outstanding pingFuture"
+
+    .line 51
+    .line 52
+    invoke-static {v1, v0}, Lo4/b;->m(ZLjava/lang/String;)V
+
+    .line 53
+    .line 54
+    .line 55
+    iget-object v0, p0, Lo7/p1;->a:Ljava/util/concurrent/ScheduledExecutorService;
+
+    .line 56
+    .line 57
+    iget-object v1, p0, Lo7/p1;->h:Lo7/q1;
+
+    .line 58
+    .line 59
+    iget-wide v2, p0, Lo7/p1;->i:J
+
+    .line 60
+    .line 61
+    sget-object v4, Ljava/util/concurrent/TimeUnit;->NANOSECONDS:Ljava/util/concurrent/TimeUnit;
+
+    .line 62
+    .line 63
+    invoke-interface {v0, v1, v2, v3, v4}, Ljava/util/concurrent/ScheduledExecutorService;->schedule(Ljava/lang/Runnable;JLjava/util/concurrent/TimeUnit;)Ljava/util/concurrent/ScheduledFuture;
+
+    .line 64
+    .line 65
+    .line 66
+    move-result-object v0
+
+    .line 67
+    iput-object v0, p0, Lo7/p1;->f:Ljava/util/concurrent/ScheduledFuture;
+    :try_end_44
+    .catchall {:try_start_2a .. :try_end_44} :catchall_12
+
+    .line 68
+    .line 69
+    :cond_44
+    :goto_44
+    monitor-exit p0
+
+    .line 70
+    return-void
+
+    .line 71
+    :goto_46
+    :try_start_46
+    monitor-exit p0
+    :try_end_47
+    .catchall {:try_start_46 .. :try_end_47} :catchall_12
+
+    .line 72
+    throw v0
+.end method
+
+.method public final declared-synchronized b()V
+    .registers 9
+
+    .line 1
+    monitor-enter p0
+
+    .line 2
+    :try_start_1
+    iget v0, p0, Lo7/p1;->d:I
+
+    .line 3
+    .line 4
+    const/4 v1, 0x1
+
+    .line 5
+    if-ne v0, v1, :cond_25
+
+    .line 6
+    .line 7
+    const/4 v0, 0x2
+
+    .line 8
+    iput v0, p0, Lo7/p1;->d:I
+
+    .line 9
+    .line 10
+    iget-object v0, p0, Lo7/p1;->f:Ljava/util/concurrent/ScheduledFuture;
+
+    .line 11
+    .line 12
+    if-nez v0, :cond_2b
+
+    .line 13
+    .line 14
+    iget-object v0, p0, Lo7/p1;->a:Ljava/util/concurrent/ScheduledExecutorService;
+
+    .line 15
+    .line 16
+    iget-object v1, p0, Lo7/p1;->h:Lo7/q1;
+
+    .line 17
+    .line 18
+    iget-wide v2, p0, Lo7/p1;->i:J
+
+    .line 19
+    .line 20
+    iget-object v4, p0, Lo7/p1;->b:Li4/f;
+
+    .line 21
+    .line 22
+    sget-object v5, Ljava/util/concurrent/TimeUnit;->NANOSECONDS:Ljava/util/concurrent/TimeUnit;
+
+    .line 23
+    .line 24
+    invoke-virtual {v4}, Li4/f;->a()J
+
+    .line 25
+    .line 26
+    .line 27
+    move-result-wide v6
+
+    .line 28
+    sub-long/2addr v2, v6
+
+    .line 29
+    invoke-interface {v0, v1, v2, v3, v5}, Ljava/util/concurrent/ScheduledExecutorService;->schedule(Ljava/lang/Runnable;JLjava/util/concurrent/TimeUnit;)Ljava/util/concurrent/ScheduledFuture;
+
+    .line 30
+    .line 31
+    .line 32
+    move-result-object v0
+
+    .line 33
+    iput-object v0, p0, Lo7/p1;->f:Ljava/util/concurrent/ScheduledFuture;
+
+    .line 34
+    .line 35
+    goto :goto_2b
+
+    .line 36
+    :catchall_23
+    move-exception v0
+
+    .line 37
+    goto :goto_2d
+
+    .line 38
+    :cond_25
+    const/4 v1, 0x5
+
+    .line 39
+    if-ne v0, v1, :cond_2b
+
+    .line 40
+    .line 41
+    const/4 v0, 0x4
+
+    .line 42
+    iput v0, p0, Lo7/p1;->d:I
+    :try_end_2b
+    .catchall {:try_start_1 .. :try_end_2b} :catchall_23
+
+    .line 43
+    .line 44
+    :cond_2b
+    :goto_2b
+    monitor-exit p0
+
+    .line 45
+    return-void
+
+    .line 46
+    :goto_2d
+    :try_start_2d
+    monitor-exit p0
+    :try_end_2e
+    .catchall {:try_start_2d .. :try_end_2e} :catchall_23
+
+    .line 47
+    throw v0
+.end method

@@ -1,0 +1,79 @@
+.class Lcom/sun/jna/Structure$AutoAllocated;
+.super Lcom/sun/jna/Memory;
+.source "r8-map-id-94e2637d1b30c6542972a7fc4ced35aa6da258c4e6702fc7c9cbf0ebc32bec75"
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lcom/sun/jna/Structure;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x9
+    name = "AutoAllocated"
+.end annotation
+
+
+# direct methods
+.method public constructor <init>(I)V
+    .registers 4
+
+    .line 1
+    int-to-long v0, p1
+
+    .line 2
+    invoke-direct {p0, v0, v1}, Lcom/sun/jna/Memory;-><init>(J)V
+
+    .line 3
+    .line 4
+    .line 5
+    invoke-super {p0}, Lcom/sun/jna/Memory;->clear()V
+
+    .line 6
+    .line 7
+    .line 8
+    return-void
+.end method
+
+
+# virtual methods
+.method public toString()Ljava/lang/String;
+    .registers 3
+
+    .line 1
+    new-instance v0, Ljava/lang/StringBuilder;
+
+    .line 2
+    .line 3
+    const-string v1, "auto-"
+
+    .line 4
+    .line 5
+    invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+
+    .line 6
+    .line 7
+    .line 8
+    invoke-super {p0}, Lcom/sun/jna/Memory;->toString()Ljava/lang/String;
+
+    .line 9
+    .line 10
+    .line 11
+    move-result-object v1
+
+    .line 12
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 13
+    .line 14
+    .line 15
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    .line 16
+    .line 17
+    .line 18
+    move-result-object v0
+
+    .line 19
+    return-object v0
+.end method

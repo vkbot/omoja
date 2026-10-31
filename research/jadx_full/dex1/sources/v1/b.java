@@ -1,0 +1,34 @@
+package v1;
+
+import android.app.Application;
+import androidx.annotation.NonNull;
+import androidx.lifecycle.AndroidViewModel;
+import androidx.lifecycle.MutableLiveData;
+
+/* JADX INFO: compiled from: r8-map-id-94e2637d1b30c6542972a7fc4ced35aa6da258c4e6702fc7c9cbf0ebc32bec75 */
+/* JADX INFO: loaded from: F:\omo\research\apk_contents\classes.dex */
+public class b extends AndroidViewModel {
+
+    /* JADX INFO: renamed from: a, reason: collision with root package name */
+    public final MutableLiveData f5509a;
+
+    /* JADX INFO: renamed from: b, reason: collision with root package name */
+    public final MutableLiveData f5510b;
+
+    /* JADX DEBUG: Don't trust debug lines info. Lines numbers was adjusted: min line is 1 */
+    public b(@NonNull Application application) {
+        super(application);
+        this.f5509a = new MutableLiveData(Boolean.FALSE);
+        this.f5510b = new MutableLiveData(null);
+    }
+
+    /* JADX DEBUG: Don't trust debug lines info. Lines numbers was adjusted: min line is 1 */
+    public final MutableLiveData a() {
+        return this.f5510b;
+    }
+
+    /* JADX DEBUG: Don't trust debug lines info. Lines numbers was adjusted: min line is 1 */
+    public final MutableLiveData b() {
+        return this.f5509a;
+    }
+}

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/back_Frame_speedBoard" android:background="#e0e0e0" android:padding="16.0dp" android:layout_width="match_parent" android:layout_height="match_parent" android:layoutDirection="ltr"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="match_parent">
+        <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="8.0dp">
+            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+                <RelativeLayout android:layout_gravity="center" android:id="@id/speedLimitBlock" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="0.0dp">
+                    <ImageView android:id="@id/speedSignImage" android:layout_width="110.0dp" android:layout_height="110.0dp" android:src="@drawable/ic_speed_sign" android:contentDescription="@string/speed_sign_image_desc" />
+                    <TextView android:textSize="35.0sp" android:textStyle="bold" android:textColor="@android:color/black" android:id="@id/speedLimitText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:layout_centerInParent="true" />
+                </RelativeLayout>
+                <ImageView android:id="@id/man_img_view" android:background="#30000000" android:visibility="invisible" android:layout_width="110.0dp" android:layout_height="110.0dp" app:srcCompat="@drawable/notification_left_sdl" />
+                <TextView android:textSize="35.0sp" android:textStyle="bold" android:textColor="@color/white" android:layout_gravity="center" android:id="@id/rast_man" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" />
+                <TextView android:textSize="35.0sp" android:textStyle="bold" android:textColor="@color/white" android:layout_gravity="center" android:id="@id/rast_finish" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" />
+            </LinearLayout>
+        </FrameLayout>
+        <RelativeLayout android:layout_gravity="center" android:id="@id/relativeLayout32" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <com.github.anastr.speedviewlib.ImageSpeedometer android:id="@id/imageSpeedometer" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_centerInParent="true" app:sv_backgroundCircleColor="#000" app:sv_endDegree="396" app:sv_image="@drawable/my_speed_bg11" app:sv_indicator="NeedleIndicator" app:sv_indicatorColor="#d51212" app:sv_indicatorWidth="15.0dp" app:sv_markHeight="1.0dp" app:sv_maxSpeed="220.0" app:sv_speedTextColor="@android:color/transparent" app:sv_speedometerWidth="20.0dp" app:sv_startDegree="132" app:sv_trembleDuration="30" app:sv_unit="" app:sv_withTremble="false" sv_indicatorLightColor="#f44336" />
+        </RelativeLayout>
+        <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dp">
+            <LinearLayout android:layout_gravity="center" android:orientation="horizontal" android:id="@id/viewWeatherBlock" android:background="@drawable/rounded_background" android:padding="3.0dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <TextView android:textSize="26.0dp" android:textColor="#d7d3d3" android:layout_gravity="center" android:id="@id/textViewWeather" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="3.0dp" android:text="--" android:layout_weight="1.0" android:fontFamily="@font/dudkabold" />
+                <ImageView android:layout_gravity="center" android:id="@id/imageViewWeather" android:layout_width="50.0dp" android:layout_height="50.0dp" android:layout_weight="1.0" app:srcCompat="@drawable/unknown" />
+            </LinearLayout>
+            <FrameLayout android:id="@id/CamAlarm" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+                    <ImageView android:layout_gravity="center" android:id="@id/cameraImage" android:layout_width="110.0dp" android:layout_height="110.0dp" android:src="@drawable/camera_alarm_show" android:contentDescription="@string/camera_image_desc" />
+                    <RelativeLayout android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="0.0dp">
+                        <ImageView android:id="@id/CamspeedSignImage" android:layout_width="110.0dp" android:layout_height="110.0dp" android:src="@drawable/ic_speed_sign" android:contentDescription="@string/speed_sign_image_desc" />
+                        <TextView android:textSize="35.0sp" android:textStyle="bold" android:textColor="@android:color/black" android:id="@id/CamspeedLimitText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:layout_centerInParent="true" />
+                    </RelativeLayout>
+                    <TextView android:textSize="35.0sp" android:textStyle="bold" android:textColor="@color/white" android:layout_gravity="center" android:id="@id/cameraDis" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" />
+                </LinearLayout>
+            </FrameLayout>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

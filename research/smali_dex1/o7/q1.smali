@@ -1,0 +1,217 @@
+.class public final Lo7/q1;
+.super Ljava/lang/Object;
+.source "r8-map-id-94e2637d1b30c6542972a7fc4ced35aa6da258c4e6702fc7c9cbf0ebc32bec75"
+
+# interfaces
+.implements Ljava/lang/Runnable;
+
+
+# static fields
+.field public static final c:Ljava/util/logging/Logger;
+
+
+# instance fields
+.field public final b:Ljava/lang/Runnable;
+
+
+# direct methods
+.method static constructor <clinit>()V
+    .registers 1
+
+    .line 1
+    const-class v0, Lo7/q1;
+
+    .line 2
+    .line 3
+    invoke-virtual {v0}, Ljava/lang/Class;->getName()Ljava/lang/String;
+
+    .line 4
+    .line 5
+    .line 6
+    move-result-object v0
+
+    .line 7
+    invoke-static {v0}, Ljava/util/logging/Logger;->getLogger(Ljava/lang/String;)Ljava/util/logging/Logger;
+
+    .line 8
+    .line 9
+    .line 10
+    move-result-object v0
+
+    .line 11
+    sput-object v0, Lo7/q1;->c:Ljava/util/logging/Logger;
+
+    .line 12
+    .line 13
+    return-void
+.end method
+
+.method public constructor <init>(Ljava/lang/Runnable;)V
+    .registers 2
+
+    .line 1
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 2
+    .line 3
+    .line 4
+    iput-object p1, p0, Lo7/q1;->b:Ljava/lang/Runnable;
+
+    .line 5
+    .line 6
+    return-void
+.end method
+
+
+# virtual methods
+.method public final run()V
+    .registers 6
+
+    .line 1
+    iget-object v0, p0, Lo7/q1;->b:Ljava/lang/Runnable;
+
+    .line 2
+    .line 3
+    :try_start_2
+    invoke-interface {v0}, Ljava/lang/Runnable;->run()V
+    :try_end_5
+    .catchall {:try_start_2 .. :try_end_5} :catchall_6
+
+    .line 4
+    .line 5
+    .line 6
+    return-void
+
+    .line 7
+    :catchall_6
+    move-exception v1
+
+    .line 8
+    sget-object v2, Ljava/util/logging/Level;->SEVERE:Ljava/util/logging/Level;
+
+    .line 9
+    .line 10
+    new-instance v3, Ljava/lang/StringBuilder;
+
+    .line 11
+    .line 12
+    const-string v4, "Exception while executing runnable "
+
+    .line 13
+    .line 14
+    invoke-direct {v3, v4}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+
+    .line 15
+    .line 16
+    .line 17
+    invoke-virtual {v3, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    .line 18
+    .line 19
+    .line 20
+    invoke-virtual {v3}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    .line 21
+    .line 22
+    .line 23
+    move-result-object v0
+
+    .line 24
+    sget-object v3, Lo7/q1;->c:Ljava/util/logging/Logger;
+
+    .line 25
+    .line 26
+    invoke-virtual {v3, v2, v0, v1}, Ljava/util/logging/Logger;->log(Ljava/util/logging/Level;Ljava/lang/String;Ljava/lang/Throwable;)V
+
+    .line 27
+    .line 28
+    .line 29
+    sget-object v0, Li4/g;->a:Ljava/lang/Object;
+
+    .line 30
+    .line 31
+    instance-of v0, v1, Ljava/lang/RuntimeException;
+
+    .line 32
+    .line 33
+    if-nez v0, :cond_2d
+
+    .line 34
+    .line 35
+    instance-of v0, v1, Ljava/lang/Error;
+
+    .line 36
+    .line 37
+    if-nez v0, :cond_2a
+
+    .line 38
+    .line 39
+    invoke-static {v1}, Lj1/i;->e(Ljava/lang/Object;)V
+
+    .line 40
+    .line 41
+    .line 42
+    return-void
+
+    .line 43
+    :cond_2a
+    check-cast v1, Ljava/lang/Error;
+
+    .line 44
+    .line 45
+    throw v1
+
+    .line 46
+    :cond_2d
+    check-cast v1, Ljava/lang/RuntimeException;
+
+    .line 47
+    .line 48
+    throw v1
+.end method
+
+.method public final toString()Ljava/lang/String;
+    .registers 3
+
+    .line 1
+    new-instance v0, Ljava/lang/StringBuilder;
+
+    .line 2
+    .line 3
+    const-string v1, "LogExceptionRunnable("
+
+    .line 4
+    .line 5
+    invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+
+    .line 6
+    .line 7
+    .line 8
+    iget-object v1, p0, Lo7/q1;->b:Ljava/lang/Runnable;
+
+    .line 9
+    .line 10
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    .line 11
+    .line 12
+    .line 13
+    const-string v1, ")"
+
+    .line 14
+    .line 15
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 16
+    .line 17
+    .line 18
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    .line 19
+    .line 20
+    .line 21
+    move-result-object v0
+
+    .line 22
+    return-object v0
+.end method

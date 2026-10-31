@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:padding="24.0dp" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="match_parent" android:fillViewport="true"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <androidx.cardview.widget.CardView android:id="@id/mainStartProPri" android:layout_width="match_parent" android:layout_height="wrap_content" app:cardBackgroundColor="@android:color/transparent" app:cardCornerRadius="0.0dp" app:cardElevation="0.0dp">
+            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <com.example.navistart.mainview.MainView app:prefsCenterLabelView="@string/modern_pp_apps" app:prefsStyle="1" app:widgetLayout="@layout/modern_start_pp_apps" style="@style/ModernMainCard" />
+                <com.example.navistart.mainview.MainView app:prefsCenterLabelView="@string/modern_custom_dashboard" app:prefsStyle="1" app:widgetLayout="@layout/modern_start_pp_custom" style="@style/ModernMainCard" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+        <com.example.navistart.mainview.MainStartProHUD android:id="@id/MainStartProHUD" app:prefsCenterLabel="@string/dashboard_widgets_title" app:prefsStyle="1" style="@style/ModernMainCard" />
+        <androidx.cardview.widget.CardView android:id="@id/mainStartProGu" android:layout_width="match_parent" android:layout_height="wrap_content" app:cardBackgroundColor="@android:color/transparent" app:cardCornerRadius="0.0dp" app:cardElevation="0.0dp">
+            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <com.example.navistart.mainview.MainView app:prefsCenterLabelView="@string/modern_gu_apps" app:prefsStyle="1" app:widgetLayout="@layout/modern_start_gu_apps" style="@style/ModernMainCard" />
+                <com.example.navistart.mainview.MainView app:prefsCenterLabelView="@string/launcher_settings_group_title" app:prefsStyle="1" app:widgetLayout="@layout/modern_start_gu_launcher" style="@style/ModernMainCard" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+</ScrollView>

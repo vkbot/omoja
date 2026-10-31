@@ -1,0 +1,181 @@
+.class public final Lokhttp3/ConnectionPool;
+.super Ljava/lang/Object;
+.source "r8-map-id-94e2637d1b30c6542972a7fc4ced35aa6da258c4e6702fc7c9cbf0ebc32bec75"
+
+
+# annotations
+.annotation runtime Lkotlin/Metadata;
+    d1 = {
+        "\u0000.\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0000\n\u0002\u0010\u0008\n\u0000\n\u0002\u0010\t\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0003\n\u0002\u0018\u0002\n\u0002\u0008\u0005\n\u0002\u0010\u0002\n\u0002\u0008\u0002\u0018\u00002\u00020\u0001B\u001f\u0008\u0016\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\u0006\u0010\u0004\u001a\u00020\u0005\u0012\u0006\u0010\u0006\u001a\u00020\u0007\u00a2\u0006\u0002\u0010\u0008B\u0007\u0008\u0016\u00a2\u0006\u0002\u0010\tB\u000f\u0008\u0000\u0012\u0006\u0010\n\u001a\u00020\u000b\u00a2\u0006\u0002\u0010\u000cJ\u0006\u0010\u000f\u001a\u00020\u0003J\u0006\u0010\u0010\u001a\u00020\u0011J\u0006\u0010\u0012\u001a\u00020\u0003R\u0014\u0010\n\u001a\u00020\u000bX\u0080\u0004\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\r\u0010\u000e\u00a8\u0006\u0013"
+    }
+    d2 = {
+        "Lokhttp3/ConnectionPool;",
+        "",
+        "maxIdleConnections",
+        "",
+        "keepAliveDuration",
+        "",
+        "timeUnit",
+        "Ljava/util/concurrent/TimeUnit;",
+        "(IJLjava/util/concurrent/TimeUnit;)V",
+        "()V",
+        "delegate",
+        "Lokhttp3/internal/connection/RealConnectionPool;",
+        "(Lokhttp3/internal/connection/RealConnectionPool;)V",
+        "getDelegate$okhttp",
+        "()Lokhttp3/internal/connection/RealConnectionPool;",
+        "connectionCount",
+        "evictAll",
+        "",
+        "idleConnectionCount",
+        "okhttp"
+    }
+    k = 0x1
+    mv = {
+        0x1,
+        0x8,
+        0x0
+    }
+    xi = 0x30
+.end annotation
+
+
+# instance fields
+.field private final delegate:Lokhttp3/internal/connection/RealConnectionPool;
+
+
+# direct methods
+.method public constructor <init>()V
+    .registers 5
+
+    const-wide/16 v0, 0x5
+
+    .line 20
+    sget-object v2, Ljava/util/concurrent/TimeUnit;->MINUTES:Ljava/util/concurrent/TimeUnit;
+
+    const/4 v3, 0x5
+
+    invoke-direct {p0, v3, v0, v1, v2}, Lokhttp3/ConnectionPool;-><init>(IJLjava/util/concurrent/TimeUnit;)V
+
+    return-void
+.end method
+
+.method public constructor <init>(IJLjava/util/concurrent/TimeUnit;)V
+    .registers 11
+
+    .line 1
+    invoke-virtual {p4}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 2
+    .line 3
+    .line 4
+    new-instance v0, Lokhttp3/internal/connection/RealConnectionPool;
+
+    .line 5
+    .line 6
+    sget-object v1, Lokhttp3/internal/concurrent/TaskRunner;->INSTANCE:Lokhttp3/internal/concurrent/TaskRunner;
+
+    .line 7
+    .line 8
+    move v2, p1
+
+    .line 9
+    move-wide v3, p2
+
+    .line 10
+    move-object v5, p4
+
+    .line 11
+    invoke-direct/range {v0 .. v5}, Lokhttp3/internal/connection/RealConnectionPool;-><init>(Lokhttp3/internal/concurrent/TaskRunner;IJLjava/util/concurrent/TimeUnit;)V
+
+    .line 12
+    .line 13
+    .line 14
+    invoke-direct {p0, v0}, Lokhttp3/ConnectionPool;-><init>(Lokhttp3/internal/connection/RealConnectionPool;)V
+
+    .line 15
+    .line 16
+    .line 17
+    return-void
+.end method
+
+.method public constructor <init>(Lokhttp3/internal/connection/RealConnectionPool;)V
+    .registers 2
+
+    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 18
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 19
+    iput-object p1, p0, Lokhttp3/ConnectionPool;->delegate:Lokhttp3/internal/connection/RealConnectionPool;
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final connectionCount()I
+    .registers 2
+
+    .line 1
+    iget-object v0, p0, Lokhttp3/ConnectionPool;->delegate:Lokhttp3/internal/connection/RealConnectionPool;
+
+    .line 2
+    .line 3
+    invoke-virtual {v0}, Lokhttp3/internal/connection/RealConnectionPool;->connectionCount()I
+
+    .line 4
+    .line 5
+    .line 6
+    move-result v0
+
+    .line 7
+    return v0
+.end method
+
+.method public final evictAll()V
+    .registers 2
+
+    .line 1
+    iget-object v0, p0, Lokhttp3/ConnectionPool;->delegate:Lokhttp3/internal/connection/RealConnectionPool;
+
+    .line 2
+    .line 3
+    invoke-virtual {v0}, Lokhttp3/internal/connection/RealConnectionPool;->evictAll()V
+
+    .line 4
+    .line 5
+    .line 6
+    return-void
+.end method
+
+.method public final getDelegate$okhttp()Lokhttp3/internal/connection/RealConnectionPool;
+    .registers 2
+
+    .line 1
+    iget-object v0, p0, Lokhttp3/ConnectionPool;->delegate:Lokhttp3/internal/connection/RealConnectionPool;
+
+    .line 2
+    .line 3
+    return-object v0
+.end method
+
+.method public final idleConnectionCount()I
+    .registers 2
+
+    .line 1
+    iget-object v0, p0, Lokhttp3/ConnectionPool;->delegate:Lokhttp3/internal/connection/RealConnectionPool;
+
+    .line 2
+    .line 3
+    invoke-virtual {v0}, Lokhttp3/internal/connection/RealConnectionPool;->idleConnectionCount()I
+
+    .line 4
+    .line 5
+    .line 6
+    move-result v0
+
+    .line 7
+    return v0
+.end method

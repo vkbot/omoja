@@ -1,0 +1,49 @@
+.class public final Ln/n;
+.super Lc0/l;
+.source "r8-map-id-94e2637d1b30c6542972a7fc4ced35aa6da258c4e6702fc7c9cbf0ebc32bec75"
+
+
+# virtual methods
+.method public final c(Ljava/lang/Object;Ljava/lang/Object;)V
+    .registers 3
+
+    .line 1
+    check-cast p1, Ln/o;
+
+    .line 2
+    .line 3
+    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 4
+    .line 5
+    .line 6
+    sget-object p2, Ln/o;->b:Ljava/util/ArrayDeque;
+
+    .line 7
+    .line 8
+    monitor-enter p2
+
+    .line 9
+    :try_start_8
+    invoke-virtual {p2, p1}, Ljava/util/ArrayDeque;->offer(Ljava/lang/Object;)Z
+
+    .line 10
+    .line 11
+    .line 12
+    monitor-exit p2
+
+    .line 13
+    return-void
+
+    .line 14
+    :catchall_d
+    move-exception p1
+
+    .line 15
+    monitor-exit p2
+    :try_end_f
+    .catchall {:try_start_8 .. :try_end_f} :catchall_d
+
+    .line 16
+    throw p1
+.end method

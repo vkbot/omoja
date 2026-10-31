@@ -1,0 +1,71 @@
+.class public final Lo7/k4;
+.super Lo7/p4;
+.source "r8-map-id-94e2637d1b30c6542972a7fc4ced35aa6da258c4e6702fc7c9cbf0ebc32bec75"
+
+
+# instance fields
+.field public final c:Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;
+
+
+# direct methods
+.method public constructor <init>(Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;)V
+    .registers 2
+
+    .line 1
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 2
+    .line 3
+    .line 4
+    iput-object p1, p0, Lo7/k4;->c:Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;
+
+    .line 5
+    .line 6
+    return-void
+.end method
+
+
+# virtual methods
+.method public final p(Lo7/m4;)Z
+    .registers 5
+
+    .line 1
+    const/4 v0, -0x1
+
+    .line 2
+    iget-object v1, p0, Lo7/k4;->c:Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;
+
+    .line 3
+    .line 4
+    const/4 v2, 0x0
+
+    .line 5
+    invoke-virtual {v1, p1, v2, v0}, Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;->compareAndSet(Ljava/lang/Object;II)Z
+
+    .line 6
+    .line 7
+    .line 8
+    move-result p1
+
+    .line 9
+    return p1
+.end method
+
+.method public final q(Lo7/m4;)V
+    .registers 4
+
+    .line 1
+    const/4 v0, 0x0
+
+    .line 2
+    iget-object v1, p0, Lo7/k4;->c:Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;
+
+    .line 3
+    .line 4
+    invoke-virtual {v1, p1, v0}, Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;->set(Ljava/lang/Object;I)V
+
+    .line 5
+    .line 6
+    .line 7
+    return-void
+.end method

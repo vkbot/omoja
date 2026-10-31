@@ -1,0 +1,1983 @@
+{
+  "version": 1,
+  "actions": {
+    "enum:Volume_Mute_Toggle": { "ru": [], "en": [] },
+    "enum:Volume_Mute_On": { "ru": [], "en": [] },
+    "enum:Volume_Mute_Off": { "ru": [], "en": [] },
+    "enum:RUN_JCT_VIDEO": { "ru": [], "en": [] },
+    "enum:GO_TO_PP": {
+      "ru": [
+        "перенеси приложение на приборку",
+        "покажи приложение на приборной панели"
+      ],
+      "en": [
+        "move the app to the instrument cluster"
+      ]
+    },
+    "enum:RUN_BLACK": {
+      "ru": [
+        "включи черный экран",
+        "покажи черный экран"
+      ],
+      "en": [
+        "show the black screen"
+      ]
+    },
+    "enum:OPEN_SHTORKA": {
+      "ru": [
+        "открой шторку люка"
+      ],
+      "en": [
+        "open the sunshade"
+      ]
+    },
+    "enum:CLOSE_SHTORKA": {
+      "ru": [
+        "закрой шторку люка"
+      ],
+      "en": [
+        "close the sunshade"
+      ]
+    },
+    "enum:VIBOR_VODITEL": {
+      "ru": [
+        "открой выбор водителя"
+      ],
+      "en": [
+        "open driver selection"
+      ]
+    },
+    "enum:GO_TO_GU": {
+      "ru": [
+        "перенеси приложение на центральный экран"
+      ],
+      "en": [
+        "move the app to the central display"
+      ]
+    },
+    "enum:RUN_START_APP_MENU": {
+      "ru": [
+        "покажи список приложений",
+        "открой меню приложений"
+      ],
+      "en": [
+        "show the app list"
+      ]
+    },
+    "enum:GLOBAL_BACK": {
+      "ru": [
+        "вернись назад"
+      ],
+      "en": [
+        "go back"
+      ]
+    },
+    "enum:GLOBAL_HOME": {
+      "ru": [
+        "перейди на главный экран"
+      ],
+      "en": [
+        "go to the home screen"
+      ]
+    },
+    "enum:TOGGLE_GU_PP": {
+      "ru": [
+        "переключи приложение между экранами"
+      ],
+      "en": [
+        "switch the app between displays"
+      ]
+    },
+    "enum:RUN_FUN_CAR": {
+      "ru": [
+        "открой быстрые функции автомобиля"
+      ],
+      "en": [
+        "open quick car controls"
+      ]
+    },
+    "enum:TOGGLE_GU_PP_CPP": {
+      "ru": [],
+      "en": []
+    },
+    "enum:GO_CPP_TO_PP": {
+      "ru": [
+        "покажи колодцы на приборке"
+      ],
+      "en": [
+        "show the custom instrument cluster"
+      ]
+    },
+    "enum:TOGGLE_CPP_PP": {
+      "ru": [],
+      "en": []
+    },
+    "enum:MEDIA_PLAY": {
+      "ru": [
+        "продолжи воспроизведение музыки",
+        "включи воспроизведение музыки"
+      ],
+      "en": [
+        "resume music playback"
+      ]
+    },
+    "enum:MEDIA_PAUSE": {
+      "ru": [
+        "поставь музыку на паузу",
+        "приостанови воспроизведение музыки"
+      ],
+      "en": [
+        "pause music playback"
+      ]
+    },
+    "enum:MEDIA_NEXT": {
+      "ru": [
+        "включи следующий трек",
+        "следующая песня"
+      ],
+      "en": [
+        "play the next track"
+      ]
+    },
+    "enum:MEDIA_BLACK": {
+      "ru": [
+        "включи предыдущий трек",
+        "предыдущая песня"
+      ],
+      "en": [
+        "play the previous track"
+      ]
+    },
+    "enum:VIEW_ALL_MESSAGE": {
+      "ru": [
+        "покажи сообщения с телефона"
+      ],
+      "en": [
+        "show phone messages"
+      ]
+    },
+    "enum:b_fiksik_on": {
+      "ru": [
+        "включи голограмму помощника"
+      ],
+      "en": [
+        "enable the assistant hologram"
+      ]
+    },
+    "enum:b_fiksik_off": {
+      "ru": [
+        "отключи голограмму помощника"
+      ],
+      "en": [
+        "disable the assistant hologram"
+      ]
+    },
+    "enum:SPLIT_RUN": {
+      "ru": [
+        "открой меню разделения экрана"
+      ],
+      "en": [
+        "open the split screen menu"
+      ]
+    },
+    "enum:RUN_APP_MORE": {
+      "ru": [],
+      "en": []
+    },
+    "enum:RUN_SPICH_FOCUS": {
+      "ru": [],
+      "en": []
+    },
+    "enum:Recirculation_On": {
+      "ru": [
+        "включи внутреннюю рециркуляцию",
+        "включи рециркуляцию воздуха"
+      ],
+      "en": [
+        "enable air recirculation"
+      ]
+    },
+    "enum:Recirculation_Off": {
+      "ru": [
+        "выключи рециркуляцию воздуха",
+        "включи приток свежего воздуха"
+      ],
+      "en": [
+        "disable air recirculation"
+      ]
+    },
+    "enum:Volume_Down": {
+      "ru": [
+        "сделай музыку тише",
+        "убавь звук"
+      ],
+      "en": [
+        "decrease the volume"
+      ]
+    },
+    "enum:Volume_Up": {
+      "ru": [
+        "сделай музыку громче",
+        "прибавь звук"
+      ],
+      "en": [
+        "increase the volume"
+      ]
+    },
+    "enum:RECENT_TASK_MANAGER": {
+      "ru": [
+        "покажи последние приложения",
+        "открой недавние приложения"
+      ],
+      "en": [
+        "show recent apps"
+      ]
+    },
+    "enum:MEDIA_PLAY_PAUSE": {
+      "ru": [
+        "переключи воспроизведение и паузу"
+      ],
+      "en": [
+        "toggle music playback"
+      ]
+    },
+    "enum:TOGGLE_MOCK_GPS": {
+      "ru": [
+        "переключи подмену геолокации"
+      ],
+      "en": [
+        "toggle mock location"
+      ]
+    },
+    "enum:RUN_JCT_WIFI": {
+      "ru": [
+        "открой настройки вай фай"
+      ],
+      "en": [
+        "open JCT WiFi"
+      ]
+    },
+    "enum:RUN_JCT_FILE": {
+      "ru": [
+        "открой файловый менеджер"
+      ],
+      "en": [
+        "open JCT file manager"
+      ]
+    },
+    "enum:RUN_JCT_STORE": {
+      "ru": [
+        "открой магазин приложений"
+      ],
+      "en": [
+        "open JCT app store"
+      ]
+    },
+    "enum:RUN_JCT_RADAR": {
+      "ru": [
+        "открой антирадар"
+      ],
+      "en": [
+        "open JCT radar"
+      ]
+    },
+    "enum:RUN_JCT_LAUNCHER": {
+      "ru": [
+        "открой лаунчер джей кар тулс"
+      ],
+      "en": [
+        "open JCT launcher"
+      ]
+    },
+    "enum:GO_DEF_TO_PP": {
+      "ru": [
+        "покажи штатную приборку"
+      ],
+      "en": [
+        "show the factory instrument cluster"
+      ]
+    },
+    "enum:Not_value": {
+      "ru": [],
+      "en": []
+    },
+    "enum:Driver_Temp_Up": {
+      "ru": [
+        "увеличь температуру водителя",
+        "сделай теплее для водителя",
+        "сделай теплее водителю"
+      ],
+      "en": [
+        "increase the driver temperature"
+      ]
+    },
+    "enum:Driver_Temp_Down": {
+      "ru": [
+        "уменьши температуру водителя",
+        "сделай холоднее для водителя",
+        "сделай холоднее водителю"
+      ],
+      "en": [
+        "decrease the driver temperature"
+      ]
+    },
+    "enum:Passenger_Temp_Up": {
+      "ru": [
+        "увеличь температуру пассажира",
+        "сделай теплее для пассажира",
+        "сделай теплее пассажиру"
+      ],
+      "en": [
+        "increase the passenger temperature"
+      ]
+    },
+    "enum:Passenger_Temp_Down": {
+      "ru": [
+        "уменьши температуру пассажира",
+        "сделай холоднее для пассажира",
+        "сделай холоднее пассажиру"
+      ],
+      "en": [
+        "decrease the passenger temperature"
+      ]
+    },
+    "enum:heat_wheel_on": {
+      "ru": [
+        "включи обогрев руля",
+        "включи подогрев руля"
+      ],
+      "en": [
+        "turn on the steering wheel heating"
+      ]
+    },
+    "enum:heat_wheel_off": {
+      "ru": [
+        "отключи обогрев руля",
+        "отключи подогрев руля"
+      ],
+      "en": [
+        "turn off the steering wheel heating"
+      ]
+    },
+    "enum:heat_windshield_on": {
+      "ru": [
+        "включи обогрев лобового стекла",
+        "включи подогрев лобового стекла"
+      ],
+      "en": [
+        "turn on the windshield heating"
+      ]
+    },
+    "enum:heat_windshield_off": {
+      "ru": [
+        "отключи обогрев лобового стекла",
+        "отключи подогрев лобового стекла"
+      ],
+      "en": [
+        "turn off the windshield heating"
+      ]
+    },
+    "enum:heat_rearwindow_on": {
+      "ru": [
+        "включи обогрев заднего стекла",
+        "включи подогрев заднего стекла"
+      ],
+      "en": [
+        "turn on the rear window heating"
+      ]
+    },
+    "enum:heat_rearwindow_off": {
+      "ru": [
+        "отключи обогрев заднего стекла",
+        "отключи подогрев заднего стекла"
+      ],
+      "en": [
+        "turn off the rear window heating"
+      ]
+    },
+    "enum:heat_seat_l_0": {
+      "ru": [
+        "отключи подогрев сиденья водителя"
+      ],
+      "en": [
+        "turn off driver heating"
+      ]
+    },
+    "enum:heat_seat_l_1": {
+      "ru": [
+        "включи подогрев сиденья водителя на 1",
+        "установи подогрев сиденья водителя на уровень 1"
+      ],
+      "en": [
+        "set driver heating to level 1"
+      ]
+    },
+    "enum:heat_seat_l_2": {
+      "ru": [
+        "включи подогрев сиденья водителя на 2",
+        "установи подогрев сиденья водителя на уровень 2"
+      ],
+      "en": [
+        "set driver heating to level 2"
+      ]
+    },
+    "enum:heat_seat_l_3": {
+      "ru": [
+        "включи подогрев сиденья водителя на 3",
+        "установи подогрев сиденья водителя на уровень 3"
+      ],
+      "en": [
+        "set driver heating to level 3"
+      ]
+    },
+    "enum:vent_seat_l_0": {
+      "ru": [
+        "отключи вентиляцию сиденья водителя"
+      ],
+      "en": [
+        "turn off driver ventilation"
+      ]
+    },
+    "enum:vent_seat_l_1": {
+      "ru": [
+        "включи вентиляцию сиденья водителя на 1",
+        "установи вентиляцию сиденья водителя на уровень 1"
+      ],
+      "en": [
+        "set driver ventilation to level 1"
+      ]
+    },
+    "enum:vent_seat_l_2": {
+      "ru": [
+        "включи вентиляцию сиденья водителя на 2",
+        "установи вентиляцию сиденья водителя на уровень 2"
+      ],
+      "en": [
+        "set driver ventilation to level 2"
+      ]
+    },
+    "enum:vent_seat_l_3": {
+      "ru": [
+        "включи вентиляцию сиденья водителя на 3",
+        "установи вентиляцию сиденья водителя на уровень 3"
+      ],
+      "en": [
+        "set driver ventilation to level 3"
+      ]
+    },
+    "enum:heat_seat_r_0": {
+      "ru": [
+        "отключи подогрев сиденья пассажира"
+      ],
+      "en": [
+        "turn off passenger heating"
+      ]
+    },
+    "enum:heat_seat_r_1": {
+      "ru": [
+        "включи подогрев сиденья пассажира на 1",
+        "установи подогрев сиденья пассажира на уровень 1"
+      ],
+      "en": [
+        "set passenger heating to level 1"
+      ]
+    },
+    "enum:heat_seat_r_2": {
+      "ru": [
+        "включи подогрев сиденья пассажира на 2",
+        "установи подогрев сиденья пассажира на уровень 2"
+      ],
+      "en": [
+        "set passenger heating to level 2"
+      ]
+    },
+    "enum:heat_seat_r_3": {
+      "ru": [
+        "включи подогрев сиденья пассажира на 3",
+        "установи подогрев сиденья пассажира на уровень 3"
+      ],
+      "en": [
+        "set passenger heating to level 3"
+      ]
+    },
+    "enum:vent_seat_r_0": {
+      "ru": [
+        "отключи вентиляцию сиденья пассажира"
+      ],
+      "en": [
+        "turn off passenger ventilation"
+      ]
+    },
+    "enum:vent_seat_r_1": {
+      "ru": [
+        "включи вентиляцию сиденья пассажира на 1",
+        "установи вентиляцию сиденья пассажира на уровень 1"
+      ],
+      "en": [
+        "set passenger ventilation to level 1"
+      ]
+    },
+    "enum:vent_seat_r_2": {
+      "ru": [
+        "включи вентиляцию сиденья пассажира на 2",
+        "установи вентиляцию сиденья пассажира на уровень 2"
+      ],
+      "en": [
+        "set passenger ventilation to level 2"
+      ]
+    },
+    "enum:vent_seat_r_3": {
+      "ru": [
+        "включи вентиляцию сиденья пассажира на 3",
+        "установи вентиляцию сиденья пассажира на уровень 3"
+      ],
+      "en": [
+        "set passenger ventilation to level 3"
+      ]
+    },
+    "enum:heat_zad_seat_l_0": {
+      "ru": [
+        "отключи подогрев заднего левого сиденья"
+      ],
+      "en": [
+        "turn off rear left seat heating"
+      ]
+    },
+    "enum:heat_zad_seat_l_1": {
+      "ru": [
+        "включи подогрев заднего левого сиденья на 1",
+        "установи подогрев заднего левого сиденья на уровень 1"
+      ],
+      "en": [
+        "set rear left seat heating to level 1"
+      ]
+    },
+    "enum:heat_zad_seat_l_2": {
+      "ru": [
+        "включи подогрев заднего левого сиденья на 2",
+        "установи подогрев заднего левого сиденья на уровень 2"
+      ],
+      "en": [
+        "set rear left seat heating to level 2"
+      ]
+    },
+    "enum:heat_zad_seat_l_3": {
+      "ru": [
+        "включи подогрев заднего левого сиденья на 3",
+        "установи подогрев заднего левого сиденья на уровень 3"
+      ],
+      "en": [
+        "set rear left seat heating to level 3"
+      ]
+    },
+    "enum:vent_zad_seat_l_0": {
+      "ru": [
+        "отключи вентиляцию заднего левого сиденья"
+      ],
+      "en": [
+        "turn off rear left seat ventilation"
+      ]
+    },
+    "enum:vent_zad_seat_l_1": {
+      "ru": [
+        "включи вентиляцию заднего левого сиденья на 1",
+        "установи вентиляцию заднего левого сиденья на уровень 1"
+      ],
+      "en": [
+        "set rear left seat ventilation to level 1"
+      ]
+    },
+    "enum:vent_zad_seat_l_2": {
+      "ru": [
+        "включи вентиляцию заднего левого сиденья на 2",
+        "установи вентиляцию заднего левого сиденья на уровень 2"
+      ],
+      "en": [
+        "set rear left seat ventilation to level 2"
+      ]
+    },
+    "enum:vent_zad_seat_l_3": {
+      "ru": [
+        "включи вентиляцию заднего левого сиденья на 3",
+        "установи вентиляцию заднего левого сиденья на уровень 3"
+      ],
+      "en": [
+        "set rear left seat ventilation to level 3"
+      ]
+    },
+    "enum:heat_zad_seat_r_off": {
+      "ru": [
+        "отключи подогрев заднего правого сиденья"
+      ],
+      "en": [
+        "turn off rear right seat heating"
+      ]
+    },
+    "enum:heat_zad_seat_r_1": {
+      "ru": [
+        "включи подогрев заднего правого сиденья на 1",
+        "установи подогрев заднего правого сиденья на уровень 1"
+      ],
+      "en": [
+        "set rear right seat heating to level 1"
+      ]
+    },
+    "enum:heat_zad_seat_r_2": {
+      "ru": [
+        "включи подогрев заднего правого сиденья на 2",
+        "установи подогрев заднего правого сиденья на уровень 2"
+      ],
+      "en": [
+        "set rear right seat heating to level 2"
+      ]
+    },
+    "enum:heat_zad_seat_r_3": {
+      "ru": [
+        "включи подогрев заднего правого сиденья на 3",
+        "установи подогрев заднего правого сиденья на уровень 3"
+      ],
+      "en": [
+        "set rear right seat heating to level 3"
+      ]
+    },
+    "enum:vent_zad_seat_r_off": {
+      "ru": [
+        "отключи вентиляцию заднего правого сиденья"
+      ],
+      "en": [
+        "turn off rear right seat ventilation"
+      ]
+    },
+    "enum:vent_zad_seat_r_1": {
+      "ru": [
+        "включи вентиляцию заднего правого сиденья на 1",
+        "установи вентиляцию заднего правого сиденья на уровень 1"
+      ],
+      "en": [
+        "set rear right seat ventilation to level 1"
+      ]
+    },
+    "enum:vent_zad_seat_r_2": {
+      "ru": [
+        "включи вентиляцию заднего правого сиденья на 2",
+        "установи вентиляцию заднего правого сиденья на уровень 2"
+      ],
+      "en": [
+        "set rear right seat ventilation to level 2"
+      ]
+    },
+    "enum:vent_zad_seat_r_3": {
+      "ru": [
+        "включи вентиляцию заднего правого сиденья на 3",
+        "установи вентиляцию заднего правого сиденья на уровень 3"
+      ],
+      "en": [
+        "set rear right seat ventilation to level 3"
+      ]
+    },
+    "enum:voditel_seat_1": {
+      "ru": [
+        "выбери водителя 1"
+      ],
+      "en": [
+        "select driver 1"
+      ]
+    },
+    "enum:voditel_seat_2": {
+      "ru": [
+        "выбери водителя 2"
+      ],
+      "en": [
+        "select driver 2"
+      ]
+    },
+    "enum:voditel_seat_3": {
+      "ru": [
+        "выбери водителя 3"
+      ],
+      "en": [
+        "select driver 3"
+      ]
+    },
+    "profile:open_trunk": {
+      "ru": [
+        "открой крышку багажника",
+        "открой багажник"
+      ],
+      "en": [
+        "open the trunk"
+      ]
+    },
+    "profile:close_trunk": {
+      "ru": [
+        "закрой крышку багажника",
+        "закрой багажник"
+      ],
+      "en": [
+        "close the trunk"
+      ]
+    },
+    "profile:open_glove_box": {
+      "ru": [
+        "открой бардачок",
+        "открой перчаточный ящик"
+      ],
+      "en": [
+        "open the glove compartment"
+      ]
+    },
+    "profile:open_fuel_tank": {
+      "ru": [
+        "открой лючок бензобака",
+        "открой топливный лючок"
+      ],
+      "en": [
+        "open the fuel flap"
+      ]
+    },
+    "profile:open_central_lock": {
+      "ru": [
+        "разблокируй центральный замок"
+      ],
+      "en": [
+        "unlock the central locking"
+      ]
+    },
+    "profile:close_central_lock": {
+      "ru": [
+        "заблокируй центральный замок"
+      ],
+      "en": [
+        "lock the central locking"
+      ]
+    },
+    "profile:fold_mirrors": {
+      "ru": [
+        "сложи боковые зеркала"
+      ],
+      "en": [
+        "fold the side mirrors"
+      ]
+    },
+    "profile:unfold_mirrors": {
+      "ru": [
+        "разложи боковые зеркала"
+      ],
+      "en": [
+        "unfold the side mirrors"
+      ]
+    },
+    "profile:close_all_doors": {
+      "ru": [
+        "закрой все двери автомобиля"
+      ],
+      "en": [
+        "close all doors"
+      ]
+    },
+    "profile:open_energy_management": {
+      "ru": [
+        "открой управление энергией"
+      ],
+      "en": [
+        "open energy management"
+      ]
+    },
+    "profile:toggle_qnx_vignette": {
+      "ru": [],
+      "en": []
+    },
+    "profile:parking_sensors_on": {
+      "ru": [
+        "включи парктроники"
+      ],
+      "en": [
+        "enable parking sensors"
+      ]
+    },
+    "profile:open_door_front_left": {
+      "ru": [
+        "открой переднюю левую дверь"
+      ],
+      "en": [
+        "open the front left door"
+      ]
+    },
+    "profile:close_door_front_left": {
+      "ru": [
+        "закрой переднюю левую дверь"
+      ],
+      "en": [
+        "close the front left door"
+      ]
+    },
+    "profile:open_window_front_left_10": {
+      "ru": [
+        "приоткрой переднее левое окно",
+        "открой переднее левое окно на 10 процентов"
+      ],
+      "en": [
+        "open the front left window to 10 percent"
+      ]
+    },
+    "profile:open_window_front_left_full": {
+      "ru": [
+        "открой переднее левое окно полностью"
+      ],
+      "en": [
+        "fully open the front left window"
+      ]
+    },
+    "profile:open_door_front_right": {
+      "ru": [
+        "открой переднюю правую дверь"
+      ],
+      "en": [
+        "open the front right door"
+      ]
+    },
+    "profile:close_door_front_right": {
+      "ru": [
+        "закрой переднюю правую дверь"
+      ],
+      "en": [
+        "close the front right door"
+      ]
+    },
+    "profile:open_window_front_right_10": {
+      "ru": [
+        "приоткрой переднее правое окно",
+        "открой переднее правое окно на 10 процентов"
+      ],
+      "en": [
+        "open the front right window to 10 percent"
+      ]
+    },
+    "profile:open_window_front_right_full": {
+      "ru": [
+        "открой переднее правое окно полностью"
+      ],
+      "en": [
+        "fully open the front right window"
+      ]
+    },
+    "profile:open_door_rear_left": {
+      "ru": [
+        "открой заднюю левую дверь"
+      ],
+      "en": [
+        "open the rear left door"
+      ]
+    },
+    "profile:close_door_rear_left": {
+      "ru": [
+        "закрой заднюю левую дверь"
+      ],
+      "en": [
+        "close the rear left door"
+      ]
+    },
+    "profile:open_window_rear_left_10": {
+      "ru": [
+        "приоткрой заднее левое окно",
+        "открой заднее левое окно на 10 процентов"
+      ],
+      "en": [
+        "open the rear left window to 10 percent"
+      ]
+    },
+    "profile:open_window_rear_left_full": {
+      "ru": [
+        "открой заднее левое окно полностью"
+      ],
+      "en": [
+        "fully open the rear left window"
+      ]
+    },
+    "profile:open_door_rear_right": {
+      "ru": [
+        "открой заднюю правую дверь"
+      ],
+      "en": [
+        "open the rear right door"
+      ]
+    },
+    "profile:close_door_rear_right": {
+      "ru": [
+        "закрой заднюю правую дверь"
+      ],
+      "en": [
+        "close the rear right door"
+      ]
+    },
+    "profile:open_window_rear_right_10": {
+      "ru": [
+        "приоткрой заднее правое окно",
+        "открой заднее правое окно на 10 процентов"
+      ],
+      "en": [
+        "open the rear right window to 10 percent"
+      ]
+    },
+    "profile:open_window_rear_right_full": {
+      "ru": [
+        "открой заднее правое окно полностью"
+      ],
+      "en": [
+        "fully open the rear right window"
+      ]
+    },
+    "profile:open_windows_full": {
+      "ru": [
+        "открой все окна полностью"
+      ],
+      "en": [
+        "fully open all windows"
+      ]
+    },
+    "profile:close_windows": {
+      "ru": [
+        "закрой все окна автомобиля"
+      ],
+      "en": [
+        "close all windows"
+      ]
+    },
+    "profile:open_windows_10": {
+      "ru": [
+        "открой все окна на 10 процентов"
+      ],
+      "en": [
+        "open all windows to 10 percent"
+      ]
+    },
+    "profile:open_windows_50": {
+      "ru": [
+        "открой все окна на 50 процентов",
+        "открой все окна наполовину"
+      ],
+      "en": [
+        "open all windows to 50 percent"
+      ]
+    },
+    "profile:vx_open_windows_full": {
+      "ru": [
+        "открой все окна полностью"
+      ],
+      "en": [
+        "fully open all windows"
+      ]
+    },
+    "profile:vx_close_windows": {
+      "ru": [
+        "закрой все окна автомобиля"
+      ],
+      "en": [
+        "close all windows"
+      ]
+    },
+    "profile:vx_open_windows_25": {
+      "ru": [
+        "открой все окна на 25 процентов"
+      ],
+      "en": [
+        "open all windows to 25 percent"
+      ]
+    },
+    "profile:vx_open_windows_50": {
+      "ru": [
+        "открой все окна на 50 процентов",
+        "открой все окна наполовину"
+      ],
+      "en": [
+        "open all windows to 50 percent"
+      ]
+    },
+    "profile:vx_open_windows_75": {
+      "ru": [
+        "открой все окна на 75 процентов"
+      ],
+      "en": [
+        "open all windows to 75 percent"
+      ]
+    },
+    "profile:open_j_climate": {
+      "ru": [
+        "открой настройки климата",
+        "покажи меню климата"
+      ],
+      "en": [
+        "open climate settings"
+      ]
+    },
+    "profile:climate_power_on": {
+      "ru": [
+        "включи климат контроль"
+      ],
+      "en": [
+        "turn on climate control"
+      ]
+    },
+    "profile:climate_power_off": {
+      "ru": [
+        "отключи климат контроль"
+      ],
+      "en": [
+        "turn off climate control"
+      ]
+    },
+    "profile:climate_ac_on": {
+      "ru": [
+        "включи кондиционер"
+      ],
+      "en": [
+        "turn on air conditioning"
+      ]
+    },
+    "profile:climate_ac_off": {
+      "ru": [
+        "отключи кондиционер"
+      ],
+      "en": [
+        "turn off air conditioning"
+      ]
+    },
+    "profile:climate_auto_on": {
+      "ru": [
+        "включи автоматический режим климата"
+      ],
+      "en": [
+        "turn on automatic climate mode"
+      ]
+    },
+    "profile:climate_auto_off": {
+      "ru": [
+        "отключи автоматический режим климата"
+      ],
+      "en": [
+        "turn off automatic climate mode"
+      ]
+    },
+    "profile:climate_sync_on": {
+      "ru": [
+        "включи синхронизацию зон климата"
+      ],
+      "en": [
+        "turn on climate zone synchronization"
+      ]
+    },
+    "profile:climate_sync_off": {
+      "ru": [
+        "отключи синхронизацию зон климата"
+      ],
+      "en": [
+        "turn off climate zone synchronization"
+      ]
+    },
+    "profile:climate_front_defrost_on": {
+      "ru": [
+        "включи максимальный обдув лобового стекла"
+      ],
+      "en": [
+        "turn on maximum windshield defrost"
+      ]
+    },
+    "profile:climate_front_defrost_off": {
+      "ru": [
+        "отключи максимальный обдув лобового стекла"
+      ],
+      "en": [
+        "turn off maximum windshield defrost"
+      ]
+    },
+    "profile:climate_fan_1": {
+      "ru": [
+        "установи вентилятор климата на 1",
+        "установи обдув на 1"
+      ],
+      "en": [
+        "set the climate fan to 1"
+      ]
+    },
+    "profile:climate_fan_2": {
+      "ru": [
+        "установи вентилятор климата на 2",
+        "установи обдув на 2"
+      ],
+      "en": [
+        "set the climate fan to 2"
+      ]
+    },
+    "profile:climate_fan_3": {
+      "ru": [
+        "установи вентилятор климата на 3",
+        "установи обдув на 3"
+      ],
+      "en": [
+        "set the climate fan to 3"
+      ]
+    },
+    "profile:climate_fan_4": {
+      "ru": [
+        "установи вентилятор климата на 4",
+        "установи обдув на 4"
+      ],
+      "en": [
+        "set the climate fan to 4"
+      ]
+    },
+    "profile:climate_fan_5": {
+      "ru": [
+        "установи вентилятор климата на 5",
+        "установи обдув на 5"
+      ],
+      "en": [
+        "set the climate fan to 5"
+      ]
+    },
+    "profile:climate_fan_6": {
+      "ru": [
+        "установи вентилятор климата на 6",
+        "установи обдув на 6"
+      ],
+      "en": [
+        "set the climate fan to 6"
+      ]
+    },
+    "profile:climate_fan_7": {
+      "ru": [
+        "установи вентилятор климата на 7",
+        "установи обдув на 7"
+      ],
+      "en": [
+        "set the climate fan to 7"
+      ]
+    },
+    "profile:climate_fan_8": {
+      "ru": [
+        "установи вентилятор климата на 8",
+        "установи обдув на 8"
+      ],
+      "en": [
+        "set the climate fan to 8"
+      ]
+    },
+    "profile:climate_fan_9": {
+      "ru": [
+        "установи вентилятор климата на 9",
+        "установи обдув на 9"
+      ],
+      "en": [
+        "set the climate fan to 9"
+      ]
+    },
+    "profile:climate_fan_10": {
+      "ru": [
+        "установи вентилятор климата на 10",
+        "установи обдув на 10"
+      ],
+      "en": [
+        "set the climate fan to 10"
+      ]
+    },
+    "profile:climate_air_face": {
+      "ru": [
+        "включи обдув на лицо",
+        "направь обдув на лицо"
+      ],
+      "en": [
+        "direct airflow to the face"
+      ]
+    },
+    "profile:climate_air_face_feet": {
+      "ru": [
+        "включи обдув на лицо и ноги",
+        "направь обдув на лицо и ноги"
+      ],
+      "en": [
+        "direct airflow to the face and feet"
+      ]
+    },
+    "profile:climate_air_feet": {
+      "ru": [
+        "включи обдув на ноги",
+        "направь обдув на ноги"
+      ],
+      "en": [
+        "direct airflow to the feet"
+      ]
+    },
+    "profile:climate_air_feet_glass": {
+      "ru": [
+        "включи обдув на ноги и стекло",
+        "направь обдув на ноги и стекло"
+      ],
+      "en": [
+        "direct airflow to the feet and windshield"
+      ]
+    },
+    "profile:climate_air_glass": {
+      "ru": [
+        "включи обдув на стекло",
+        "направь обдув на стекло"
+      ],
+      "en": [
+        "direct airflow to the windshield"
+      ]
+    },
+    "profile:climate_air_face_glass": {
+      "ru": [
+        "включи обдув на лицо и стекло",
+        "направь обдув на лицо и стекло"
+      ],
+      "en": [
+        "direct airflow to the face and windshield"
+      ]
+    },
+    "profile:climate_air_all": {
+      "ru": [
+        "включи обдув на лицо ноги и стекло",
+        "направь обдув на лицо ноги и стекло"
+      ],
+      "en": [
+        "direct airflow to the face feet and windshield"
+      ]
+    },
+    "profile:open_j6_climate": {
+      "ru": [
+        "открой настройки климата",
+        "покажи меню климата"
+      ],
+      "en": [
+        "open climate settings"
+      ]
+    },
+    "profile:j6_climate_power_on": {
+      "ru": [
+        "включи климат контроль"
+      ],
+      "en": [
+        "turn on climate control"
+      ]
+    },
+    "profile:j6_climate_power_off": {
+      "ru": [
+        "отключи климат контроль"
+      ],
+      "en": [
+        "turn off climate control"
+      ]
+    },
+    "profile:j6_climate_ac_on": {
+      "ru": [
+        "включи кондиционер"
+      ],
+      "en": [
+        "turn on air conditioning"
+      ]
+    },
+    "profile:j6_climate_ac_off": {
+      "ru": [
+        "отключи кондиционер"
+      ],
+      "en": [
+        "turn off air conditioning"
+      ]
+    },
+    "profile:j6_climate_auto_on": {
+      "ru": [
+        "включи автоматический режим климата"
+      ],
+      "en": [
+        "turn on automatic climate mode"
+      ]
+    },
+    "profile:j6_climate_auto_off": {
+      "ru": [
+        "отключи автоматический режим климата"
+      ],
+      "en": [
+        "turn off automatic climate mode"
+      ]
+    },
+    "profile:j6_climate_sync_on": {
+      "ru": [
+        "включи синхронизацию зон климата"
+      ],
+      "en": [
+        "turn on climate zone synchronization"
+      ]
+    },
+    "profile:j6_climate_sync_off": {
+      "ru": [
+        "отключи синхронизацию зон климата"
+      ],
+      "en": [
+        "turn off climate zone synchronization"
+      ]
+    },
+    "profile:j6_climate_front_defrost_on": {
+      "ru": [
+        "включи максимальный обдув лобового стекла"
+      ],
+      "en": [
+        "turn on maximum windshield defrost"
+      ]
+    },
+    "profile:j6_climate_front_defrost_off": {
+      "ru": [
+        "отключи максимальный обдув лобового стекла"
+      ],
+      "en": [
+        "turn off maximum windshield defrost"
+      ]
+    },
+    "profile:j6_climate_fan_1": {
+      "ru": [
+        "установи вентилятор климата на 1",
+        "установи обдув на 1"
+      ],
+      "en": [
+        "set the climate fan to 1"
+      ]
+    },
+    "profile:j6_climate_fan_2": {
+      "ru": [
+        "установи вентилятор климата на 2",
+        "установи обдув на 2"
+      ],
+      "en": [
+        "set the climate fan to 2"
+      ]
+    },
+    "profile:j6_climate_fan_3": {
+      "ru": [
+        "установи вентилятор климата на 3",
+        "установи обдув на 3"
+      ],
+      "en": [
+        "set the climate fan to 3"
+      ]
+    },
+    "profile:j6_climate_fan_4": {
+      "ru": [
+        "установи вентилятор климата на 4",
+        "установи обдув на 4"
+      ],
+      "en": [
+        "set the climate fan to 4"
+      ]
+    },
+    "profile:j6_climate_fan_5": {
+      "ru": [
+        "установи вентилятор климата на 5",
+        "установи обдув на 5"
+      ],
+      "en": [
+        "set the climate fan to 5"
+      ]
+    },
+    "profile:j6_climate_fan_6": {
+      "ru": [
+        "установи вентилятор климата на 6",
+        "установи обдув на 6"
+      ],
+      "en": [
+        "set the climate fan to 6"
+      ]
+    },
+    "profile:j6_climate_fan_7": {
+      "ru": [
+        "установи вентилятор климата на 7",
+        "установи обдув на 7"
+      ],
+      "en": [
+        "set the climate fan to 7"
+      ]
+    },
+    "profile:j6_climate_fan_8": {
+      "ru": [
+        "установи вентилятор климата на 8",
+        "установи обдув на 8"
+      ],
+      "en": [
+        "set the climate fan to 8"
+      ]
+    },
+    "profile:j6_climate_fan_9": {
+      "ru": [
+        "установи вентилятор климата на 9",
+        "установи обдув на 9"
+      ],
+      "en": [
+        "set the climate fan to 9"
+      ]
+    },
+    "profile:j6_climate_fan_10": {
+      "ru": [
+        "установи вентилятор климата на 10",
+        "установи обдув на 10"
+      ],
+      "en": [
+        "set the climate fan to 10"
+      ]
+    },
+    "profile:j6_climate_air_face": {
+      "ru": [
+        "включи обдув на лицо",
+        "направь обдув на лицо"
+      ],
+      "en": [
+        "direct airflow to the face"
+      ]
+    },
+    "profile:j6_climate_air_face_feet": {
+      "ru": [
+        "включи обдув на лицо и ноги",
+        "направь обдув на лицо и ноги"
+      ],
+      "en": [
+        "direct airflow to the face and feet"
+      ]
+    },
+    "profile:j6_climate_air_feet": {
+      "ru": [
+        "включи обдув на ноги",
+        "направь обдув на ноги"
+      ],
+      "en": [
+        "direct airflow to the feet"
+      ]
+    },
+    "profile:j6_climate_air_feet_glass": {
+      "ru": [
+        "включи обдув на ноги и стекло",
+        "направь обдув на ноги и стекло"
+      ],
+      "en": [
+        "direct airflow to the feet and windshield"
+      ]
+    },
+    "profile:j6_climate_air_glass": {
+      "ru": [
+        "включи обдув на стекло",
+        "направь обдув на стекло"
+      ],
+      "en": [
+        "direct airflow to the windshield"
+      ]
+    },
+    "profile:j6_climate_air_face_glass": {
+      "ru": [
+        "включи обдув на лицо и стекло",
+        "направь обдув на лицо и стекло"
+      ],
+      "en": [
+        "direct airflow to the face and windshield"
+      ]
+    },
+    "profile:j6_climate_air_all": {
+      "ru": [
+        "включи обдув на лицо ноги и стекло",
+        "направь обдув на лицо ноги и стекло"
+      ],
+      "en": [
+        "direct airflow to the face feet and windshield"
+      ]
+    },
+    "profile:open_vx_climate": {
+      "ru": [
+        "открой настройки климата",
+        "покажи меню климата"
+      ],
+      "en": [
+        "open climate settings"
+      ]
+    },
+    "profile:vx_climate_power_on": {
+      "ru": [
+        "включи климат контроль"
+      ],
+      "en": [
+        "turn on climate control"
+      ]
+    },
+    "profile:vx_climate_power_off": {
+      "ru": [
+        "отключи климат контроль"
+      ],
+      "en": [
+        "turn off climate control"
+      ]
+    },
+    "profile:vx_climate_ac_on": {
+      "ru": [
+        "включи кондиционер"
+      ],
+      "en": [
+        "turn on air conditioning"
+      ]
+    },
+    "profile:vx_climate_ac_off": {
+      "ru": [
+        "отключи кондиционер"
+      ],
+      "en": [
+        "turn off air conditioning"
+      ]
+    },
+    "profile:vx_climate_auto_on": {
+      "ru": [
+        "включи автоматический режим климата"
+      ],
+      "en": [
+        "turn on automatic climate mode"
+      ]
+    },
+    "profile:vx_climate_auto_off": {
+      "ru": [
+        "отключи автоматический режим климата"
+      ],
+      "en": [
+        "turn off automatic climate mode"
+      ]
+    },
+    "profile:vx_climate_sync_on": {
+      "ru": [
+        "включи синхронизацию зон климата"
+      ],
+      "en": [
+        "turn on climate zone synchronization"
+      ]
+    },
+    "profile:vx_climate_sync_off": {
+      "ru": [
+        "отключи синхронизацию зон климата"
+      ],
+      "en": [
+        "turn off climate zone synchronization"
+      ]
+    },
+    "profile:vx_climate_front_defrost_on": {
+      "ru": [
+        "включи максимальный обдув лобового стекла"
+      ],
+      "en": [
+        "turn on maximum windshield defrost"
+      ]
+    },
+    "profile:vx_climate_front_defrost_off": {
+      "ru": [
+        "отключи максимальный обдув лобового стекла"
+      ],
+      "en": [
+        "turn off maximum windshield defrost"
+      ]
+    },
+    "profile:vx_climate_fan_0": {
+      "ru": [
+        "установи вентилятор климата на 0",
+        "установи обдув на 0"
+      ],
+      "en": [
+        "set the climate fan to 0"
+      ]
+    },
+    "profile:vx_climate_fan_1": {
+      "ru": [
+        "установи вентилятор климата на 1",
+        "установи обдув на 1"
+      ],
+      "en": [
+        "set the climate fan to 1"
+      ]
+    },
+    "profile:vx_climate_fan_2": {
+      "ru": [
+        "установи вентилятор климата на 2",
+        "установи обдув на 2"
+      ],
+      "en": [
+        "set the climate fan to 2"
+      ]
+    },
+    "profile:vx_climate_fan_3": {
+      "ru": [
+        "установи вентилятор климата на 3",
+        "установи обдув на 3"
+      ],
+      "en": [
+        "set the climate fan to 3"
+      ]
+    },
+    "profile:vx_climate_fan_4": {
+      "ru": [
+        "установи вентилятор климата на 4",
+        "установи обдув на 4"
+      ],
+      "en": [
+        "set the climate fan to 4"
+      ]
+    },
+    "profile:vx_climate_fan_5": {
+      "ru": [
+        "установи вентилятор климата на 5",
+        "установи обдув на 5"
+      ],
+      "en": [
+        "set the climate fan to 5"
+      ]
+    },
+    "profile:vx_climate_fan_6": {
+      "ru": [
+        "установи вентилятор климата на 6",
+        "установи обдув на 6"
+      ],
+      "en": [
+        "set the climate fan to 6"
+      ]
+    },
+    "profile:vx_climate_fan_7": {
+      "ru": [
+        "установи вентилятор климата на 7",
+        "установи обдув на 7"
+      ],
+      "en": [
+        "set the climate fan to 7"
+      ]
+    },
+    "profile:vx_climate_air_0": {
+      "ru": [
+        "включи обдув на лицо",
+        "направь обдув на лицо"
+      ],
+      "en": [
+        "direct airflow to the face"
+      ]
+    },
+    "profile:vx_climate_air_1": {
+      "ru": [
+        "включи обдув на лицо и ноги",
+        "направь обдув на лицо и ноги"
+      ],
+      "en": [
+        "direct airflow to the face and feet"
+      ]
+    },
+    "profile:vx_climate_air_2": {
+      "ru": [
+        "включи обдув на ноги",
+        "направь обдув на ноги"
+      ],
+      "en": [
+        "direct airflow to the feet"
+      ]
+    },
+    "profile:vx_climate_air_3": {
+      "ru": [
+        "включи обдув на ноги и стекло",
+        "направь обдув на ноги и стекло"
+      ],
+      "en": [
+        "direct airflow to the feet and windshield"
+      ]
+    },
+    "profile:vx_climate_air_4": {
+      "ru": [
+        "включи обдув на стекло",
+        "направь обдув на стекло"
+      ],
+      "en": [
+        "direct airflow to the windshield"
+      ]
+    },
+    "profile:vx_window_0_0": {
+      "ru": [
+        "закрой переднее левое окно"
+      ],
+      "en": [
+        "close the front left window"
+      ]
+    },
+    "profile:vx_window_0_25": {
+      "ru": [
+        "открой переднее левое окно на 25 процентов"
+      ],
+      "en": [
+        "open the front left window to 25 percent"
+      ]
+    },
+    "profile:vx_window_0_50": {
+      "ru": [
+        "открой переднее левое окно на 50 процентов"
+      ],
+      "en": [
+        "open the front left window to 50 percent"
+      ]
+    },
+    "profile:vx_window_0_75": {
+      "ru": [
+        "открой переднее левое окно на 75 процентов"
+      ],
+      "en": [
+        "open the front left window to 75 percent"
+      ]
+    },
+    "profile:vx_window_0_100": {
+      "ru": [
+        "открой переднее левое окно полностью"
+      ],
+      "en": [
+        "open the front left window to 100 percent"
+      ]
+    },
+    "profile:vx_window_1_0": {
+      "ru": [
+        "закрой переднее правое окно"
+      ],
+      "en": [
+        "close the front right window"
+      ]
+    },
+    "profile:vx_window_1_25": {
+      "ru": [
+        "открой переднее правое окно на 25 процентов"
+      ],
+      "en": [
+        "open the front right window to 25 percent"
+      ]
+    },
+    "profile:vx_window_1_50": {
+      "ru": [
+        "открой переднее правое окно на 50 процентов"
+      ],
+      "en": [
+        "open the front right window to 50 percent"
+      ]
+    },
+    "profile:vx_window_1_75": {
+      "ru": [
+        "открой переднее правое окно на 75 процентов"
+      ],
+      "en": [
+        "open the front right window to 75 percent"
+      ]
+    },
+    "profile:vx_window_1_100": {
+      "ru": [
+        "открой переднее правое окно полностью"
+      ],
+      "en": [
+        "open the front right window to 100 percent"
+      ]
+    },
+    "profile:vx_window_2_0": {
+      "ru": [
+        "закрой заднее левое окно"
+      ],
+      "en": [
+        "close the rear left window"
+      ]
+    },
+    "profile:vx_window_2_25": {
+      "ru": [
+        "открой заднее левое окно на 25 процентов"
+      ],
+      "en": [
+        "open the rear left window to 25 percent"
+      ]
+    },
+    "profile:vx_window_2_50": {
+      "ru": [
+        "открой заднее левое окно на 50 процентов"
+      ],
+      "en": [
+        "open the rear left window to 50 percent"
+      ]
+    },
+    "profile:vx_window_2_75": {
+      "ru": [
+        "открой заднее левое окно на 75 процентов"
+      ],
+      "en": [
+        "open the rear left window to 75 percent"
+      ]
+    },
+    "profile:vx_window_2_100": {
+      "ru": [
+        "открой заднее левое окно полностью"
+      ],
+      "en": [
+        "open the rear left window to 100 percent"
+      ]
+    },
+    "profile:vx_window_3_0": {
+      "ru": [
+        "закрой заднее правое окно"
+      ],
+      "en": [
+        "close the rear right window"
+      ]
+    },
+    "profile:vx_window_3_25": {
+      "ru": [
+        "открой заднее правое окно на 25 процентов"
+      ],
+      "en": [
+        "open the rear right window to 25 percent"
+      ]
+    },
+    "profile:vx_window_3_50": {
+      "ru": [
+        "открой заднее правое окно на 50 процентов"
+      ],
+      "en": [
+        "open the rear right window to 50 percent"
+      ]
+    },
+    "profile:vx_window_3_75": {
+      "ru": [
+        "открой заднее правое окно на 75 процентов"
+      ],
+      "en": [
+        "open the rear right window to 75 percent"
+      ]
+    },
+    "profile:vx_window_3_100": {
+      "ru": [
+        "открой заднее правое окно полностью"
+      ],
+      "en": [
+        "open the rear right window to 100 percent"
+      ]
+    },
+    "profile:vx_temperature_1_17_5": {
+      "ru": [],
+      "en": []
+    },
+    "profile:vx_temperature_1_18_0": {
+      "ru": [
+        "установи температуру водителя на 18 градусов"
+      ],
+      "en": [
+        "set the driver temperature to 18 degrees"
+      ]
+    },
+    "profile:vx_temperature_1_20_0": {
+      "ru": [
+        "установи температуру водителя на 20 градусов"
+      ],
+      "en": [
+        "set the driver temperature to 20 degrees"
+      ]
+    },
+    "profile:vx_temperature_1_22_0": {
+      "ru": [
+        "установи температуру водителя на 22 градусов"
+      ],
+      "en": [
+        "set the driver temperature to 22 degrees"
+      ]
+    },
+    "profile:vx_temperature_1_24_0": {
+      "ru": [
+        "установи температуру водителя на 24 градусов"
+      ],
+      "en": [
+        "set the driver temperature to 24 degrees"
+      ]
+    },
+    "profile:vx_temperature_1_26_0": {
+      "ru": [
+        "установи температуру водителя на 26 градусов"
+      ],
+      "en": [
+        "set the driver temperature to 26 degrees"
+      ]
+    },
+    "profile:vx_temperature_1_28_0": {
+      "ru": [
+        "установи температуру водителя на 28 градусов"
+      ],
+      "en": [
+        "set the driver temperature to 28 degrees"
+      ]
+    },
+    "profile:vx_temperature_1_30_0": {
+      "ru": [
+        "установи температуру водителя на 30 градусов"
+      ],
+      "en": [
+        "set the driver temperature to 30 degrees"
+      ]
+    },
+    "profile:vx_temperature_1_32_5": {
+      "ru": [],
+      "en": []
+    },
+    "profile:vx_temperature_2_17_5": {
+      "ru": [],
+      "en": []
+    },
+    "profile:vx_temperature_2_18_0": {
+      "ru": [
+        "установи температуру пассажира на 18 градусов"
+      ],
+      "en": [
+        "set the passenger temperature to 18 degrees"
+      ]
+    },
+    "profile:vx_temperature_2_20_0": {
+      "ru": [
+        "установи температуру пассажира на 20 градусов"
+      ],
+      "en": [
+        "set the passenger temperature to 20 degrees"
+      ]
+    },
+    "profile:vx_temperature_2_22_0": {
+      "ru": [
+        "установи температуру пассажира на 22 градусов"
+      ],
+      "en": [
+        "set the passenger temperature to 22 degrees"
+      ]
+    },
+    "profile:vx_temperature_2_24_0": {
+      "ru": [
+        "установи температуру пассажира на 24 градусов"
+      ],
+      "en": [
+        "set the passenger temperature to 24 degrees"
+      ]
+    },
+    "profile:vx_temperature_2_26_0": {
+      "ru": [
+        "установи температуру пассажира на 26 градусов"
+      ],
+      "en": [
+        "set the passenger temperature to 26 degrees"
+      ]
+    },
+    "profile:vx_temperature_2_28_0": {
+      "ru": [
+        "установи температуру пассажира на 28 градусов"
+      ],
+      "en": [
+        "set the passenger temperature to 28 degrees"
+      ]
+    },
+    "profile:vx_temperature_2_30_0": {
+      "ru": [
+        "установи температуру пассажира на 30 градусов"
+      ],
+      "en": [
+        "set the passenger temperature to 30 degrees"
+      ]
+    },
+    "profile:vx_temperature_2_32_5": {
+      "ru": [],
+      "en": []
+    }
+  }
+}

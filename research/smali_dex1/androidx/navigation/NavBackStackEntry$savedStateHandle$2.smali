@@ -1,0 +1,216 @@
+.class final Landroidx/navigation/NavBackStackEntry$savedStateHandle$2;
+.super Lkotlin/jvm/internal/Lambda;
+.source "r8-map-id-94e2637d1b30c6542972a7fc4ced35aa6da258c4e6702fc7c9cbf0ebc32bec75"
+
+# interfaces
+.implements Lkotlin/jvm/functions/Function0;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Landroidx/navigation/NavBackStackEntry;-><init>(Landroid/content/Context;Landroidx/navigation/NavDestination;Landroid/os/Bundle;Landroidx/lifecycle/Lifecycle$State;Landroidx/navigation/NavViewModelStoreProvider;Ljava/lang/String;Landroid/os/Bundle;)V
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x19
+    name = null
+.end annotation
+
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Lkotlin/jvm/internal/Lambda;",
+        "Lkotlin/jvm/functions/Function0<",
+        "Landroidx/lifecycle/SavedStateHandle;",
+        ">;"
+    }
+.end annotation
+
+.annotation runtime Lkotlin/Metadata;
+    d1 = {
+        "\u0000\u0008\n\u0000\n\u0002\u0018\u0002\n\u0000\u0010\u0000\u001a\u00020\u0001H\n\u00a2\u0006\u0002\u0008\u0002"
+    }
+    d2 = {
+        "<anonymous>",
+        "Landroidx/lifecycle/SavedStateHandle;",
+        "invoke"
+    }
+    k = 0x3
+    mv = {
+        0x1,
+        0x8,
+        0x0
+    }
+    xi = 0x30
+.end annotation
+
+
+# instance fields
+.field final synthetic this$0:Landroidx/navigation/NavBackStackEntry;
+
+
+# direct methods
+.method public constructor <init>(Landroidx/navigation/NavBackStackEntry;)V
+    .registers 2
+
+    .line 1
+    iput-object p1, p0, Landroidx/navigation/NavBackStackEntry$savedStateHandle$2;->this$0:Landroidx/navigation/NavBackStackEntry;
+
+    .line 2
+    .line 3
+    const/4 p1, 0x0
+
+    .line 4
+    invoke-direct {p0, p1}, Lkotlin/jvm/internal/Lambda;-><init>(I)V
+
+    .line 5
+    .line 6
+    .line 7
+    return-void
+.end method
+
+
+# virtual methods
+.method public final invoke()Landroidx/lifecycle/SavedStateHandle;
+    .registers 5
+
+    .line 1
+    iget-object v0, p0, Landroidx/navigation/NavBackStackEntry$savedStateHandle$2;->this$0:Landroidx/navigation/NavBackStackEntry;
+
+    .line 2
+    .line 3
+    # getter for: Landroidx/navigation/NavBackStackEntry;->savedStateRegistryAttached:Z
+    invoke-static {v0}, Landroidx/navigation/NavBackStackEntry;->access$getSavedStateRegistryAttached$p(Landroidx/navigation/NavBackStackEntry;)Z
+
+    .line 4
+    .line 5
+    .line 6
+    move-result v0
+
+    .line 7
+    if-eqz v0, :cond_38
+
+    .line 8
+    .line 9
+    iget-object v0, p0, Landroidx/navigation/NavBackStackEntry$savedStateHandle$2;->this$0:Landroidx/navigation/NavBackStackEntry;
+
+    .line 10
+    .line 11
+    invoke-virtual {v0}, Landroidx/navigation/NavBackStackEntry;->getLifecycle()Landroidx/lifecycle/Lifecycle;
+
+    .line 12
+    .line 13
+    .line 14
+    move-result-object v0
+
+    .line 15
+    invoke-virtual {v0}, Landroidx/lifecycle/Lifecycle;->getCurrentState()Landroidx/lifecycle/Lifecycle$State;
+
+    .line 16
+    .line 17
+    .line 18
+    move-result-object v0
+
+    .line 19
+    sget-object v1, Landroidx/lifecycle/Lifecycle$State;->DESTROYED:Landroidx/lifecycle/Lifecycle$State;
+
+    .line 20
+    .line 21
+    if-eq v0, v1, :cond_31
+
+    .line 22
+    .line 23
+    new-instance v0, Landroidx/lifecycle/ViewModelProvider;
+
+    .line 24
+    .line 25
+    iget-object v1, p0, Landroidx/navigation/NavBackStackEntry$savedStateHandle$2;->this$0:Landroidx/navigation/NavBackStackEntry;
+
+    .line 26
+    .line 27
+    new-instance v2, Landroidx/navigation/NavBackStackEntry$NavResultSavedStateFactory;
+
+    .line 28
+    .line 29
+    iget-object v3, p0, Landroidx/navigation/NavBackStackEntry$savedStateHandle$2;->this$0:Landroidx/navigation/NavBackStackEntry;
+
+    .line 30
+    .line 31
+    invoke-direct {v2, v3}, Landroidx/navigation/NavBackStackEntry$NavResultSavedStateFactory;-><init>(Landroidx/savedstate/SavedStateRegistryOwner;)V
+
+    .line 32
+    .line 33
+    .line 34
+    invoke-direct {v0, v1, v2}, Landroidx/lifecycle/ViewModelProvider;-><init>(Landroidx/lifecycle/ViewModelStoreOwner;Landroidx/lifecycle/ViewModelProvider$Factory;)V
+
+    .line 35
+    .line 36
+    .line 37
+    const-class v1, Landroidx/navigation/NavBackStackEntry$SavedStateViewModel;
+
+    .line 38
+    .line 39
+    invoke-virtual {v0, v1}, Landroidx/lifecycle/ViewModelProvider;->get(Ljava/lang/Class;)Landroidx/lifecycle/ViewModel;
+
+    .line 40
+    .line 41
+    .line 42
+    move-result-object v0
+
+    .line 43
+    check-cast v0, Landroidx/navigation/NavBackStackEntry$SavedStateViewModel;
+
+    .line 44
+    .line 45
+    invoke-virtual {v0}, Landroidx/navigation/NavBackStackEntry$SavedStateViewModel;->getHandle()Landroidx/lifecycle/SavedStateHandle;
+
+    .line 46
+    .line 47
+    .line 48
+    move-result-object v0
+
+    .line 49
+    return-object v0
+
+    .line 50
+    :cond_31
+    const-string v0, "You cannot access the NavBackStackEntry\'s SavedStateHandle after the NavBackStackEntry is destroyed."
+
+    .line 51
+    .line 52
+    invoke-static {v0}, Lj1/i;->l(Ljava/lang/String;)V
+
+    .line 53
+    .line 54
+    .line 55
+    const/4 v0, 0x0
+
+    .line 56
+    return-object v0
+
+    .line 57
+    :cond_38
+    const-string v0, "You cannot access the NavBackStackEntry\'s SavedStateHandle until it is added to the NavController\'s back stack (i.e., the Lifecycle of the NavBackStackEntry reaches the CREATED state)."
+
+    .line 58
+    .line 59
+    invoke-static {v0}, Lj1/i;->l(Ljava/lang/String;)V
+
+    .line 60
+    .line 61
+    .line 62
+    const/4 v0, 0x0
+
+    .line 63
+    return-object v0
+.end method
+
+.method public bridge synthetic invoke()Ljava/lang/Object;
+    .registers 2
+
+    .line 64
+    invoke-virtual {p0}, Landroidx/navigation/NavBackStackEntry$savedStateHandle$2;->invoke()Landroidx/lifecycle/SavedStateHandle;
+
+    move-result-object v0
+
+    return-object v0
+.end method

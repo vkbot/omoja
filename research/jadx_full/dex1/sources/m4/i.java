@@ -1,0 +1,17 @@
+package m4;
+
+import sun.misc.Unsafe;
+
+/* JADX INFO: compiled from: r8-map-id-94e2637d1b30c6542972a7fc4ced35aa6da258c4e6702fc7c9cbf0ebc32bec75 */
+/* JADX INFO: loaded from: F:\omo\research\apk_contents\classes.dex */
+public abstract /* synthetic */ class i {
+    /* JADX DEBUG: Don't trust debug lines info. Lines numbers was adjusted: min line is 1 */
+    public static /* synthetic */ boolean a(Unsafe unsafe, m mVar, long j9, Object obj, Object obj2) {
+        while (!unsafe.compareAndSwapObject(mVar, j9, obj, obj2)) {
+            if (unsafe.getObject(mVar, j9) != obj) {
+                return false;
+            }
+        }
+        return true;
+    }
+}

@@ -1,0 +1,13 @@
+package p;
+
+import android.graphics.ImageDecoder$DecodeException;
+import android.graphics.ImageDecoder$OnPartialImageListener;
+
+/* JADX INFO: compiled from: r8-map-id-94e2637d1b30c6542972a7fc4ced35aa6da258c4e6702fc7c9cbf0ebc32bec75 */
+/* JADX INFO: loaded from: F:\omo\research\apk_contents\classes.dex */
+public final class a implements ImageDecoder$OnPartialImageListener {
+    /* JADX DEBUG: Don't trust debug lines info. Lines numbers was adjusted: min line is 1 */
+    public final boolean onPartialImage(ImageDecoder$DecodeException imageDecoder$DecodeException) {
+        return false;
+    }
+}

@@ -1,0 +1,70 @@
+.class public abstract Landroidx/core/hardware/fingerprint/FingerprintManagerCompat$AuthenticationCallback;
+.super Ljava/lang/Object;
+.source "r8-map-id-94e2637d1b30c6542972a7fc4ced35aa6da258c4e6702fc7c9cbf0ebc32bec75"
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Landroidx/core/hardware/fingerprint/FingerprintManagerCompat;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x409
+    name = "AuthenticationCallback"
+.end annotation
+
+
+# direct methods
+.method public constructor <init>()V
+    .registers 1
+
+    .line 1
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 2
+    .line 3
+    .line 4
+    return-void
+.end method
+
+
+# virtual methods
+.method public onAuthenticationError(ILjava/lang/CharSequence;)V
+    .registers 3
+    .param p2    # Ljava/lang/CharSequence;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
+
+    .line 1
+    return-void
+.end method
+
+.method public onAuthenticationFailed()V
+    .registers 1
+
+    .line 1
+    return-void
+.end method
+
+.method public onAuthenticationHelp(ILjava/lang/CharSequence;)V
+    .registers 3
+    .param p2    # Ljava/lang/CharSequence;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
+
+    .line 1
+    return-void
+.end method
+
+.method public onAuthenticationSucceeded(Landroidx/core/hardware/fingerprint/FingerprintManagerCompat$AuthenticationResult;)V
+    .registers 2
+    .param p1    # Landroidx/core/hardware/fingerprint/FingerprintManagerCompat$AuthenticationResult;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
+
+    .line 1
+    return-void
+.end method

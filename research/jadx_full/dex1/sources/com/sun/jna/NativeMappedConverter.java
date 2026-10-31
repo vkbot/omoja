@@ -1,0 +1,79 @@
+package com.sun.jna;
+
+import ai.onnxruntime.a;
+import j1.i;
+import java.lang.ref.Reference;
+import java.lang.ref.SoftReference;
+import java.util.Map;
+import java.util.WeakHashMap;
+
+/* JADX INFO: compiled from: r8-map-id-94e2637d1b30c6542972a7fc4ced35aa6da258c4e6702fc7c9cbf0ebc32bec75 */
+/* JADX INFO: loaded from: F:\omo\research\apk_contents\classes.dex */
+public class NativeMappedConverter implements TypeConverter {
+    private static final Map<Class<?>, Reference<NativeMappedConverter>> converters = new WeakHashMap();
+    private final NativeMapped instance;
+    private final Class<?> nativeType;
+    private final Class<?> type;
+
+    /* JADX DEBUG: Don't trust debug lines info. Lines numbers was adjusted: min line is 1 */
+    public NativeMappedConverter(Class<?> cls) {
+        if (!NativeMapped.class.isAssignableFrom(cls)) {
+            i.k(a.j(NativeMapped.class, "Type must derive from "));
+            throw null;
+        }
+        this.type = cls;
+        NativeMapped nativeMappedDefaultValue = defaultValue();
+        this.instance = nativeMappedDefaultValue;
+        this.nativeType = nativeMappedDefaultValue.nativeType();
+    }
+
+    /* JADX DEBUG: Don't trust debug lines info. Lines numbers was adjusted: min line is 1 */
+    public static NativeMappedConverter getInstance(Class<?> cls) {
+        NativeMappedConverter nativeMappedConverter;
+        Map<Class<?>, Reference<NativeMappedConverter>> map = converters;
+        synchronized (map) {
+            try {
+                Reference<NativeMappedConverter> reference = map.get(cls);
+                nativeMappedConverter = reference != null ? reference.get() : null;
+                if (nativeMappedConverter == null) {
+                    nativeMappedConverter = new NativeMappedConverter(cls);
+                    map.put(cls, new SoftReference(nativeMappedConverter));
+                }
+            } catch (Throwable th) {
+                throw th;
+            }
+        }
+        return nativeMappedConverter;
+    }
+
+    /* JADX DEBUG: Don't trust debug lines info. Lines numbers was adjusted: min line is 1 */
+    public NativeMapped defaultValue() {
+        boolean zIsEnum = this.type.isEnum();
+        Class<?> cls = this.type;
+        return zIsEnum ? (NativeMapped) cls.getEnumConstants()[0] : (NativeMapped) Klass.newInstance(cls);
+    }
+
+    /* JADX DEBUG: Don't trust debug lines info. Lines numbers was adjusted: min line is 1 */
+    @Override // com.sun.jna.FromNativeConverter
+    public Object fromNative(Object obj, FromNativeContext fromNativeContext) {
+        return this.instance.fromNative(obj, fromNativeContext);
+    }
+
+    /* JADX DEBUG: Don't trust debug lines info. Lines numbers was adjusted: min line is 1 */
+    @Override // com.sun.jna.FromNativeConverter, com.sun.jna.ToNativeConverter
+    public Class<?> nativeType() {
+        return this.nativeType;
+    }
+
+    /* JADX DEBUG: Don't trust debug lines info. Lines numbers was adjusted: min line is 1 */
+    @Override // com.sun.jna.ToNativeConverter
+    public Object toNative(Object obj, ToNativeContext toNativeContext) {
+        if (obj == null) {
+            if (Pointer.class.isAssignableFrom(this.nativeType)) {
+                return null;
+            }
+            obj = defaultValue();
+        }
+        return ((NativeMapped) obj).toNative();
+    }
+}

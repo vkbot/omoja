@@ -1,0 +1,409 @@
+package androidx.collection;
+
+import androidx.collection.internal.ContainerHelpersKt;
+import androidx.constraintlayout.widget.ConstraintLayout$LayoutParams$Table;
+import androidx.exifinterface.media.ExifInterface;
+import java.util.Arrays;
+import kotlin.Deprecated;
+import kotlin.Metadata;
+import kotlin.ReplaceWith;
+import kotlin.collections.ArraysKt;
+import kotlin.jvm.JvmField;
+import kotlin.jvm.JvmName;
+import kotlin.jvm.JvmOverloads;
+import kotlin.jvm.internal.DefaultConstructorMarker;
+import kotlin.jvm.internal.Intrinsics;
+import kotlin.jvm.internal.SourceDebugExtension;
+
+/* JADX INFO: compiled from: r8-map-id-94e2637d1b30c6542972a7fc4ced35aa6da258c4e6702fc7c9cbf0ebc32bec75 */
+/* JADX INFO: loaded from: F:\omo\research\apk_contents\classes.dex */
+@Metadata(d1 = {"\u0000@\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u001a\n\u0000\n\u0002\u0010\b\n\u0002\b\u0002\n\u0002\u0010\u000b\n\u0002\b\u0004\n\u0002\u0010\u0015\n\u0002\b\u0002\n\u0002\u0010\u0011\n\u0002\u0010\u0000\n\u0002\b\u0002\n\u0002\u0010\u0002\n\u0002\b\u001f\n\u0002\u0010\u000e\n\u0002\b\u0002\b\u0016\u0018\u0000*\u0004\b\u0000\u0010\u00012\u00020\u0002B\u0011\b\u0007\u0012\b\b\u0002\u0010\u0003\u001a\u00020\u0004¢\u0006\u0002\u0010\u0005J\u001d\u0010\u0012\u001a\u00020\u00132\u0006\u0010\u0014\u001a\u00020\u00042\u0006\u0010\u0015\u001a\u00028\u0000H\u0016¢\u0006\u0002\u0010\u0016J\b\u0010\u0017\u001a\u00020\u0013H\u0016J\u000e\u0010\u0018\u001a\b\u0012\u0004\u0012\u00028\u00000\u0000H\u0016J\u0010\u0010\u0019\u001a\u00020\u00072\u0006\u0010\u0014\u001a\u00020\u0004H\u0016J\u0015\u0010\u001a\u001a\u00020\u00072\u0006\u0010\u0015\u001a\u00028\u0000H\u0016¢\u0006\u0002\u0010\u001bJ\u0010\u0010\u001c\u001a\u00020\u00132\u0006\u0010\u0014\u001a\u00020\u0004H\u0017J\u0018\u0010\u001d\u001a\u0004\u0018\u00018\u00002\u0006\u0010\u0014\u001a\u00020\u0004H\u0096\u0002¢\u0006\u0002\u0010\u001eJ\u001d\u0010\u001d\u001a\u00028\u00002\u0006\u0010\u0014\u001a\u00020\u00042\u0006\u0010\u001f\u001a\u00028\u0000H\u0016¢\u0006\u0002\u0010 J\u0010\u0010!\u001a\u00020\u00042\u0006\u0010\u0014\u001a\u00020\u0004H\u0016J\u0015\u0010\"\u001a\u00020\u00042\u0006\u0010\u0015\u001a\u00028\u0000H\u0016¢\u0006\u0002\u0010#J\b\u0010\b\u001a\u00020\u0007H\u0016J\u0010\u0010$\u001a\u00020\u00042\u0006\u0010%\u001a\u00020\u0004H\u0016J\u001d\u0010&\u001a\u00020\u00132\u0006\u0010\u0014\u001a\u00020\u00042\u0006\u0010\u0015\u001a\u00028\u0000H\u0016¢\u0006\u0002\u0010\u0016J\u0018\u0010'\u001a\u00020\u00132\u000e\u0010(\u001a\n\u0012\u0006\b\u0001\u0012\u00028\u00000\u0000H\u0016J\u001f\u0010)\u001a\u0004\u0018\u00018\u00002\u0006\u0010\u0014\u001a\u00020\u00042\u0006\u0010\u0015\u001a\u00028\u0000H\u0016¢\u0006\u0002\u0010 J\u0010\u0010*\u001a\u00020\u00132\u0006\u0010\u0014\u001a\u00020\u0004H\u0016J\u001a\u0010*\u001a\u00020\u00072\u0006\u0010\u0014\u001a\u00020\u00042\b\u0010\u0015\u001a\u0004\u0018\u00010\u0010H\u0016J\u0010\u0010+\u001a\u00020\u00132\u0006\u0010%\u001a\u00020\u0004H\u0016J\u0018\u0010,\u001a\u00020\u00132\u0006\u0010%\u001a\u00020\u00042\u0006\u0010\r\u001a\u00020\u0004H\u0016J\u001f\u0010-\u001a\u0004\u0018\u00018\u00002\u0006\u0010\u0014\u001a\u00020\u00042\u0006\u0010\u0015\u001a\u00028\u0000H\u0016¢\u0006\u0002\u0010 J%\u0010-\u001a\u00020\u00072\u0006\u0010\u0014\u001a\u00020\u00042\u0006\u0010.\u001a\u00028\u00002\u0006\u0010/\u001a\u00028\u0000H\u0016¢\u0006\u0002\u00100J\u001d\u00101\u001a\u00020\u00132\u0006\u0010%\u001a\u00020\u00042\u0006\u0010\u0015\u001a\u00028\u0000H\u0016¢\u0006\u0002\u0010\u0016J\b\u0010\r\u001a\u00020\u0004H\u0016J\b\u00102\u001a\u000203H\u0016J\u0015\u00104\u001a\u00028\u00002\u0006\u0010%\u001a\u00020\u0004H\u0016¢\u0006\u0002\u0010\u001eR\u0012\u0010\u0006\u001a\u00020\u00078\u0000@\u0000X\u0081\u000e¢\u0006\u0002\n\u0000R\u0011\u0010\b\u001a\u00020\u00078G¢\u0006\u0006\u001a\u0004\b\t\u0010\nR\u0012\u0010\u000b\u001a\u00020\f8\u0000@\u0000X\u0081\u000e¢\u0006\u0002\n\u0000R\u0012\u0010\r\u001a\u00020\u00048\u0000@\u0000X\u0081\u000e¢\u0006\u0002\n\u0000R\u001c\u0010\u000e\u001a\n\u0012\u0006\u0012\u0004\u0018\u00010\u00100\u000f8\u0000@\u0000X\u0081\u000e¢\u0006\u0004\n\u0002\u0010\u0011¨\u00065"}, d2 = {"Landroidx/collection/SparseArrayCompat;", ExifInterface.LONGITUDE_EAST, "", "initialCapacity", "", "(I)V", "garbage", "", "isEmpty", "getIsEmpty", "()Z", "keys", "", "size", "values", "", "", "[Ljava/lang/Object;", "append", "", "key", "value", "(ILjava/lang/Object;)V", "clear", "clone", "containsKey", "containsValue", "(Ljava/lang/Object;)Z", "delete", "get", "(I)Ljava/lang/Object;", "defaultValue", "(ILjava/lang/Object;)Ljava/lang/Object;", "indexOfKey", "indexOfValue", "(Ljava/lang/Object;)I", "keyAt", "index", "put", "putAll", "other", "putIfAbsent", "remove", "removeAt", "removeAtRange", "replace", "oldValue", "newValue", "(ILjava/lang/Object;Ljava/lang/Object;)Z", "setValueAt", "toString", "", "valueAt", "collection"}, k = 1, mv = {1, 8, 0}, xi = ConstraintLayout$LayoutParams$Table.LAYOUT_CONSTRAINT_VERTICAL_CHAINSTYLE)
+@SourceDebugExtension({"SMAP\nSparseArrayCompat.jvm.kt\nKotlin\n*S Kotlin\n*F\n+ 1 SparseArrayCompat.jvm.kt\nandroidx/collection/SparseArrayCompat\n+ 2 SparseArrayCompat.kt\nandroidx/collection/SparseArrayCompatKt\n*L\n1#1,273:1\n275#2,9:274\n288#2,5:283\n296#2,5:288\n304#2,8:293\n320#2,9:301\n353#2,40:310\n396#2,2:350\n353#2,47:352\n403#2,3:399\n353#2,40:402\n407#2:442\n412#2,4:443\n419#2:447\n423#2,4:448\n431#2,8:452\n443#2,5:460\n451#2,4:465\n459#2,9:469\n472#2:478\n477#2:479\n459#2,9:480\n482#2,8:489\n493#2,17:497\n513#2,21:514\n*S KotlinDebug\n*F\n+ 1 SparseArrayCompat.jvm.kt\nandroidx/collection/SparseArrayCompat\n*L\n130#1:274,9\n135#1:283,5\n144#1:288,5\n152#1:293,8\n163#1:301,9\n169#1:310,40\n176#1:350,2\n176#1:352,47\n186#1:399,3\n186#1:402,40\n186#1:442\n191#1:443,4\n205#1:447\n212#1:448,4\n218#1:452,8\n224#1:460,5\n234#1:465,4\n246#1:469,9\n249#1:478\n252#1:479\n252#1:480,9\n257#1:489,8\n263#1:497,17\n271#1:514,21\n*E\n"})
+public class SparseArrayCompat<E> implements Cloneable {
+
+    @JvmField
+    public /* synthetic */ boolean garbage;
+
+    @JvmField
+    public /* synthetic */ int[] keys;
+
+    @JvmField
+    public /* synthetic */ int size;
+
+    @JvmField
+    public /* synthetic */ Object[] values;
+
+    /* JADX DEBUG: Don't trust debug lines info. Lines numbers was adjusted: min line is 1 */
+    @JvmOverloads
+    public SparseArrayCompat(int i9) {
+        if (i9 == 0) {
+            this.keys = ContainerHelpersKt.EMPTY_INTS;
+            this.values = ContainerHelpersKt.EMPTY_OBJECTS;
+        } else {
+            int iIdealIntArraySize = ContainerHelpersKt.idealIntArraySize(i9);
+            this.keys = new int[iIdealIntArraySize];
+            this.values = new Object[iIdealIntArraySize];
+        }
+    }
+
+    /* JADX DEBUG: Don't trust debug lines info. Lines numbers was adjusted: min line is 1 */
+    public void append(int key, E value) {
+        int i9 = this.size;
+        if (i9 != 0 && key <= this.keys[i9 - 1]) {
+            put(key, value);
+            return;
+        }
+        if (this.garbage && i9 >= this.keys.length) {
+            SparseArrayCompatKt.access$gc(this);
+        }
+        int i10 = this.size;
+        if (i10 >= this.keys.length) {
+            int iIdealIntArraySize = ContainerHelpersKt.idealIntArraySize(i10 + 1);
+            this.keys = Arrays.copyOf(this.keys, iIdealIntArraySize);
+            this.values = Arrays.copyOf(this.values, iIdealIntArraySize);
+        }
+        this.keys[i10] = key;
+        this.values[i10] = value;
+        this.size = i10 + 1;
+    }
+
+    /* JADX DEBUG: Don't trust debug lines info. Lines numbers was adjusted: min line is 1 */
+    public void clear() {
+        int i9 = this.size;
+        Object[] objArr = this.values;
+        for (int i10 = 0; i10 < i9; i10++) {
+            objArr[i10] = null;
+        }
+        this.size = 0;
+        this.garbage = false;
+    }
+
+    /* JADX DEBUG: Don't trust debug lines info. Lines numbers was adjusted: min line is 1 */
+    public SparseArrayCompat<E> clone() throws CloneNotSupportedException {
+        Object objClone = super.clone();
+        objClone.getClass();
+        SparseArrayCompat<E> sparseArrayCompat = (SparseArrayCompat) objClone;
+        sparseArrayCompat.keys = (int[]) this.keys.clone();
+        sparseArrayCompat.values = (Object[]) this.values.clone();
+        return sparseArrayCompat;
+    }
+
+    /* JADX DEBUG: Don't trust debug lines info. Lines numbers was adjusted: min line is 1 */
+    public boolean containsKey(int key) {
+        return indexOfKey(key) >= 0;
+    }
+
+    /* JADX DEBUG: Don't trust debug lines info. Lines numbers was adjusted: min line is 1 */
+    /* JADX WARN: Code duplicated, block: B:13:0x001a A[RETURN] */
+    /* JADX WARN: Code duplicated, block: B:15:0x001c A[RETURN] */
+    public boolean containsValue(E value) {
+        if (this.garbage) {
+            SparseArrayCompatKt.access$gc(this);
+        }
+        int i9 = this.size;
+        int i10 = 0;
+        while (i10 < i9) {
+            if (this.values[i10] == value) {
+                if (i10 >= 0) {
+                    return true;
+                }
+                return false;
+            }
+            i10++;
+        }
+        i10 = -1;
+        if (i10 >= 0) {
+            return true;
+        }
+        return false;
+    }
+
+    /* JADX DEBUG: Don't trust debug lines info. Lines numbers was adjusted: min line is 1 */
+    @Deprecated(message = "Alias for remove(int).", replaceWith = @ReplaceWith(expression = "remove(key)", imports = {}))
+    public void delete(int key) {
+        remove(key);
+    }
+
+    /* JADX DEBUG: Don't trust debug lines info. Lines numbers was adjusted: min line is 1 */
+    public E get(int key) {
+        return (E) SparseArrayCompatKt.commonGet(this, key);
+    }
+
+    /* JADX DEBUG: Don't trust debug lines info. Lines numbers was adjusted: min line is 1 */
+    @JvmName(name = "getIsEmpty")
+    public final boolean getIsEmpty() {
+        return isEmpty();
+    }
+
+    /* JADX DEBUG: Don't trust debug lines info. Lines numbers was adjusted: min line is 1 */
+    public int indexOfKey(int key) {
+        if (this.garbage) {
+            SparseArrayCompatKt.access$gc(this);
+        }
+        return ContainerHelpersKt.binarySearch(this.keys, this.size, key);
+    }
+
+    /* JADX DEBUG: Don't trust debug lines info. Lines numbers was adjusted: min line is 1 */
+    public int indexOfValue(E value) {
+        if (this.garbage) {
+            SparseArrayCompatKt.access$gc(this);
+        }
+        int i9 = this.size;
+        for (int i10 = 0; i10 < i9; i10++) {
+            if (this.values[i10] == value) {
+                return i10;
+            }
+        }
+        return -1;
+    }
+
+    /* JADX DEBUG: Don't trust debug lines info. Lines numbers was adjusted: min line is 1 */
+    public boolean isEmpty() {
+        return size() == 0;
+    }
+
+    /* JADX DEBUG: Don't trust debug lines info. Lines numbers was adjusted: min line is 1 */
+    public int keyAt(int index) {
+        if (this.garbage) {
+            SparseArrayCompatKt.access$gc(this);
+        }
+        return this.keys[index];
+    }
+
+    /* JADX DEBUG: Don't trust debug lines info. Lines numbers was adjusted: min line is 1 */
+    public void put(int key, E value) {
+        int iBinarySearch = ContainerHelpersKt.binarySearch(this.keys, this.size, key);
+        if (iBinarySearch >= 0) {
+            this.values[iBinarySearch] = value;
+            return;
+        }
+        int i9 = ~iBinarySearch;
+        if (i9 < this.size && this.values[i9] == SparseArrayCompatKt.access$getDELETED$p()) {
+            this.keys[i9] = key;
+            this.values[i9] = value;
+            return;
+        }
+        if (this.garbage && this.size >= this.keys.length) {
+            SparseArrayCompatKt.access$gc(this);
+            i9 = ~ContainerHelpersKt.binarySearch(this.keys, this.size, key);
+        }
+        int i10 = this.size;
+        if (i10 >= this.keys.length) {
+            int iIdealIntArraySize = ContainerHelpersKt.idealIntArraySize(i10 + 1);
+            this.keys = Arrays.copyOf(this.keys, iIdealIntArraySize);
+            this.values = Arrays.copyOf(this.values, iIdealIntArraySize);
+        }
+        int i11 = this.size;
+        if (i11 - i9 != 0) {
+            int[] iArr = this.keys;
+            int i12 = i9 + 1;
+            ArraysKt.k(iArr, iArr, i12, i9, i11);
+            Object[] objArr = this.values;
+            ArraysKt.m(objArr, objArr, i12, i9, this.size);
+        }
+        this.keys[i9] = key;
+        this.values[i9] = value;
+        this.size++;
+    }
+
+    /* JADX DEBUG: Don't trust debug lines info. Lines numbers was adjusted: min line is 1 */
+    public void putAll(SparseArrayCompat<? extends E> other) {
+        other.getClass();
+        int size = other.size();
+        for (int i9 = 0; i9 < size; i9++) {
+            int iKeyAt = other.keyAt(i9);
+            E eValueAt = other.valueAt(i9);
+            int iBinarySearch = ContainerHelpersKt.binarySearch(this.keys, this.size, iKeyAt);
+            if (iBinarySearch >= 0) {
+                this.values[iBinarySearch] = eValueAt;
+            } else {
+                int i10 = ~iBinarySearch;
+                if (i10 >= this.size || this.values[i10] != SparseArrayCompatKt.access$getDELETED$p()) {
+                    if (this.garbage && this.size >= this.keys.length) {
+                        SparseArrayCompatKt.access$gc(this);
+                        i10 = ~ContainerHelpersKt.binarySearch(this.keys, this.size, iKeyAt);
+                    }
+                    int i11 = this.size;
+                    if (i11 >= this.keys.length) {
+                        int iIdealIntArraySize = ContainerHelpersKt.idealIntArraySize(i11 + 1);
+                        this.keys = Arrays.copyOf(this.keys, iIdealIntArraySize);
+                        this.values = Arrays.copyOf(this.values, iIdealIntArraySize);
+                    }
+                    int i12 = this.size;
+                    if (i12 - i10 != 0) {
+                        int[] iArr = this.keys;
+                        int i13 = i10 + 1;
+                        ArraysKt.k(iArr, iArr, i13, i10, i12);
+                        Object[] objArr = this.values;
+                        ArraysKt.m(objArr, objArr, i13, i10, this.size);
+                    }
+                    this.keys[i10] = iKeyAt;
+                    this.values[i10] = eValueAt;
+                    this.size++;
+                } else {
+                    this.keys[i10] = iKeyAt;
+                    this.values[i10] = eValueAt;
+                }
+            }
+        }
+    }
+
+    /* JADX DEBUG: Don't trust debug lines info. Lines numbers was adjusted: min line is 1 */
+    public E putIfAbsent(int key, E value) {
+        E e = (E) SparseArrayCompatKt.commonGet(this, key);
+        if (e == null) {
+            int iBinarySearch = ContainerHelpersKt.binarySearch(this.keys, this.size, key);
+            if (iBinarySearch >= 0) {
+                this.values[iBinarySearch] = value;
+                return e;
+            }
+            int i9 = ~iBinarySearch;
+            if (i9 < this.size && this.values[i9] == SparseArrayCompatKt.access$getDELETED$p()) {
+                this.keys[i9] = key;
+                this.values[i9] = value;
+                return e;
+            }
+            if (this.garbage && this.size >= this.keys.length) {
+                SparseArrayCompatKt.access$gc(this);
+                i9 = ~ContainerHelpersKt.binarySearch(this.keys, this.size, key);
+            }
+            int i10 = this.size;
+            if (i10 >= this.keys.length) {
+                int iIdealIntArraySize = ContainerHelpersKt.idealIntArraySize(i10 + 1);
+                this.keys = Arrays.copyOf(this.keys, iIdealIntArraySize);
+                this.values = Arrays.copyOf(this.values, iIdealIntArraySize);
+            }
+            int i11 = this.size;
+            if (i11 - i9 != 0) {
+                int[] iArr = this.keys;
+                int i12 = i9 + 1;
+                ArraysKt.k(iArr, iArr, i12, i9, i11);
+                Object[] objArr = this.values;
+                ArraysKt.m(objArr, objArr, i12, i9, this.size);
+            }
+            this.keys[i9] = key;
+            this.values[i9] = value;
+            this.size++;
+        }
+        return e;
+    }
+
+    /* JADX DEBUG: Don't trust debug lines info. Lines numbers was adjusted: min line is 1 */
+    public boolean remove(int key, Object value) {
+        int iIndexOfKey = indexOfKey(key);
+        if (iIndexOfKey < 0 || !Intrinsics.areEqual(value, valueAt(iIndexOfKey))) {
+            return false;
+        }
+        removeAt(iIndexOfKey);
+        return true;
+    }
+
+    /* JADX DEBUG: Don't trust debug lines info. Lines numbers was adjusted: min line is 1 */
+    public void removeAt(int index) {
+        if (this.values[index] != SparseArrayCompatKt.access$getDELETED$p()) {
+            this.values[index] = SparseArrayCompatKt.access$getDELETED$p();
+            this.garbage = true;
+        }
+    }
+
+    /* JADX DEBUG: Don't trust debug lines info. Lines numbers was adjusted: min line is 1 */
+    public void removeAtRange(int index, int size) {
+        int iMin = Math.min(size, index + size);
+        while (index < iMin) {
+            removeAt(index);
+            index++;
+        }
+    }
+
+    /* JADX DEBUG: Don't trust debug lines info. Lines numbers was adjusted: min line is 1 */
+    public boolean replace(int key, E oldValue, E newValue) {
+        int iIndexOfKey = indexOfKey(key);
+        if (iIndexOfKey < 0 || !Intrinsics.areEqual(this.values[iIndexOfKey], oldValue)) {
+            return false;
+        }
+        this.values[iIndexOfKey] = newValue;
+        return true;
+    }
+
+    /* JADX DEBUG: Don't trust debug lines info. Lines numbers was adjusted: min line is 1 */
+    public void setValueAt(int index, E value) {
+        if (this.garbage) {
+            SparseArrayCompatKt.access$gc(this);
+        }
+        this.values[index] = value;
+    }
+
+    /* JADX DEBUG: Don't trust debug lines info. Lines numbers was adjusted: min line is 1 */
+    public int size() {
+        if (this.garbage) {
+            SparseArrayCompatKt.access$gc(this);
+        }
+        return this.size;
+    }
+
+    /* JADX DEBUG: Don't trust debug lines info. Lines numbers was adjusted: min line is 1 */
+    public String toString() {
+        if (size() <= 0) {
+            return "{}";
+        }
+        StringBuilder sb = new StringBuilder(this.size * 28);
+        sb.append('{');
+        int i9 = this.size;
+        for (int i10 = 0; i10 < i9; i10++) {
+            if (i10 > 0) {
+                sb.append(", ");
+            }
+            sb.append(keyAt(i10));
+            sb.append('=');
+            E eValueAt = valueAt(i10);
+            if (eValueAt != this) {
+                sb.append(eValueAt);
+            } else {
+                sb.append("(this Map)");
+            }
+        }
+        sb.append('}');
+        return sb.toString();
+    }
+
+    /* JADX DEBUG: Don't trust debug lines info. Lines numbers was adjusted: min line is 1 */
+    public E valueAt(int index) {
+        if (this.garbage) {
+            SparseArrayCompatKt.access$gc(this);
+        }
+        return (E) this.values[index];
+    }
+
+    public E get(int key, E defaultValue) {
+        return (E) SparseArrayCompatKt.commonGet(this, key, defaultValue);
+    }
+
+    public void remove(int key) {
+        SparseArrayCompatKt.commonRemove(this, key);
+    }
+
+    public E replace(int key, E value) {
+        int iIndexOfKey = indexOfKey(key);
+        if (iIndexOfKey < 0) {
+            return null;
+        }
+        Object[] objArr = this.values;
+        E e = (E) objArr[iIndexOfKey];
+        objArr[iIndexOfKey] = value;
+        return e;
+    }
+
+    @JvmOverloads
+    public SparseArrayCompat() {
+        this(0, 1, null);
+    }
+
+    public /* synthetic */ SparseArrayCompat(int i9, int i10, DefaultConstructorMarker defaultConstructorMarker) {
+        this((i10 & 1) != 0 ? 10 : i9);
+    }
+
+    /* JADX INFO: renamed from: clone, reason: collision with other method in class */
+    public /* bridge */ /* synthetic */ Object m25clone() {
+        return clone();
+    }
+}

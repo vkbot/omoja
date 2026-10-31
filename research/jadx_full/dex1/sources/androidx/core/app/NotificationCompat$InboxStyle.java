@@ -1,0 +1,94 @@
+package androidx.core.app;
+
+import android.app.Notification$InboxStyle;
+import android.os.Bundle;
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
+import androidx.annotation.RestrictTo;
+import androidx.annotation.RestrictTo$Scope;
+import java.util.ArrayList;
+import java.util.Collections;
+
+/* JADX INFO: compiled from: r8-map-id-94e2637d1b30c6542972a7fc4ced35aa6da258c4e6702fc7c9cbf0ebc32bec75 */
+/* JADX INFO: loaded from: F:\omo\research\apk_contents\classes.dex */
+public class NotificationCompat$InboxStyle extends NotificationCompat$Style {
+    private static final String TEMPLATE_CLASS_NAME = "androidx.core.app.NotificationCompat$InboxStyle";
+    private ArrayList<CharSequence> mTexts = new ArrayList<>();
+
+    /* JADX DEBUG: Don't trust debug lines info. Lines numbers was adjusted: min line is 1 */
+    public NotificationCompat$InboxStyle(@Nullable NotificationCompat$Builder notificationCompat$Builder) {
+        setBuilder(notificationCompat$Builder);
+    }
+
+    /* JADX DEBUG: Don't trust debug lines info. Lines numbers was adjusted: min line is 1 */
+    @NonNull
+    public NotificationCompat$InboxStyle addLine(@Nullable CharSequence charSequence) {
+        if (charSequence != null) {
+            this.mTexts.add(NotificationCompat$Builder.limitCharSequenceLength(charSequence));
+        }
+        return this;
+    }
+
+    /* JADX DEBUG: Don't trust debug lines info. Lines numbers was adjusted: min line is 1 */
+    @Override // androidx.core.app.NotificationCompat$Style
+    @RestrictTo({RestrictTo$Scope.LIBRARY_GROUP_PREFIX})
+    public void apply(NotificationBuilderWithBuilderAccessor notificationBuilderWithBuilderAccessor) {
+        Notification$InboxStyle bigContentTitle = new Notification$InboxStyle(notificationBuilderWithBuilderAccessor.getBuilder()).setBigContentTitle(this.mBigContentTitle);
+        if (this.mSummaryTextSet) {
+            bigContentTitle.setSummaryText(this.mSummaryText);
+        }
+        ArrayList<CharSequence> arrayList = this.mTexts;
+        int size = arrayList.size();
+        int i9 = 0;
+        while (i9 < size) {
+            CharSequence charSequence = arrayList.get(i9);
+            i9++;
+            bigContentTitle.addLine(charSequence);
+        }
+    }
+
+    /* JADX DEBUG: Don't trust debug lines info. Lines numbers was adjusted: min line is 1 */
+    @Override // androidx.core.app.NotificationCompat$Style
+    @RestrictTo({RestrictTo$Scope.LIBRARY_GROUP_PREFIX})
+    public void clearCompatExtraKeys(@NonNull Bundle bundle) {
+        super.clearCompatExtraKeys(bundle);
+        bundle.remove(NotificationCompat.EXTRA_TEXT_LINES);
+    }
+
+    /* JADX DEBUG: Don't trust debug lines info. Lines numbers was adjusted: min line is 1 */
+    @Override // androidx.core.app.NotificationCompat$Style
+    @NonNull
+    @RestrictTo({RestrictTo$Scope.LIBRARY_GROUP_PREFIX})
+    public String getClassName() {
+        return TEMPLATE_CLASS_NAME;
+    }
+
+    /* JADX DEBUG: Don't trust debug lines info. Lines numbers was adjusted: min line is 1 */
+    @Override // androidx.core.app.NotificationCompat$Style
+    @RestrictTo({RestrictTo$Scope.LIBRARY_GROUP_PREFIX})
+    public void restoreFromCompatExtras(@NonNull Bundle bundle) {
+        super.restoreFromCompatExtras(bundle);
+        this.mTexts.clear();
+        if (bundle.containsKey(NotificationCompat.EXTRA_TEXT_LINES)) {
+            Collections.addAll(this.mTexts, bundle.getCharSequenceArray(NotificationCompat.EXTRA_TEXT_LINES));
+        }
+    }
+
+    /* JADX DEBUG: Don't trust debug lines info. Lines numbers was adjusted: min line is 1 */
+    @NonNull
+    public NotificationCompat$InboxStyle setBigContentTitle(@Nullable CharSequence charSequence) {
+        this.mBigContentTitle = NotificationCompat$Builder.limitCharSequenceLength(charSequence);
+        return this;
+    }
+
+    /* JADX DEBUG: Don't trust debug lines info. Lines numbers was adjusted: min line is 1 */
+    @NonNull
+    public NotificationCompat$InboxStyle setSummaryText(@Nullable CharSequence charSequence) {
+        this.mSummaryText = NotificationCompat$Builder.limitCharSequenceLength(charSequence);
+        this.mSummaryTextSet = true;
+        return this;
+    }
+
+    public NotificationCompat$InboxStyle() {
+    }
+}

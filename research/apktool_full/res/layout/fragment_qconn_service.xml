@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:padding="20.0dp" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="20.0sp" android:textStyle="bold" android:textColor="?android:textColorPrimary" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Проверка сервиса" />
+    <TextView android:textSize="16.0sp" android:textColor="?android:textColorPrimary" android:id="@id/qconnServiceStages" android:background="?android:colorBackground" android:padding="12.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="16.0dp" android:minHeight="160.0dp" android:text="Готово к запуску" />
+    <TextView android:textSize="14.0sp" android:textColor="?android:textColorPrimary" android:id="@id/qconnServiceOutput" android:background="?android:colorBackground" android:padding="12.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dp" android:textIsSelectable="true" />
+    <Button android:id="@id/qconnServiceStart" android:layout_width="match_parent" android:layout_height="56.0dp" android:layout_marginTop="12.0dp" android:text="Запустить" />
+</LinearLayout>

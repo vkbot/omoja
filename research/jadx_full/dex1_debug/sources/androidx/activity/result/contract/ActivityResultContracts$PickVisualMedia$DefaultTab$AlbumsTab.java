@@ -1,0 +1,23 @@
+package androidx.activity.result.contract;
+
+import androidx.constraintlayout.widget.ConstraintLayout$LayoutParams$Table;
+import kotlin.Metadata;
+
+/* JADX INFO: compiled from: r8-map-id-94e2637d1b30c6542972a7fc4ced35aa6da258c4e6702fc7c9cbf0ebc32bec75 */
+/* JADX INFO: loaded from: F:\omo\research\apk_contents\classes.dex */
+@Metadata(d1 = {"\u0000\u0014\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\b\n\u0002\b\u0003\bÆ\u0002\u0018\u00002\u00020\u0001B\u0007\b\u0002¢\u0006\u0002\u0010\u0002R\u0014\u0010\u0003\u001a\u00020\u0004X\u0096D¢\u0006\b\n\u0000\u001a\u0004\b\u0005\u0010\u0006¨\u0006\u0007"}, d2 = {"Landroidx/activity/result/contract/ActivityResultContracts$PickVisualMedia$DefaultTab$AlbumsTab;", "Landroidx/activity/result/contract/ActivityResultContracts$PickVisualMedia$DefaultTab;", "()V", "value", "", "getValue", "()I", "activity_release"}, k = 1, mv = {1, 8, 0}, xi = ConstraintLayout$LayoutParams$Table.LAYOUT_CONSTRAINT_VERTICAL_CHAINSTYLE)
+public final class ActivityResultContracts$PickVisualMedia$DefaultTab$AlbumsTab extends ActivityResultContracts$PickVisualMedia$DefaultTab {
+    public static final ActivityResultContracts$PickVisualMedia$DefaultTab$AlbumsTab INSTANCE = new ActivityResultContracts$PickVisualMedia$DefaultTab$AlbumsTab();
+    private static final int value = 0;
+
+    /* JADX DEBUG: Don't trust debug lines info. Lines numbers was adjusted: min line is 1 */
+    private ActivityResultContracts$PickVisualMedia$DefaultTab$AlbumsTab() {
+        super(null);
+    }
+
+    /* JADX DEBUG: Don't trust debug lines info. Lines numbers was adjusted: min line is 1 */
+    @Override // androidx.activity.result.contract.ActivityResultContracts$PickVisualMedia$DefaultTab
+    public int getValue() {
+        return value;
+    }
+}

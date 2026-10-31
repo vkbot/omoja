@@ -1,0 +1,70 @@
+.class public final Lcom/google/protobuf/m1;
+.super Ljava/lang/Object;
+.source "r8-map-id-94e2637d1b30c6542972a7fc4ced35aa6da258c4e6702fc7c9cbf0ebc32bec75"
+
+# interfaces
+.implements Ljava/util/Iterator;
+
+
+# instance fields
+.field public b:Ljava/util/Iterator;
+
+
+# virtual methods
+.method public final hasNext()Z
+    .registers 2
+
+    .line 1
+    iget-object v0, p0, Lcom/google/protobuf/m1;->b:Ljava/util/Iterator;
+
+    .line 2
+    .line 3
+    invoke-interface {v0}, Ljava/util/Iterator;->hasNext()Z
+
+    .line 4
+    .line 5
+    .line 6
+    move-result v0
+
+    .line 7
+    return v0
+.end method
+
+.method public final next()Ljava/lang/Object;
+    .registers 2
+
+    .line 1
+    iget-object v0, p0, Lcom/google/protobuf/m1;->b:Ljava/util/Iterator;
+
+    .line 2
+    .line 3
+    invoke-interface {v0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+
+    .line 4
+    .line 5
+    .line 6
+    move-result-object v0
+
+    .line 7
+    check-cast v0, Ljava/lang/String;
+
+    .line 8
+    .line 9
+    return-object v0
+.end method
+
+.method public final remove()V
+    .registers 2
+
+    .line 1
+    new-instance v0, Ljava/lang/UnsupportedOperationException;
+
+    .line 2
+    .line 3
+    invoke-direct {v0}, Ljava/lang/UnsupportedOperationException;-><init>()V
+
+    .line 4
+    .line 5
+    .line 6
+    throw v0
+.end method

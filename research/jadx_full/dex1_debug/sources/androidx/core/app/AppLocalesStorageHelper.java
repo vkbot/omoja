@@ -1,0 +1,134 @@
+package androidx.core.app;
+
+import android.content.Context;
+import android.util.Log;
+import android.util.Xml;
+import androidx.annotation.NonNull;
+import androidx.annotation.RestrictTo;
+import androidx.annotation.RestrictTo$Scope;
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import org.xmlpull.v1.XmlPullParser;
+import org.xmlpull.v1.XmlPullParserException;
+import org.xmlpull.v1.XmlSerializer;
+
+/* JADX INFO: compiled from: r8-map-id-94e2637d1b30c6542972a7fc4ced35aa6da258c4e6702fc7c9cbf0ebc32bec75 */
+/* JADX INFO: loaded from: F:\omo\research\apk_contents\classes.dex */
+@RestrictTo({RestrictTo$Scope.LIBRARY_GROUP_PREFIX})
+public class AppLocalesStorageHelper {
+    static final String APPLICATION_LOCALES_RECORD_FILE = "androidx.appcompat.app.AppCompatDelegate.application_locales_record_file";
+    static final boolean DEBUG = false;
+    static final String LOCALE_RECORD_ATTRIBUTE_TAG = "application_locales";
+    static final String LOCALE_RECORD_FILE_TAG = "locales";
+    static final String TAG = "AppLocalesStorageHelper";
+    private static final Object sAppLocaleStorageSync = new Object();
+
+    /* JADX DEBUG: Don't trust debug lines info. Lines numbers was adjusted: min line is 1 */
+    private AppLocalesStorageHelper() {
+    }
+
+    /* JADX DEBUG: Don't trust debug lines info. Lines numbers was adjusted: min line is 1 */
+    /* JADX WARN: Code duplicated, block: B:42:0x003e A[EXC_TOP_SPLITTER, SYNTHETIC] */
+    public static void persistLocales(@NonNull Context context, @NonNull String str) {
+        synchronized (sAppLocaleStorageSync) {
+            if (str.equals("")) {
+                context.deleteFile(APPLICATION_LOCALES_RECORD_FILE);
+                return;
+            }
+            try {
+                FileOutputStream fileOutputStreamOpenFileOutput = context.openFileOutput(APPLICATION_LOCALES_RECORD_FILE, 0);
+                XmlSerializer xmlSerializerNewSerializer = Xml.newSerializer();
+                try {
+                    try {
+                        xmlSerializerNewSerializer.setOutput(fileOutputStreamOpenFileOutput, null);
+                        xmlSerializerNewSerializer.startDocument("UTF-8", Boolean.TRUE);
+                        xmlSerializerNewSerializer.startTag(null, LOCALE_RECORD_FILE_TAG);
+                        xmlSerializerNewSerializer.attribute(null, LOCALE_RECORD_ATTRIBUTE_TAG, str);
+                        xmlSerializerNewSerializer.endTag(null, LOCALE_RECORD_FILE_TAG);
+                        xmlSerializerNewSerializer.endDocument();
+                        if (fileOutputStreamOpenFileOutput != null) {
+                            try {
+                                fileOutputStreamOpenFileOutput.close();
+                            } catch (IOException unused) {
+                            }
+                        }
+                    } catch (Throwable th) {
+                        if (fileOutputStreamOpenFileOutput != null) {
+                            try {
+                                fileOutputStreamOpenFileOutput.close();
+                            } catch (IOException unused2) {
+                            }
+                        }
+                        throw th;
+                    }
+                } catch (Exception e) {
+                    Log.w(TAG, "Storing App Locales : Failed to persist app-locales in storage ", e);
+                    if (fileOutputStreamOpenFileOutput != null) {
+                        fileOutputStreamOpenFileOutput.close();
+                    }
+                }
+            } catch (FileNotFoundException unused3) {
+                Log.w(TAG, "Storing App Locales : FileNotFoundException: Cannot open file androidx.appcompat.app.AppCompatDelegate.application_locales_record_file for writing ");
+            }
+        }
+    }
+
+    /* JADX DEBUG: Don't trust debug lines info. Lines numbers was adjusted: min line is 1 */
+    /* JADX WARN: Code duplicated, block: B:48:0x0046 A[EXC_TOP_SPLITTER, PHI: r1
+  0x0046: PHI (r1v2 java.lang.String) = (r1v0 java.lang.String), (r1v4 java.lang.String) binds: [B:29:0x0053, B:23:0x0044] A[DONT_GENERATE, DONT_INLINE], SYNTHETIC] */
+    @NonNull
+    public static String readLocales(@NonNull Context context) {
+        String attributeValue;
+        synchronized (sAppLocaleStorageSync) {
+            attributeValue = "";
+            try {
+                FileInputStream fileInputStreamOpenFileInput = context.openFileInput(APPLICATION_LOCALES_RECORD_FILE);
+                try {
+                    try {
+                        XmlPullParser xmlPullParserNewPullParser = Xml.newPullParser();
+                        xmlPullParserNewPullParser.setInput(fileInputStreamOpenFileInput, "UTF-8");
+                        int depth = xmlPullParserNewPullParser.getDepth();
+                        while (true) {
+                            int next = xmlPullParserNewPullParser.next();
+                            if (next != 1 && (next != 3 || xmlPullParserNewPullParser.getDepth() > depth)) {
+                                if (next != 3 && next != 4 && xmlPullParserNewPullParser.getName().equals(LOCALE_RECORD_FILE_TAG)) {
+                                    attributeValue = xmlPullParserNewPullParser.getAttributeValue(null, LOCALE_RECORD_ATTRIBUTE_TAG);
+                                    break;
+                                }
+                            } else {
+                                break;
+                            }
+                        }
+                        if (fileInputStreamOpenFileInput != null) {
+                            try {
+                                fileInputStreamOpenFileInput.close();
+                            } catch (IOException unused) {
+                            }
+                        }
+                    } catch (IOException | XmlPullParserException unused2) {
+                        Log.w(TAG, "Reading app Locales : Unable to parse through file :androidx.appcompat.app.AppCompatDelegate.application_locales_record_file");
+                        if (fileInputStreamOpenFileInput != null) {
+                            fileInputStreamOpenFileInput.close();
+                        }
+                    }
+                    if (attributeValue.isEmpty()) {
+                        context.deleteFile(APPLICATION_LOCALES_RECORD_FILE);
+                    }
+                } catch (Throwable th) {
+                    if (fileInputStreamOpenFileInput != null) {
+                        try {
+                            fileInputStreamOpenFileInput.close();
+                        } catch (IOException unused3) {
+                        }
+                    }
+                    throw th;
+                }
+            } catch (FileNotFoundException unused4) {
+                return "";
+            }
+        }
+        return attributeValue;
+    }
+}

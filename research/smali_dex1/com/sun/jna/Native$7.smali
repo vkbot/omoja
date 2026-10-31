@@ -1,0 +1,74 @@
+.class final Lcom/sun/jna/Native$7;
+.super Ljava/lang/ThreadLocal;
+.source "r8-map-id-94e2637d1b30c6542972a7fc4ced35aa6da258c4e6702fc7c9cbf0ebc32bec75"
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lcom/sun/jna/Native;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x9
+    name = null
+.end annotation
+
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Ljava/lang/ThreadLocal<",
+        "Lcom/sun/jna/Memory;",
+        ">;"
+    }
+.end annotation
+
+
+# direct methods
+.method public constructor <init>()V
+    .registers 1
+
+    .line 1
+    invoke-direct {p0}, Ljava/lang/ThreadLocal;-><init>()V
+
+    .line 2
+    .line 3
+    .line 4
+    return-void
+.end method
+
+
+# virtual methods
+.method public initialValue()Lcom/sun/jna/Memory;
+    .registers 4
+
+    .line 1
+    new-instance v0, Lcom/sun/jna/Memory;
+
+    .line 2
+    .line 3
+    const-wide/16 v1, 0x4
+
+    .line 4
+    .line 5
+    invoke-direct {v0, v1, v2}, Lcom/sun/jna/Memory;-><init>(J)V
+
+    .line 6
+    .line 7
+    .line 8
+    invoke-virtual {v0}, Lcom/sun/jna/Memory;->clear()V
+
+    .line 9
+    .line 10
+    .line 11
+    return-object v0
+.end method
+
+.method public bridge synthetic initialValue()Ljava/lang/Object;
+    .registers 2
+
+    .line 12
+    invoke-virtual {p0}, Lcom/sun/jna/Native$7;->initialValue()Lcom/sun/jna/Memory;
+
+    move-result-object v0
+
+    return-object v0
+.end method

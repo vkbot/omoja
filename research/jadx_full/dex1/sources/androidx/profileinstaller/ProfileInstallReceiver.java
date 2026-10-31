@@ -1,0 +1,92 @@
+package androidx.profileinstaller;
+
+import android.content.BroadcastReceiver;
+import android.content.Context;
+import android.content.Intent;
+import android.os.Bundle;
+import android.os.Process;
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
+
+/* JADX INFO: compiled from: r8-map-id-94e2637d1b30c6542972a7fc4ced35aa6da258c4e6702fc7c9cbf0ebc32bec75 */
+/* JADX INFO: loaded from: F:\omo\research\apk_contents\classes.dex */
+public class ProfileInstallReceiver extends BroadcastReceiver {
+
+    @NonNull
+    public static final String ACTION_BENCHMARK_OPERATION = "androidx.profileinstaller.action.BENCHMARK_OPERATION";
+
+    @NonNull
+    public static final String ACTION_INSTALL_PROFILE = "androidx.profileinstaller.action.INSTALL_PROFILE";
+
+    @NonNull
+    public static final String ACTION_SAVE_PROFILE = "androidx.profileinstaller.action.SAVE_PROFILE";
+
+    @NonNull
+    public static final String ACTION_SKIP_FILE = "androidx.profileinstaller.action.SKIP_FILE";
+
+    @NonNull
+    private static final String EXTRA_BENCHMARK_OPERATION = "EXTRA_BENCHMARK_OPERATION";
+
+    @NonNull
+    private static final String EXTRA_BENCHMARK_OPERATION_DROP_SHADER_CACHE = "DROP_SHADER_CACHE";
+
+    @NonNull
+    private static final String EXTRA_SKIP_FILE_OPERATION = "EXTRA_SKIP_FILE_OPERATION";
+
+    @NonNull
+    private static final String EXTRA_SKIP_FILE_OPERATION_DELETE = "DELETE_SKIP_FILE";
+
+    @NonNull
+    private static final String EXTRA_SKIP_FILE_OPERATION_WRITE = "WRITE_SKIP_FILE";
+
+    /* JADX DEBUG: Don't trust debug lines info. Lines numbers was adjusted: min line is 1 */
+    public static void saveProfile(@NonNull ProfileInstaller$DiagnosticsCallback profileInstaller$DiagnosticsCallback) {
+        Process.sendSignal(Process.myPid(), 10);
+        profileInstaller$DiagnosticsCallback.onResultReceived(12, null);
+    }
+
+    /* JADX DEBUG: Don't trust debug lines info. Lines numbers was adjusted: min line is 1 */
+    @Override // android.content.BroadcastReceiver
+    public void onReceive(@NonNull Context context, @Nullable Intent intent) {
+        Bundle extras;
+        if (intent == null) {
+            return;
+        }
+        String action = intent.getAction();
+        if (ACTION_INSTALL_PROFILE.equals(action)) {
+            ProfileInstaller.writeProfile(context, new androidx.arch.core.executor.a(2), new ProfileInstallReceiver$ResultDiagnostics(this), true);
+            return;
+        }
+        if (ACTION_SKIP_FILE.equals(action)) {
+            Bundle extras2 = intent.getExtras();
+            if (extras2 != null) {
+                String string = extras2.getString(EXTRA_SKIP_FILE_OPERATION);
+                if (EXTRA_SKIP_FILE_OPERATION_WRITE.equals(string)) {
+                    ProfileInstaller.writeSkipFile(context, new androidx.arch.core.executor.a(2), new ProfileInstallReceiver$ResultDiagnostics(this));
+                    return;
+                } else {
+                    if (EXTRA_SKIP_FILE_OPERATION_DELETE.equals(string)) {
+                        ProfileInstaller.deleteSkipFile(context, new androidx.arch.core.executor.a(2), new ProfileInstallReceiver$ResultDiagnostics(this));
+                        return;
+                    }
+                    return;
+                }
+            }
+            return;
+        }
+        if (ACTION_SAVE_PROFILE.equals(action)) {
+            saveProfile(new ProfileInstallReceiver$ResultDiagnostics(this));
+            return;
+        }
+        if (!ACTION_BENCHMARK_OPERATION.equals(action) || (extras = intent.getExtras()) == null) {
+            return;
+        }
+        String string2 = extras.getString(EXTRA_BENCHMARK_OPERATION);
+        ProfileInstallReceiver$ResultDiagnostics profileInstallReceiver$ResultDiagnostics = new ProfileInstallReceiver$ResultDiagnostics(this);
+        if (EXTRA_BENCHMARK_OPERATION_DROP_SHADER_CACHE.equals(string2)) {
+            BenchmarkOperation.dropShaderCache(context, profileInstallReceiver$ResultDiagnostics);
+        } else {
+            profileInstallReceiver$ResultDiagnostics.onResultReceived(16, null);
+        }
+    }
+}

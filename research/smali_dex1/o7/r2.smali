@@ -1,0 +1,235 @@
+.class public final Lo7/r2;
+.super Ljava/io/OutputStream;
+.source "r8-map-id-94e2637d1b30c6542972a7fc4ced35aa6da258c4e6702fc7c9cbf0ebc32bec75"
+
+
+# instance fields
+.field public final b:Ljava/util/ArrayList;
+
+.field public c:Lp7/u;
+
+.field public final synthetic d:Lo7/t2;
+
+
+# direct methods
+.method public constructor <init>(Lo7/t2;)V
+    .registers 2
+
+    .line 1
+    iput-object p1, p0, Lo7/r2;->d:Lo7/t2;
+
+    .line 2
+    .line 3
+    invoke-direct {p0}, Ljava/io/OutputStream;-><init>()V
+
+    .line 4
+    .line 5
+    .line 6
+    new-instance p1, Ljava/util/ArrayList;
+
+    .line 7
+    .line 8
+    invoke-direct {p1}, Ljava/util/ArrayList;-><init>()V
+
+    .line 9
+    .line 10
+    .line 11
+    iput-object p1, p0, Lo7/r2;->b:Ljava/util/ArrayList;
+
+    .line 12
+    .line 13
+    return-void
+.end method
+
+
+# virtual methods
+.method public final write(I)V
+    .registers 5
+
+    .line 65
+    iget-object v0, p0, Lo7/r2;->c:Lp7/u;
+
+    const/4 v1, 0x1
+
+    if-eqz v0, :cond_1a
+
+    .line 66
+    iget v2, v0, Lp7/u;->b:I
+
+    if-lez v2, :cond_1a
+
+    int-to-byte p1, p1
+
+    .line 67
+    iget-object v2, v0, Lp7/u;->a:Ll9/l;
+
+    .line 68
+    invoke-virtual {v2, p1}, Ll9/l;->m0(I)V
+
+    .line 69
+    iget p1, v0, Lp7/u;->b:I
+
+    sub-int/2addr p1, v1
+
+    iput p1, v0, Lp7/u;->b:I
+
+    .line 70
+    iget p1, v0, Lp7/u;->c:I
+
+    add-int/2addr p1, v1
+
+    iput p1, v0, Lp7/u;->c:I
+
+    return-void
+
+    :cond_1a
+    int-to-byte p1, p1
+
+    .line 71
+    new-array v0, v1, [B
+
+    const/4 v2, 0x0
+
+    aput-byte p1, v0, v2
+
+    .line 72
+    invoke-virtual {p0, v0, v2, v1}, Lo7/r2;->write([BII)V
+
+    return-void
+.end method
+
+.method public final write([BII)V
+    .registers 8
+
+    .line 1
+    iget-object v0, p0, Lo7/r2;->d:Lo7/t2;
+
+    .line 2
+    .line 3
+    iget-object v0, v0, Lo7/t2;->g:Lc5/e;
+
+    .line 4
+    .line 5
+    iget-object v1, p0, Lo7/r2;->c:Lp7/u;
+
+    .line 6
+    .line 7
+    iget-object v2, p0, Lo7/r2;->b:Ljava/util/ArrayList;
+
+    .line 8
+    .line 9
+    if-nez v1, :cond_16
+
+    .line 10
+    .line 11
+    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 12
+    .line 13
+    .line 14
+    invoke-static {p3}, Lc5/e;->o(I)Lp7/u;
+
+    .line 15
+    .line 16
+    .line 17
+    move-result-object v1
+
+    .line 18
+    iput-object v1, p0, Lo7/r2;->c:Lp7/u;
+
+    .line 19
+    .line 20
+    invoke-virtual {v2, v1}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+
+    .line 21
+    .line 22
+    .line 23
+    :cond_16
+    :goto_16
+    if-lez p3, :cond_3f
+
+    .line 24
+    .line 25
+    iget-object v1, p0, Lo7/r2;->c:Lp7/u;
+
+    .line 26
+    .line 27
+    iget v1, v1, Lp7/u;->b:I
+
+    .line 28
+    .line 29
+    invoke-static {p3, v1}, Ljava/lang/Math;->min(II)I
+
+    .line 30
+    .line 31
+    .line 32
+    move-result v1
+
+    .line 33
+    iget-object v3, p0, Lo7/r2;->c:Lp7/u;
+
+    .line 34
+    .line 35
+    if-nez v1, :cond_39
+
+    .line 36
+    .line 37
+    iget v1, v3, Lp7/u;->c:I
+
+    .line 38
+    .line 39
+    mul-int/lit8 v1, v1, 0x2
+
+    .line 40
+    .line 41
+    invoke-static {p3, v1}, Ljava/lang/Math;->max(II)I
+
+    .line 42
+    .line 43
+    .line 44
+    move-result v1
+
+    .line 45
+    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 46
+    .line 47
+    .line 48
+    invoke-static {v1}, Lc5/e;->o(I)Lp7/u;
+
+    .line 49
+    .line 50
+    .line 51
+    move-result-object v1
+
+    .line 52
+    iput-object v1, p0, Lo7/r2;->c:Lp7/u;
+
+    .line 53
+    .line 54
+    invoke-virtual {v2, v1}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+
+    .line 55
+    .line 56
+    .line 57
+    goto :goto_16
+
+    .line 58
+    :cond_39
+    invoke-virtual {v3, p1, p2, v1}, Lp7/u;->a([BII)V
+
+    .line 59
+    .line 60
+    .line 61
+    add-int/2addr p2, v1
+
+    .line 62
+    sub-int/2addr p3, v1
+
+    .line 63
+    goto :goto_16
+
+    .line 64
+    :cond_3f
+    return-void
+.end method

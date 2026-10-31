@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/modern_action_row" android:paddingTop="12.0dp" android:paddingBottom="12.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="8.0dp" android:minHeight="76.0dp" android:paddingStart="18.0dp" android:paddingEnd="18.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="18.0sp" android:textStyle="bold" android:textColor="@color/modern_text" android:ellipsize="end" android:id="@id/ssidText" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxLines="1" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="4.0dp">
+        <TextView android:textSize="14.0sp" android:textStyle="bold" android:textColor="@color/modern_primary" android:id="@id/statusText" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_weight="1.0" />
+        <TextView android:textSize="14.0sp" android:textColor="@color/modern_text_secondary" android:id="@id/signalText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/wifi_signal_unknown" />
+    </LinearLayout>
+</LinearLayout>

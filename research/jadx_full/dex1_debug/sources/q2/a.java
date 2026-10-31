@@ -1,0 +1,100 @@
+package q2;
+
+import android.app.Activity;
+import android.app.Application$ActivityLifecycleCallbacks;
+import android.content.ComponentCallbacks2;
+import android.content.res.Configuration;
+import android.os.Bundle;
+import java.util.ArrayList;
+import java.util.concurrent.atomic.AtomicBoolean;
+import o4.d;
+
+/* JADX INFO: compiled from: r8-map-id-94e2637d1b30c6542972a7fc4ced35aa6da258c4e6702fc7c9cbf0ebc32bec75 */
+/* JADX INFO: loaded from: F:\omo\research\apk_contents\classes.dex */
+public final class a implements Application$ActivityLifecycleCallbacks, ComponentCallbacks2 {
+
+    /* JADX INFO: renamed from: f, reason: collision with root package name */
+    public static final a f4868f = new a();
+
+    /* JADX INFO: renamed from: b, reason: collision with root package name */
+    public final AtomicBoolean f4869b = new AtomicBoolean();
+    public final AtomicBoolean c = new AtomicBoolean();
+    public final ArrayList d = new ArrayList();
+    public boolean e = false;
+
+    /* JADX DEBUG: Don't trust debug lines info. Lines numbers was adjusted: min line is 1 */
+    public final void a(boolean z8) {
+        synchronized (f4868f) {
+            try {
+                ArrayList arrayList = this.d;
+                int size = arrayList.size();
+                int i9 = 0;
+                while (i9 < size) {
+                    Object obj = arrayList.get(i9);
+                    i9++;
+                    ((d) obj).getClass();
+                    d.a(z8);
+                }
+            } catch (Throwable th) {
+                throw th;
+            }
+        }
+    }
+
+    /* JADX DEBUG: Don't trust debug lines info. Lines numbers was adjusted: min line is 1 */
+    @Override // android.app.Application$ActivityLifecycleCallbacks
+    public final void onActivityCreated(Activity activity, Bundle bundle) {
+        boolean zCompareAndSet = this.f4869b.compareAndSet(true, false);
+        this.c.set(true);
+        if (zCompareAndSet) {
+            a(false);
+        }
+    }
+
+    /* JADX DEBUG: Don't trust debug lines info. Lines numbers was adjusted: min line is 1 */
+    @Override // android.app.Application$ActivityLifecycleCallbacks
+    public final void onActivityResumed(Activity activity) {
+        boolean zCompareAndSet = this.f4869b.compareAndSet(true, false);
+        this.c.set(true);
+        if (zCompareAndSet) {
+            a(false);
+        }
+    }
+
+    /* JADX DEBUG: Don't trust debug lines info. Lines numbers was adjusted: min line is 1 */
+    @Override // android.content.ComponentCallbacks2
+    public final void onTrimMemory(int i9) {
+        if (i9 == 20 && this.f4869b.compareAndSet(false, true)) {
+            this.c.set(true);
+            a(true);
+        }
+    }
+
+    @Override // android.content.ComponentCallbacks
+    public final void onLowMemory() {
+    }
+
+    @Override // android.app.Application$ActivityLifecycleCallbacks
+    public final void onActivityDestroyed(Activity activity) {
+    }
+
+    @Override // android.app.Application$ActivityLifecycleCallbacks
+    public final void onActivityPaused(Activity activity) {
+    }
+
+    @Override // android.app.Application$ActivityLifecycleCallbacks
+    public final void onActivityStarted(Activity activity) {
+    }
+
+    @Override // android.app.Application$ActivityLifecycleCallbacks
+    public final void onActivityStopped(Activity activity) {
+    }
+
+    @Override // android.content.ComponentCallbacks
+    public final void onConfigurationChanged(Configuration configuration) {
+    }
+
+    @Override // android.app.Application$ActivityLifecycleCallbacks
+    public final void onActivitySaveInstanceState(Activity activity, Bundle bundle) {
+    }
+}

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="center" android:id="@id/centerImage" android:layout_width="100.0dp" android:layout_height="100.0dp" android:src="@drawable/multi_button_core" />
+    <FrameLayout android:layout_gravity="center|top" android:id="@id/imgTop" android:layout_width="90.0dp" android:layout_height="90.0dp" android:layout_marginBottom="220.0dp">
+        <ImageView android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/multi_button_vspom" />
+        <ImageView android:layout_gravity="center" android:id="@id/badgeTop" android:layout_width="@dimen/Image_badge_size" android:layout_height="@dimen/Image_badge_size" android:layout_margin="4.0dp" />
+    </FrameLayout>
+    <FrameLayout android:layout_gravity="center|top" android:id="@id/imgBottom" android:layout_width="90.0dp" android:layout_height="90.0dp" android:layout_marginTop="220.0dp">
+        <ImageView android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/multi_button_vspom" />
+        <ImageView android:layout_gravity="center" android:id="@id/badgeBottom" android:layout_width="@dimen/Image_badge_size" android:layout_height="@dimen/Image_badge_size" android:layout_margin="4.0dp" />
+    </FrameLayout>
+    <FrameLayout android:id="@id/imgLeft" android:layout_width="90.0dp" android:layout_height="90.0dp" android:layout_marginTop="110.0dp" android:layout_marginRight="220.0dp">
+        <ImageView android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/multi_button_vspom" />
+        <ImageView android:layout_gravity="center" android:id="@id/badgeLeft" android:layout_width="@dimen/Image_badge_size" android:layout_height="@dimen/Image_badge_size" android:layout_margin="4.0dp" />
+    </FrameLayout>
+    <FrameLayout android:id="@id/imgRight" android:layout_width="90.0dp" android:layout_height="90.0dp" android:layout_marginLeft="220.0dp" android:layout_marginTop="110.0dp">
+        <ImageView android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/multi_button_vspom" />
+        <ImageView android:layout_gravity="center" android:id="@id/badgeRight" android:layout_width="@dimen/Image_badge_size" android:layout_height="@dimen/Image_badge_size" android:layout_margin="4.0dp" />
+    </FrameLayout>
+    <FrameLayout android:layout_gravity="center" android:id="@id/imgTopLeft" android:visibility="gone" android:layout_width="90.0dp" android:layout_height="90.0dp" android:translationX="-85.0dp" android:translationY="-85.0dp">
+        <ImageView android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/multi_button_vspom" />
+        <ImageView android:layout_gravity="center" android:id="@id/badgeTopLeft" android:layout_width="@dimen/Image_badge_size" android:layout_height="@dimen/Image_badge_size" android:layout_margin="4.0dp" />
+    </FrameLayout>
+    <FrameLayout android:layout_gravity="center" android:id="@id/imgTopRight" android:visibility="gone" android:layout_width="90.0dp" android:layout_height="90.0dp" android:translationX="85.0dp" android:translationY="-85.0dp">
+        <ImageView android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/multi_button_vspom" />
+        <ImageView android:layout_gravity="center" android:id="@id/badgeTopRight" android:layout_width="@dimen/Image_badge_size" android:layout_height="@dimen/Image_badge_size" android:layout_margin="4.0dp" />
+    </FrameLayout>
+    <FrameLayout android:layout_gravity="center" android:id="@id/imgBottomLeft" android:visibility="gone" android:layout_width="90.0dp" android:layout_height="90.0dp" android:translationX="-85.0dp" android:translationY="85.0dp">
+        <ImageView android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/multi_button_vspom" />
+        <ImageView android:layout_gravity="center" android:id="@id/badgeBottomLeft" android:layout_width="@dimen/Image_badge_size" android:layout_height="@dimen/Image_badge_size" android:layout_margin="4.0dp" />
+    </FrameLayout>
+    <FrameLayout android:layout_gravity="center" android:id="@id/imgBottomRight" android:visibility="gone" android:layout_width="90.0dp" android:layout_height="90.0dp" android:translationX="85.0dp" android:translationY="85.0dp">
+        <ImageView android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/multi_button_vspom" />
+        <ImageView android:layout_gravity="center" android:id="@id/badgeBottomRight" android:layout_width="@dimen/Image_badge_size" android:layout_height="@dimen/Image_badge_size" android:layout_margin="4.0dp" />
+    </FrameLayout>
+</FrameLayout>

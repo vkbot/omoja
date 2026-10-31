@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:textColor="@color/black" android:background="@drawable/l_fon" android:layout_width="match_parent" android:layout_height="match_parent" android:alpha="0.85"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.widget.ConstraintLayout android:layout_width="match_parent" android:layout_height="match_parent">
+        <ListView android:id="@id/prolistv" android:layout_width="0.0dp" android:layout_height="0.0dp" android:layout_marginTop="15.0dp" android:layout_marginBottom="15.0dp" android:layout_marginStart="15.0dp" android:layout_marginEnd="15.0dp" app:layout_constraintBottom_toTopOf="@id/button17" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+        <Button android:textSize="20.0dp" android:id="@id/button17" android:layout_width="0.0dp" android:layout_height="60.0dp" android:text="Отменить" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</RelativeLayout>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageButton android:textColor="@android:color/white" android:layout_gravity="center" android:id="@id/heating_button" android:background="@drawable/button_background2" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <LinearLayout android:layout_gravity="center|bottom" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="8.0dp" android:layout_marginBottom="8.0dp" android:layout_marginStart="8.0dp" android:layout_marginEnd="8.0dp">
+        <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <LinearLayout android:layout_gravity="center" android:background="@drawable/l_fon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="8.0dp">
+                <ImageView android:layout_gravity="center" android:id="@id/heating_button_ico" android:layout_width="70.0dp" android:layout_height="70.0dp" android:layout_margin="8.0dp" />
+            </LinearLayout>
+            <TextView android:textSize="20.0dp" android:textColor="@color/black" android:layout_gravity="center" android:id="@id/heating_button_text" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="5.0dp" android:text="" />
+        </LinearLayout>
+        <LinearLayout android:layout_gravity="center|bottom" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dp" android:layout_marginBottom="8.0dp">
+            <ImageView android:id="@id/lamp1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/lamp_off2" />
+            <ImageView android:id="@id/lamp2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/lamp_off2" android:layout_marginStart="8.0dp" />
+            <ImageView android:id="@id/lamp3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/lamp_off2" android:layout_marginStart="8.0dp" />
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

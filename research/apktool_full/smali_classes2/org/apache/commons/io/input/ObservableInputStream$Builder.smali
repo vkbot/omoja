@@ -1,0 +1,65 @@
+.class public Lorg/apache/commons/io/input/ObservableInputStream$Builder;
+.super Lorg/apache/commons/io/input/ObservableInputStream$AbstractBuilder;
+.source "r8-map-id-94e2637d1b30c6542972a7fc4ced35aa6da258c4e6702fc7c9cbf0ebc32bec75"
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lorg/apache/commons/io/input/ObservableInputStream;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x9
+    name = "Builder"
+.end annotation
+
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Lorg/apache/commons/io/input/ObservableInputStream$AbstractBuilder<",
+        "Lorg/apache/commons/io/input/ObservableInputStream$Builder;",
+        ">;"
+    }
+.end annotation
+
+
+# direct methods
+.method public constructor <init>()V
+    .locals 0
+
+    .line 1
+    invoke-direct {p0}, Lorg/apache/commons/io/input/ObservableInputStream$AbstractBuilder;-><init>()V
+
+    .line 2
+    .line 3
+    .line 4
+    return-void
+.end method
+
+
+# virtual methods
+.method public bridge synthetic get()Ljava/lang/Object;
+    .locals 1
+
+    .line 7
+    invoke-virtual {p0}, Lorg/apache/commons/io/input/ObservableInputStream$Builder;->get()Lorg/apache/commons/io/input/ObservableInputStream;
+
+    move-result-object v0
+
+    return-object v0
+.end method
+
+.method public get()Lorg/apache/commons/io/input/ObservableInputStream;
+    .locals 1
+
+    .line 1
+    new-instance v0, Lorg/apache/commons/io/input/ObservableInputStream;
+
+    .line 2
+    .line 3
+    invoke-direct {v0, p0}, Lorg/apache/commons/io/input/ObservableInputStream;-><init>(Lorg/apache/commons/io/input/ObservableInputStream$AbstractBuilder;)V
+
+    .line 4
+    .line 5
+    .line 6
+    return-object v0
+.end method

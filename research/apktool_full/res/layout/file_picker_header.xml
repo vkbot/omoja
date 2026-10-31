@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:paddingBottom="8.0dp" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="16.0sp" android:textColor="@color/modern_text" android:id="@id/currentPathTextView" android:background="@drawable/modern_panel" android:padding="16.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="12.0dp" android:text="@string/tek_folder" />
+    <Button android:id="@id/cancelButton" android:paddingTop="12.0dp" android:paddingBottom="12.0dp" android:layout_height="wrap_content" android:minHeight="52.0dp" android:text="@string/cancel" style="@style/ModernStoreActionRow" />
+    <Button android:id="@id/open_usb_button" android:paddingTop="12.0dp" android:paddingBottom="12.0dp" android:layout_height="wrap_content" android:minHeight="52.0dp" android:text="USB" style="@style/ModernStoreActionRow" />
+    <Button android:id="@id/upButton" android:paddingTop="12.0dp" android:paddingBottom="12.0dp" android:layout_height="wrap_content" android:minHeight="52.0dp" android:text="@string/up" style="@style/ModernStoreActionRow" />
+</LinearLayout>

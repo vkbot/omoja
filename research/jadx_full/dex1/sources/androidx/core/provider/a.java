@@ -1,0 +1,13 @@
+package androidx.core.provider;
+
+import java.util.Comparator;
+
+/* JADX INFO: compiled from: r8-map-id-94e2637d1b30c6542972a7fc4ced35aa6da258c4e6702fc7c9cbf0ebc32bec75 */
+/* JADX INFO: loaded from: F:\omo\research\apk_contents\classes.dex */
+public final /* synthetic */ class a implements Comparator {
+    /* JADX DEBUG: Don't trust debug lines info. Lines numbers was adjusted: min line is 1 */
+    @Override // java.util.Comparator
+    public final int compare(Object obj, Object obj2) {
+        return FontProvider.a((byte[]) obj, (byte[]) obj2);
+    }
+}

@@ -1,0 +1,316 @@
+.class Landroidx/recyclerview/widget/ItemTouchUIUtilImpl;
+.super Ljava/lang/Object;
+.source "r8-map-id-94e2637d1b30c6542972a7fc4ced35aa6da258c4e6702fc7c9cbf0ebc32bec75"
+
+# interfaces
+.implements Landroidx/recyclerview/widget/ItemTouchUIUtil;
+
+
+# static fields
+.field static final INSTANCE:Landroidx/recyclerview/widget/ItemTouchUIUtil;
+
+
+# direct methods
+.method static constructor <clinit>()V
+    .registers 1
+
+    .line 1
+    new-instance v0, Landroidx/recyclerview/widget/ItemTouchUIUtilImpl;
+
+    .line 2
+    .line 3
+    invoke-direct {v0}, Landroidx/recyclerview/widget/ItemTouchUIUtilImpl;-><init>()V
+
+    .line 4
+    .line 5
+    .line 6
+    sput-object v0, Landroidx/recyclerview/widget/ItemTouchUIUtilImpl;->INSTANCE:Landroidx/recyclerview/widget/ItemTouchUIUtil;
+
+    .line 7
+    .line 8
+    return-void
+.end method
+
+.method public constructor <init>()V
+    .registers 1
+
+    .line 1
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 2
+    .line 3
+    .line 4
+    return-void
+.end method
+
+.method private static findMaxElevation(Landroidx/recyclerview/widget/RecyclerView;Landroid/view/View;)F
+    .registers 7
+
+    .line 1
+    invoke-virtual {p0}, Landroid/view/ViewGroup;->getChildCount()I
+
+    .line 2
+    .line 3
+    .line 4
+    move-result v0
+
+    .line 5
+    const/4 v1, 0x0
+
+    .line 6
+    const/4 v2, 0x0
+
+    .line 7
+    :goto_6
+    if-ge v2, v0, :cond_1b
+
+    .line 8
+    .line 9
+    invoke-virtual {p0, v2}, Landroid/view/ViewGroup;->getChildAt(I)Landroid/view/View;
+
+    .line 10
+    .line 11
+    .line 12
+    move-result-object v3
+
+    .line 13
+    if-ne v3, p1, :cond_f
+
+    .line 14
+    .line 15
+    goto :goto_18
+
+    .line 16
+    :cond_f
+    invoke-static {v3}, Landroidx/core/view/ViewCompat;->getElevation(Landroid/view/View;)F
+
+    .line 17
+    .line 18
+    .line 19
+    move-result v3
+
+    .line 20
+    cmpl-float v4, v3, v1
+
+    .line 21
+    .line 22
+    if-lez v4, :cond_18
+
+    .line 23
+    .line 24
+    move v1, v3
+
+    .line 25
+    :cond_18
+    :goto_18
+    add-int/lit8 v2, v2, 0x1
+
+    .line 26
+    .line 27
+    goto :goto_6
+
+    .line 28
+    :cond_1b
+    return v1
+.end method
+
+
+# virtual methods
+.method public clearView(Landroid/view/View;)V
+    .registers 4
+    .param p1    # Landroid/view/View;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
+
+    .line 1
+    sget v0, Landroidx/recyclerview/R$id;->item_touch_helper_previous_elevation:I
+
+    .line 2
+    .line 3
+    invoke-virtual {p1, v0}, Landroid/view/View;->getTag(I)Ljava/lang/Object;
+
+    .line 4
+    .line 5
+    .line 6
+    move-result-object v0
+
+    .line 7
+    instance-of v1, v0, Ljava/lang/Float;
+
+    .line 8
+    .line 9
+    if-eqz v1, :cond_13
+
+    .line 10
+    .line 11
+    check-cast v0, Ljava/lang/Float;
+
+    .line 12
+    .line 13
+    invoke-virtual {v0}, Ljava/lang/Float;->floatValue()F
+
+    .line 14
+    .line 15
+    .line 16
+    move-result v0
+
+    .line 17
+    invoke-static {p1, v0}, Landroidx/core/view/ViewCompat;->setElevation(Landroid/view/View;F)V
+
+    .line 18
+    .line 19
+    .line 20
+    :cond_13
+    sget v0, Landroidx/recyclerview/R$id;->item_touch_helper_previous_elevation:I
+
+    .line 21
+    .line 22
+    const/4 v1, 0x0
+
+    .line 23
+    invoke-virtual {p1, v0, v1}, Landroid/view/View;->setTag(ILjava/lang/Object;)V
+
+    .line 24
+    .line 25
+    .line 26
+    const/4 v0, 0x0
+
+    .line 27
+    invoke-virtual {p1, v0}, Landroid/view/View;->setTranslationX(F)V
+
+    .line 28
+    .line 29
+    .line 30
+    invoke-virtual {p1, v0}, Landroid/view/View;->setTranslationY(F)V
+
+    .line 31
+    .line 32
+    .line 33
+    return-void
+.end method
+
+.method public onDraw(Landroid/graphics/Canvas;Landroidx/recyclerview/widget/RecyclerView;Landroid/view/View;FFIZ)V
+    .registers 8
+    .param p1    # Landroid/graphics/Canvas;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
+    .param p2    # Landroidx/recyclerview/widget/RecyclerView;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
+    .param p3    # Landroid/view/View;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
+
+    .line 1
+    if-eqz p7, :cond_21
+
+    .line 2
+    .line 3
+    sget p1, Landroidx/recyclerview/R$id;->item_touch_helper_previous_elevation:I
+
+    .line 4
+    .line 5
+    invoke-virtual {p3, p1}, Landroid/view/View;->getTag(I)Ljava/lang/Object;
+
+    .line 6
+    .line 7
+    .line 8
+    move-result-object p1
+
+    .line 9
+    if-nez p1, :cond_21
+
+    .line 10
+    .line 11
+    invoke-static {p3}, Landroidx/core/view/ViewCompat;->getElevation(Landroid/view/View;)F
+
+    .line 12
+    .line 13
+    .line 14
+    move-result p1
+
+    .line 15
+    invoke-static {p1}, Ljava/lang/Float;->valueOf(F)Ljava/lang/Float;
+
+    .line 16
+    .line 17
+    .line 18
+    move-result-object p1
+
+    .line 19
+    const/high16 p6, 0x3f800000    # 1.0f
+
+    .line 20
+    .line 21
+    invoke-static {p2, p3}, Landroidx/recyclerview/widget/ItemTouchUIUtilImpl;->findMaxElevation(Landroidx/recyclerview/widget/RecyclerView;Landroid/view/View;)F
+
+    .line 22
+    .line 23
+    .line 24
+    move-result p2
+
+    .line 25
+    add-float/2addr p2, p6
+
+    .line 26
+    invoke-static {p3, p2}, Landroidx/core/view/ViewCompat;->setElevation(Landroid/view/View;F)V
+
+    .line 27
+    .line 28
+    .line 29
+    sget p2, Landroidx/recyclerview/R$id;->item_touch_helper_previous_elevation:I
+
+    .line 30
+    .line 31
+    invoke-virtual {p3, p2, p1}, Landroid/view/View;->setTag(ILjava/lang/Object;)V
+
+    .line 32
+    .line 33
+    .line 34
+    :cond_21
+    invoke-virtual {p3, p4}, Landroid/view/View;->setTranslationX(F)V
+
+    .line 35
+    .line 36
+    .line 37
+    invoke-virtual {p3, p5}, Landroid/view/View;->setTranslationY(F)V
+
+    .line 38
+    .line 39
+    .line 40
+    return-void
+.end method
+
+.method public onDrawOver(Landroid/graphics/Canvas;Landroidx/recyclerview/widget/RecyclerView;Landroid/view/View;FFIZ)V
+    .registers 8
+    .param p1    # Landroid/graphics/Canvas;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
+    .param p2    # Landroidx/recyclerview/widget/RecyclerView;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
+    .param p3    # Landroid/view/View;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
+
+    .line 1
+    return-void
+.end method
+
+.method public onSelected(Landroid/view/View;)V
+    .registers 2
+    .param p1    # Landroid/view/View;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
+
+    .line 1
+    return-void
+.end method

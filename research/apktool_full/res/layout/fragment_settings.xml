@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent" android:alpha="0.95"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:padding="16.0dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+            <TextView android:textStyle="bold" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/antiradar_database_text" />
+            <Spinner android:id="@id/spinner_antiradar_database" android:layout_width="match_parent" android:layout_height="60.0dp" android:spinnerMode="dialog" />
+            <TextView android:textStyle="bold" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/antiradar_volum_text" />
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <SeekBar android:id="@id/seekBar_antiradar_volum" android:layout_width="0.0dp" android:layout_height="60.0dp" android:layout_weight="1.0" />
+                <TextView android:gravity="center" android:id="@id/textView_antiradar_volum" android:layout_width="wrap_content" android:layout_height="60.0dp" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+            <TextView android:textStyle="bold" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Радиус поля камер (radius)" />
+            <SeekBar android:id="@id/seekBar_radius" android:layout_width="match_parent" android:layout_height="wrap_content" />
+            <TextView android:layout_gravity="end" android:id="@id/textView_radius_value" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="500" />
+            <TextView android:textStyle="bold" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Радиус действия камеры (AnglSet)" />
+            <SeekBar android:id="@id/seekBar_anglSet" android:layout_width="match_parent" android:layout_height="wrap_content" />
+            <TextView android:layout_gravity="end" android:id="@id/textView_anglSet_value" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="10" />
+            <TextView android:textStyle="bold" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Дистанция оповещения об камере (DistAlarm)" />
+            <SeekBar android:id="@id/seekBar_distAlarm" android:layout_width="match_parent" android:layout_height="wrap_content" />
+            <TextView android:layout_gravity="end" android:id="@id/textView_distAlarm_value" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="50" />
+            <TextView android:textStyle="bold" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Максимальное расстояние после проезда камеры (MAX_DISTANCE_AFTER_PASS)" />
+            <SeekBar android:id="@id/seekBar_maxDistanceAfterPass" android:layout_width="match_parent" android:layout_height="wrap_content" />
+            <TextView android:layout_gravity="end" android:id="@id/textView_maxDistanceAfterPass_value" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="50" />
+            <TextView android:textStyle="bold" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Минимальная скорость оповещения (MIN_SPEED_ALARMING)" />
+            <SeekBar android:id="@id/seekBar_minSpeedAlarming" android:layout_width="match_parent" android:layout_height="wrap_content" />
+            <TextView android:layout_gravity="end" android:id="@id/textView_minSpeedAlarming_value" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="5" />
+            <TextView android:textStyle="bold" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Типы оповещения" />
+            <CheckBox android:id="@id/checkbox_speed" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Превышение скорости" />
+            <CheckBox android:id="@id/checkbox_red_light" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Проезд на красный" />
+            <CheckBox android:id="@id/checkbox_pedestrian" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Пешеходный переход" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

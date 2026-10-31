@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView android:background="@color/modern_background" android:scrollbars="vertical" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="match_parent" android:fillViewport="true"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:padding="24.0dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="72.0dp">
+            <Button android:textColor="@color/modern_text" android:gravity="center" android:id="@id/wifi_acti_back" android:background="@drawable/modern_button_primary" android:layout_width="140.0dp" android:layout_height="52.0dp" android:layout_marginBottom="0.0dp" android:text="@string/b_back" android:alpha="1.0" android:backgroundTint="@null" style="@style/ModernStoreActionRow" />
+            <TextView android:textSize="28.0sp" android:textStyle="bold" android:textColor="@color/modern_text" android:layout_width="0.0dp" android:layout_height="wrap_content" android:text="@string/wifimanager" android:layout_weight="1.0" android:layout_marginStart="20.0dp" />
+        </LinearLayout>
+        <androidx.cardview.widget.CardView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12.0dp" app:cardBackgroundColor="@color/modern_surface" app:cardCornerRadius="20.0dp" app:cardElevation="0.0dp">
+            <LinearLayout android:orientation="vertical" android:padding="18.0dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="18.0sp" android:textStyle="bold" android:textColor="@color/modern_text" android:gravity="center_vertical" android:id="@id/currentWifiStatus" android:background="@drawable/modern_action_row" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="58.0dp" android:text="@string/wifi_connect" android:paddingStart="18.0dp" android:paddingEnd="18.0dp" />
+                <TextView android:textSize="15.0sp" android:textStyle="bold" android:textColor="@android:color/holo_red_light" android:gravity="center_vertical" android:id="@id/currentInternetStatus" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="6.0dp" android:minHeight="40.0dp" android:text="@string/wifi_internet_unavailable" android:paddingStart="18.0dp" android:paddingEnd="18.0dp" />
+                <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dp" android:baselineAligned="false">
+                    <com.example.navistart.mainview.OnOffButton android:id="@id/wifiToggleButtonOnOff" android:layout_width="0.0dp" android:layout_height="54.0dp" android:layout_weight="1.0" android:layout_marginEnd="8.0dp" />
+                    <Button android:gravity="center" android:id="@id/refreshWifiButton" android:layout_width="0.0dp" android:layout_height="54.0dp" android:layout_marginBottom="0.0dp" android:text="@string/wifi_scan_refrash" android:layout_weight="1.0" android:layout_marginStart="8.0dp" style="@style/ModernStoreActionRow" />
+                </LinearLayout>
+                <Button android:id="@id/wifiToggleButton" android:visibility="gone" android:layout_width="match_parent" android:layout_height="52.0dp" android:text="@string/wifi_onoff_toggele" />
+                <Button android:id="@id/startDefWifiButton" android:visibility="gone" android:layout_width="match_parent" android:layout_height="52.0dp" android:text="@string/wifimanager" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+        <TextView android:layout_marginTop="18.0dp" android:text="@string/wifi_scan_refrash" style="@style/ModernGroupTitle" />
+        <androidx.recyclerview.widget.RecyclerView android:id="@id/recyclerView" android:paddingBottom="16.0dp" android:scrollbars="none" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="wrap_content" android:nestedScrollingEnabled="false" />
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

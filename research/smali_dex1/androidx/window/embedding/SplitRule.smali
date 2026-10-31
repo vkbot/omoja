@@ -1,0 +1,533 @@
+.class public Landroidx/window/embedding/SplitRule;
+.super Landroidx/window/embedding/EmbeddingRule;
+.source "r8-map-id-94e2637d1b30c6542972a7fc4ced35aa6da258c4e6702fc7c9cbf0ebc32bec75"
+
+
+# annotations
+.annotation build Landroidx/window/core/ExperimentalWindowApi;
+.end annotation
+
+.annotation system Ldalvik/annotation/MemberClasses;
+    value = {
+        Landroidx/window/embedding/SplitRule$LayoutDir;,
+        Landroidx/window/embedding/SplitRule$Api30Impl;
+    }
+.end annotation
+
+.annotation runtime Lkotlin/Metadata;
+    d1 = {
+        "\u00000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0008\n\u0002\u0008\u0002\n\u0002\u0010\u0007\n\u0002\u0008\t\n\u0002\u0010\u000b\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0010\u0000\n\u0002\u0008\u0004\u0008\u0017\u0018\u00002\u00020\u0001:\u0002\u0017\u0018B/\u0008\u0000\u0012\u0008\u0008\u0002\u0010\u0002\u001a\u00020\u0003\u0012\u0008\u0008\u0002\u0010\u0004\u001a\u00020\u0003\u0012\u0008\u0008\u0002\u0010\u0005\u001a\u00020\u0006\u0012\u0008\u0008\u0002\u0010\u0007\u001a\u00020\u0003\u00a2\u0006\u0002\u0010\u0008J\u000e\u0010\u000f\u001a\u00020\u00102\u0006\u0010\u0011\u001a\u00020\u0012J\u0013\u0010\u0013\u001a\u00020\u00102\u0008\u0010\u0014\u001a\u0004\u0018\u00010\u0015H\u0096\u0002J\u0008\u0010\u0016\u001a\u00020\u0003H\u0016R\u0011\u0010\u0007\u001a\u00020\u0003\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\t\u0010\nR\u0011\u0010\u0004\u001a\u00020\u0003\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\u000b\u0010\nR\u0011\u0010\u0002\u001a\u00020\u0003\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\u000c\u0010\nR\u0011\u0010\u0005\u001a\u00020\u0006\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\r\u0010\u000e\u00a8\u0006\u0019"
+    }
+    d2 = {
+        "Landroidx/window/embedding/SplitRule;",
+        "Landroidx/window/embedding/EmbeddingRule;",
+        "minWidth",
+        "",
+        "minSmallestWidth",
+        "splitRatio",
+        "",
+        "layoutDirection",
+        "(IIFI)V",
+        "getLayoutDirection",
+        "()I",
+        "getMinSmallestWidth",
+        "getMinWidth",
+        "getSplitRatio",
+        "()F",
+        "checkParentMetrics",
+        "",
+        "parentMetrics",
+        "Landroid/view/WindowMetrics;",
+        "equals",
+        "other",
+        "",
+        "hashCode",
+        "Api30Impl",
+        "LayoutDir",
+        "window_release"
+    }
+    k = 0x1
+    mv = {
+        0x1,
+        0x6,
+        0x0
+    }
+    xi = 0x30
+.end annotation
+
+
+# instance fields
+.field private final layoutDirection:I
+
+.field private final minSmallestWidth:I
+
+.field private final minWidth:I
+
+.field private final splitRatio:F
+
+
+# direct methods
+.method public constructor <init>()V
+    .registers 8
+
+    .line 27
+    const/16 v5, 0xf
+
+    const/4 v6, 0x0
+
+    const/4 v1, 0x0
+
+    const/4 v2, 0x0
+
+    const/4 v3, 0x0
+
+    const/4 v4, 0x0
+
+    move-object v0, p0
+
+    invoke-direct/range {v0 .. v6}, Landroidx/window/embedding/SplitRule;-><init>(IIFIILkotlin/jvm/internal/DefaultConstructorMarker;)V
+
+    return-void
+.end method
+
+.method public constructor <init>(IIFI)V
+    .registers 5
+
+    .line 28
+    invoke-direct {p0}, Landroidx/window/embedding/EmbeddingRule;-><init>()V
+
+    .line 29
+    iput p1, p0, Landroidx/window/embedding/SplitRule;->minWidth:I
+
+    .line 30
+    iput p2, p0, Landroidx/window/embedding/SplitRule;->minSmallestWidth:I
+
+    .line 31
+    iput p3, p0, Landroidx/window/embedding/SplitRule;->splitRatio:F
+
+    .line 32
+    iput p4, p0, Landroidx/window/embedding/SplitRule;->layoutDirection:I
+
+    return-void
+.end method
+
+.method public synthetic constructor <init>(IIFIILkotlin/jvm/internal/DefaultConstructorMarker;)V
+    .registers 8
+
+    .line 1
+    and-int/lit8 p6, p5, 0x1
+
+    .line 2
+    .line 3
+    const/4 v0, 0x0
+
+    .line 4
+    if-eqz p6, :cond_6
+
+    .line 5
+    .line 6
+    move p1, v0
+
+    .line 7
+    :cond_6
+    and-int/lit8 p6, p5, 0x2
+
+    .line 8
+    .line 9
+    if-eqz p6, :cond_b
+
+    .line 10
+    .line 11
+    move p2, v0
+
+    .line 12
+    :cond_b
+    and-int/lit8 p6, p5, 0x4
+
+    .line 13
+    .line 14
+    if-eqz p6, :cond_11
+
+    .line 15
+    .line 16
+    const/high16 p3, 0x3f000000    # 0.5f
+
+    .line 17
+    .line 18
+    :cond_11
+    and-int/lit8 p5, p5, 0x8
+
+    .line 19
+    .line 20
+    if-eqz p5, :cond_16
+
+    .line 21
+    .line 22
+    const/4 p4, 0x3
+
+    .line 23
+    :cond_16
+    invoke-direct {p0, p1, p2, p3, p4}, Landroidx/window/embedding/SplitRule;-><init>(IIFI)V
+
+    .line 24
+    .line 25
+    .line 26
+    return-void
+.end method
+
+
+# virtual methods
+.method public final checkParentMetrics(Landroid/view/WindowMetrics;)Z
+    .registers 6
+
+    .line 1
+    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 2
+    .line 3
+    .line 4
+    sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
+
+    .line 5
+    .line 6
+    const/16 v1, 0x1e
+
+    .line 7
+    .line 8
+    const/4 v2, 0x0
+
+    .line 9
+    if-gt v0, v1, :cond_b
+
+    .line 10
+    .line 11
+    return v2
+
+    .line 12
+    :cond_b
+    sget-object v0, Landroidx/window/embedding/SplitRule$Api30Impl;->INSTANCE:Landroidx/window/embedding/SplitRule$Api30Impl;
+
+    .line 13
+    .line 14
+    invoke-virtual {v0, p1}, Landroidx/window/embedding/SplitRule$Api30Impl;->getBounds(Landroid/view/WindowMetrics;)Landroid/graphics/Rect;
+
+    .line 15
+    .line 16
+    .line 17
+    move-result-object p1
+
+    .line 18
+    iget v0, p0, Landroidx/window/embedding/SplitRule;->minWidth:I
+
+    .line 19
+    .line 20
+    const/4 v1, 0x1
+
+    .line 21
+    if-eqz v0, :cond_21
+
+    .line 22
+    .line 23
+    invoke-virtual {p1}, Landroid/graphics/Rect;->width()I
+
+    .line 24
+    .line 25
+    .line 26
+    move-result v0
+
+    .line 27
+    iget v3, p0, Landroidx/window/embedding/SplitRule;->minWidth:I
+
+    .line 28
+    .line 29
+    if-lt v0, v3, :cond_1f
+
+    .line 30
+    .line 31
+    goto :goto_21
+
+    .line 32
+    :cond_1f
+    move v0, v2
+
+    .line 33
+    goto :goto_22
+
+    .line 34
+    :cond_21
+    :goto_21
+    move v0, v1
+
+    .line 35
+    :goto_22
+    iget v3, p0, Landroidx/window/embedding/SplitRule;->minSmallestWidth:I
+
+    .line 36
+    .line 37
+    if-eqz v3, :cond_39
+
+    .line 38
+    .line 39
+    invoke-virtual {p1}, Landroid/graphics/Rect;->width()I
+
+    .line 40
+    .line 41
+    .line 42
+    move-result v3
+
+    .line 43
+    invoke-virtual {p1}, Landroid/graphics/Rect;->height()I
+
+    .line 44
+    .line 45
+    .line 46
+    move-result p1
+
+    .line 47
+    invoke-static {v3, p1}, Ljava/lang/Math;->min(II)I
+
+    .line 48
+    .line 49
+    .line 50
+    move-result p1
+
+    .line 51
+    iget v3, p0, Landroidx/window/embedding/SplitRule;->minSmallestWidth:I
+
+    .line 52
+    .line 53
+    if-lt p1, v3, :cond_37
+
+    .line 54
+    .line 55
+    goto :goto_39
+
+    .line 56
+    :cond_37
+    move p1, v2
+
+    .line 57
+    goto :goto_3a
+
+    .line 58
+    :cond_39
+    :goto_39
+    move p1, v1
+
+    .line 59
+    :goto_3a
+    if-eqz v0, :cond_3f
+
+    .line 60
+    .line 61
+    if-eqz p1, :cond_3f
+
+    .line 62
+    .line 63
+    return v1
+
+    .line 64
+    :cond_3f
+    return v2
+.end method
+
+.method public equals(Ljava/lang/Object;)Z
+    .registers 6
+
+    .line 1
+    const/4 v0, 0x1
+
+    .line 2
+    if-ne p0, p1, :cond_4
+
+    .line 3
+    .line 4
+    return v0
+
+    .line 5
+    :cond_4
+    instance-of v1, p1, Landroidx/window/embedding/SplitRule;
+
+    .line 6
+    .line 7
+    const/4 v2, 0x0
+
+    .line 8
+    if-nez v1, :cond_a
+
+    .line 9
+    .line 10
+    return v2
+
+    .line 11
+    :cond_a
+    iget v1, p0, Landroidx/window/embedding/SplitRule;->minWidth:I
+
+    .line 12
+    .line 13
+    check-cast p1, Landroidx/window/embedding/SplitRule;
+
+    .line 14
+    .line 15
+    iget v3, p1, Landroidx/window/embedding/SplitRule;->minWidth:I
+
+    .line 16
+    .line 17
+    if-eq v1, v3, :cond_13
+
+    .line 18
+    .line 19
+    return v2
+
+    .line 20
+    :cond_13
+    iget v1, p0, Landroidx/window/embedding/SplitRule;->minSmallestWidth:I
+
+    .line 21
+    .line 22
+    iget v3, p1, Landroidx/window/embedding/SplitRule;->minSmallestWidth:I
+
+    .line 23
+    .line 24
+    if-eq v1, v3, :cond_1a
+
+    .line 25
+    .line 26
+    return v2
+
+    .line 27
+    :cond_1a
+    iget v1, p0, Landroidx/window/embedding/SplitRule;->splitRatio:F
+
+    .line 28
+    .line 29
+    iget v3, p1, Landroidx/window/embedding/SplitRule;->splitRatio:F
+
+    .line 30
+    .line 31
+    cmpg-float v1, v1, v3
+
+    .line 32
+    .line 33
+    if-nez v1, :cond_2a
+
+    .line 34
+    .line 35
+    iget v1, p0, Landroidx/window/embedding/SplitRule;->layoutDirection:I
+
+    .line 36
+    .line 37
+    iget p1, p1, Landroidx/window/embedding/SplitRule;->layoutDirection:I
+
+    .line 38
+    .line 39
+    if-eq v1, p1, :cond_29
+
+    .line 40
+    .line 41
+    return v2
+
+    .line 42
+    :cond_29
+    return v0
+
+    .line 43
+    :cond_2a
+    return v2
+.end method
+
+.method public final getLayoutDirection()I
+    .registers 2
+
+    .line 1
+    iget v0, p0, Landroidx/window/embedding/SplitRule;->layoutDirection:I
+
+    .line 2
+    .line 3
+    return v0
+.end method
+
+.method public final getMinSmallestWidth()I
+    .registers 2
+
+    .line 1
+    iget v0, p0, Landroidx/window/embedding/SplitRule;->minSmallestWidth:I
+
+    .line 2
+    .line 3
+    return v0
+.end method
+
+.method public final getMinWidth()I
+    .registers 2
+
+    .line 1
+    iget v0, p0, Landroidx/window/embedding/SplitRule;->minWidth:I
+
+    .line 2
+    .line 3
+    return v0
+.end method
+
+.method public final getSplitRatio()F
+    .registers 2
+
+    .line 1
+    iget v0, p0, Landroidx/window/embedding/SplitRule;->splitRatio:F
+
+    .line 2
+    .line 3
+    return v0
+.end method
+
+.method public hashCode()I
+    .registers 3
+
+    .line 1
+    iget v0, p0, Landroidx/window/embedding/SplitRule;->minWidth:I
+
+    .line 2
+    .line 3
+    mul-int/lit8 v0, v0, 0x1f
+
+    .line 4
+    .line 5
+    iget v1, p0, Landroidx/window/embedding/SplitRule;->minSmallestWidth:I
+
+    .line 6
+    .line 7
+    add-int/2addr v0, v1
+
+    .line 8
+    mul-int/lit8 v0, v0, 0x1f
+
+    .line 9
+    .line 10
+    iget v1, p0, Landroidx/window/embedding/SplitRule;->splitRatio:F
+
+    .line 11
+    .line 12
+    invoke-static {v1}, Ljava/lang/Float;->hashCode(F)I
+
+    .line 13
+    .line 14
+    .line 15
+    move-result v1
+
+    .line 16
+    add-int/2addr v1, v0
+
+    .line 17
+    mul-int/lit8 v1, v1, 0x1f
+
+    .line 18
+    .line 19
+    iget v0, p0, Landroidx/window/embedding/SplitRule;->layoutDirection:I
+
+    .line 20
+    .line 21
+    add-int/2addr v1, v0
+
+    .line 22
+    return v1
+.end method

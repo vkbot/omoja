@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:layout_gravity="center" android:background="@drawable/rounded_background" android:padding="8.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/imageCover" android:layout_width="120.0dp" android:layout_height="120.0dp" android:layout_margin="5.0dp" android:layout_weight="1.0" />
+    <LinearLayout android:orientation="vertical" android:id="@id/mediaButtonControl" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="5.0dp" android:layout_weight="1.0">
+        <TextView android:textSize="20.0sp" android:textColor="@color/white" android:ellipsize="marquee" android:id="@id/textMediaData" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="" android:scrollHorizontally="true" android:singleLine="true" android:layout_weight="1.0" android:marqueeRepeatLimit="marquee_forever" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <ImageButton android:id="@id/mediaBack" android:background="@android:color/transparent" android:layout_width="90.0dp" android:layout_height="90.0dp" android:src="@drawable/music_back" android:scaleType="fitXY" android:layout_weight="1.0" />
+            <ImageButton android:id="@id/mediaPlayPause" android:background="@android:color/transparent" android:layout_width="90.0dp" android:layout_height="90.0dp" android:src="@drawable/music_pause" android:scaleType="fitXY" android:layout_weight="1.0" />
+            <ImageButton android:id="@id/mediaNext" android:background="@android:color/transparent" android:layout_width="90.0dp" android:layout_height="90.0dp" android:src="@drawable/music_next" android:scaleType="fitXY" android:layout_weight="1.0" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

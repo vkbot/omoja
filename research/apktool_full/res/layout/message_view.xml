@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_gravity="center" android:background="@drawable/speech_bubble3" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_margin="16.0dp">
+            <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <ImageView android:layout_gravity="center" android:id="@id/appIco" android:layout_width="70.0dp" android:layout_height="70.0dp" app:srcCompat="@drawable/icon_voice_message_6376305" />
+                <TextView android:textSize="40.0sp" android:textStyle="bold" android:textColor="#000" android:layout_gravity="center" android:id="@id/titleText" android:padding="8.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="titleText" />
+            </LinearLayout>
+            <TextView android:textSize="38.0sp" android:textColor="#000" android:id="@id/messageText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Очень длинный текст, который нужно переносить на новую строку, если он не помещается в ширину облака" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/LinearLayout_send_messadge" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content" android:minWidth="200.0dp">
+            <ImageView android:layout_width="match_parent" android:layout_height="wrap_content" android:src="@drawable/line_shape" />
+            <Button android:textSize="35.0sp" android:textColor="#007aff" android:id="@id/otvetit_button" android:background="@android:color/transparent" android:visibility="gone" android:layout_width="match_parent" android:layout_height="80.0dp" android:text="@string/otvetit" />
+            <LinearLayout android:orientation="horizontal" android:id="@id/LinearLayout_send_messadge_edit" android:background="@drawable/speech_bubble4" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:minWidth="200.0dp">
+                <ImageButton android:id="@id/button_golos_messadge" android:background="@android:color/transparent" android:visibility="gone" android:layout_width="100.0dp" android:layout_height="100.0dp" android:src="@drawable/microphone_off" android:scaleType="fitXY" />
+                <ImageButton android:id="@id/button_send_messadge" android:background="@android:color/transparent" android:layout_width="90.0dp" android:layout_height="90.0dp" android:src="@drawable/send_ico2" android:scaleType="fitXY" />
+                <EditText android:textSize="30.0sp" android:layout_gravity="center" android:id="@id/editText_send_messadge" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="" android:ems="10" android:inputType="textMultiLine" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

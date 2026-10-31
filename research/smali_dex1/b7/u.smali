@@ -1,0 +1,383 @@
+.class public final Lb7/u;
+.super Ljava/lang/Object;
+.source "r8-map-id-94e2637d1b30c6542972a7fc4ced35aa6da258c4e6702fc7c9cbf0ebc32bec75"
+
+# interfaces
+.implements Ljava/lang/Comparable;
+
+
+# instance fields
+.field public final b:I
+
+.field public final c:I
+
+
+# direct methods
+.method public constructor <init>(II)V
+    .registers 3
+
+    .line 1
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 2
+    .line 3
+    .line 4
+    iput p1, p0, Lb7/u;->b:I
+
+    .line 5
+    .line 6
+    iput p2, p0, Lb7/u;->c:I
+
+    .line 7
+    .line 8
+    return-void
+.end method
+
+
+# virtual methods
+.method public final a(Lb7/u;)Lb7/u;
+    .registers 7
+
+    .line 1
+    iget v0, p1, Lb7/u;->c:I
+
+    .line 2
+    .line 3
+    iget v1, p0, Lb7/u;->b:I
+
+    .line 4
+    .line 5
+    mul-int v2, v1, v0
+
+    .line 6
+    .line 7
+    iget p1, p1, Lb7/u;->b:I
+
+    .line 8
+    .line 9
+    iget v3, p0, Lb7/u;->c:I
+
+    .line 10
+    .line 11
+    mul-int v4, p1, v3
+
+    .line 12
+    .line 13
+    if-gt v2, v4, :cond_16
+
+    .line 14
+    .line 15
+    new-instance v0, Lb7/u;
+
+    .line 16
+    .line 17
+    mul-int/2addr v3, p1
+
+    .line 18
+    div-int/2addr v3, v1
+
+    .line 19
+    invoke-direct {v0, p1, v3}, Lb7/u;-><init>(II)V
+
+    .line 20
+    .line 21
+    .line 22
+    return-object v0
+
+    .line 23
+    :cond_16
+    new-instance p1, Lb7/u;
+
+    .line 24
+    .line 25
+    mul-int/2addr v1, v0
+
+    .line 26
+    div-int/2addr v1, v3
+
+    .line 27
+    invoke-direct {p1, v1, v0}, Lb7/u;-><init>(II)V
+
+    .line 28
+    .line 29
+    .line 30
+    return-object p1
+.end method
+
+.method public final b(Lb7/u;)Lb7/u;
+    .registers 7
+
+    .line 1
+    iget v0, p1, Lb7/u;->c:I
+
+    .line 2
+    .line 3
+    iget v1, p0, Lb7/u;->b:I
+
+    .line 4
+    .line 5
+    mul-int v2, v1, v0
+
+    .line 6
+    .line 7
+    iget p1, p1, Lb7/u;->b:I
+
+    .line 8
+    .line 9
+    iget v3, p0, Lb7/u;->c:I
+
+    .line 10
+    .line 11
+    mul-int v4, p1, v3
+
+    .line 12
+    .line 13
+    if-lt v2, v4, :cond_16
+
+    .line 14
+    .line 15
+    new-instance v0, Lb7/u;
+
+    .line 16
+    .line 17
+    mul-int/2addr v3, p1
+
+    .line 18
+    div-int/2addr v3, v1
+
+    .line 19
+    invoke-direct {v0, p1, v3}, Lb7/u;-><init>(II)V
+
+    .line 20
+    .line 21
+    .line 22
+    return-object v0
+
+    .line 23
+    :cond_16
+    new-instance p1, Lb7/u;
+
+    .line 24
+    .line 25
+    mul-int/2addr v1, v0
+
+    .line 26
+    div-int/2addr v1, v3
+
+    .line 27
+    invoke-direct {p1, v1, v0}, Lb7/u;-><init>(II)V
+
+    .line 28
+    .line 29
+    .line 30
+    return-object p1
+.end method
+
+.method public final compareTo(Ljava/lang/Object;)I
+    .registers 4
+
+    .line 1
+    check-cast p1, Lb7/u;
+
+    .line 2
+    .line 3
+    iget v0, p0, Lb7/u;->c:I
+
+    .line 4
+    .line 5
+    iget v1, p0, Lb7/u;->b:I
+
+    .line 6
+    .line 7
+    mul-int/2addr v0, v1
+
+    .line 8
+    iget v1, p1, Lb7/u;->c:I
+
+    .line 9
+    .line 10
+    iget p1, p1, Lb7/u;->b:I
+
+    .line 11
+    .line 12
+    mul-int/2addr v1, p1
+
+    .line 13
+    if-ge v1, v0, :cond_10
+
+    .line 14
+    .line 15
+    const/4 p1, 0x1
+
+    .line 16
+    return p1
+
+    .line 17
+    :cond_10
+    if-le v1, v0, :cond_14
+
+    .line 18
+    .line 19
+    const/4 p1, -0x1
+
+    .line 20
+    return p1
+
+    .line 21
+    :cond_14
+    const/4 p1, 0x0
+
+    .line 22
+    return p1
+.end method
+
+.method public final equals(Ljava/lang/Object;)Z
+    .registers 6
+
+    .line 1
+    const/4 v0, 0x1
+
+    .line 2
+    if-ne p0, p1, :cond_4
+
+    .line 3
+    .line 4
+    return v0
+
+    .line 5
+    :cond_4
+    const/4 v1, 0x0
+
+    .line 6
+    if-eqz p1, :cond_1f
+
+    .line 7
+    .line 8
+    const-class v2, Lb7/u;
+
+    .line 9
+    .line 10
+    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 11
+    .line 12
+    .line 13
+    move-result-object v3
+
+    .line 14
+    if-eq v2, v3, :cond_10
+
+    .line 15
+    .line 16
+    goto :goto_1f
+
+    .line 17
+    :cond_10
+    check-cast p1, Lb7/u;
+
+    .line 18
+    .line 19
+    iget v2, p0, Lb7/u;->b:I
+
+    .line 20
+    .line 21
+    iget v3, p1, Lb7/u;->b:I
+
+    .line 22
+    .line 23
+    if-ne v2, v3, :cond_1f
+
+    .line 24
+    .line 25
+    iget v2, p0, Lb7/u;->c:I
+
+    .line 26
+    .line 27
+    iget p1, p1, Lb7/u;->c:I
+
+    .line 28
+    .line 29
+    if-ne v2, p1, :cond_1f
+
+    .line 30
+    .line 31
+    return v0
+
+    .line 32
+    :cond_1f
+    :goto_1f
+    return v1
+.end method
+
+.method public final hashCode()I
+    .registers 3
+
+    .line 1
+    iget v0, p0, Lb7/u;->b:I
+
+    .line 2
+    .line 3
+    mul-int/lit8 v0, v0, 0x1f
+
+    .line 4
+    .line 5
+    iget v1, p0, Lb7/u;->c:I
+
+    .line 6
+    .line 7
+    add-int/2addr v0, v1
+
+    .line 8
+    return v0
+.end method
+
+.method public final toString()Ljava/lang/String;
+    .registers 3
+
+    .line 1
+    new-instance v0, Ljava/lang/StringBuilder;
+
+    .line 2
+    .line 3
+    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
+
+    .line 4
+    .line 5
+    .line 6
+    iget v1, p0, Lb7/u;->b:I
+
+    .line 7
+    .line 8
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    .line 9
+    .line 10
+    .line 11
+    const-string v1, "x"
+
+    .line 12
+    .line 13
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 14
+    .line 15
+    .line 16
+    iget v1, p0, Lb7/u;->c:I
+
+    .line 17
+    .line 18
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    .line 19
+    .line 20
+    .line 21
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    .line 22
+    .line 23
+    .line 24
+    move-result-object v0
+
+    .line 25
+    return-object v0
+.end method
