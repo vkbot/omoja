@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="media_mid_source_width">90dp</dimen>
+    <dimen name="media_small_tip_width">203dp</dimen>
+    <dimen name="theme_shop_title_margin_top">20dp</dimen>
+</resources>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.android.launcher3.BubbleTextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:textSize="18.6sp"
+    android:background="@drawable/bg_workspace_bubbletext"
+    android:maxLines="2"
+    android:shadowColor="@color/txt_workspace_bubbletext_shadow"
+    android:shadowDy="10"
+    android:shadowRadius="10"
+    android:paddingStart="24dp"
+    android:paddingEnd="24dp"
+    android:fallbackLineSpacing="false"
+    style="@style/BaseIcon.Workspace"/>

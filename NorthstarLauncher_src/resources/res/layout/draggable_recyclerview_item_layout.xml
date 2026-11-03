@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.android.launcher3.views.dragableviews.TouchListenerFrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/draggable_content_view"
+    android:clipChildren="false"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent">
+    <com.android.launcher3.views.blur.BlurView
+        android:layout_gravity="center"
+        android:id="@+id/blur_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+    <FrameLayout
+        android:layout_gravity="center"
+        android:id="@+id/widget_container"
+        android:clipChildren="false"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"/>
+    <ImageView
+        android:id="@+id/iv_delete"
+        android:padding="8dp"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="8dp"
+        android:src="@drawable/ic_widget_delete"/>
+</com.android.launcher3.views.dragableviews.TouchListenerFrameLayout>

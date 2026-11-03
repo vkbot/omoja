@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    android:sharedUserId="android.uid.system"
+    android:versionCode="30"
+    android:versionName="1.0.20251226035352-release/stanleypark_hqx.1.2.1_20251015"
+    android:compileSdkVersion="32"
+    android:compileSdkVersionCodename="12"
+    coreApp="true"
+    package="com.android.launcher3"
+    platformBuildVersionCode="32"
+    platformBuildVersionName="12">
+    <uses-sdk
+        android:minSdkVersion="30"
+        android:targetSdkVersion="30"/>
+    <permission
+        android:label="@string/permlab_install_shortcut"
+        android:name="com.android.launcher.permission.INSTALL_SHORTCUT"
+        android:protectionLevel="dangerous"
+        android:permissionGroup="android.permission-group.SYSTEM_TOOLS"
+        android:description="@string/permdesc_install_shortcut"/>
+    <permission android:name="com.android.launcher3.permission.READ_WALLPAPER"/>
+    <permission android:name="com.android.launcher3.permission.ACCESS_BADGE_COUNT"/>
+    <uses-permission android:name="android.permission.CALL_PHONE"/>
+    <uses-permission android:name="android.permission.INTERACT_ACROSS_USERS"/>
+    <uses-permission android:name="android.permission.SET_WALLPAPER"/>
+    <uses-permission android:name="android.permission.SET_WALLPAPER_HINTS"/>
+    <uses-permission android:name="android.permission.BIND_APPWIDGET"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name="android.permission.REQUEST_DELETE_PACKAGES"/>
+    <uses-permission android:name="android.permission.READ_DEVICE_CONFIG"/>
+    <uses-permission android:name="android.permission.QUERY_ALL_PACKAGES"/>
+    <uses-permission android:name="android.permission.WRITE_SECURE_SETTINGS"/>
+    <uses-permission android:name="android.permission.GET_TASKS"/>
+    <uses-permission android:name="mega.car.permission.SEQUOIA"/>
+    <uses-permission android:name="mega.car.permission.VEHICLE_BODY"/>
+    <uses-permission android:name="mega.car.permission.ECU"/>
+    <uses-permission android:name="android.permission.READ_FRAME_BUFFER"/>
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+    <uses-permission android:name="android.permission.SYSTEM_OVERLAY_WINDOW"/>
+    <uses-permission android:name="android.permission.INTERNAL_SYSTEM_WINDOW"/>
+    <uses-permission android:name="android.permission.REORDER_TASKS"/>
+    <uses-permission android:name="android.permission.MANAGE_EXTERNAL_STORAGE"/>
+    <permission
+        android:label="@string/permlab_read_settings"
+        android:name="com.android.launcher3.permission.READ_SETTINGS"
+        android:protectionLevel="signatureOrSystem"
+        android:permissionGroup="android.permission-group.SYSTEM_TOOLS"
+        android:description="@string/permdesc_read_settings"/>
+    <permission
+        android:label="@string/permlab_write_settings"
+        android:name="com.android.launcher3.permission.WRITE_SETTINGS"
+        android:protectionLevel="signatureOrSystem"
+        android:permissionGroup="android.permission-group.SYSTEM_TOOLS"
+        android:description="@string/permdesc_write_settings"/>
+    <uses-permission android:name="com.android.launcher3.permission.READ_SETTINGS"/>
+    <uses-permission android:name="com.android.launcher3.permission.WRITE_SETTINGS"/>
+    <queries>
+        <intent>
+            <action android:name="com.mega.launcher.wallpaper.BIND_WALLPAPER"/>
+        </intent>
+    </queries>
+    <uses-permission android:name="android.permission.BLUETOOTH"/>
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN"/>
+    <uses-permission android:name="android.permission.BLUETOOTH_CONNECT"/>
+    <protected-broadcast android:name="mega_action_close_dialog"/>
+    <protected-broadcast android:name="mega.intent.action.PREPARE_FORCE_SLEEP"/>
+    <protected-broadcast android:name="mega.intent.action.AWAKE_FORCE_SLEEP"/>
+    <application
+        android:theme="@style/NorthstarLauncherTheme"
+        android:label="@string/derived_app_name"
+        android:icon="@drawable/ic_launcher_home"
+        android:name="com.android.launcher3.LauncherApplication"
+        android:allowClearUserData="false"
+        android:backupAgent="com.android.launcher3.LauncherBackupAgent"
+        android:killAfterRestore="false"
+        android:restoreAnyVersion="true"
+        android:hardwareAccelerated="true"
+        android:largeHeap="@bool/config_largeHeap"
+        android:supportsRtl="true"
+        android:fullBackupOnly="true"
+        android:extractNativeLibs="false"
+        android:fullBackupContent="@xml/backupscheme"
+        android:usesCleartextTraffic="true"
+        android:backupInForeground="true"
+        android:appComponentFactory="androidx.core.app.CoreComponentFactory">
+        <activity
+            android:theme="@style/NorthstarLauncherTheme.Launcher"
+            android:name="com.android.launcher3.Launcher"
+            android:enabled="true"
+            android:taskAffinity=""
+            android:clearTaskOnLaunch="true"
+            android:stateNotNeeded="true"
+            android:launchMode="singleTask"
+            android:screenOrientation="unspecified"
+            android:configChanges="smallestScreenSize|screenSize|screenLayout|orientation|navigation|keyboardHidden|keyboard|mnc|mcc"
+            android:resumeWhilePausing="true"
+            android:resizeableActivity="false">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.HOME"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.MONKEY"/>
+                <category android:name="android.intent.category.LAUNCHER_APP"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <meta-data
+            android:name="android.nfc.disable_beam_default"
+            android:value="true"/>
+        <provider
+            android:name="com.android.launcher3.LauncherProvider"
+            android:readPermission="com.android.launcher3.permission.READ_SETTINGS"
+            android:writePermission="com.android.launcher3.permission.WRITE_SETTINGS"
+            android:exported="true"
+            android:authorities="com.android.launcher3.settings"/>
+        <activity
+            android:theme="@style/AppListTheme"
+            android:name="com.android.launcher3.activity.AppListActivity"
+            android:exported="true"
+            android:taskAffinity=""
+            android:launchMode="singleInstance"
+            android:configChanges="fontScale|layoutDirection|density|screenSize|screenLayout|orientation|keyboard|touchscreen|mnc|mcc"
+            android:resizeableActivity="false"
+            android:supportsPictureInPicture="false">
+            <intent-filter>
+                <action android:name="android.intent.action.APP_LIST"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <service
+            android:name="com.mega.launcher.wallpaper.service.WallpaperService"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.mega.launcher.wallpaper.BIND_WALLPAPER"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </service>
+        <provider
+            android:name="com.android.launcher3.provider.PreviewProvider"
+            android:exported="false"
+            android:authorities="com.android.launcher3.preview_provider"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths"/>
+        </provider>
+        <provider
+            android:name="com.mega.launcher.wallpaper.provider.WallpapersProvider"
+            android:permission="com.android.launcher3.permission.READ_WALLPAPER"
+            android:exported="true"
+            android:authorities="com.android.launcher3.wallpaperprovider">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths"/>
+        </provider>
+        <receiver android:name="com.mega.launcher.wallpaper.WallpaperReceiver">
+            <intent-filter>
+                <action android:name="mega.carsettings.intent.ACTION_RESET_DISPLAY_SETTINGS"/>
+            </intent-filter>
+        </receiver>
+        <provider
+            android:name="com.android.launcher3.BadgeProvider"
+            android:permission="com.android.launcher3.permission.ACCESS_BADGE_COUNT"
+            android:exported="true"
+            android:authorities="com.android.launcher3.badge"/>
+        <provider
+            android:name="mega.car.MegaCarPropertyInitializer"
+            android:exported="false"
+            android:authorities="com.android.launcher3.mega.car.propertyInitializer"/>
+        <service
+            android:name="androidx.room.MultiInstanceInvalidationService"
+            android:exported="false"
+            android:directBootAware="true"/>
+        <provider
+            android:name="androidx.lifecycle.ProcessLifecycleOwnerInitializer"
+            android:exported="false"
+            android:multiprocess="true"
+            android:authorities="com.android.launcher3.lifecycle-process"/>
+    </application>
+</manifest>

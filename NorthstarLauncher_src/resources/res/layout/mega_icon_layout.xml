@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.android.launcher3.views.AppIconView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/root_view"
+    android:layout_width="@dimen/icon_height_width"
+    android:layout_height="@dimen/icon_height_height">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="@dimen/icon_height_width"
+        android:layout_height="@dimen/icon_height_height">
+        <ImageView
+            android:layout_gravity="center_horizontal"
+            android:id="@+id/list_icon"
+            android:layout_width="@dimen/icon_image_height_weight"
+            android:layout_height="@dimen/icon_image_height_height"
+            android:layout_marginTop="@dimen/icon_image_margin_top"/>
+        <TextView
+            android:textSize="@dimen/icon_image_text_size"
+            android:textColor="@color/txt_app_list_color"
+            android:ellipsize="end"
+            android:gravity="center_horizontal"
+            android:id="@+id/list_text"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/icon_image_text_margin_top"
+            android:maxLines="2"
+            android:fallbackLineSpacing="false"/>
+    </LinearLayout>
+    <ImageView
+        android:id="@+id/icon_red_hot"
+        android:background="@mipmap/icon_red_hot"
+        android:visibility="gone"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginTop="10.7dp"
+        android:layout_marginStart="132.8dp"/>
+    <com.android.launcher3.activity.view.DownloadProgress
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/download_progress"
+        android:visibility="gone"
+        android:layout_width="@dimen/icon_image_height_weight"
+        android:layout_height="@dimen/icon_image_height_weight"
+        android:layout_marginTop="@dimen/icon_image_margin_top"
+        app:borderWidth="6.5dp"
+        app:radius="25dp"/>
+</com.android.launcher3.views.AppIconView>

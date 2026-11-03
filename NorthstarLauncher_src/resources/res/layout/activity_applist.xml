@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.android.launcher3.activity.AppListRootView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/app_bg"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <FrameLayout
+        android:id="@+id/tab_container"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/app_list_selector_height"
+        android:layout_marginTop="90dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"/>
+    <FrameLayout
+        android:id="@+id/system_apps_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/tab_container"/>
+    <FrameLayout
+        android:id="@+id/mix_launcher_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/tab_container"/>
+</com.android.launcher3.activity.AppListRootView>

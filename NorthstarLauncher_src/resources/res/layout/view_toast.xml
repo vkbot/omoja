@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:gravity="center"
+    android:id="@+id/cl_container"
+    android:background="@drawable/shape_bg_toast"
+    android:paddingTop="20dp"
+    android:paddingBottom="20dp"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:minWidth="491dp"
+    android:minHeight="80dp"
+    android:paddingStart="79dp"
+    android:paddingEnd="79dp"
+    android:translationZ="10dp"
+    android:elevation="10dp">
+    <TextView
+        android:textSize="24sp"
+        android:textColor="@color/font_main"
+        android:gravity="center"
+        android:id="@+id/tv_tip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+</LinearLayout>

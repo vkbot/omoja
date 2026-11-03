@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.android.launcher3.widget.AppContainerRecyclerView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:scrollbarSize="8dp"
+    android:scrollbarThumbVertical="@drawable/widget_scrollbar_thumb_vertical"
+    android:scrollbarStyle="outsideOverlay"
+    android:scrollbars="vertical"
+    android:fadingEdgeLength="50dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbarDefaultDelayBeforeFade="@integer/scrollbar_delay_before_fade"
+    android:overScrollMode="never"
+    android:requiresFadingEdge="vertical"
+    android:paddingStart="@dimen/widget_table_recycler_item_margin"
+    android:paddingEnd="@dimen/widget_table_recycler_item_margin"/>
