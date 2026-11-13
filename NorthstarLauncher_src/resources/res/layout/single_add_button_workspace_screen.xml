@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<com.android.launcher3.CellLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:launcher="http://schemas.android.com/apk/res-auto"
-    android:background="@mipmap/ic_workspace_cell_add"
-    android:layout_width="@dimen/height_launcher_celllayout"
-    android:layout_height="@dimen/height_launcher_celllayout"
-    android:hapticFeedbackEnabled="false"
-    launcher:containerType="workspace"/>
